@@ -1,0 +1,37 @@
+name: hourly-data-update
+on:
+  schedule:
+    - cron: "5 * * * *"     # 每小時第 5 分
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: update
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch data (Analytics + Data API)
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python fetch_data.py
+      - name: Fetch comments (best-effort, datacenter IP 可能被擋)
+        run: python fetch_comments.py || echo "comments fetch failed, keep cached comments.json"
+      - name: Fetch thumbnails (best-effort)
+        run: python fetch_thumbs.py || echo "thumbs fetch failed, keep cached thumbs.json"
+      - name: Apply to dashboard
+        run: python apply_data.py docs/index.html
+      - name: Commit & push
+        run: |
+          git config user.name "yt-data-bot"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "data update $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push

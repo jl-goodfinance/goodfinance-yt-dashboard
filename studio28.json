@@ -1,0 +1,235 @@
+{
+ "period": "2026/6/12–2026/7/9",
+ "channel": {
+  "impressions": 4666048,
+  "ctr": 6.8,
+  "views28": 543817
+ },
+ "newViewers": 76000,
+ "returningViewers": 26000,
+ "shows": {
+  "Better Living 美好生活": {
+   "impr": 1612680,
+   "videos": 10,
+   "ctr": 6.7,
+   "topctr": {
+    "id": "h6KX7WXkfzU",
+    "title": "0050 vs. 0056 不用選？多少錢才能安心退休？退休後 1000 萬年領 50 萬還能留給孩子！feat. 樂活大叔 施昇輝",
+    "ctr": 8.0,
+    "views": 9116
+   }
+  },
+  "Good Invest 美好投資": {
+   "impr": 691730,
+   "videos": 3,
+   "ctr": 5.7,
+   "topctr": {
+    "id": "iafFE0iEXtE",
+    "title": "AI這麼強，只買0050會不會太慢？該不該買主動式ETF？你應該等一個絕佳的機會進場搶便宜 ft. 李柏鋒｜EP34 #00981a #台股",
+    "ctr": 6.6,
+    "views": 14277
+   }
+  },
+  "Entrepreneurship": {
+   "impr": 277515,
+   "videos": 1,
+   "ctr": 4.1,
+   "topctr": {
+    "id": "rhj-cJfMdy0",
+    "title": "NVIDIA 市值 5 兆美元還能買嗎？2030 年挑戰市值 10 兆！為什麼現在的輝達很有可能是「最便宜」的科技巨頭？",
+    "ctr": 4.1,
+    "views": 14588
+   }
+  },
+  "Good Morning 美好": {
+   "impr": 1602603,
+   "videos": 28,
+   "ctr": 8.3,
+   "topctr": {
+    "id": "-3iFkurES4Y",
+    "title": "面板廠變身封裝巨頭？台積電傳聯手群創攻 FOPLP！洪進揚：群創已站上先進封裝第一梯隊｜2026/05/11 (一)",
+    "ctr": 11.5,
+    "views": 1733
+   }
+  },
+  "Good Income": {
+   "impr": 4096,
+   "videos": 1,
+   "ctr": 3.6
+  }
+ },
+ "videos": {
+  "GIEKO1DQMsU": {
+   "ctr": 7.2,
+   "impr": 698797
+  },
+  "7iFxcXD2Ru8": {
+   "ctr": 5.4,
+   "impr": 502562
+  },
+  "g_17YMQRXvI": {
+   "ctr": 5.7,
+   "impr": 494484
+  },
+  "rhj-cJfMdy0": {
+   "ctr": 4.1,
+   "impr": 277515
+  },
+  "ZAQe284luAE": {
+   "ctr": 6.9,
+   "impr": 227494
+  },
+  "iafFE0iEXtE": {
+   "ctr": 6.6,
+   "impr": 165287
+  },
+  "I79Z8p8wTFk": {
+   "ctr": 7.8,
+   "impr": 157272
+  },
+  "KS5UEKlrezA": {
+   "ctr": 6.8,
+   "impr": 150485
+  },
+  "h6KX7WXkfzU": {
+   "ctr": 8.0,
+   "impr": 139948
+  },
+  "pNPMEDoIhrw": {
+   "ctr": 8.6,
+   "impr": 124152
+  },
+  "MB6NF35pI9c": {
+   "ctr": 6.2,
+   "impr": 105442
+  },
+  "egqD41-P6Jg": {
+   "ctr": 10.2,
+   "impr": 96423
+  },
+  "8d3huL8b4Ng": {
+   "ctr": 10.0,
+   "impr": 89784
+  },
+  "vMn0bPtsKVo": {
+   "ctr": 7.7,
+   "impr": 76203
+  },
+  "szWe052Mlp8": {
+   "ctr": 8.5,
+   "impr": 72768
+  },
+  "QFeNsNMzIMo": {
+   "ctr": 8.9,
+   "impr": 58690
+  },
+  "pP3UCseTJxc": {
+   "ctr": 8.0,
+   "impr": 56174
+  },
+  "JHLiFF3j4aw": {
+   "ctr": 6.7,
+   "impr": 53335
+  },
+  "bbKNIG79Izk": {
+   "ctr": 8.9,
+   "impr": 46726
+  },
+  "64uzCevRsrM": {
+   "ctr": 11.3,
+   "impr": 45956
+  },
+  "1Jov9OQ6QO0": {
+   "ctr": 7.6,
+   "impr": 45478
+  },
+  "XbUBQEHehVs": {
+   "ctr": 10.7,
+   "impr": 43004
+  },
+  "McXYAe9KvWc": {
+   "ctr": 9.3,
+   "impr": 42166
+  },
+  "W2fmpAPLWi0": {
+   "ctr": 10.0,
+   "impr": 41418
+  },
+  "mNHUpX2VleA": {
+   "ctr": 9.3,
+   "impr": 41113
+  },
+  "aLSX2SYQ12Y": {
+   "ctr": 9.8,
+   "impr": 39189
+  },
+  "3r6uOwTqP_Y": {
+   "ctr": 9.1,
+   "impr": 36989
+  },
+  "0y81JOe5BTE": {
+   "ctr": 6.6,
+   "impr": 36385
+  },
+  "0UMcpRWKOpw": {
+   "ctr": 7.2,
+   "impr": 28371
+  },
+  "44mxk7UgAsI": {
+   "ctr": 6.9,
+   "impr": 26709
+  },
+  "NlcW0mxBPNw": {
+   "ctr": 4.6,
+   "impr": 23881
+  },
+  "65MMo6_gA5Y": {
+   "ctr": 5.3,
+   "impr": 22434
+  },
+  "JLNoq73XD78": {
+   "ctr": 6.7,
+   "impr": 21692
+  },
+  "DPhdD5_FsF4": {
+   "ctr": 4.4,
+   "impr": 19970
+  },
+  "C0YeArPX8NE": {
+   "ctr": 8.4,
+   "impr": 14295
+  },
+  "-3iFkurES4Y": {
+   "ctr": 11.5,
+   "impr": 12536
+  },
+  "xa0ZyGtqz4k": {
+   "ctr": 7.2,
+   "impr": 10639
+  },
+  "wNnnv517yjE": {
+   "ctr": 1.8,
+   "impr": 10278
+  },
+  "FRP7s6r6SQM": {
+   "ctr": 8.2,
+   "impr": 7707
+  },
+  "vJVAPN63VNc": {
+   "ctr": 3.7,
+   "impr": 7582
+  },
+  "3hWck9jTXcw": {
+   "ctr": 6.4,
+   "impr": 6822
+  },
+  "-nMoZvQAGMo": {
+   "ctr": 3.7,
+   "impr": 6373
+  },
+  "8cB1BlwWBPY": {
+   "ctr": 3.6,
+   "impr": 4096
+  }
+ }
+}
