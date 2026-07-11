@@ -79,42 +79,42 @@ repl(r"const CHANNEL_TOTAL = [\d]+, TOTAL_2026 = [\d]+;",
 # 4. KPI 八卡
 kpis = f'''<div class="kpis">
     <div class="card kpi hero">
-      <div class="label">訂閱數 <span class="badge real">實</span></div>
+      <div class="label">訂閱數</div>
       <div class="num">{ch["subs"]/10000:.2f}<small>萬</small></div>
       <div class="foot">{ch["subs"]:,} 位訂閱者</div>
     </div>
     <div class="card kpi hero">
-      <div class="label">總觀看數 <span class="badge real">實</span></div>
+      <div class="label">總觀看數</div>
       <div class="num">{ch["totalViews"]/10000:.1f}<small>萬</small></div>
       <div class="foot">{ch["totalViews"]:,} 次（全頻道 {ch["totalVideos"]} 支）</div>
     </div>
     <div class="card kpi hero">
-      <div class="label">觀看訂閱轉化率 <span class="badge real">實</span></div>
+      <div class="label">觀看訂閱轉化率</div>
       <div class="num">{round(ch["views26"]/ch["subsGained26"])}<small> : 1</small></div>
       <div class="foot">2026：{ch["views26"]/10000:.0f}萬觀看 ÷ {ch["subsGained26"]:,} 訂閱</div>
     </div>
     <div class="card kpi hero">
-      <div class="label">2026 訂閱轉化 <span class="badge real">實</span></div>
+      <div class="label">2026 訂閱轉化</div>
       <div class="num">+{ch["subsGained26"]/10000:.2f}<small>萬</small></div>
       <div class="foot">+{ch["subsGained26"]:,}（全期間累計 +{ch["subsGainedLife"]:,}）</div>
     </div>
     <div class="card kpi hero">
-      <div class="label">平均觀看時長 <span class="badge real">實</span></div>
+      <div class="label">平均觀看時長</div>
       <div class="num">{fmt_dur(ch["avgDur26"])}</div>
       <div class="foot">2026 全頻道（全期間 {fmt_dur(ch["avgDurLife"])}）</div>
     </div>
     <div class="card kpi hero">
-      <div class="label">平均完播率 <span class="badge real">實</span></div>
+      <div class="label">平均完播率</div>
       <div class="num">{ch["avgPct26"]:.1f}<small>%</small></div>
       <div class="foot">2026 平均觀看百分比</div>
     </div>
     <div class="card kpi hero">
-      <div class="label">縮圖 CTR（近28天）<span class="badge real">實</span></div>
+      <div class="label">縮圖 CTR（近28天）</div>
       <div class="num">{S28["channel"].get("ctr", 0)}<small>%</small></div>
       <div class="foot">曝光 {S28["channel"].get("impressions", 0)/10000:.0f}萬 · Studio {S28.get("period", "")}</div>
     </div>
     <div class="card kpi hero">
-      <div class="label">新觀眾占比（近28天）<span class="badge real">實</span></div>
+      <div class="label">新觀眾占比（近28天）</div>
       <div class="num">{S28.get("newViewers", 0)/(S28.get("newViewers", 0)+S28.get("returningViewers", 1))*100:.0f}<small>%</small></div>
       <div class="foot">新 {S28.get("newViewers", 0)/10000:.1f}萬 vs 回訪 {S28.get("returningViewers", 0)/10000:.1f}萬（影片）</div>
     </div>
@@ -123,6 +123,8 @@ repl(r'<div class="kpis">.*?\n  </div>', kpis)
 # 5. 觀眾輪廓：區塊 badge、性別、年齡、40+、流量
 repl(r'<span class="badge demo">示意數據 · 需接 YouTube Studio</span>',
      '<span class="badge real">實 · 2026 YouTube Analytics</span>', optional=True)
+repl(r'<span class="badge real">實 · 2026 YouTube Analytics</span>',
+     '<span class="badge real">2026 YouTube Analytics</span>', optional=True)
 g = D["gender"]
 repl(r'<div class="gender-bar">.*?</div>\n      <div class="gender-legend">',
      f'''<div class="gender-bar">
