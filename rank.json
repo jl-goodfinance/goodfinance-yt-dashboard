@@ -8,7 +8,8 @@
    "handle": "@fubonsec",
    "subs": 418000,
    "views": 35626026,
-   "videos": 501
+   "videos": 501,
+   "w7": null
   },
   {
    "name": "永豐金證券 豐雲學堂",
@@ -17,7 +18,8 @@
    "handle": "@sinoec",
    "subs": 225000,
    "views": 35971890,
-   "videos": 1116
+   "videos": 1117,
+   "w7": null
   },
   {
    "name": "凱基 股股漲",
@@ -26,7 +28,8 @@
    "handle": "@kgisia.channel",
    "subs": 204000,
    "views": 11264002,
-   "videos": 1428
+   "videos": 1428,
+   "w7": null
   },
   {
    "name": "元大投信",
@@ -35,7 +38,8 @@
    "handle": "@元大投信-yuantafunds",
    "subs": 105000,
    "views": 23647122,
-   "videos": 195
+   "videos": 195,
+   "w7": null
   },
   {
    "name": "群益期貨 KeensPie",
@@ -44,16 +48,18 @@
    "handle": "@keenspie",
    "subs": 105000,
    "views": 9841222,
-   "videos": 600
+   "videos": 600,
+   "w7": null
   },
   {
    "name": "美好證券 Good Finance",
    "id": "UCadQDNkNdOGwYnXK3HSTBsA",
    "yt_title": "美好證券 Good Finance",
    "handle": "@goodfinance",
-   "subs": 61200,
+   "subs": 61300,
    "views": 6005451,
-   "videos": 631
+   "videos": 631,
+   "w7": null
   },
   {
    "name": "凱基證券 樂活投資人",
@@ -62,7 +68,8 @@
    "handle": "@凱基證券樂活投資人",
    "subs": 54700,
    "views": 10514002,
-   "videos": 1350
+   "videos": 1350,
+   "w7": null
   },
   {
    "name": "國泰世華銀行",
@@ -71,7 +78,8 @@
    "handle": "@cathayunitedbank",
    "subs": 38700,
    "views": 173605317,
-   "videos": 452
+   "videos": 452,
+   "w7": null
   },
   {
    "name": "國泰投信 大樹下學投資",
@@ -80,7 +88,8 @@
    "handle": "@cathaysite",
    "subs": 22800,
    "views": 10784833,
-   "videos": 123
+   "videos": 123,
+   "w7": null
   },
   {
    "name": "中國信託 CTBC",
@@ -89,7 +98,8 @@
    "handle": "@ctbc9079",
    "subs": 11200,
    "views": 63030690,
-   "videos": 116
+   "videos": 116,
+   "w7": null
   },
   {
    "name": "玉山銀行 E.SUN",
@@ -98,7 +108,8 @@
    "handle": "@esunchannel",
    "subs": 7440,
    "views": 149719808,
-   "videos": 274
+   "videos": 274,
+   "w7": null
   },
   {
    "name": "元大證券",
@@ -107,7 +118,8 @@
    "handle": "@元大證券-e1g",
    "subs": 5320,
    "views": 1569827,
-   "videos": 81
+   "videos": 81,
+   "w7": null
   },
   {
    "name": "統一投信",
@@ -116,7 +128,8 @@
    "handle": "@ezmoney-tw",
    "subs": 3760,
    "views": 13672679,
-   "videos": 80
+   "videos": 80,
+   "w7": null
   },
   {
    "name": "兆豐銀行",
@@ -125,7 +138,8 @@
    "handle": "@megabank8747",
    "subs": 3160,
    "views": 10604970,
-   "videos": 395
+   "videos": 395,
+   "w7": null
   },
   {
    "name": "台新銀行 Richart",
@@ -134,7 +148,8 @@
    "handle": "",
    "subs": 0,
    "views": 0,
-   "videos": 0
+   "videos": 0,
+   "w7": null
   }
  ],
  "kol": [
@@ -145,7 +160,8 @@
    "handle": "@thestormmedia",
    "subs": 2540000,
    "views": 1322553203,
-   "videos": 15973
+   "videos": 15973,
+   "w7": null
   },
   {
    "name": "柴鼠兄弟 ZRBros",
@@ -154,7 +170,8 @@
    "handle": "@zrbro",
    "subs": 1160000,
    "views": 100692155,
-   "videos": 791
+   "videos": 791,
+   "w7": null
   },
   {
    "name": "游庭皓的財經皓角",
@@ -163,7 +180,8 @@
    "handle": "@yutinghaofinance",
    "subs": 679000,
    "views": 103256856,
-   "videos": 1166
+   "videos": 1166,
+   "w7": null
   },
   {
    "name": "老王愛說笑",
@@ -172,7 +190,8 @@
    "handle": "@oldwangstock",
    "subs": 588000,
    "views": 126900814,
-   "videos": 2357
+   "videos": 2357,
+   "w7": null
   },
   {
    "name": "SHIN LI 李勛",
@@ -181,7 +200,8 @@
    "handle": "@shinli",
    "subs": 471000,
    "views": 112833763,
-   "videos": 1818
+   "videos": 1818,
+   "w7": null
   },
   {
    "name": "阿格力",
@@ -190,7 +210,8 @@
    "handle": "@agreedr",
    "subs": 308000,
    "views": 50068767,
-   "videos": 696
+   "videos": 696,
+   "w7": null
   },
   {
    "name": "清流君",
@@ -199,7 +220,8 @@
    "handle": "@mrwaterdrop",
    "subs": 229000,
    "views": 22627596,
-   "videos": 236
+   "videos": 236,
+   "w7": null
   },
   {
    "name": "Ms.Selena",
@@ -208,7 +230,8 @@
    "handle": "@msselenamrwayne",
    "subs": 192000,
    "views": 13405816,
-   "videos": 947
+   "videos": 947,
+   "w7": null
   },
   {
    "name": "Nicolas 楊應超",
@@ -217,7 +240,8 @@
    "handle": "@nicolasyounglive",
    "subs": 174000,
    "views": 8629447,
-   "videos": 64
+   "videos": 64,
+   "w7": null
   },
   {
    "name": "股癌 Gooaye",
@@ -226,7 +250,8 @@
    "handle": "@gooaye",
    "subs": 170000,
    "views": 14658843,
-   "videos": 677
+   "videos": 677,
+   "w7": null
   },
   {
    "name": "M觀點 Miula",
@@ -235,7 +260,8 @@
    "handle": "@miulaviewpoint",
    "subs": 131000,
    "views": 15724387,
-   "videos": 1552
+   "videos": 1552,
+   "w7": null
   },
   {
    "name": "慢活夫妻",
@@ -244,7 +270,8 @@
    "handle": "@georgedewi",
    "subs": 120000,
    "views": 10809133,
-   "videos": 386
+   "videos": 386,
+   "w7": null
   },
   {
    "name": "財報狗",
@@ -253,7 +280,8 @@
    "handle": "@statementdog_official",
    "subs": 13900,
    "views": 428989,
-   "videos": 977
+   "videos": 977,
+   "w7": null
   },
   {
    "name": "雨果的投資理財生活觀",
@@ -262,7 +290,8 @@
    "handle": "@hugolife",
    "subs": 811,
    "views": 17856,
-   "videos": 79
+   "videos": 79,
+   "w7": null
   }
  ]
 }

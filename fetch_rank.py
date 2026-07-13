@@ -2,7 +2,7 @@
 """競品排行：台灣金融業官方頻道＋財經 KOL 的訂閱/觀看數 → rank.json
 頻道 ID 首次用 search 解析後快取到 rank_channels.json（之後每小時只花 channels.list 的 1 quota）"""
 import json, os, urllib.request, urllib.parse
-from datetime import date
+from datetime import date, timedelta
 
 CONF = os.path.expanduser("~/.config/goodfinance-yt")
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -107,7 +107,30 @@ industry = build(INDUSTRY)
 print("KOL：")
 kol = build(KOL)
 json.dump(cache, open(cache_p, "w"), ensure_ascii=False, indent=1)
-out = {"updated": date.today().isoformat(), "industry": industry, "kol": kol}
+
+# 每日訂閱快照 → 累積各頻道週增（YouTube 不給他人歷史，只能自建時序，滿一週後生效）
+TODAY = date.today()
+hist_p = os.path.join(BASE, "rank_history.json")
+hist = json.load(open(hist_p)) if os.path.exists(hist_p) else []
+snap = {r["id"]: r["subs"] for r in industry + kol}
+hist = [h for h in hist if h["date"] != TODAY.isoformat()]   # 同日覆蓋為最新
+hist.append({"date": TODAY.isoformat(), "subs": snap})
+hist.sort(key=lambda h: h["date"])
+hist = hist[-160:]
+json.dump(hist, open(hist_p, "w"), ensure_ascii=False)
+
+def week_delta(cid, cur):
+    """取 5–10 天前、最接近 7 天的快照算訂閱增加；無足夠歷史回 None"""
+    best, best_gap = None, 99
+    for h in hist:
+        age = (TODAY - date.fromisoformat(h["date"])).days
+        if 5 <= age <= 10 and cid in h["subs"] and abs(age - 7) < best_gap:
+            best, best_gap = h, abs(age - 7)
+    return cur - best["subs"][cid] if best else None
+for r in industry + kol:
+    r["w7"] = week_delta(r["id"], r["subs"])
+
+out = {"updated": TODAY.isoformat(), "industry": industry, "kol": kol}
 json.dump(out, open(os.path.join(BASE, "rank.json"), "w"), ensure_ascii=False, indent=1)
 for r in industry[:12]: print(f'  {r["subs"]:>9,} {r["name"]} ({r["yt_title"]})')
 print("---")
