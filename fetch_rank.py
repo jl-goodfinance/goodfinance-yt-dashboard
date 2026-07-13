@@ -108,11 +108,77 @@ print("KOL：")
 kol = build(KOL)
 json.dump(cache, open(cache_p, "w"), ensure_ascii=False, indent=1)
 
-# 每日訂閱快照 → 累積各頻道週增（YouTube 不給他人歷史，只能自建時序，滿一週後生效）
+# ── 近期影片深入指標：uploads 清單一次抓（近7日上片數＋近15支統計）──────
 TODAY = date.today()
+rows_all = industry + kol
+recent_ids = {}
+for r in rows_all:
+    try:
+        rr = get("playlistItems", part="contentDetails", playlistId="UU" + r["id"][2:], maxResults=50)
+        items = [(i["contentDetails"]["videoId"], i["contentDetails"].get("videoPublishedAt", "")) for i in rr.get("items", [])]
+        cutoff = (TODAY - timedelta(days=7)).isoformat()
+        r["w7v"] = sum(1 for _, p in items if p[:10] >= cutoff)
+        recent_ids[r["id"]] = [v for v, _ in items[:15]]
+    except Exception:
+        r["w7v"] = None
+        recent_ids[r["id"]] = []
+
+import re as _re
+def dur_sec(iso):
+    m = _re.match(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", iso or "")
+    if not m: return 0
+    h, mi, s = (int(x) if x else 0 for x in m.groups())
+    return h * 3600 + mi * 60 + s
+
+all_vids = [v for ids in recent_ids.values() for v in ids]
+vstat = {}
+for i in range(0, len(all_vids), 50):
+    rr = get("videos", part="statistics,contentDetails", id=",".join(all_vids[i:i+50]), maxResults=50)
+    for it in rr.get("items", []):
+        st = it["statistics"]
+        vstat[it["id"]] = {"v": int(st.get("viewCount", 0)), "l": int(st.get("likeCount", 0)),
+                           "c": int(st.get("commentCount", 0)), "d": dur_sec(it["contentDetails"].get("duration"))}
+for r in rows_all:
+    vs = [vstat[v] for v in recent_ids[r["id"]] if v in vstat]
+    if vs:
+        tv = sum(x["v"] for x in vs)
+        r["recentAvg"] = round(tv / len(vs))
+        r["engage"] = round(sum(x["l"] + x["c"] for x in vs) / tv * 100, 1) if tv else None
+        r["shorts"] = round(sum(1 for x in vs if x["d"] <= 61) / len(vs) * 100)
+    else:
+        r["recentAvg"] = r["engage"] = r["shorts"] = None
+
+# ── 單支最高觀看（search 費 100 quota → 每頻道快取 7 天）─────────────
+tops_p = os.path.join(BASE, "rank_tops.json")
+tops = json.load(open(tops_p)) if os.path.exists(tops_p) else {}
+need = [r["id"] for r in rows_all
+        if r["id"] not in tops or (TODAY - date.fromisoformat(tops[r["id"]].get("fetched", "2000-01-01"))).days >= 7]
+top_ids = {}
+for cid in need:
+    try:
+        rr = get("search", part="snippet", channelId=cid, order="viewCount", type="video", maxResults=1)
+        its = rr.get("items", [])
+        if its:
+            top_ids[cid] = {"id": its[0]["id"]["videoId"], "title": its[0]["snippet"]["title"]}
+    except Exception as e:
+        print("  top 查詢失敗", cid, e)
+for i in range(0, len(need), 50):
+    batch = [top_ids[c]["id"] for c in need[i:i+50] if c in top_ids]
+    if batch:
+        rr = get("videos", part="statistics", id=",".join(batch), maxResults=50)
+        vv = {it["id"]: int(it["statistics"].get("viewCount", 0)) for it in rr.get("items", [])}
+        for c in need[i:i+50]:
+            if c in top_ids:
+                tops[c] = {**top_ids[c], "views": vv.get(top_ids[c]["id"], 0), "fetched": TODAY.isoformat()}
+json.dump(tops, open(tops_p, "w"), ensure_ascii=False, indent=1)
+for r in rows_all:
+    t = tops.get(r["id"])
+    r["top"] = {"id": t["id"], "title": t["title"][:60], "views": t["views"]} if t else None
+
+# ── 每日快照 → 週增（訂閱/影片/總觀看；YouTube 不給他人歷史，只能自建）──
 hist_p = os.path.join(BASE, "rank_history.json")
 hist = json.load(open(hist_p)) if os.path.exists(hist_p) else []
-snap = {r["id"]: [r["subs"], r["videos"]] for r in industry + kol}   # [訂閱, 影片數]
+snap = {r["id"]: [r["subs"], r["videos"], r["views"]] for r in rows_all}
 hist = [h for h in hist if h["date"] != TODAY.isoformat()]   # 同日覆蓋為最新
 hist.append({"date": TODAY.isoformat(), "subs": snap})
 hist.sort(key=lambda h: h["date"])
@@ -120,8 +186,7 @@ hist = hist[-160:]
 json.dump(hist, open(hist_p, "w"), ensure_ascii=False)
 
 def week_delta(cid, cur, idx):
-    """取 5–10 天前、最接近 7 天的快照算增加（idx 0=訂閱 1=影片數）；無足夠歷史回 None
-    相容舊格式（值為 int＝僅訂閱快照，無影片歷史）"""
+    """取 5–10 天前、最接近 7 天的快照算增量；相容舊格式（int／短 list）"""
     best, best_gap = None, 99
     for h in hist:
         age = (TODAY - date.fromisoformat(h["date"])).days
@@ -130,12 +195,12 @@ def week_delta(cid, cur, idx):
     if not best:
         return None
     prev = best["subs"][cid]
-    if isinstance(prev, list):
-        return cur - prev[idx]
-    return cur - prev if idx == 0 else None   # 舊 int 只有訂閱
-for r in industry + kol:
+    prev = prev if isinstance(prev, list) else [prev]
+    return cur - prev[idx] if idx < len(prev) else None
+
+for r in rows_all:
     r["w7"] = week_delta(r["id"], r["subs"], 0)
-    r["w7v"] = week_delta(r["id"], r["videos"], 1)
+    r["w7view"] = week_delta(r["id"], r["views"], 2)
 
 out = {"updated": TODAY.isoformat(), "industry": industry, "kol": kol}
 json.dump(out, open(os.path.join(BASE, "rank.json"), "w"), ensure_ascii=False, indent=1)
