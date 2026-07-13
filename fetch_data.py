@@ -83,6 +83,19 @@ channel = {
 }
 print("頻道:", channel)
 
+# ── 1b. 2026 逐日訂閱增減 → 每週彙整（週一為週首）────────────
+day_rows = analytics(startDate=Y26_START, metrics="subscribersGained,subscribersLost",
+                     dimensions="day", sort="day").get("rows", [])
+weeks = {}   # 週一 ISO 日期 -> {gained, lost}
+for d, g, l in day_rows:
+    dd = date.fromisoformat(d)
+    monday = dd - timedelta(days=dd.weekday())
+    w = weeks.setdefault(monday.isoformat(), {"gained": 0, "lost": 0})
+    w["gained"] += int(g); w["lost"] += int(l)
+weekly = [{"w": k, "gained": v["gained"], "lost": v["lost"], "net": v["gained"] - v["lost"]}
+          for k, v in sorted(weeks.items())]
+print(f"每週訂閱：{len(weekly)} 週，最近一週淨增 {weekly[-1]['net'] if weekly else 0:+d}")
+
 # ── 2. 觀眾輪廓（2026）──────────────────────────────────
 demo_rows = analytics(startDate=Y26_START, metrics="viewerPercentage", dimensions="ageGroup,gender").get("rows", [])
 gender = {"male": 0.0, "female": 0.0, "user_specified": 0.0}
@@ -199,6 +212,7 @@ out = {
     "age": {k: round(v, 1) for k, v in age.items()},
     "age40": round(age40, 1),
     "traffic": traffic,
+    "weekly": weekly,
     "shows": shows,
 }
 json.dump(out, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data.json"), "w"), ensure_ascii=False, indent=1)
