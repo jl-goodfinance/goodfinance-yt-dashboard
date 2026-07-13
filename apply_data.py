@@ -27,6 +27,7 @@ CMT_RAW = load("comments.json", {})
 CMT = {vid: [{"l": c["likes"], "t": c["text"][:170]} for c in info.get("comments", [])[:6]]
        for vid, info in CMT_RAW.items() if info.get("comments")}
 THUMBS = load("thumbs.json", {})
+RANK = load("rank.json", {"updated": "", "industry": [], "kol": []})
 
 j = lambda o: json.dumps(o, ensure_ascii=False)
 
@@ -73,6 +74,7 @@ repl(r"const ADVICE = \{.*?\};\n", "const ADVICE = " + j(ADV) + ";\n")
 repl(r"const ANALYSIS = \{.*?\};\n", "const ANALYSIS = " + j(ANA) + ";\n")
 repl(r"const COMMENTS = \{.*?\};\n", "const COMMENTS = " + j(CMT) + ";\n")
 repl(r"const THUMBS = \{.*?\};\n", "const THUMBS = " + j(THUMBS) + ";\n")
+repl(r"const RANKS = \{.*?\};\n", "const RANKS = " + j(RANK) + ";\n")
 # 3. 總量常數
 repl(r"const CHANNEL_TOTAL = [\d]+, TOTAL_2026 = [\d]+;",
      f"const CHANNEL_TOTAL = {ch['totalViews']}, TOTAL_2026 = {ch['views26']};")

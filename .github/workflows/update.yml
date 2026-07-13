@@ -26,6 +26,12 @@ jobs:
         run: python fetch_comments.py || echo "comments fetch failed, keep cached comments.json"
       - name: Fetch thumbnails (best-effort)
         run: python fetch_thumbs.py || echo "thumbs fetch failed, keep cached thumbs.json"
+      - name: Fetch competitor rankings (best-effort)
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python fetch_rank.py || echo "rank fetch failed, keep cached rank.json"
       - name: Apply to dashboard
         run: python apply_data.py docs/index.html
       - name: Commit & push
