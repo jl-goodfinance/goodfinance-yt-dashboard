@@ -149,6 +149,35 @@ stat26 = video_stats(all_ids, Y26_START)
 statLife = video_stats(all_ids, LIFE_START)
 print(f"影片 stats: 2026 {len(stat26)} 支 / 全期間 {len(statLife)} 支")
 
+# ── 4b. 各月增幅最高週：標記＋抓當週訂閱轉化最高影片（峰值原因）────
+by_month = {}
+for w in weekly:
+    m = w["w"][:7]
+    if m not in by_month or w["net"] > by_month[m]["net"]:
+        by_month[m] = w
+for w in by_month.values():
+    w["peak"] = True
+    ws = date.fromisoformat(w["w"])
+    we = min(ws + timedelta(days=6), END_D)
+    try:
+        rows = analytics(startDate=ws.isoformat(), endDate=we.isoformat(),
+                         metrics="subscribersGained", dimensions="video",
+                         sort="-subscribersGained", maxResults=5).get("rows", [])
+    except Exception as e:
+        print("  峰值影片查詢失敗", w["w"], e)
+        rows = []
+    if rows and rows[0][1] > 0:
+        vid, sg = rows[0][0], int(rows[0][1])
+        title = vid_meta.get(vid, {}).get("title")
+        if not title:
+            try:
+                vr = data_api("videos", part="snippet", id=vid).get("items", [])
+                title = vr[0]["snippet"]["title"] if vr else vid
+            except Exception:
+                title = vid
+        w["why"] = {"id": vid, "title": title[:70], "subs": sg}
+        print(f"  峰值 {w['w']} +{w['net']}: 《{title[:40]}》 +{sg}")
+
 # ── 5. 組節目層 ──────────────────────────────────────────
 def rel_str(pub):
     d = (TODAY - date.fromisoformat(pub)).days

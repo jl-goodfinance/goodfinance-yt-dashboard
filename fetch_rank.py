@@ -26,7 +26,7 @@ INDUSTRY = {
     "兆豐銀行": "UCTHisK1U5uIToyCfaiKYUdA",
 }
 KOL = {
-    "下班經濟學（風傳媒）": "UCwWXGnvVmi-6Sfx2wf8S8tQ",
+    "小Lin説": "UCilwQlk62k1z7aUEZPOB6yw",
     "柴鼠兄弟 ZRBros": "UC45i13dEfEVac2IEJT_Nr5Q",
     "游庭皓的財經皓角": "UC0lbAQVpenvfA2QqzsRtL_g",
     "股癌 Gooaye": "UC23rnlQU_qE3cec9x709peA",
@@ -112,23 +112,30 @@ json.dump(cache, open(cache_p, "w"), ensure_ascii=False, indent=1)
 TODAY = date.today()
 hist_p = os.path.join(BASE, "rank_history.json")
 hist = json.load(open(hist_p)) if os.path.exists(hist_p) else []
-snap = {r["id"]: r["subs"] for r in industry + kol}
+snap = {r["id"]: [r["subs"], r["videos"]] for r in industry + kol}   # [訂閱, 影片數]
 hist = [h for h in hist if h["date"] != TODAY.isoformat()]   # 同日覆蓋為最新
 hist.append({"date": TODAY.isoformat(), "subs": snap})
 hist.sort(key=lambda h: h["date"])
 hist = hist[-160:]
 json.dump(hist, open(hist_p, "w"), ensure_ascii=False)
 
-def week_delta(cid, cur):
-    """取 5–10 天前、最接近 7 天的快照算訂閱增加；無足夠歷史回 None"""
+def week_delta(cid, cur, idx):
+    """取 5–10 天前、最接近 7 天的快照算增加（idx 0=訂閱 1=影片數）；無足夠歷史回 None
+    相容舊格式（值為 int＝僅訂閱快照，無影片歷史）"""
     best, best_gap = None, 99
     for h in hist:
         age = (TODAY - date.fromisoformat(h["date"])).days
         if 5 <= age <= 10 and cid in h["subs"] and abs(age - 7) < best_gap:
             best, best_gap = h, abs(age - 7)
-    return cur - best["subs"][cid] if best else None
+    if not best:
+        return None
+    prev = best["subs"][cid]
+    if isinstance(prev, list):
+        return cur - prev[idx]
+    return cur - prev if idx == 0 else None   # 舊 int 只有訂閱
 for r in industry + kol:
-    r["w7"] = week_delta(r["id"], r["subs"])
+    r["w7"] = week_delta(r["id"], r["subs"], 0)
+    r["w7v"] = week_delta(r["id"], r["videos"], 1)
 
 out = {"updated": TODAY.isoformat(), "industry": industry, "kol": kol}
 json.dump(out, open(os.path.join(BASE, "rank.json"), "w"), ensure_ascii=False, indent=1)

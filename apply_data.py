@@ -76,6 +76,7 @@ repl(r"const COMMENTS = \{.*?\};\n", "const COMMENTS = " + j(CMT) + ";\n")
 repl(r"const THUMBS = \{.*?\};\n", "const THUMBS = " + j(THUMBS) + ";\n")
 repl(r"const RANKS = \{.*?\};\n", "const RANKS = " + j(RANK) + ";\n")
 repl(r"const WEEKLY = \[.*?\];\n", "const WEEKLY = " + j(D.get("weekly", [])) + ";\n")
+repl(r"const SUBS_NOW = \d+;", f"const SUBS_NOW = {ch['subs']};")
 # 3. 總量常數
 repl(r"const CHANNEL_TOTAL = [\d]+, TOTAL_2026 = [\d]+;",
      f"const CHANNEL_TOTAL = {ch['totalViews']}, TOTAL_2026 = {ch['views26']};")
