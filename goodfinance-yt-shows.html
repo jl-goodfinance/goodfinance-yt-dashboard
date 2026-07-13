@@ -328,6 +328,31 @@ a.ep-t:hover{text-decoration:underline}
   @keyframes drift1{to{transform:translate(70px,45px)}}
   @keyframes drift2{to{transform:translate(-60px,70px)}}
   @keyframes drift3{to{transform:translate(50px,-55px)}}
+  /* 競品頁進場（放緩、更順） */
+  #competPage{animation:pageIn .5s ease}
+  #competPage .rkcard{animation:rise .65s cubic-bezier(.22,.61,.36,1) both}
+  #competPage .rkcard:last-child{animation-delay:.12s}
+  #competPage table.rank tbody tr{animation:rowIn .6s cubic-bezier(.22,.61,.36,1) both;animation-delay:calc(.15s + var(--i,0) * 45ms)}
+  @keyframes rowIn{from{opacity:0;transform:translateX(-16px)}}
+  #competPage .rkbar i{transform-origin:left;animation:growX .95s .3s cubic-bezier(.22,.61,.36,1) backwards}
+  #competPage table.rank td.n.best::after{animation:pop .5s .65s cubic-bezier(.34,1.56,.64,1) backwards}
+  @keyframes pop{from{opacity:0;transform:scale(0)}}
+  .compet-teaser{animation:rise .6s .12s cubic-bezier(.22,.61,.36,1) both}
+  /* 訂閱增長折線圖 */
+  .wc-line{stroke-dasharray:2600;stroke-dashoffset:2600;animation:draw 3.6s .3s cubic-bezier(.33,0,.18,1) forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  .wc-svg path[fill^="url"]{animation:fadeIn 1.8s .6s both}
+  @keyframes fadeIn{from{opacity:0}}
+  .wc-dot{opacity:0;animation:dotIn .5s cubic-bezier(.22,.61,.36,1) both;animation-delay:calc(1.3s + var(--i,0) * 60ms)}
+  @keyframes dotIn{to{opacity:.5}}
+  .wc-dot.last{animation-name:dotInFull}
+  .wc-dot.pk{animation:dotInFull .5s cubic-bezier(.22,.61,.36,1) both,pkPulse 3.2s ease-in-out infinite;animation-delay:calc(1.3s + var(--i,0) * 60ms),3.6s}
+  @keyframes dotInFull{from{opacity:0}to{opacity:1}}
+  @keyframes pkPulse{0%,100%{r:4px;opacity:.75}50%{r:6.5px;opacity:1}}
+  /* 競品標題流動漸層（持續、緩慢平滑） */
+  #competPage h1{animation:flowGrad 8s ease-in-out infinite}
+  @keyframes flowGrad{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+  .rkbar i,.wc-line,#competPage table.rank tbody tr,#competPage .rkcard{will-change:transform,opacity}
 }
 
 /* footer */
@@ -352,7 +377,7 @@ footer.src b{color:var(--sub)}
   /* 競品觀測 */
   .rk-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:8px}
   
-  .rkcard h3{margin:0 0 2px;font-size:15px}
+  .rkcard h3{margin:0;font-size:20px;font-weight:800}
   .rknote{color:#97a3bd;font-size:11.5px;margin-bottom:8px}
   table.rank{width:100%;border-collapse:collapse;font-size:13px}
   table.rank th{text-align:left;color:#97a3bd;font-weight:600;font-size:11px;padding:5px 8px;border-bottom:1px solid var(--line)}
@@ -367,12 +392,22 @@ footer.src b{color:var(--sub)}
   table.rank td.n b{font-weight:700}
   .rkbar{display:block;height:3px;background:rgba(255,255,255,.06);border-radius:2px;margin-top:3px;overflow:hidden}
   .rkbar i{display:block;height:100%;background:linear-gradient(90deg,#4f8dff 0%,#2fa3b8 60%,#3dbb87 100%);border-radius:2px}
-  table.rank tr.me{background:linear-gradient(90deg,rgba(90,166,255,.24),rgba(53,240,138,.16))}
+  table.rank tr.me{background:linear-gradient(90deg,rgba(43,232,107,.16),rgba(49,131,255,.22))}
   table.rank tr.me td{background:transparent}
-  table.rank tr.me td.ch a{background:linear-gradient(90deg,#5aa6ff,#35f08a);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700}
-  table.rank tr.me td.rk{color:#3ddf95}
+  table.rank tr.me td.ch a{background:linear-gradient(95deg,#2be86b 0%,#22cfe0 50%,#3183ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700}
+  table.rank tr.me td.rk{color:#35f08a}
   table.rank tr.gap td{text-align:center;color:#97a3bd;padding:2px}
-  .rk-scroll{overflow-x:auto;margin:0 -2px}
+  .rkcard-head{display:flex;align-items:baseline;gap:10px;cursor:pointer;user-select:none;flex-wrap:wrap}
+  .rkcard-head h3{margin:0}
+  .rknote-inline{color:#97a3bd;font-size:11.5px}
+  .rk-chev{margin-left:auto;font-size:12px;color:#97a3bd;transition:transform .3s cubic-bezier(.4,0,.2,1)}
+  .rkcard.collapsed .rk-chev{transform:rotate(-90deg)}
+  .rk-scroll{overflow-x:auto;overflow-y:hidden;max-height:1600px;margin-top:11px;transition:max-height .45s cubic-bezier(.4,0,.2,1),opacity .3s,margin-top .3s}
+  .rkcard.collapsed .rk-scroll{max-height:0;opacity:0;margin-top:0}
+  table.rank thead th[data-k]{cursor:pointer;transition:color .15s;white-space:nowrap}
+  table.rank thead th[data-k]:hover{color:#dfe7f5}
+  table.rank thead th.sorted{color:#35f08a}
+  .sort-ar{font-size:8px;margin-left:3px}
   table.rank{min-width:1080px}
   table.rank td.n a{color:inherit;text-decoration:none;border-bottom:1px dotted rgba(255,255,255,.25)}
   table.rank td.n a:hover{border-bottom-color:#3dbb87}
@@ -405,7 +440,13 @@ footer.src b{color:var(--sub)}
   .rk-impossible{color:#97a3bd;font-size:11.5px;margin-top:10px;line-height:1.5}
   .wc-dot.pk{fill:#e8a04b;opacity:.95}
   .wc-dot.pk:hover{opacity:1}
-  .wc-peaks{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:3px 18px;margin-top:9px;font-size:11px;color:#97a3bd;line-height:1.55}
+  .wc-peaks-wrap{margin-top:8px}
+  .wc-peaks-toggle{background:none;border:1px solid var(--line);color:#c6cfe2;font-size:11.5px;padding:4px 11px;border-radius:8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-family:inherit}
+  .wc-peaks-toggle:hover{border-color:rgba(109,177,255,.5);color:#fff}
+  .wc-peaks-toggle .wc-chev{font-size:9px;transition:transform .22s}
+  .wc-peaks-wrap.open .wc-peaks-toggle .wc-chev{transform:rotate(180deg)}
+  .wc-peaks{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:3px 18px;font-size:11px;color:#97a3bd;line-height:1.55;max-height:0;overflow:hidden;opacity:0;transition:max-height .38s ease,opacity .3s,margin .38s}
+  .wc-peaks-wrap.open .wc-peaks{max-height:360px;opacity:1;margin-top:11px}
   .wc-peaks b{color:#e8a04b;font-weight:700}
   .wc-peaks a{color:#c6cfe2;text-decoration:none}
   .wc-peaks a:hover{text-decoration:underline}
@@ -960,7 +1001,7 @@ function weeklyChartHTML(weekly, title){
     const [px, py] = pts[i], last = i === data.length - 1;
     let tip = `${wkEnd(d.w)}\n${num(cum[i])} (+${num(d.net)})`;
     if (d.peak && d.why) tip += `\n當月最高 · 主因《${d.why.title}》+${num(d.why.subs)} 訂閱`;
-    return `<circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="${d.peak ? 4 : last ? 3.5 : 2.5}" class="wc-dot${d.peak ? " pk" : ""}${last ? " last" : ""}" data-tip="${tip.replace(/"/g, "&quot;")}"></circle>`;
+    return `<circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="${d.peak ? 4 : last ? 3.5 : 2.5}" class="wc-dot${d.peak ? " pk" : ""}${last ? " last" : ""}" style="--i:${i}" data-tip="${tip.replace(/"/g, "&quot;")}"></circle>`;
   }).join("");
   const peaks = data.filter(d => d.peak && d.why).map(d =>
     `<span><b>${parseInt(d.w.slice(5, 7))}月 +${num(d.net)}</b>（${wkEnd(d.w)} 那週）主因 <a href="https://www.youtube.com/watch?v=${d.why.id}" target="_blank" rel="noopener">《${d.why.title.slice(0, 34)}${d.why.title.length > 34 ? "…" : ""}》</a> +${num(d.why.subs)} 訂閱</span>`).join("");
@@ -973,7 +1014,10 @@ function weeklyChartHTML(weekly, title){
       ${grid}<path d="${area}" fill="url(#wcFill)"/><path d="${line}" class="wc-line"/>${dots}${xlab}
     </svg>
     <div class="wc-note">累計訂閱數＝每週（一～日）淨增逐週累加至今 · <span style="color:#e8a04b">●</span> 當月增幅最高週 · 來源：YouTube Analytics（統計至前一日）· 滑過各點看當週明細</div>
-    ${peaks ? `<div class="wc-peaks">${peaks}</div>` : ""}
+    ${peaks ? `<div class="wc-peaks-wrap">
+      <button class="wc-peaks-toggle" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))">每月高峰主因 <span class="wc-chev">▾</span></button>
+      <div class="wc-peaks">${peaks}</div>
+    </div>` : ""}
   </div>`;
 }
 (function renderWeekly(){
@@ -985,44 +1029,76 @@ function weeklyChartHTML(weekly, title){
 
 /* 競品觀測：金融業 / 財經 KOL 排行（依訂閱數，每小時更新） */
 const ME_ID = "UCadQDNkNdOGwYnXK3HSTBsA";
-function rankTableHTML(rows, title, note){
-  const top = rows.slice(0, 10);
-  const meIdx = rows.findIndex(r => r.id === ME_ID);
-  const avg = r => r.videos ? Math.round(r.views / r.videos) : 0;
-  const max = Math.max(...top.map(r => r.subs), 1);
-  const hi = arr => { const v = arr.filter(x => x != null); return v.length ? Math.max(...v) : null; };
-  const bSubs = hi(top.map(r => r.subs)), bViews = hi(top.map(r => r.views));
-  const bAvg = hi(top.map(avg)), bVid = hi(top.map(r => r.videos));
-  const bW7 = hi(top.map(r => r.w7)), bW7v = hi(top.map(r => r.w7v)), bW7w = hi(top.map(r => r.w7view));
-  const bRec = hi(top.map(r => r.recentAvg)), bEng = hi(top.map(r => r.engage));
-  const bTop = hi(top.map(r => r.top && r.top.views));
-  const mk = on => on ? " best" : "";
+const RANK_COLS = [
+  {h:"訂閱數", k:"subs"}, {h:"每週訂閱數", k:"w7"}, {h:"每週影片數", k:"w7v"},
+  {h:"每週觀看數", k:"w7view"}, {h:"近期平均觀看", k:"recentAvg"}, {h:"互動率", k:"engage"},
+  {h:"Shorts", k:"shorts"}, {h:"平均觀看", k:"avg"}, {h:"影片數", k:"videos"},
+  {h:"總觀看數", k:"views"}, {h:"最高觀看", k:"top"},
+];
+const mval = (r, k) => k === "avg" ? (r.videos ? r.views / r.videos : 0)
+  : k === "top" ? (r.top ? r.top.views : -1)
+  : (r[k] == null ? -1 : r[k]);
+const RANK_STATE = {};
+function rankBase(rows){
+  const b = rows.slice(0, 10);
+  if (!b.some(r => r.id === ME_ID)) { const me = rows.find(r => r.id === ME_ID); if (me) b.push(me); }
+  return b;
+}
+function rankBest(base){
+  const o = {};
+  RANK_COLS.forEach(c => { const v = base.map(r => mval(r, c.k)).filter(x => x >= 0); o[c.k] = v.length ? Math.max(...v) : null; });
+  return o;
+}
+function rankRow(r, i, best, max){
+  const mk = (k, ok) => "n" + (ok && best[k] != null && mval(r, k) === best[k] ? " best" : "");
   const pend = (v, f) => v == null ? `<span class="rkpend">累積中</span>`
     : v === 0 ? `<span class="rkpend">0</span>`
     : `<span class="${v > 0 ? "rkpos-d" : ""}">${v > 0 ? "+" : ""}${(f || num)(v)}</span>`;
-  const tr = (r, i) => `<tr class="${r.id === ME_ID ? "me" : ""}">
-      <td class="rk">${i + 1}</td>
-      <td class="ch"><a href="https://www.youtube.com/channel/${r.id}" target="_blank" rel="noopener">${r.name}</a><small>${r.handle || ""}</small></td>
-      <td class="n${mk(r.subs === bSubs)}"><b>${wan(r.subs)}</b><span class="rkbar"><i style="width:${(r.subs / max * 100).toFixed(1)}%"></i></span></td>
-      <td class="n${mk(r.w7 != null && r.w7 === bW7)}">${pend(r.w7)}</td>
-      <td class="n${mk(r.w7v != null && r.w7v === bW7v)}">${pend(r.w7v)}</td>
-      <td class="n${mk(r.w7view != null && r.w7view === bW7w)}">${pend(r.w7view, wan)}</td>
-      <td class="n${mk(r.recentAvg != null && r.recentAvg === bRec)}">${r.recentAvg != null ? wan(r.recentAvg) : "—"}</td>
-      <td class="n${mk(r.engage != null && r.engage === bEng)}">${r.engage != null ? r.engage + "%" : "—"}</td>
-      <td class="n">${r.shorts != null ? r.shorts + "%" : "—"}</td>
-      <td class="n${mk(avg(r) === bAvg)}">${wan(avg(r))}</td>
-      <td class="n${mk(r.videos === bVid)}">${num(r.videos)}</td>
-      <td class="n${mk(r.views === bViews)}">${bigViews(r.views)}</td>
-      <td class="n${mk(r.top && r.top.views === bTop)}">${r.top ? `<a href="https://www.youtube.com/watch?v=${r.top.id}" target="_blank" rel="noopener" data-tip="${(r.top.title || "").replace(/"/g, "&quot;")}">${wan(r.top.views)}</a>` : "—"}</td>
-    </tr>`;
-  const extra = meIdx >= 10
-    ? `<tr class="gap"><td colspan="13">\u22ef</td></tr>` + tr(rows[meIdx], meIdx)
-    : "";
-  return `<div class="card rkcard"><h3>${title}</h3><div class="rknote">${note}</div>
+  const avgv = r.videos ? Math.round(r.views / r.videos) : 0;
+  return `<tr class="${r.id === ME_ID ? "me" : ""}" style="--i:${i}">
+    <td class="rk">${i + 1}</td>
+    <td class="ch"><a href="https://www.youtube.com/channel/${r.id}" target="_blank" rel="noopener">${r.name}</a><small>${r.handle || ""}</small></td>
+    <td class="${mk("subs", true)}"><b>${wan(r.subs)}</b><span class="rkbar"><i style="width:${(r.subs / max * 100).toFixed(1)}%"></i></span></td>
+    <td class="${mk("w7", r.w7 != null)}">${pend(r.w7)}</td>
+    <td class="${mk("w7v", r.w7v != null)}">${pend(r.w7v)}</td>
+    <td class="${mk("w7view", r.w7view != null)}">${pend(r.w7view, wan)}</td>
+    <td class="${mk("recentAvg", r.recentAvg != null)}">${r.recentAvg != null ? wan(r.recentAvg) : "—"}</td>
+    <td class="${mk("engage", r.engage != null)}">${r.engage != null ? r.engage + "%" : "—"}</td>
+    <td class="n">${r.shorts != null ? r.shorts + "%" : "—"}</td>
+    <td class="${mk("avg", true)}">${wan(avgv)}</td>
+    <td class="${mk("videos", true)}">${num(r.videos)}</td>
+    <td class="${mk("views", true)}">${bigViews(r.views)}</td>
+    <td class="${mk("top", !!r.top)}">${r.top ? `<a href="https://www.youtube.com/watch?v=${r.top.id}" target="_blank" rel="noopener" data-tip="${(r.top.title || "").replace(/"/g, "&quot;")}">${wan(r.top.views)}</a>` : "—"}</td>
+  </tr>`;
+}
+function rankBodyHTML(group){
+  const st = RANK_STATE[group];
+  const rows = [...st.base].sort((a, b) => (mval(a, st.key) - mval(b, st.key)) * st.dir);
+  return rows.map((r, i) => rankRow(r, i, st.best, st.max)).join("");
+}
+function rankHeadHTML(group){
+  const st = RANK_STATE[group];
+  const ths = RANK_COLS.map(c => {
+    const on = c.k === st.key;
+    return `<th data-k="${c.k}" class="${on ? "sorted" : ""}">${c.h}${on ? `<span class="sort-ar">${st.dir < 0 ? "▼" : "▲"}</span>` : ""}</th>`;
+  }).join("");
+  return `<th>#</th><th>頻道</th>${ths}`;
+}
+function rankTableHTML(group, title, note){
+  return `<div class="card rkcard" data-group="${group}">
+    <div class="rkcard-head"><h3>${title}</h3><span class="rknote-inline">${note}</span><span class="rk-chev">\u25be</span></div>
     <div class="rk-scroll"><table class="rank">
-      <tr><th>#</th><th>頻道</th><th>訂閱數</th><th>每週訂閱數</th><th>每週影片數</th><th>每週觀看數</th><th>近期平均觀看</th><th>互動率</th><th>Shorts</th><th>平均觀看</th><th>影片數</th><th>總觀看數</th><th>最高觀看</th></tr>
-      ${top.map(tr).join("")}${extra}
+      <thead><tr>${rankHeadHTML(group)}</tr></thead>
+      <tbody>${rankBodyHTML(group)}</tbody>
     </table></div></div>`;
+}
+function sortRank(group, key){
+  const st = RANK_STATE[group];
+  if (st.key === key) st.dir = -st.dir; else { st.key = key; st.dir = -1; }
+  const card = document.querySelector(`#competPage .rkcard[data-group="${group}"]`);
+  card.querySelector("thead tr").innerHTML = rankHeadHTML(group);
+  card.querySelector("tbody").innerHTML = rankBodyHTML(group);
+  bindTips(card);
 }
 function openCompet(){
   const sp = document.getElementById("showPage");
@@ -1036,20 +1112,29 @@ function openCompet(){
   const ind = RANKS.industry || [], kol = RANKS.kol || [];
   const meIdx = ind.findIndex(r => r.id === ME_ID);
   const me = meIdx >= 0 ? ind[meIdx] : null;
-  const ahead = meIdx > 0 ? ind[meIdx - 1] : null;
-  const behind = (meIdx >= 0 && meIdx < ind.length - 1) ? ind[meIdx + 1] : null;
+  [["ind", ind], ["kol", kol]].forEach(([g, rows]) => {
+    const base = rankBase(rows);
+    RANK_STATE[g] = {base, key: "subs", dir: -1, best: rankBest(base), max: Math.max(...base.map(r => r.subs), 1)};
+  });
   page.innerHTML = `
     <div class="sp-head">
       <button class="sp-back" onclick="closeShow()">← 返回總覽</button>
-      <h1 style="background:linear-gradient(95deg,#2f6bff 0%,#37e0ff 50%,#22e06b 100%);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:4px;font-weight:800">競品觀測</h1>
+      <h1 style="background:linear-gradient(95deg,#2be86b 0%,#22cfe0 40%,#3183ff 75%,#2be86b 100%);background-size:230% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800;font-size:30px;letter-spacing:.01em">競品觀測</h1>
       <div class="rknote">依訂閱數排序 · 美好證券${me ? "目前金融業第 <b style=\'color:#3dbb87\'>" + (meIdx + 1) + "</b> 名（共 " + ind.length + " 個官方頻道）" : ""} · YouTube 公開數據每小時更新（${RANKS.updated || ""}）· ▲ 為該欄最高</div>
     </div>
     <div class="rk-grid">
-      ${rankTableHTML(ind, "🏦 金融業頻道 TOP 10", "券商／銀行／投信官方頻道")}
-      ${rankTableHTML(kol, "🎙 財經 KOL TOP 10", "個人財經創作者（下班經濟學以風傳媒主頻道計）")}
+      ${rankTableHTML("ind", "🏦 金融業頻道 TOP 10", "券商／銀行／投信官方頻道 · 點欄位標題可排序")}
+      ${rankTableHTML("kol", "🎙 財經 KOL TOP 10", "個人財經創作者 · 點欄位標題可排序")}
     </div>
     <div class="rk-impossible">每週影片數＝近 7 天實際上片數（即時）；每週訂閱數／每週觀看數＝自建每日快照，累積滿一週自動顯示（YouTube 不提供他人頻道歷史）· 近期平均觀看／互動率／Shorts＝該頻道最近 15 支：互動率＝（讚＋留言）÷觀看，Shorts＝60 秒內短片占比 · 平均觀看＝總觀看 ÷ 影片數 · 最高觀看＝歷史最高觀看影片（每週更新，滑過看片名、點擊開啟）。平均觀看時長、完播率、縮圖 CTR 屬 YouTube 私有數據，僅自家頻道可得，故競品不列。</div>`;
   bindTips(page);
+  page.querySelectorAll(".rkcard").forEach(card => {
+    card.querySelector(".rkcard-head").addEventListener("click", () => card.classList.toggle("collapsed"));
+    card.addEventListener("click", e => {          // 委派：重繪表頭後仍可持續排序
+      const th = e.target.closest("th[data-k]");
+      if (th) sortRank(card.dataset.group, th.dataset.k);
+    });
+  });
   document.querySelector(".wrap").style.display = "none";
   page.style.display = "block";
   window.scrollTo(0, 0);
