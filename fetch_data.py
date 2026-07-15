@@ -208,10 +208,10 @@ for name, ids in show_videos.items():
     def wdur(key):
         tot = sum(v[key]["views"] for v in vids)
         return round(sum(v[key]["dur"] * v[key]["views"] for v in vids) / tot) if tot else 0
-    # 更新週期：2026 首支上片日起算（日曆天）
+    # 更新週期：2026 首支上片日起算，以「工作天」計（週末不計；顯示端仍只寫「天」）
     if up26:
         first = min(date.fromisoformat(v["published"]) for v in up26)
-        wd26 = (END_D - max(first, date(2026, 1, 1))).days + 1
+        wd26 = workdays(max(first, date(2026, 1, 1)), END_D)
     else:
         wd26 = None
     top = max(vids, key=lambda v: v["life"]["views"]) if vids else None
