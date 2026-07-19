@@ -120,9 +120,9 @@ kpis = f'''<div class="kpis">
       <div class="foot">曝光 {S28["channel"].get("impressions", 0)/10000:.0f}萬 · Studio {S28.get("period", "")}</div>
     </div>
     <div class="card kpi hero">
-      <div class="label">新觀眾占比（近28天）</div>
+      <div class="label">新觀眾觸及（近28天）</div>
       <div class="num">{S28.get("newViewers", 0)/(S28.get("newViewers", 0)+S28.get("returningViewers", 1))*100:.0f}<small>%</small></div>
-      <div class="foot">新 {S28.get("newViewers", 0)/10000:.1f}萬 vs 回訪 {S28.get("returningViewers", 0)/10000:.1f}萬 · 以「人數」計，每人只算一次（長片）</div>
+      <div class="foot">觸及人數中首次來訪的占比（非觀看量）· 新 {S28.get("newViewers", 0)/10000:.1f}萬 vs 回訪 {S28.get("returningViewers", 0)/10000:.1f}萬人</div>
     </div>
   </div>'''
 repl(r'<div class="kpis">.*?\n  </div>', kpis)
