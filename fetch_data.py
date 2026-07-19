@@ -221,8 +221,10 @@ for name, ids in show_videos.items():
                "ratio": round(v["life"]["views"] / v["life"]["subs"]) if v["life"]["subs"] else None}
               for v in vids[:10]]
     views_up26 = sum(v["life"]["views"] for v in up26)
+    subs_up26 = sum(v["life"]["subs"] for v in up26)
     shows.append({
         "name": name, "n": n, "n26": len(up26), "wd26": wd26,
+        "viewsUp26": views_up26 or None, "subsUp26": subs_up26 or None,
         "avg26": round(views_up26 / len(up26)) if up26 else None,
         "views": viewsL, "views26": views26,
         "subs": subsL, "subs26": subs26,

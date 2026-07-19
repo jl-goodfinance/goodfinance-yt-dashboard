@@ -38,6 +38,7 @@ for s in D["shows"]:
     entry = {
         "name": name, "hue": HUE[name], "wd26": s["wd26"],
         "n": s["n"], "n26": s["n26"], "avg26": s["avg26"],
+        "vu26": s.get("viewsUp26"), "su26": s.get("subsUp26"),
         "views": s["views"], "v26": s["views26"],
         "subs": [s["subs"], s["subs26"]],
         "dur": [fmt_dur(s["dur"]), fmt_dur(s["dur26"])],
