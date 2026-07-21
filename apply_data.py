@@ -78,6 +78,8 @@ repl(r"const THUMBS = \{.*?\};\n", "const THUMBS = " + j(THUMBS) + ";\n")
 repl(r"const RANKS = \{.*?\};\n", "const RANKS = " + j(RANK) + ";\n")
 repl(r"const WEEKLY = \[.*?\];\n", "const WEEKLY = " + j(D.get("weekly", [])) + ";\n")
 repl(r"const SUBS_NOW = \d+;", f"const SUBS_NOW = {ch['subs']};")
+CINS = load("compet_insights.json", {"updated": "", "industry": [], "kol": []})
+repl(r"const CINSIGHT = \{.*?\};\n", "const CINSIGHT = " + j(CINS) + ";\n")
 NEWRET = load("studio_newret.json", {"updated": "", "videos": {}})
 repl(r"const NEWRET = \{.*?\};\n", "const NEWRET = " + j({"updated": NEWRET.get("updated", ""), "videos": NEWRET.get("videos", {})}) + ";\n")
 # 3. 總量常數
