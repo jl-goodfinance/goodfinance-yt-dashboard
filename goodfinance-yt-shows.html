@@ -987,6 +987,9 @@ function openShow(name){
   document.querySelector(".wrap").style.display = "none";
   page.style.display = "block";
   window.scrollTo(0, 0);
+  CUR_VIEW = "show:" + name;
+  const slug = SLUGS[name];
+  if (slug && location.hash.slice(1) !== "show/" + slug) location.hash = "show/" + slug;
 }
 function closeShow(){
   const page = document.getElementById("showPage");
@@ -995,6 +998,8 @@ function closeShow(){
   if (cp) cp.style.display = "none";
   document.querySelector(".wrap").style.display = "block";
   window.scrollTo(0, 0);
+  CUR_VIEW = "home";
+  if (location.hash) history.pushState(null, "", location.pathname + location.search);
 }
 
 
@@ -1168,6 +1173,8 @@ function openCompet(){
       ${cinsHTML("kol", "📌 財經 KOL 觀察（議題 / 熱點 / 形式）")}
     </div>
     <div class="rk-impossible">每週影片數＝近 7 天實際上片數（即時）；每週訂閱數／每週觀看數＝自建每日快照，累積滿一週自動顯示（YouTube 不提供他人頻道歷史）· 近期平均觀看／互動率／Shorts＝該頻道最近 15 支：互動率＝（讚＋留言）÷觀看，Shorts＝60 秒內短片占比 · 平均觀看＝總觀看 ÷ 影片數 · 最高觀看＝歷史最高觀看影片（每週更新，滑過看片名、點擊開啟）。平均觀看時長、完播率、縮圖 CTR 屬 YouTube 私有數據，僅自家頻道可得，故競品不列。</div>`;
+  CUR_VIEW = "compet";
+  if (location.hash.slice(1) !== "competitors") location.hash = "competitors";
   bindTips(page);
   page.querySelectorAll(".rkcard").forEach(card => {
     card.querySelector(".rkcard-head").addEventListener("click", () => card.classList.toggle("collapsed"));
@@ -1235,6 +1242,29 @@ function bindTips(scope){
 }
 bindTips(document);
 renderStack("y2026");
+
+/* URL 路由：#competitors、#show/good-invest 可直接分享/深連結，返回鍵可用 */
+let CUR_VIEW = "home";
+const SLUGS = {
+  "Good Morning 美好": "good-morning",
+  "Good Invest 美好投資": "good-invest",
+  "Better Living 美好生活": "better-living",
+  "Good Income": "good-income",
+  "Entrepreneurship": "entrepreneurship",
+};
+const SLUG2NAME = Object.fromEntries(Object.entries(SLUGS).map(([k, v]) => [v, k]));
+function routeFromHash(){
+  const h = location.hash.slice(1);
+  const target = h === "competitors" ? "compet"
+    : (h.startsWith("show/") && SLUG2NAME[h.slice(5)]) ? "show:" + SLUG2NAME[h.slice(5)] : "home";
+  if (target === CUR_VIEW) return;
+  if (target === "compet") openCompet();
+  else if (target.startsWith("show:")) openShow(target.slice(5));
+  else closeShow();
+}
+window.addEventListener("hashchange", routeFromHash);
+window.addEventListener("popstate", routeFromHash);
+if (location.hash) routeFromHash();
 
 /* 動態：進場交錯與 KPI 數字滾動 */
 (function motion(){
