@@ -130,10 +130,12 @@ for name, pid in PLAYLISTS.items():
     print(f"{name}: {len(ids)} 支")
 all_ids = [v for ids in show_videos.values() for v in ids]
 for i in range(0, len(all_ids), 50):
-    r = data_api("videos", part="snippet,statistics", id=",".join(all_ids[i:i+50]), maxResults=50)
+    r = data_api("videos", part="snippet,statistics,status", id=",".join(all_ids[i:i+50]), maxResults=50)
     for it in r.get("items", []):
+        st_ = it.get("status", {})
         vid_meta[it["id"]] = {"title": it["snippet"]["title"], "published": it["snippet"]["publishedAt"][:10],
-                              "viewCount": int(it["statistics"].get("viewCount", 0))}
+                              "viewCount": int(it["statistics"].get("viewCount", 0)),
+                              "sch": (st_.get("publishAt", "") or "")[:10] if st_.get("privacyStatus") != "public" else ""}
 
 # ── 4. 逐支影片 Analytics（兩期間）────────────────────────
 def video_stats(ids, start):
@@ -218,6 +220,7 @@ for name, ids in show_videos.items():
     top26 = max(vids, key=lambda v: v["s26"]["views"]) if vids else None
     recent = [{"id": v["id"], "title": v["title"][:70], "rel": rel_str(v["published"]), "pub": v["published"],
                "views": v["life"]["views"], "dur": v["life"]["dur"], "subs": v["life"]["subs"],
+               "sch": v.get("sch", ""),
                "ratio": round(v["life"]["views"] / v["life"]["subs"]) if v["life"]["subs"] else None}
               for v in vids[:20]]
     views_up26 = sum(v["life"]["views"] for v in up26)
