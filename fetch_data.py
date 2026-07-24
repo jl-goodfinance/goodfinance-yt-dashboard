@@ -219,7 +219,7 @@ for name, ids in show_videos.items():
     recent = [{"id": v["id"], "title": v["title"][:70], "rel": rel_str(v["published"]), "pub": v["published"],
                "views": v["life"]["views"], "dur": v["life"]["dur"], "subs": v["life"]["subs"],
                "ratio": round(v["life"]["views"] / v["life"]["subs"]) if v["life"]["subs"] else None}
-              for v in vids[:10]]
+              for v in vids[:20]]
     views_up26 = sum(v["life"]["views"] for v in up26)
     subs_up26 = sum(v["life"]["subs"] for v in up26)
     shows.append({
