@@ -10,7 +10,7 @@
    "views": 36586205,
    "videos": 507,
    "w7v": 3,
-   "recentAvg": 18415,
+   "recentAvg": 18443,
    "engage": 1.3,
    "shorts": 0,
    "top": {
@@ -27,10 +27,10 @@
    "yt_title": "永豐金證券",
    "handle": "@sinoec",
    "subs": 229000,
-   "views": 36325851,
+   "views": 36337322,
    "videos": 1139,
    "w7v": 10,
-   "recentAvg": 4994,
+   "recentAvg": 5001,
    "engage": 0.1,
    "shorts": 7,
    "top": {
@@ -39,7 +39,7 @@
     "views": 2991895
    },
    "w7": 2000,
-   "w7view": 168423
+   "w7view": 179894
   },
   {
    "name": "凱基 股股漲",
@@ -47,10 +47,10 @@
    "yt_title": "凱基股股漲",
    "handle": "@kgisia.channel",
    "subs": 209000,
-   "views": 11403914,
+   "views": 11415388,
    "videos": 1448,
    "w7v": 10,
-   "recentAvg": 6491,
+   "recentAvg": 6496,
    "engage": 0.3,
    "shorts": 47,
    "top": {
@@ -59,7 +59,7 @@
     "views": 31555
    },
    "w7": 2000,
-   "w7view": 64727
+   "w7view": 76201
   },
   {
    "name": "群益期貨 KeensPie",
@@ -70,7 +70,7 @@
    "views": 9957960,
    "videos": 608,
    "w7v": 3,
-   "recentAvg": 12805,
+   "recentAvg": 12813,
    "engage": 4.5,
    "shorts": 0,
    "top": {
@@ -110,7 +110,7 @@
    "views": 6190838,
    "videos": 654,
    "w7v": 12,
-   "recentAvg": 3414,
+   "recentAvg": 3452,
    "engage": 3.1,
    "shorts": 27,
    "top": {
@@ -126,11 +126,11 @@
    "id": "UCAb0OrzVjoc_3S97ng5lemg",
    "yt_title": "凱基證券樂活投資人",
    "handle": "@凱基證券樂活投資人",
-   "subs": 61500,
+   "subs": 61600,
    "views": 10660413,
-   "videos": 1366,
+   "videos": 1364,
    "w7v": 7,
-   "recentAvg": 4596,
+   "recentAvg": 4657,
    "engage": 0.4,
    "shorts": 40,
    "top": {
@@ -138,7 +138,7 @@
     "title": "凱基證券 小資金大未來",
     "views": 2433199
    },
-   "w7": 3200,
+   "w7": 3300,
    "w7view": 55553
   },
   {
@@ -147,10 +147,10 @@
    "yt_title": "國泰世華銀行",
    "handle": "@cathayunitedbank",
    "subs": 38700,
-   "views": 173801520,
+   "views": 174212779,
    "videos": 451,
    "w7v": 2,
-   "recentAvg": 224923,
+   "recentAvg": 225433,
    "engage": 0.1,
    "shorts": 53,
    "top": {
@@ -159,7 +159,7 @@
     "views": 9057292
    },
    "w7": 0,
-   "w7view": 105451
+   "w7view": 516710
   },
   {
    "name": "國泰投信 大樹下學投資",
@@ -167,7 +167,7 @@
    "yt_title": "大樹下學投資",
    "handle": "@cathaysite",
    "subs": 22700,
-   "views": 10864302,
+   "views": 10864607,
    "videos": 124,
    "w7v": 1,
    "recentAvg": 371068,
@@ -179,7 +179,7 @@
     "views": 1657589
    },
    "w7": -100,
-   "w7view": 77083
+   "w7view": 77388
   },
   {
    "name": "中國信託 CTBC",
@@ -207,19 +207,19 @@
    "yt_title": "ESUNCHANNEL",
    "handle": "@esunchannel",
    "subs": 7460,
-   "views": 149839373,
+   "views": 149844031,
    "videos": 274,
-   "w7v": null,
-   "recentAvg": null,
-   "engage": null,
-   "shorts": null,
+   "w7v": 0,
+   "recentAvg": 219185,
+   "engage": 0.0,
+   "shorts": 80,
    "top": {
     "id": "l2hwmwwraNo",
     "title": "e.Fingo持續創新，陪伴你超越自我｜玉山銀行數位金融 e.Fingo（精華版）",
     "views": 5618453
    },
    "w7": 10,
-   "w7view": 50574
+   "w7view": 55232
   },
   {
    "name": "元大證券",
@@ -227,19 +227,19 @@
    "yt_title": "元大證券",
    "handle": "@元大證券-e1g",
    "subs": 5360,
-   "views": 1573242,
+   "views": 1573364,
    "videos": 82,
-   "w7v": null,
-   "recentAvg": null,
-   "engage": null,
-   "shorts": null,
+   "w7v": 0,
+   "recentAvg": 336,
+   "engage": 0.7,
+   "shorts": 73,
    "top": {
     "id": "ko22K2e0Ctg",
     "title": "最好的投資就在台灣｜存好股 找元大｜元大證券形象廣告 Yuanta Securities",
     "views": 710274
    },
    "w7": 30,
-   "w7view": 1804
+   "w7view": 1926
   },
   {
    "name": "統一投信",
@@ -247,10 +247,10 @@
    "yt_title": "統一投信",
    "handle": "@ezmoney-tw",
    "subs": 3780,
-   "views": 14084767,
+   "views": 14145148,
    "videos": 87,
    "w7v": 3,
-   "recentAvg": 230359,
+   "recentAvg": 231186,
    "engage": 0.1,
    "shorts": 20,
    "top": {
@@ -259,7 +259,7 @@
     "views": 850457
    },
    "w7": 10,
-   "w7view": 389454
+   "w7view": 449835
   },
   {
    "name": "兆豐銀行",
@@ -267,7 +267,7 @@
    "yt_title": "兆豐銀行Mega Bank",
    "handle": "@megabank8747",
    "subs": 3160,
-   "views": 10624655,
+   "views": 10624664,
    "videos": 396,
    "w7v": 0,
    "recentAvg": 19883,
@@ -279,7 +279,7 @@
     "views": 1599207
    },
    "w7": 0,
-   "w7view": 4064
+   "w7view": 4073
   },
   {
    "name": "台新銀行 Richart",
@@ -305,10 +305,10 @@
    "yt_title": "小Lin说",
    "handle": "@xiao_lin_shuo",
    "subs": 2800000,
-   "views": 265211317,
+   "views": 265288699,
    "videos": 158,
    "w7v": 1,
-   "recentAvg": 1068142,
+   "recentAvg": 1068876,
    "engage": 2.3,
    "shorts": 0,
    "top": {
@@ -317,7 +317,7 @@
     "views": 5963071
    },
    "w7": 0,
-   "w7view": 728738
+   "w7view": 806120
   },
   {
    "name": "柴鼠兄弟 ZRBros",
@@ -328,7 +328,7 @@
    "views": 100875350,
    "videos": 792,
    "w7v": 1,
-   "recentAvg": 125648,
+   "recentAvg": 125712,
    "engage": 2.7,
    "shorts": 0,
    "top": {
@@ -346,9 +346,9 @@
    "handle": "@yutinghaofinance",
    "subs": 685000,
    "views": 105066529,
-   "videos": 1179,
+   "videos": 1175,
    "w7v": 5,
-   "recentAvg": 137675,
+   "recentAvg": 137738,
    "engage": 2.6,
    "shorts": 0,
    "top": {
@@ -368,8 +368,8 @@
    "views": 128879559,
    "videos": 2384,
    "w7v": 17,
-   "recentAvg": 45162,
-   "engage": 3.4,
+   "recentAvg": 45636,
+   "engage": 3.3,
    "shorts": 0,
    "top": {
     "id": "4iLZrxWsjSk",
@@ -388,7 +388,7 @@
    "views": 113658973,
    "videos": 1826,
    "w7v": 5,
-   "recentAvg": 40986,
+   "recentAvg": 41323,
    "engage": 1.5,
    "shorts": 47,
    "top": {
@@ -405,19 +405,19 @@
    "yt_title": "阿格力博識",
    "handle": "@agreedr",
    "subs": 308000,
-   "views": 50348649,
+   "views": 50357210,
    "videos": 698,
-   "w7v": null,
-   "recentAvg": null,
-   "engage": null,
-   "shorts": null,
+   "w7v": 0,
+   "recentAvg": 36851,
+   "engage": 1.4,
+   "shorts": 0,
    "top": {
     "id": "t4Iu2_9guEk",
     "title": "【阿格力】推坑親姊姊買房，台北市藍線宅租不如買？雙捷運超強格局兩房，河景與公園為鄰，誠品、寶雅、星巴克走路到，耐震係數超",
     "views": 662512
    },
    "w7": 0,
-   "w7view": 95335
+   "w7view": 103896
   },
   {
    "name": "清流君",
@@ -428,7 +428,7 @@
    "views": 22717339,
    "videos": 237,
    "w7v": 0,
-   "recentAvg": 129230,
+   "recentAvg": 129237,
    "engage": 1.8,
    "shorts": 53,
    "top": {
@@ -465,10 +465,10 @@
    "yt_title": "尼可拉斯楊Live精",
    "handle": "@nicolasyounglive",
    "subs": 174000,
-   "views": 8944917,
+   "views": 9031933,
    "videos": 68,
    "w7v": 2,
-   "recentAvg": 87973,
+   "recentAvg": 88084,
    "engage": 4.5,
    "shorts": 33,
    "top": {
@@ -477,7 +477,7 @@
     "views": 390247
    },
    "w7": 0,
-   "w7view": 91805
+   "w7view": 178821
   },
   {
    "name": "股癌 Gooaye",
@@ -488,7 +488,7 @@
    "views": 14840056,
    "videos": 681,
    "w7v": 2,
-   "recentAvg": 48794,
+   "recentAvg": 48952,
    "engage": 1.5,
    "shorts": 0,
    "top": {
@@ -507,10 +507,10 @@
    "subs": 131000,
    "views": 15750575,
    "videos": 1555,
-   "w7v": null,
-   "recentAvg": null,
-   "engage": null,
-   "shorts": null,
+   "w7v": 2,
+   "recentAvg": 5805,
+   "engage": 2.3,
+   "shorts": 0,
    "top": {
     "id": "Zg10Brpl1GY",
     "title": "【投資好難】#84 微軟特斯拉財報 + 下跌時的信仰考驗",
@@ -528,7 +528,7 @@
    "views": 10821084,
    "videos": 386,
    "w7v": 0,
-   "recentAvg": 26179,
+   "recentAvg": 26180,
    "engage": 2.6,
    "shorts": 7,
    "top": {
@@ -545,10 +545,10 @@
    "yt_title": "財報狗",
    "handle": "@statementdog_official",
    "subs": 13900,
-   "views": 432129,
+   "views": 432327,
    "videos": 979,
    "w7v": 1,
-   "recentAvg": 934,
+   "recentAvg": 936,
    "engage": 2.4,
    "shorts": 0,
    "top": {
@@ -557,27 +557,27 @@
     "views": 2994
    },
    "w7": 0,
-   "w7view": 1500
+   "w7view": 1698
   },
   {
    "name": "雨果的投資理財生活觀",
    "id": "UCsrEBPmcX6bT2easAwI_dMA",
    "yt_title": "雨果的投資理財生活觀",
    "handle": "@hugolife",
-   "subs": 826,
-   "views": 21470,
+   "subs": 831,
+   "views": 21477,
    "videos": 83,
    "w7v": 2,
-   "recentAvg": 429,
-   "engage": 0.8,
+   "recentAvg": 445,
+   "engage": 0.7,
    "shorts": 67,
    "top": {
     "id": "35cTRoWrcl0",
     "title": "退休規劃：450萬理財藍圖",
     "views": 2624
    },
-   "w7": 8,
-   "w7view": 1881
+   "w7": 13,
+   "w7view": 1888
   }
  ]
 }
