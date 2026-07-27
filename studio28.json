@@ -1,12 +1,12 @@
 {
- "period": "2026/6/17–2026/7/14",
+ "period": "2026/6/29–2026/7/26",
  "channel": {
-  "impressions": 4921000,
-  "ctr": 6.9,
-  "views28": 584247
+  "impressions": 4154000,
+  "ctr": 6.8,
+  "views28": 451550
  },
- "newViewers": 76000,
- "returningViewers": 26000,
+ "newViewers": 57000,
+ "returningViewers": 27000,
  "shows": {
   "Better Living 美好生活": {
    "impr": 1612680,
