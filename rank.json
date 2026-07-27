@@ -8,10 +8,10 @@
    "handle": "@fubonsec",
    "subs": 435000,
    "views": 36613957,
-   "videos": 507,
-   "w7v": 3,
-   "recentAvg": 18985,
-   "engage": 1.3,
+   "videos": 508,
+   "w7v": 4,
+   "recentAvg": 16671,
+   "engage": 1.1,
    "shorts": 0,
    "top": {
     "id": "ciHP-zVDuKg",
@@ -29,10 +29,10 @@
    "subs": 229000,
    "views": 36342584,
    "videos": 1140,
-   "w7v": 10,
-   "recentAvg": 5144,
+   "w7v": 11,
+   "recentAvg": 4466,
    "engage": 0.1,
-   "shorts": 0,
+   "shorts": 7,
    "top": {
     "id": "Tx_Ym4DZFfY",
     "title": "股票禮品卡－會增值的心意 (曖昧篇) ｜永豐金證券",
@@ -48,11 +48,11 @@
    "handle": "@kgisia.channel",
    "subs": 210000,
    "views": 11415945,
-   "videos": 1448,
-   "w7v": 10,
-   "recentAvg": 6808,
+   "videos": 1449,
+   "w7v": 11,
+   "recentAvg": 6164,
    "engage": 0.3,
-   "shorts": 47,
+   "shorts": 53,
    "top": {
     "id": "6Z5XoSLDxrU",
     "title": "第317集｜《2025台股投資展望》《凱基股股漲》2024/12/03 - 台股多頭持續 創高空間有限 特快車變成普通車",
@@ -70,7 +70,7 @@
    "views": 9958565,
    "videos": 607,
    "w7v": 3,
-   "recentAvg": 12862,
+   "recentAvg": 12867,
    "engage": 4.5,
    "shorts": 0,
    "top": {
@@ -102,6 +102,26 @@
    "w7view": 390
   },
   {
+   "name": "凱基證券 樂活投資人",
+   "id": "UCAb0OrzVjoc_3S97ng5lemg",
+   "yt_title": "凱基證券樂活投資人",
+   "handle": "@凱基證券樂活投資人",
+   "subs": 62300,
+   "views": 10664108,
+   "videos": 1368,
+   "w7v": 9,
+   "recentAvg": 2857,
+   "engage": 0.7,
+   "shorts": 40,
+   "top": {
+    "id": "hUoC42yRYzY",
+    "title": "凱基證券 小資金大未來",
+    "views": 2433202
+   },
+   "w7": 3500,
+   "w7view": 56099
+  },
+  {
    "name": "美好證券 Good Finance",
    "id": "UCadQDNkNdOGwYnXK3HSTBsA",
    "yt_title": "美好證券 Good Finance",
@@ -110,7 +130,7 @@
    "views": 6196375,
    "videos": 655,
    "w7v": 13,
-   "recentAvg": 3267,
+   "recentAvg": 3367,
    "engage": 3.1,
    "shorts": 27,
    "top": {
@@ -122,26 +142,6 @@
    "w7view": 67060
   },
   {
-   "name": "凱基證券 樂活投資人",
-   "id": "UCAb0OrzVjoc_3S97ng5lemg",
-   "yt_title": "凱基證券樂活投資人",
-   "handle": "@凱基證券樂活投資人",
-   "subs": 62100,
-   "views": 10664108,
-   "videos": 1368,
-   "w7v": 9,
-   "recentAvg": 2807,
-   "engage": 0.7,
-   "shorts": 40,
-   "top": {
-    "id": "hUoC42yRYzY",
-    "title": "凱基證券 小資金大未來",
-    "views": 2433202
-   },
-   "w7": 3300,
-   "w7view": 56099
-  },
-  {
    "name": "國泰世華銀行",
    "id": "UCnJ41_Tdf65EaM8-lfWg8Hg",
    "yt_title": "國泰世華銀行",
@@ -150,7 +150,7 @@
    "views": 174239044,
    "videos": 453,
    "w7v": 4,
-   "recentAvg": 160974,
+   "recentAvg": 161924,
    "engage": 0.1,
    "shorts": 67,
    "top": {
@@ -170,7 +170,7 @@
    "views": 10864837,
    "videos": 124,
    "w7v": 1,
-   "recentAvg": 371075,
+   "recentAvg": 371076,
    "engage": 0.0,
    "shorts": 60,
    "top": {
@@ -210,9 +210,9 @@
    "views": 149846467,
    "videos": 276,
    "w7v": 2,
-   "recentAvg": 234780,
+   "recentAvg": 219131,
    "engage": 0.0,
-   "shorts": 71,
+   "shorts": 67,
    "top": {
     "id": "l2hwmwwraNo",
     "title": "e.Fingo持續創新，陪伴你超越自我｜玉山銀行數位金融 e.Fingo（精華版）",
@@ -230,7 +230,7 @@
    "views": 1573394,
    "videos": 82,
    "w7v": 0,
-   "recentAvg": 337,
+   "recentAvg": 338,
    "engage": 0.7,
    "shorts": 73,
    "top": {
@@ -250,7 +250,7 @@
    "views": 14172418,
    "videos": 87,
    "w7v": 3,
-   "recentAvg": 237552,
+   "recentAvg": 238746,
    "engage": 0.1,
    "shorts": 20,
    "top": {
@@ -308,7 +308,7 @@
    "views": 265337751,
    "videos": 158,
    "w7v": 1,
-   "recentAvg": 1073467,
+   "recentAvg": 1074031,
    "engage": 2.3,
    "shorts": 0,
    "top": {
@@ -328,7 +328,7 @@
    "views": 100879064,
    "videos": 792,
    "w7v": 1,
-   "recentAvg": 126157,
+   "recentAvg": 126222,
    "engage": 2.7,
    "shorts": 0,
    "top": {
@@ -348,7 +348,7 @@
    "views": 105087407,
    "videos": 1180,
    "w7v": 6,
-   "recentAvg": 136208,
+   "recentAvg": 137197,
    "engage": 2.5,
    "shorts": 0,
    "top": {
@@ -366,10 +366,10 @@
    "handle": "@oldwangstock",
    "subs": 593000,
    "views": 128926131,
-   "videos": 2387,
-   "w7v": 19,
-   "recentAvg": 43684,
-   "engage": 3.3,
+   "videos": 2388,
+   "w7v": 20,
+   "recentAvg": 43013,
+   "engage": 3.2,
    "shorts": 0,
    "top": {
     "id": "0jp6_NdU8_U",
@@ -386,9 +386,9 @@
    "handle": "@shinli",
    "subs": 471000,
    "views": 113677129,
-   "videos": 1827,
-   "w7v": 5,
-   "recentAvg": 42171,
+   "videos": 1828,
+   "w7v": 6,
+   "recentAvg": 41828,
    "engage": 1.5,
    "shorts": 47,
    "top": {
@@ -408,7 +408,7 @@
    "views": 50360775,
    "videos": 698,
    "w7v": 0,
-   "recentAvg": 36985,
+   "recentAvg": 36999,
    "engage": 1.4,
    "shorts": 0,
    "top": {
@@ -428,7 +428,7 @@
    "views": 22719376,
    "videos": 237,
    "w7v": 0,
-   "recentAvg": 129297,
+   "recentAvg": 129308,
    "engage": 1.8,
    "shorts": 53,
    "top": {
@@ -448,7 +448,7 @@
    "views": 13426272,
    "videos": 950,
    "w7v": 1,
-   "recentAvg": 1550,
+   "recentAvg": 1551,
    "engage": 1.4,
    "shorts": 80,
    "top": {
@@ -468,7 +468,7 @@
    "views": 9041480,
    "videos": 67,
    "w7v": 2,
-   "recentAvg": 88836,
+   "recentAvg": 88910,
    "engage": 4.5,
    "shorts": 33,
    "top": {
@@ -488,7 +488,7 @@
    "views": 14866662,
    "videos": 681,
    "w7v": 2,
-   "recentAvg": 49894,
+   "recentAvg": 49993,
    "engage": 1.5,
    "shorts": 0,
    "top": {
@@ -508,7 +508,7 @@
    "views": 15750835,
    "videos": 1556,
    "w7v": 3,
-   "recentAvg": 5452,
+   "recentAvg": 5499,
    "engage": 2.3,
    "shorts": 0,
    "top": {
@@ -528,7 +528,7 @@
    "views": 10821366,
    "videos": 386,
    "w7v": 0,
-   "recentAvg": 26194,
+   "recentAvg": 26195,
    "engage": 2.6,
    "shorts": 7,
    "top": {
@@ -548,7 +548,7 @@
    "views": 432434,
    "videos": 980,
    "w7v": 2,
-   "recentAvg": 902,
+   "recentAvg": 911,
    "engage": 2.4,
    "shorts": 0,
    "top": {
@@ -568,7 +568,7 @@
    "views": 21731,
    "videos": 83,
    "w7v": 2,
-   "recentAvg": 447,
+   "recentAvg": 448,
    "engage": 0.7,
    "shorts": 67,
    "top": {
