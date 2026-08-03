@@ -82,6 +82,8 @@ import time as _time
 _TS = int(_time.time())
 repl(r"const BUILD_TS = \d+;", f"const BUILD_TS = {_TS};")
 json.dump({"ts": _TS}, open(os.path.join(BASE, "docs", "version.json"), "w"))
+BRIEF = load("weekly_brief.json", {})
+repl(r"const BRIEF = \{.*?\};\n", "const BRIEF = " + j(BRIEF) + ";\n")
 CINS = load("compet_insights.json", {"updated": "", "industry": [], "kol": []})
 repl(r"const CINSIGHT = \{.*?\};\n", "const CINSIGHT = " + j(CINS) + ";\n")
 NEWRET = load("studio_newret.json", {"updated": "", "videos": {}})

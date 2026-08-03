@@ -32,6 +32,8 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: python fetch_rank.py || echo "rank fetch failed, keep cached rank.json"
+      - name: Weekly brief (純運算分析：週動能/節目產出/競品週增/最佳單集)
+        run: python weekly_brief.py
       - name: Apply to dashboard
         run: python apply_data.py docs/index.html
       - name: Commit & push
