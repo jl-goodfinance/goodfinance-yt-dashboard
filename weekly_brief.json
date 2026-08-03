@@ -38,7 +38,7 @@
    "dViews": null,
    "dSubs": null,
    "ratio": null,
-   "avg26": 10310,
+   "avg26": 10322,
    "stale": false,
    "lastPub": "2026-08-03"
   },
@@ -48,9 +48,19 @@
    "dViews": null,
    "dSubs": null,
    "ratio": null,
-   "avg26": 71617,
+   "avg26": 71651,
    "stale": false,
    "lastPub": "2026-07-30"
+  },
+  {
+   "name": "Good Income",
+   "newEps": 1,
+   "dViews": null,
+   "dSubs": null,
+   "ratio": null,
+   "avg26": 15416,
+   "stale": false,
+   "lastPub": "2026-08-03"
   },
   {
    "name": "Good Invest 美好投資",
@@ -58,19 +68,9 @@
    "dViews": null,
    "dSubs": null,
    "ratio": null,
-   "avg26": 90564,
+   "avg26": 90602,
    "stale": true,
    "lastPub": "2026-07-08"
-  },
-  {
-   "name": "Good Income",
-   "newEps": 0,
-   "dViews": null,
-   "dSubs": null,
-   "ratio": null,
-   "avg26": 30832,
-   "stale": true,
-   "lastPub": "2026-05-14"
   },
   {
    "name": "Entrepreneurship",
@@ -78,7 +78,7 @@
    "dViews": null,
    "dSubs": null,
    "ratio": null,
-   "avg26": 22089,
+   "avg26": 22093,
    "stale": true,
    "lastPub": "2026-06-29"
   }
@@ -94,9 +94,9 @@
    },
    {
     "name": "凱基證券 樂活投資人",
-    "w7": 3400,
-    "subs": 65800,
-    "w7v": 14,
+    "w7": 3600,
+    "subs": 66000,
+    "w7v": 15,
     "me": false
    },
    {
@@ -117,7 +117,7 @@
     "name": "美好證券 Good Finance",
     "w7": 200,
     "subs": 62400,
-    "w7v": 18,
+    "w7v": 19,
     "me": true
    },
    {
@@ -135,9 +135,9 @@
   "leaderW7": 8000,
   "rival": {
    "name": "凱基證券 樂活投資人",
-   "subs": 65800,
-   "w7": 3400,
-   "gap": -3400
+   "subs": 66000,
+   "w7": 3600,
+   "gap": -3600
   }
  },
  "best": {
@@ -146,11 +146,11 @@
    "title": "45 歲當阿公開始學投資？舉家搬到恆春卻遇上財務危機？！自由地賺錢很重要！feat. 攝影師老喬 @Joechen9000",
    "rel": "4 天前",
    "pub": "2026-07-30",
-   "views": 13446,
+   "views": 13614,
    "dur": 219,
    "subs": 61,
    "sch": "",
-   "ratio": 220,
+   "ratio": 223,
    "show": "Better Living 美好生活"
   },
   "subs": {
@@ -158,18 +158,13 @@
    "title": "45 歲當阿公開始學投資？舉家搬到恆春卻遇上財務危機？！自由地賺錢很重要！feat. 攝影師老喬 @Joechen9000",
    "rel": "4 天前",
    "pub": "2026-07-30",
-   "views": 13446,
+   "views": 13614,
    "dur": 219,
    "subs": 61,
    "sch": "",
-   "ratio": 220,
+   "ratio": 223,
    "show": "Better Living 美好生活"
   }
  },
- "hotComment": {
-  "likes": 30,
-  "text": "我60𡻕學投資，現在81歲 仍然在理自己的財。",
-  "id": "cdKzPWUqnyM",
-  "title": "45 歲當阿公開始學投資？舉家搬到恆春卻遇上財務危機？！自由地賺錢很重要！feat. 攝影師老喬 @"
- }
+ "hotComment": null
 }
