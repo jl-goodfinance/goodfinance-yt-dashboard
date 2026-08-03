@@ -36,10 +36,22 @@ jobs:
         run: python weekly_brief.py
       - name: Apply to dashboard
         run: python apply_data.py docs/index.html
-      - name: Commit & push
+      - name: Commit & push（含重試：避免與人工推送競爭而丟失整輪更新）
         run: |
           git config user.name "yt-data-bot"
           git config user.email "actions@github.com"
           git add -A
-          git diff --cached --quiet || git commit -m "data update $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git push
+          git diff --cached --quiet && echo "no change" && exit 0
+          git commit -m "data update $(date -u +'%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3 4 5; do
+            if git push; then echo "pushed on attempt $i"; exit 0; fi
+            echo "push rejected, rebasing (attempt $i)"
+            git pull --rebase -X ours origin main || git rebase --abort
+            python weekly_brief.py || true
+            python apply_data.py docs/index.html
+            git add -A
+            git diff --cached --quiet || git commit --amend --no-edit
+            sleep $((i * 5))
+          done
+          echo "::error::push failed after 5 attempts"
+          exit 1
