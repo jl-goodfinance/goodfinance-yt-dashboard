@@ -32,8 +32,6 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: python fetch_rank.py || echo "rank fetch failed, keep cached rank.json"
-      - name: Weekly brief (純運算分析：週動能/節目產出/競品週增/最佳單集)
-        run: python weekly_brief.py
       - name: Apply to dashboard
         run: python apply_data.py docs/index.html
       - name: Commit & push（含重試：避免與人工推送競爭而丟失整輪更新）
@@ -47,7 +45,6 @@ jobs:
             if git push; then echo "pushed on attempt $i"; exit 0; fi
             echo "push rejected, rebasing (attempt $i)"
             git pull --rebase -X ours origin main || git rebase --abort
-            python weekly_brief.py || true
             python apply_data.py docs/index.html
             git add -A
             git diff --cached --quiet || git commit --amend --no-edit
