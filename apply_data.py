@@ -90,6 +90,7 @@ repl(r"const NEWRET = \{.*?\};\n", "const NEWRET = " + j({"updated": NEWRET.get(
 repl(r"const CHANNEL_TOTAL = [\d]+, TOTAL_2026 = [\d]+;",
      f"const CHANNEL_TOTAL = {ch['totalViews']}, TOTAL_2026 = {ch['views26']};")
 # 4. KPI 八卡
+VM = S28.get("viewerMix", {})
 kpis = f'''<div class="kpis">
     <div class="card kpi hero">
       <div class="label">訂閱數</div>
@@ -127,9 +128,9 @@ kpis = f'''<div class="kpis">
       <div class="foot">曝光 {S28["channel"].get("impressions", 0)/10000:.0f}萬 · Studio {S28.get("period", "")}</div>
     </div>
     <div class="card kpi hero">
-      <div class="label">新觀眾觸及（近28天）</div>
-      <div class="num">{S28.get("newViewers", 0)/(S28.get("newViewers", 0)+S28.get("returningViewers", 1))*100:.0f}<small>%</small></div>
-      <div class="foot">觸及人數中首次來訪的占比（非觀看量）· 新 {S28.get("newViewers", 0)/10000:.1f}萬 vs 回訪 {S28.get("returningViewers", 0)/10000:.1f}萬人</div>
+      <div class="label">新觀眾占比（近28天）</div>
+      <div class="num">{VM.get("new", 0):.1f}<small>%</small></div>
+      <div class="foot">每月觀眾 {VM.get("monthly", 0)/10000:.1f}萬中首次來訪者 · 游離 {VM.get("casual", 0):.1f}% / 一般 {VM.get("regular", 0):.1f}%（Studio 按觀看行為三分）</div>
     </div>
   </div>'''
 repl(r'<div class="kpis">.*?\n  </div>', kpis)
@@ -171,7 +172,7 @@ repl(r'<span><span class="dot demo"></span>「≈」示意：CTR、新舊觀眾�
 # 7. 頁尾資料說明
 repl(r'<footer class="src">.*?</footer>',
      f'''<footer class="src">
-  <b>資料說明</b> — 觀看數為 YouTube 即時數（與影片頁面一致）；時長、訂閱轉化、觀眾輪廓來自 <b>YouTube Analytics API</b>（頻道擁有者授權，統計至 {D["endDate"].replace("-", "/")}）；<b>縮圖 CTR、曝光、新觀眾占比</b>來自 <b>YouTube Studio</b>（近 28 天：{S28.get("period", "")}，API 未提供此三項，更新時需重新自 Studio 抓取）。「2026」為該期間實際發生之觀看／訂閱（含舊影片今年的觀看）；「2026 集數」與「平均單支觀看」以 2026 上片影片計。<b>平均更新週期以天計</b>，自該節目 2026 年首支上片日起算。<b>新觀眾比</b>＝Studio 逐支影片「自上傳至今」新觀眾佔非重複觀眾比例（YouTube 僅提供上傳 90 天內且資料量足夠之影片，其餘顯示 —；節目值＝有資料集數之觀看加權，每週更新）。訂閱轉化數＝該影片觀看頁產生的訂閱；觀看訂閱轉化率＝觀看數 ÷ 訂閱轉化數（愈低愈好）。節目數據以 10 檔播放清單歸屬（{sum(s["n"] for s in D["shows"])} 支）；Shorts 與清單外影片計入頻道總量、不入節目卡。
+  <b>資料說明</b> — 觀看數為 YouTube 即時數（與影片頁面一致）；時長、訂閱轉化、觀眾輪廓來自 <b>YouTube Analytics API</b>（頻道擁有者授權，統計至 {D["endDate"].replace("-", "/")}）；<b>縮圖 CTR、曝光、新觀眾占比</b>來自 <b>YouTube Studio</b>（新觀眾占比為 Studio「觀眾（按觀看行為）」三分法：新觀眾／游離／一般，母數為每月觀眾人數）（近 28 天：{S28.get("period", "")}，API 未提供此三項，更新時需重新自 Studio 抓取）。「2026」為該期間實際發生之觀看／訂閱（含舊影片今年的觀看）；「2026 集數」與「平均單支觀看」以 2026 上片影片計。<b>平均更新週期以天計</b>，自該節目 2026 年首支上片日起算。<b>新觀眾比</b>＝Studio 逐支影片「自上傳至今」新觀眾佔非重複觀眾比例（YouTube 僅提供上傳 90 天內且資料量足夠之影片，其餘顯示 —；節目值＝有資料集數之觀看加權，每週更新）。訂閱轉化數＝該影片觀看頁產生的訂閱；觀看訂閱轉化率＝觀看數 ÷ 訂閱轉化數（愈低愈好）。節目數據以 10 檔播放清單歸屬（{sum(s["n"] for s in D["shows"])} 支）；Shorts 與清單外影片計入頻道總量、不入節目卡。
 </footer>''')
 
 open(HTML, "w", encoding="utf-8").write(html)
