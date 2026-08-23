@@ -542,16 +542,16 @@
     "replies": 0
    },
    {
-    "text": "台積電強美好按讚",
-    "likes": 0,
-    "author": "@廖美玲-i1r",
-    "replies": 1
-   },
-   {
     "text": "大氣磅礴",
     "likes": 0,
     "author": "@劉大賢",
     "replies": 0
+   },
+   {
+    "text": "台積電強美好按讚",
+    "likes": 0,
+    "author": "@廖美玲-i1r",
+    "replies": 1
    },
    {
     "text": "「客戶希望我們趕快蓋廠」真的道盡 AI 需求有多恐慌...",
@@ -757,16 +757,16 @@
   "n": 4,
   "comments": [
    {
-    "text": "張力十足",
-    "likes": 1,
-    "author": "@劉大賢",
-    "replies": 0
-   },
-   {
     "text": "謝謝你們回答廣達的問題",
     "likes": 1,
     "author": "@jameshsiao9020",
     "replies": 1
+   },
+   {
+    "text": "張力十足",
+    "likes": 1,
+    "author": "@劉大賢",
+    "replies": 0
    },
    {
     "text": "樂觀展望美好不變",
@@ -1207,12 +1207,6 @@
     "replies": 1
    },
    {
-    "text": "內槓不如外槓…只是現在外槓快死了。錢不夠又想多賺只好買正二，老實說股票不是拿來賺錢的，而是拿來建立資產跟提早取回自己的時間，這才是投資心法的差異。",
-    "likes": 4,
-    "author": "@fowdoo",
-    "replies": 1
-   },
-   {
     "text": "7:28他說台股現在股價已經反應未來了所以漲不動，未來會在四到五萬盤整三年！！記得他說要盤三年喔！",
     "likes": 3,
     "author": "@newmant77",
@@ -1235,6 +1229,12 @@
     "likes": 3,
     "author": "@aaa0108aaa",
     "replies": 1
+   },
+   {
+    "text": "這咖之前說什麼有錢就要歐印 一半放0050一半放債券 如果0050跌債券就會漲 可以賣掉漲的債券去接下跌的0050 說這樣是完美劇本 天底下就你最聰明想得到這種穩賺不賠的投資方法",
+    "likes": 3,
+    "author": "@WangKid",
+    "replies": 3
    },
    {
     "text": "很多人崩潰會說0050可以長期持久，正二不能😊",
@@ -2034,12 +2034,6 @@
     "replies": 1
    },
    {
-    "text": "黃金這個員工應該是因應全球去美元化與美債規模持續攀高的不可逆性 黃金不是用來避險 但可以拿來配置",
-    "likes": 3,
-    "author": "@chrislin9644",
-    "replies": 1
-   },
-   {
     "text": "已經39800了",
     "likes": 3,
     "author": "@play6633",
@@ -2073,6 +2067,12 @@
     "text": "現在不適合買黃金，戰爭時買0050賺了不少",
     "likes": 2,
     "author": "@SavannaRoast",
+    "replies": 1
+   },
+   {
+    "text": "黃金還是不敗的～ 等著看",
+    "likes": 2,
+    "author": "@520milo",
     "replies": 1
    }
   ]
@@ -2530,16 +2530,16 @@
     "replies": 2
    },
    {
-    "text": "先赞👍👍感谢分享🙏🙏",
-    "likes": 0,
-    "author": "@hongruwang1752",
-    "replies": 1
-   },
-   {
     "text": "哇哇哇邦妮耶❤❤❤太讚了",
     "likes": 0,
     "author": "@jackson9623",
     "replies": 2
+   },
+   {
+    "text": "先赞👍👍感谢分享🙏🙏",
+    "likes": 0,
+    "author": "@hongruwang1752",
+    "replies": 1
    },
    {
     "text": "因為邦妮就點進來❤",
@@ -3033,12 +3033,6 @@
     "replies": 1
    },
    {
-    "text": "❤",
-    "likes": 1,
-    "author": "@pioneer0001",
-    "replies": 0
-   },
-   {
     "text": "清楚易懂，感謝🙏",
     "likes": 1,
     "author": "@GTmaxx_n",
@@ -3051,15 +3045,21 @@
     "replies": 1
    },
    {
-    "text": "很棒的影片~主持人好讚",
+    "text": "❤",
     "likes": 1,
-    "author": "@李貞樺AlmaLee",
-    "replies": 1
+    "author": "@pioneer0001",
+    "replies": 0
    },
    {
     "text": "很有趣的商品，立馬來研究！",
     "likes": 1,
     "author": "@Ravelhch",
+    "replies": 1
+   },
+   {
+    "text": "很棒的影片~主持人好讚",
+    "likes": 1,
+    "author": "@李貞樺AlmaLee",
     "replies": 1
    },
    {
@@ -3105,21 +3105,15 @@
     "replies": 1
    },
    {
-    "text": "讚讚讚 美好主持人❤",
-    "likes": 1,
-    "author": "@catherine-ue2tl",
-    "replies": 1
-   },
-   {
     "text": "內容介紹得很好 主持人太美了❤",
     "likes": 1,
     "author": "@嘉貞洪-o4s",
     "replies": 1
    },
    {
-    "text": "解釋的好清楚喔, 希望主持人繼續拍更多影片讓人賞心悅目,又幫助大家增加知識",
+    "text": "讚讚讚 美好主持人❤",
     "likes": 1,
-    "author": "@natashahuang36",
+    "author": "@catherine-ue2tl",
     "replies": 1
    },
    {
@@ -3127,6 +3121,12 @@
     "likes": 1,
     "author": "@EricWang-r6c",
     "replies": 2
+   },
+   {
+    "text": "解釋的好清楚喔, 希望主持人繼續拍更多影片讓人賞心悅目,又幫助大家增加知識",
+    "likes": 1,
+    "author": "@natashahuang36",
+    "replies": 1
    },
    {
     "text": "❤❤主持人太正了",
@@ -3541,16 +3541,16 @@
     "replies": 3
    },
    {
-    "text": "我一直以為老喬有好幾億 因為跟王陽明一起玩",
-    "likes": 0,
-    "author": "@ALLIN5168",
-    "replies": 3
-   },
-   {
     "text": "個人覺得喜歡無聊😂！",
     "likes": 0,
     "author": "@user-lionkitty",
     "replies": 1
+   },
+   {
+    "text": "我一直以為老喬有好幾億 因為跟王陽明一起玩",
+    "likes": 0,
+    "author": "@ALLIN5168",
+    "replies": 3
    },
    {
     "text": "蠻可憐的，都當阿公了 養出一堆沒用的子孫 還要為後代操心",
@@ -4062,21 +4062,15 @@
     "replies": 1
    },
    {
-    "text": "很喜歡這集的內容，很溫暖！",
-    "likes": 0,
-    "author": "@gfinternal",
-    "replies": 1
-   },
-   {
     "text": "很棒的分享！😊",
     "likes": 0,
     "author": "@yunglingchen5637",
     "replies": 1
    },
    {
-    "text": "很喜歡今天的影片",
+    "text": "很喜歡這集的內容，很溫暖！",
     "likes": 0,
-    "author": "@Kyra_Mi",
+    "author": "@gfinternal",
     "replies": 1
    },
    {
@@ -4086,19 +4080,25 @@
     "replies": 1
    },
    {
-    "text": "提提研的面膜很好用！！！",
-    "likes": 0,
-    "author": "@LIMI-n2u",
-    "replies": 1
-   },
-   {
     "text": "李執行長的書非常好看，大力推薦!",
     "likes": 0,
     "author": "@vickychang3657",
     "replies": 1
    },
    {
-    "text": "超讚的，團隊我們也人手一本，書中內容振奮人心，也期許我們大家 Be Happy。🥰",
+    "text": "提提研的面膜很好用！！！",
+    "likes": 0,
+    "author": "@LIMI-n2u",
+    "replies": 1
+   },
+   {
+    "text": "很喜歡今天的影片",
+    "likes": 0,
+    "author": "@Kyra_Mi",
+    "replies": 1
+   },
+   {
+    "text": "謝謝 Kyra！歡迎把影片分享更多朋友們❤❤❤",
     "likes": 0,
     "author": "@goodfinance",
     "replies": 0
@@ -4118,7 +4118,7 @@
    },
    {
     "text": "曹哥棒👍  修修曾經訪問過郝哥，內容也蠻值得學習😊。郝哥曾經說過：「嘗試會帶來見識，見識會帶來膽識。」  不要讓自己的人生過得太平庸😄",
-    "likes": 48,
+    "likes": 49,
     "author": "@吳莉莉-f5j",
     "replies": 1
    },
@@ -4225,6 +4225,12 @@
     "replies": 1
    },
    {
+    "text": "主講人對這集內容設定，非常有層次分明，從來賓個人開始，工作經驗分享，到生活家庭及子女教育觀念，最後的個人人生規劃建議。個人認為這是目前採訪郝旭烈先生的專訪中，可吸取及觀察郝哥思路脈絡延伸，在這不到半小時，就能完整讓他表達完整的想法及感受。🎉",
+    "likes": 2,
+    "author": "@Soaringbull",
+    "replies": 2
+   },
+   {
     "text": "很喜歡郝哥~~提供好的思考與觀念~說話語調也很好聽",
     "likes": 2,
     "author": "@yrKo-vz4up",
@@ -4253,12 +4259,6 @@
     "likes": 1,
     "author": "@chenshufen6700",
     "replies": 1
-   },
-   {
-    "text": "主講人對這集內容設定，非常有層次分明，從來賓個人開始，工作經驗分享，到生活家庭及子女教育觀念，最後的個人人生規劃建議。個人認為這是目前採訪郝旭烈先生的專訪中，可吸取及觀察郝哥思路脈絡延伸，在這不到半小時，就能完整讓他表達完整的想法及感受。🎉",
-    "likes": 1,
-    "author": "@Soaringbull",
-    "replies": 2
    },
    {
     "text": "活在自己的能力裡 自由自己說了算",
@@ -5149,12 +5149,6 @@
     "replies": 1
    },
    {
-    "text": "2位理財專家的觀念很相近~~~好好學習起來跟孩子一起成長~~",
-    "likes": 0,
-    "author": "@rose8257151",
-    "replies": 1
-   },
-   {
     "text": "超棒的觀念，讓我們有新的觀點，感恩❤  謝謝曹哥，雅淇姊",
     "likes": 0,
     "author": "@Red_1568",
@@ -5165,6 +5159,12 @@
     "likes": 0,
     "author": "@李菁-w7l",
     "replies": 0
+   },
+   {
+    "text": "2位理財專家的觀念很相近~~~好好學習起來跟孩子一起成長~~",
+    "likes": 0,
+    "author": "@rose8257151",
+    "replies": 1
    },
    {
     "text": "外省人真的有一套。",
@@ -5354,15 +5354,15 @@
     "replies": 1
    },
    {
-    "text": "這集好棒，超級無敵愛堅哥",
-    "likes": 1,
-    "author": "@dannyzhan5399",
-    "replies": 1
-   },
-   {
     "text": "很喜歡這個分享。😊",
     "likes": 1,
     "author": "@yunglingchen5637",
+    "replies": 1
+   },
+   {
+    "text": "這集好棒，超級無敵愛堅哥",
+    "likes": 1,
+    "author": "@dannyzhan5399",
     "replies": 1
    },
    {
@@ -5548,13 +5548,13 @@
     "replies": 1
    },
    {
-    "text": "\"被動\" (bèi dòng) 的意思是，受到外力影響而動，或因他人行為或環境而處於被動的狀態。 簡單來說，被動表示一個人或事情沒有自主權，需要受到外力驅動才能行動。",
+    "text": "被動收入，通常指非屬原本職業的收入，或建立出一套穩定的收入來源後，不一定需要每日工作即可獲得的一筆收入。在完成被動收入的條件後，可能會有一些工作來維持此收入，但總的來說，被動收入現金流可以繼續自行運行 。 美國國稅局把收入劃分為三種類型，分別是主動收入，被動收入，和組合收入。",
     "likes": 0,
     "author": "@yul928",
     "replies": 1
    },
    {
-    "text": "被動收入，通常指非屬原本職業的收入，或建立出一套穩定的收入來源後，不一定需要每日工作即可獲得的一筆收入。在完成被動收入的條件後，可能會有一些工作來維持此收入，但總的來說，被動收入現金流可以繼續自行運行 。 美國國稅局把收入劃分為三種類型，分別是主動收入，被動收入，和組合收入。",
+    "text": "\"被動\" (bèi dòng) 的意思是，受到外力影響而動，或因他人行為或環境而處於被動的狀態。 簡單來說，被動表示一個人或事情沒有自主權，需要受到外力驅動才能行動。",
     "likes": 0,
     "author": "@yul928",
     "replies": 1
@@ -6363,15 +6363,15 @@
     "replies": 1
    },
    {
-    "text": "我都捐給柯文哲",
-    "likes": 1,
-    "author": "@user-SC-J",
-    "replies": 1
-   },
-   {
     "text": "完全沒用的一支影片，捐贈要節稅一定要捐給自己的基金會，然後基金會再想辦法偷偷把錢轉回來給自己用，這是重點中的重點，完全都沒提到，不過提了可能就下架了。有自己基金會的人還要你來教嗎？我們一般小老百姓捐出去的錢就沒了，還節什麼稅？",
     "likes": 1,
     "author": "@drtsliutw",
+    "replies": 1
+   },
+   {
+    "text": "我都捐給柯文哲",
+    "likes": 1,
+    "author": "@user-SC-J",
     "replies": 1
    },
    {
@@ -6490,15 +6490,15 @@
     "replies": 1
    },
    {
-    "text": "喜歡！ 謝謝您！💐",
-    "likes": 4,
-    "author": "@黃小玉-e9v",
-    "replies": 1
-   },
-   {
     "text": "非常棒的分享👍 敲碗投資團隊具體是怎麼運用 AI 的，希望能分享這類主題",
     "likes": 4,
     "author": "@eddylin6679",
+    "replies": 1
+   },
+   {
+    "text": "喜歡！ 謝謝您！💐",
+    "likes": 4,
+    "author": "@黃小玉-e9v",
     "replies": 1
    },
    {
@@ -6514,15 +6514,15 @@
     "replies": 1
    },
    {
-    "text": "喜歡今天節目，討論的方式，而不是告知",
-    "likes": 3,
-    "author": "@陳科翰-t4f",
-    "replies": 1
-   },
-   {
     "text": "超棒的節目！想往前翻看看有沒有研究其他公司的節目，發現這好像是第一集！？簡直挖到一個寶藏！！",
     "likes": 3,
     "author": "@darrenlin903",
+    "replies": 1
+   },
+   {
+    "text": "喜歡今天節目，討論的方式，而不是告知",
+    "likes": 3,
+    "author": "@陳科翰-t4f",
     "replies": 1
    },
    {
@@ -6544,6 +6544,12 @@
     "replies": 1
    },
    {
+    "text": "感谢分享",
+    "likes": 2,
+    "author": "@第一桶美金",
+    "replies": 1
+   },
+   {
     "text": "太優質的節目了！！",
     "likes": 2,
     "author": "@qazo19911112",
@@ -6553,12 +6559,6 @@
     "text": "讚 感謝分享",
     "likes": 2,
     "author": "@Paulzi333",
-    "replies": 1
-   },
-   {
-    "text": "感谢分享",
-    "likes": 2,
-    "author": "@第一桶美金",
     "replies": 1
    },
    {
@@ -7299,15 +7299,15 @@
     "replies": 1
    },
    {
-    "text": "分析的很好👍",
-    "likes": 0,
-    "author": "@yujen7730",
-    "replies": 1
-   },
-   {
     "text": "好喜歡這集！跟我好像🤣",
     "likes": 0,
     "author": "@hitaniiiiiiiiiiii_da",
+    "replies": 1
+   },
+   {
+    "text": "分析的很好👍",
+    "likes": 0,
+    "author": "@yujen7730",
     "replies": 1
    },
    {
@@ -7317,15 +7317,15 @@
     "replies": 1
    },
    {
-    "text": "天使！",
-    "likes": 0,
-    "author": "@chiukuitv",
-    "replies": 1
-   },
-   {
     "text": "對有小孩的很受用😂",
     "likes": 0,
     "author": "@MrJulie4942",
+    "replies": 1
+   },
+   {
+    "text": "天使！",
+    "likes": 0,
+    "author": "@chiukuitv",
     "replies": 1
    },
    {
