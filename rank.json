@@ -10,7 +10,7 @@
    "views": 38245261,
    "videos": 517,
    "w7v": 2,
-   "recentAvg": 19810,
+   "recentAvg": 19814,
    "engage": 1.3,
    "shorts": 0,
    "top": {
@@ -30,7 +30,7 @@
    "views": 38335589,
    "videos": 1179,
    "w7v": 11,
-   "recentAvg": 4206,
+   "recentAvg": 4213,
    "engage": 0.1,
    "shorts": 7,
    "top": {
@@ -70,7 +70,7 @@
    "views": 10175668,
    "videos": 625,
    "w7v": 6,
-   "recentAvg": 10638,
+   "recentAvg": 10656,
    "engage": 3.8,
    "shorts": 0,
    "top": {
@@ -90,7 +90,7 @@
    "views": 25787283,
    "videos": 195,
    "w7v": 0,
-   "recentAvg": 1101091,
+   "recentAvg": 1101163,
    "engage": 0.0,
    "shorts": 87,
    "top": {
@@ -130,7 +130,7 @@
    "views": 6650105,
    "videos": 686,
    "w7v": 5,
-   "recentAvg": 9385,
+   "recentAvg": 9393,
    "engage": 2.6,
    "shorts": 13,
    "top": {
@@ -150,7 +150,7 @@
    "views": 175620374,
    "videos": 454,
    "w7v": 0,
-   "recentAvg": 176008,
+   "recentAvg": 176019,
    "engage": 0.0,
    "shorts": 60,
    "top": {
@@ -189,10 +189,10 @@
    "subs": 11200,
    "views": 63044890,
    "videos": 116,
-   "w7v": 0,
-   "recentAvg": 1073307,
-   "engage": 0.0,
-   "shorts": 40,
+   "w7v": null,
+   "recentAvg": null,
+   "engage": null,
+   "shorts": null,
    "top": {
     "id": "v1Iubg4_vdk",
     "title": "【家．如常｜平凡的每一刻，如此難能可貴】",
@@ -210,7 +210,7 @@
    "views": 151214668,
    "videos": 289,
    "w7v": 3,
-   "recentAvg": 80260,
+   "recentAvg": 80561,
    "engage": 0.0,
    "shorts": 80,
    "top": {
@@ -246,7 +246,7 @@
    "id": "UCYkIQ8mfEd0e1M2F2cNTShA",
    "yt_title": "統一投信",
    "handle": "@ezmoney-tw",
-   "subs": 3820,
+   "subs": 3830,
    "views": 15750156,
    "videos": 87,
    "w7v": 0,
@@ -258,7 +258,7 @@
     "title": "統一奔騰基金：台股投資神隊友",
     "views": 850468
    },
-   "w7": 0,
+   "w7": 10,
    "w7view": 1642
   },
   {
@@ -308,7 +308,7 @@
    "views": 268948207,
    "videos": 159,
    "w7v": 0,
-   "recentAvg": 1153629,
+   "recentAvg": 1153722,
    "engage": 2.1,
    "shorts": 0,
    "top": {
@@ -348,7 +348,7 @@
    "views": 108792400,
    "videos": 1204,
    "w7v": 5,
-   "recentAvg": 133028,
+   "recentAvg": 133034,
    "engage": 2.5,
    "shorts": 0,
    "top": {
@@ -368,7 +368,7 @@
    "views": 133008011,
    "videos": 2450,
    "w7v": 18,
-   "recentAvg": 39010,
+   "recentAvg": 39062,
    "engage": 3.3,
    "shorts": 13,
    "top": {
@@ -388,7 +388,7 @@
    "views": 115045605,
    "videos": 1852,
    "w7v": 6,
-   "recentAvg": 23252,
+   "recentAvg": 23265,
    "engage": 1.5,
    "shorts": 47,
    "top": {
@@ -408,7 +408,7 @@
    "views": 51401744,
    "videos": 712,
    "w7v": 3,
-   "recentAvg": 48753,
+   "recentAvg": 48765,
    "engage": 2.4,
    "shorts": 0,
    "top": {
@@ -428,7 +428,7 @@
    "views": 22950624,
    "videos": 237,
    "w7v": 1,
-   "recentAvg": 119291,
+   "recentAvg": 119293,
    "engage": 1.8,
    "shorts": 53,
    "top": {
@@ -468,7 +468,7 @@
    "views": 15249975,
    "videos": 689,
    "w7v": 2,
-   "recentAvg": 45098,
+   "recentAvg": 45106,
    "engage": 1.5,
    "shorts": 0,
    "top": {
@@ -488,7 +488,7 @@
    "views": 9269005,
    "videos": 73,
    "w7v": 2,
-   "recentAvg": 80281,
+   "recentAvg": 80284,
    "engage": 4.5,
    "shorts": 7,
    "top": {
@@ -508,7 +508,7 @@
    "views": 15793113,
    "videos": 1563,
    "w7v": 2,
-   "recentAvg": 5528,
+   "recentAvg": 5530,
    "engage": 2.3,
    "shorts": 0,
    "top": {
