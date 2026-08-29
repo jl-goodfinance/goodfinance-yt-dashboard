@@ -196,6 +196,7 @@ for name, ids in show_videos.items():
              "life": statLife.get(v, {"views": 0, "dur": 0, "subs": 0})} for v in ids]
     # 觀看數以 Data API 即時值為準（與 YouTube 頁面一致；Analytics 對近日/新片有處理延遲會少算）
     for v in vids:
+        v["_cov"] = (v["life"]["views"] / v["viewCount"]) if v["viewCount"] else 1   # Analytics 成熟度
         v["life"]["views"] = v["viewCount"]
         if v["published"] >= Y26_START:            # 2026 上片：全部觀看都發生在 2026
             v["s26"]["views"] = v["viewCount"]
@@ -221,7 +222,8 @@ for name, ids in show_videos.items():
     recent = [{"id": v["id"], "title": v["title"][:70], "rel": rel_str(v["published"]), "pub": v["published"],
                "views": v["life"]["views"], "dur": v["life"]["dur"], "subs": v["life"]["subs"],
                "sch": v.get("sch", ""),
-               "ratio": round(v["life"]["views"] / v["life"]["subs"]) if v["life"]["subs"] else None}
+               "imm": 1 if v.get("_cov", 1) < 0.75 else 0,   # Analytics 未處理完（覆蓋率<75%）→ 訂閱/轉化不可判
+               "ratio": round(v["life"]["views"] / v["life"]["subs"]) if (v["life"]["subs"] and v.get("_cov", 1) >= 0.75) else None}
               for v in vids[:20]]
     views_up26 = sum(v["life"]["views"] for v in up26)
     subs_up26 = sum(v["life"]["subs"] for v in up26)
