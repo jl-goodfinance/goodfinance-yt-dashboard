@@ -40,6 +40,8 @@ for s in D["shows"]:
         "n": s["n"], "n26": s["n26"], "avg26": s["avg26"],
         "vu26": s.get("viewsUp26"), "su26": s.get("subsUp26"),
         "views": s["views"], "v26": s["views26"],
+        "ev": s.get("ev"), "ev26": s.get("ev26"), "evu26": s.get("evUp26"),
+        "eavg26": s.get("eavg26"), "topev": (s["top"] or {}).get("ev"),
         "subs": [s["subs"], s["subs26"]],
         "dur": [fmt_dur(s["dur"]), fmt_dur(s["dur26"])],
         "ctr28": S28["shows"].get(name, {}).get("ctr"),
@@ -87,8 +89,8 @@ repl(r"const CINSIGHT = \{.*?\};\n", "const CINSIGHT = " + j(CINS) + ";\n")
 NEWRET = load("studio_newret.json", {"updated": "", "videos": {}})
 repl(r"const NEWRET = \{.*?\};\n", "const NEWRET = " + j({"updated": NEWRET.get("updated", ""), "videos": NEWRET.get("videos", {})}) + ";\n")
 # 3. 總量常數
-repl(r"const CHANNEL_TOTAL = [\d]+, TOTAL_2026 = [\d]+;",
-     f"const CHANNEL_TOTAL = {ch['totalViews']}, TOTAL_2026 = {ch['views26']};")
+repl(r"const CHANNEL_TOTAL = [^;]+;",
+     f"const CHANNEL_TOTAL = {ch['totalViews']}, TOTAL_2026 = {ch['views26']}, EV_LIFE = {ch.get('evLife') or 0}, EV_TOTAL_2026 = {ch.get('ev26') or 0};")
 # 4. KPI 八卡
 VM = S28.get("viewerMix", {})
 kpis = f'''<div class="kpis">
@@ -99,13 +101,13 @@ kpis = f'''<div class="kpis">
     </div>
     <div class="card kpi hero">
       <div class="label">總觀看數</div>
-      <div class="num">{ch["totalViews"]/10000:.1f}<small>萬</small></div>
-      <div class="foot">{ch["totalViews"]:,} 次（全頻道 {ch["totalVideos"]} 支）</div>
+      <div class="num">{(ch.get("evLife") or ch["totalViews"])/10000:.1f}<small>萬</small></div>
+      <div class="foot">互動觀看 {(ch.get("evLife") or ch["totalViews"]):,} · 公開 {ch["totalViews"]/10000:.1f}萬（全頻道 {ch["totalVideos"]} 支）</div>
     </div>
     <div class="card kpi hero">
       <div class="label">觀看訂閱轉化率</div>
-      <div class="num">{round(ch["views26"]/ch["subsGained26"])}<small> : 1</small></div>
-      <div class="foot">2026：{ch["views26"]/10000:.0f}萬觀看 ÷ {ch["subsGained26"]:,} 訂閱</div>
+      <div class="num">{round((ch.get("ev26") or ch["views26"])/ch["subsGained26"])}<small> : 1</small></div>
+      <div class="foot">2026：{(ch.get("ev26") or ch["views26"])/10000:.0f}萬互動觀看 ÷ {ch["subsGained26"]:,} 訂閱</div>
     </div>
     <div class="card kpi hero">
       <div class="label">2026 訂閱轉化</div>
@@ -172,7 +174,8 @@ repl(r'<span><span class="dot demo"></span>「≈」示意：CTR、新舊觀眾�
 # 7. 頁尾資料說明
 repl(r'<footer class="src">.*?</footer>',
      f'''<footer class="src">
-  <b>資料說明</b> — 觀看數為 YouTube 即時數（與影片頁面一致）；時長、訂閱轉化、觀眾輪廓來自 <b>YouTube Analytics API</b>（頻道擁有者授權，統計至 {D["endDate"].replace("-", "/")}）；<b>縮圖 CTR、曝光、新觀眾占比</b>來自 <b>YouTube Studio</b>（新觀眾占比為 Studio「觀眾（按觀看行為）」三分法：新觀眾／游離／一般，母數為每月觀眾人數）（近 28 天：{S28.get("period", "")}，API 未提供此三項，更新時需重新自 Studio 抓取）。「2026」為該期間實際發生之觀看／訂閱（含舊影片今年的觀看）；「2026 集數」與「平均單支觀看」以 2026 上片影片計。<b>平均更新週期以天計</b>，自該節目 2026 年首支上片日起算。<b>新觀眾比</b>＝Studio 逐支影片「自上傳至今」新觀眾佔非重複觀眾比例（YouTube 僅提供上傳 90 天內且資料量足夠之影片，其餘顯示 —；節目值＝有資料集數之觀看加權，每週更新）。訂閱轉化數＝該影片觀看頁產生的訂閱；觀看訂閱轉化率＝觀看數 ÷ 訂閱轉化數（愈低愈好）。節目數據以 10 檔播放清單歸屬（{sum(s["n"] for s in D["shows"])} 支）；Shorts 與清單外影片計入頻道總量、不入節目卡。
+  <b>⚠️ YouTube 於 2026/8/24 起變更觀看數計法</b>：開始播放即計一次觀看（長片原需觀看 30 秒），本頻道數據自 8/27 起反映，公開觀看數約為舊口徑 2 倍以上，<b>不可與先前時序直接比較</b>。因此<b>本站所有觀看數（頻道、節目、逐支、平均、占比、轉化率）一律採用互動觀看數</b>（engaged views；定義未變、8/27 前與公開觀看數幾乎相同），小字「公開 N」為 YouTube 頁面顯示的公開觀看數；Analytics 尚未處理完的新片（48–72 小時）暫以公開數顯示並標「互動 處理中」。競品頁僅有公開數據，所有頻道同受影響。<br>
+  <b>資料說明</b> — 觀看數為互動觀看數（YouTube Analytics）；時長、訂閱轉化、觀眾輪廓來自 <b>YouTube Analytics API</b>（頻道擁有者授權，統計至 {D["endDate"].replace("-", "/")}）；<b>縮圖 CTR、曝光、新觀眾占比</b>來自 <b>YouTube Studio</b>（新觀眾占比為 Studio「觀眾（按觀看行為）」三分法：新觀眾／游離／一般，母數為每月觀眾人數）（近 28 天：{S28.get("period", "")}，API 未提供此三項，更新時需重新自 Studio 抓取）。「2026」為該期間實際發生之觀看／訂閱（含舊影片今年的觀看）；「2026 集數」與「平均單支觀看」以 2026 上片影片計。<b>平均更新週期以天計</b>，自該節目 2026 年首支上片日起算。<b>新觀眾比</b>＝Studio 逐支影片「自上傳至今」新觀眾佔非重複觀眾比例（YouTube 僅提供上傳 90 天內且資料量足夠之影片，其餘顯示 —；節目值＝有資料集數之觀看加權，每週更新）。訂閱轉化數＝該影片觀看頁產生的訂閱；觀看訂閱轉化率＝觀看數 ÷ 訂閱轉化數（愈低愈好）。節目數據以 10 檔播放清單歸屬（{sum(s["n"] for s in D["shows"])} 支）；Shorts 與清單外影片計入頻道總量、不入節目卡。
 </footer>''')
 
 open(HTML, "w", encoding="utf-8").write(html)

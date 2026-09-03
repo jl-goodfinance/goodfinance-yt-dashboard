@@ -22,6 +22,7 @@ INDUSTRY = {
     "中國信託 CTBC": "UCK-qHFerEXOQG0q6yOkm_SQ",
     "玉山銀行 E.SUN": "UC3tl5_Ff9aPYEHgtJELpcnw",
     "台新銀行 Richart": "UCjoEdiFwtGZS_z4n-iA6TQw",
+    "台新證券": "UCTL45FxklS6YXCQ4r7MSHKA",   # 原元富證券頻道，2026/4/6 合併後改名（2026-09-03 加入）
     "統一投信": "UCYkIQ8mfEd0e1M2F2cNTShA",
     "兆豐銀行": "UCTHisK1U5uIToyCfaiKYUdA",
 }

@@ -72,14 +72,16 @@ def workdays(a, b):
 ch = data_api("channels", part="snippet,statistics", mine="true")["items"][0]
 st = ch["statistics"]
 ch26 = analytics(startDate=Y26_START,
-    metrics="views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained")["rows"][0]
+    metrics="views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained,engagedViews")["rows"][0]
 chLife = analytics(startDate=LIFE_START,
-    metrics="views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained")["rows"][0]
+    metrics="views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained,engagedViews")["rows"][0]
 channel = {
     "subs": int(st["subscriberCount"]), "totalViews": int(st["viewCount"]),
     "totalVideos": int(st["videoCount"]),
     "views26": ch26[0], "watchMin26": ch26[1], "avgDur26": ch26[2], "avgPct26": ch26[3], "subsGained26": ch26[4],
     "avgDurLife": chLife[2], "avgPctLife": chLife[3], "subsGainedLife": chLife[4],
+    # 互動觀看數（engagedViews）：定義未受 2026/8/24 觀看數計法變更影響，作為舊口徑一致的時序/比率基準
+    "ev26": ch26[5], "evLife": chLife[5],
 }
 print("頻道:", channel)
 
@@ -142,10 +144,10 @@ def video_stats(ids, start):
     out = {}
     for i in range(0, len(ids), 40):
         batch = ids[i:i+40]
-        r = analytics(startDate=start, metrics="views,averageViewDuration,subscribersGained",
+        r = analytics(startDate=start, metrics="views,averageViewDuration,subscribersGained,engagedViews",
                       dimensions="video", filters="video==" + ",".join(batch), maxResults=200)
         for row in r.get("rows", []):
-            out[row[0]] = {"views": row[1], "dur": row[2], "subs": row[3]}
+            out[row[0]] = {"views": row[1], "dur": row[2], "subs": row[3], "ev": row[4]}
     return out
 stat26 = video_stats(all_ids, Y26_START)
 statLife = video_stats(all_ids, LIFE_START)
@@ -192,8 +194,8 @@ def rel_str(pub):
 shows = []
 for name, ids in show_videos.items():
     vids = [{"id": v, **vid_meta.get(v, {"title": "?", "published": "2022-01-01", "viewCount": 0}),
-             "s26": stat26.get(v, {"views": 0, "dur": 0, "subs": 0}),
-             "life": statLife.get(v, {"views": 0, "dur": 0, "subs": 0})} for v in ids]
+             "s26": stat26.get(v, {"views": 0, "dur": 0, "subs": 0, "ev": 0}),
+             "life": statLife.get(v, {"views": 0, "dur": 0, "subs": 0, "ev": 0})} for v in ids]
     # 觀看數以 Data API 即時值為準（與 YouTube 頁面一致；Analytics 對近日/新片有處理延遲會少算）
     for v in vids:
         v["_cov"] = (v["life"]["views"] / v["viewCount"]) if v["viewCount"] else 1   # Analytics 成熟度
@@ -207,6 +209,8 @@ for name, ids in show_videos.items():
     viewsL = sum(v["life"]["views"] for v in vids)
     subs26 = sum(v["s26"]["subs"] for v in vids)
     subsL = sum(v["life"]["subs"] for v in vids)
+    ev26 = sum(v["s26"].get("ev", 0) for v in vids)      # 互動觀看（舊口徑一致）
+    evL = sum(v["life"].get("ev", 0) for v in vids)
     # 平均時長（觀看加權）
     def wdur(key):
         tot = sum(v[key]["views"] for v in vids)
@@ -217,25 +221,31 @@ for name, ids in show_videos.items():
         wd26 = workdays(max(first, date(2026, 1, 1)), END_D)
     else:
         wd26 = None
-    top = max(vids, key=lambda v: v["life"]["views"]) if vids else None
-    top26 = max(vids, key=lambda v: v["s26"]["views"]) if vids else None
+    # 觀看王以互動觀看數判定（8/24 計法變更後公開觀看數口徑不一致）
+    top = max(vids, key=lambda v: v["life"].get("ev") or v["life"]["views"]) if vids else None
+    top26 = max(vids, key=lambda v: v["s26"].get("ev") or v["s26"]["views"]) if vids else None
     recent = [{"id": v["id"], "title": v["title"][:70], "rel": rel_str(v["published"]), "pub": v["published"],
                "views": v["life"]["views"], "dur": v["life"]["dur"], "subs": v["life"]["subs"],
+               "ev": v["life"].get("ev", 0),
                "sch": v.get("sch", ""),
                "imm": 1 if v.get("_cov", 1) < 0.75 else 0,   # Analytics 未處理完（覆蓋率<75%）→ 訂閱/轉化不可判
-               "ratio": round(v["life"]["views"] / v["life"]["subs"]) if (v["life"]["subs"] and v.get("_cov", 1) >= 0.75) else None}
+               # 轉化率以互動觀看數計（8/24 計法變更後公開觀看數約為 2 倍，會使轉化率失真）
+               "ratio": round((v["life"].get("ev") or v["life"]["views"]) / v["life"]["subs"]) if (v["life"]["subs"] and v.get("_cov", 1) >= 0.75) else None}
               for v in vids[:20]]
     views_up26 = sum(v["life"]["views"] for v in up26)
     subs_up26 = sum(v["life"]["subs"] for v in up26)
+    ev_up26 = sum(v["life"].get("ev", 0) for v in up26)
+    eavg26 = round(ev_up26 / len(up26)) if (up26 and ev_up26) else None   # 2026 上片平均互動觀看
     shows.append({
         "name": name, "n": n, "n26": len(up26), "wd26": wd26,
         "viewsUp26": views_up26 or None, "subsUp26": subs_up26 or None,
         "avg26": round(views_up26 / len(up26)) if up26 else None,
         "views": viewsL, "views26": views26,
+        "ev": evL, "ev26": ev26, "evUp26": ev_up26 or None, "eavg26": eavg26,
         "subs": subsL, "subs26": subs26,
         "dur": wdur("life"), "dur26": wdur("s26"),
-        "top": {"id": top["id"], "title": top["title"][:70], "views": top["life"]["views"]} if top else None,
-        "top26": {"id": top26["id"], "title": top26["title"][:70], "views": top26["s26"]["views"],
+        "top": {"id": top["id"], "title": top["title"][:70], "views": top["life"]["views"], "ev": top["life"].get("ev", 0)} if top else None,
+        "top26": {"id": top26["id"], "title": top26["title"][:70], "views": top26["s26"]["views"], "ev": top26["s26"].get("ev", 0),
                   "dur": top26["s26"]["dur"], "subs": top26["s26"]["subs"]} if top26 and top26["s26"]["views"] else None,
         "recent": recent,
     })
