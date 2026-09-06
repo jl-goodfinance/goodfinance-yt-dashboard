@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """成本效率（CAC）私人頁：讀 data.json（公開）＋ ~/.config/goodfinance-yt/budget.json（本機、不進 repo）→ cac.html（.gitignore）。
-口徑（JL 2026-09-04 定案）：成本＝第二層（節目製作費＋跨節目共用攤提，預算單價）；節目層訂閱＝影片頁歸因；頻道層另列淨增版；上線滿 30 天才算成熟。"""
+口徑（JL 2026-09-04 定案，09-06 簡化）：成本＝第二層（節目製作費＋跨節目共用攤提，預算單價）；節目層訂閱＝影片頁歸因；頻道層另列淨增版；不設成熟門檻（全部已上片集數）。"""
 import json, os, html
 from datetime import date, datetime
 
@@ -9,7 +9,7 @@ B = json.load(open(CONF, encoding="utf-8"))
 D = json.load(open("data.json", encoding="utf-8"))
 OUT = "cac.html"
 TODAY = date.fromisoformat(D["generated"])
-MATURE = int(B.get("mature_days", 30))
+FRESH = 3   # 上線 ≤3 天且訂閱 0＝Analytics 尚未歸因，不列入最划算／最貴名單
 ORDER = ["Good Morning 美好", "Good Invest 美好投資", "Better Living 美好生活", "Good Income", "Entrepreneurship"]
 COLOR = {"Good Morning 美好": "#3d8bfd", "Good Invest 美好投資": "#7c6ff0", "Better Living 美好生活": "#c77a1c",
          "Good Income": "#15905f", "Entrepreneurship": "#e0568f"}
@@ -31,49 +31,44 @@ for name in ORDER:
     for e in eps:
         e["show"] = name; e["unit"] = unit
         e["age"] = (TODAY - date.fromisoformat(e["pub"])).days
-        e["mature"] = e["age"] >= MATURE
+        e["pending"] = e["age"] <= FRESH and not e["subs"]
         e["cac"] = unit / e["subs"] if e["subs"] else None
         m = e["pub"][:7]; mm = months.setdefault(m, {"cost": 0, "subs": 0, "n": 0, "immature": 0})
-        mm["cost"] += unit; mm["subs"] += e["subs"]; mm["n"] += 1; mm["immature"] += (not e["mature"])
+        mm["cost"] += unit; mm["subs"] += e["subs"]; mm["n"] += 1; mm["immature"] += e["pending"]
     all_eps += eps
-    mat = [e for e in eps if e["mature"]]
-    n_all, n_mat = len(eps), len(mat)
-    subs_all = sum(e["subs"] for e in eps); subs_mat = sum(e["subs"] for e in mat)
-    rows.append(dict(name=name, unit=unit, unit_prod=unit_prod, n_all=n_all, n_mat=n_mat, budget_eps=b["episodes"],
-                     annual=b["annual"], cost_all=unit * n_all, cost_mat=unit * n_mat, subs_all=subs_all, subs_mat=subs_mat,
-                     cac_mat=(unit * n_mat / subs_mat) if subs_mat else None,
+    n_all = len(eps)
+    subs_all = sum(e["subs"] for e in eps)
+    rows.append(dict(name=name, unit=unit, unit_prod=unit_prod, n_all=n_all, budget_eps=b["episodes"],
+                     annual=b["annual"], cost_all=unit * n_all, subs_all=subs_all,
                      cac_all=(unit * n_all / subs_all) if subs_all else None,
-                     per_ep=(subs_mat / n_mat) if n_mat else 0))
+                     per_ep=(subs_all / n_all) if n_all else 0))
 
 cost_total = sum(r["cost_all"] for r in rows); subs_attr = sum(r["subs_all"] for r in rows)
-cost_mat_total = sum(r["cost_mat"] for r in rows); subs_mat_total = sum(r["subs_mat"] for r in rows)
 net26 = sum(w["net"] for w in D["weekly"])
 gained26 = D["channel"]["subsGained26"]
 cac_attr = cost_total / subs_attr if subs_attr else 0
-cac_mat = cost_mat_total / subs_mat_total if subs_mat_total else 0
 cac_net = cost_total / net26 if net26 else 0
 months_elapsed = TODAY.month - 1 + TODAY.day / 30
 staff_ytd = B["staff"]["annual"] * months_elapsed / 12
 cac_full = (cost_total + staff_ytd) / subs_attr if subs_attr else 0
-mat_eps = [e for e in all_eps if e["mature"]]
-best = sorted([e for e in mat_eps if e["cac"]], key=lambda e: e["cac"])[:8]
-worst = sorted(mat_eps, key=lambda e: -(e["cac"] or 1e12))[:8]
+ranked = [e for e in all_eps if not e["pending"]]
+best = sorted([e for e in ranked if e["cac"]], key=lambda e: e["cac"])[:8]
+worst = sorted(ranked, key=lambda e: -(e["cac"] or 1e12))[:8]
 max_month_cac = max((m["cost"] / m["subs"]) for m in months.values() if m["subs"]) if months else 1
 
 def chip(name):
     c = COLOR[name]; return f'<span class="chip" style="--c:{c}">{esc(SHORT[name])}</span>'
 def cac_cls(v):
     if v is None: return "na"
-    return "good" if v <= cac_mat * 0.85 else ("bad" if v >= cac_mat * 1.3 else "")
+    return "good" if v <= cac_attr * 0.85 else ("bad" if v >= cac_attr * 1.3 else "")
 
 show_rows = "".join(f'''<tr>
   <td class="nm">{chip(r["name"])}<span>{esc(r["name"])}</span></td>
-  <td class="n">{r["n_mat"]}<small>/ {r["n_all"]} 已上片</small></td>
+  <td class="n">{r["n_all"]}</td>
   <td class="n">{num(r["unit"])}<small>製作 {num(r["unit_prod"])} ＋ 共用 {num(shared_unit)}</small></td>
   <td class="n">{wan(r["cost_all"])}<small>年預算 {wan(r["annual"])}</small></td>
-  <td class="n">{num(r["subs_mat"])}<small>{r["per_ep"]:.0f} / 集</small></td>
-  <td class="n cac {cac_cls(r["cac_mat"])}"><b>{num(r["cac_mat"]) if r["cac_mat"] else "—"}</b></td>
-  <td class="n mut">{num(r["cac_all"]) if r["cac_all"] else "—"}</td>
+  <td class="n">{num(r["subs_all"])}<small>{r["per_ep"]:.0f} / 集</small></td>
+  <td class="n cac {cac_cls(r["cac_all"])}"><b>{num(r["cac_all"]) if r["cac_all"] else "—"}</b></td>
   <td class="bar"><i style="width:{min(100, r["n_all"]/r["budget_eps"]*100):.1f}%;background:{COLOR[r["name"]]}"></i><small>{r["n_all"]} / {r["budget_eps"]} 集（{r["n_all"]/r["budget_eps"]*100:.0f}%）</small></td>
 </tr>''' for r in rows)
 
@@ -81,7 +76,7 @@ month_rows = ""
 for m in sorted(months):
     x = months[m]; cac = x["cost"] / x["subs"] if x["subs"] else None
     w = (cac / max_month_cac * 100) if cac else 0
-    tag = f'<small class="pre">含 {x["immature"]} 支未滿 {MATURE} 天</small>' if x["immature"] else ""
+    tag = f'<small class="pre">{x["immature"]} 支尚未歸因</small>' if x["immature"] else ""
     month_rows += f'''<div class="mrow"><span class="ml">{m[:4]}/{m[5:]}</span>
       <span class="mbar"><i style="width:{w:.1f}%"></i></span>
       <span class="mv"><b>{num(cac) if cac else "—"}</b><small>{x["n"]} 集 · {wan(x["cost"])} · +{num(x["subs"])}</small>{tag}</span></div>'''
@@ -163,38 +158,37 @@ HTML = f'''<meta charset="utf-8"><meta name="viewport" content="width=device-wid
   <div class="rules">
     <span class="rule">成本口徑 <b>第二層＝製作費＋共用攤提</b>（預算單價，不含人事）</span>
     <span class="rule">訂閱口徑 <b>影片頁歸因</b>（頻道層另列淨增版）</span>
-    <span class="rule">成熟門檻 <b>上線滿 {MATURE} 天</b>才計入正式 CAC</span>
     <span class="rule">共用攤提 <b>{num(shared_unit)} 元／集</b>（{wan(B["shared"]["annual"])} ÷ {B["shared"]["episodes"]} 集）</span>
   </div>
 </header>
 
 <div class="kpis">
-  <div class="card kpi"><div class="label">CAC（成熟集數）</div><div class="num">{num(cac_mat)}<small>元 / 訂閱</small></div>
-    <div class="foot">{wan(cost_mat_total)} ÷ {num(subs_mat_total)} 訂閱 · 五檔已上線滿 {MATURE} 天的 {sum(r["n_mat"] for r in rows)} 集</div></div>
-  <div class="card kpi"><div class="label">CAC（含初步，全部已上片）</div><div class="num">{num(cac_attr)}<small>元 / 訂閱</small></div>
-    <div class="foot">{wan(cost_total)} ÷ {num(subs_attr)} 訂閱 · {sum(r["n_all"] for r in rows)} 集，新集訂閱仍在累積、會下修</div></div>
-  <div class="card kpi"><div class="label">CAC（頻道淨增口徑）</div><div class="num">{num(cac_net)}<small>元 / 訂閱</small></div>
-    <div class="foot">同一筆成本 ÷ 2026 頻道淨增 {num(net26)}（含流失、含 Shorts 與清單外影片；頻道歸因 +{num(gained26)}）</div></div>
+  <div class="card kpi"><div class="label">CAC（影片歸因）</div><div class="num">{num(cac_attr)}<small>元 / 訂閱</small></div>
+    <div class="foot">{wan(cost_total)} ÷ {num(subs_attr)} 訂閱 · 五檔 2026 已上片 {sum(r["n_all"] for r in rows)} 集的觀看頁帶來的訂閱</div></div>
+  <div class="card kpi"><div class="label">CAC（頻道淨增）</div><div class="num">{num(cac_net)}<small>元 / 訂閱</small></div>
+    <div class="foot">同一筆成本 ÷ 2026 頻道淨增 {num(net26)}（所有來源含 Shorts、頻道頁，已扣流失）</div></div>
+  <div class="card kpi"><div class="label">五檔已投入</div><div class="num">{wan(cost_total)}<small>元</small></div>
+    <div class="foot">預算單價 × 已上片集數 · 五檔年預算合計 {wan(sum(r["annual"] for r in rows) + B["shared"]["annual"])}（含共用）</div></div>
   <div class="card kpi ref"><div class="label">全成本參考（含人事）</div><div class="num">{num(cac_full)}<small>元 / 訂閱</small></div>
     <div class="foot">人事 {wan(B["staff"]["annual"])} 按 {months_elapsed:.1f} 個月折算 {wan(staff_ytd)}；不拆節目，只看年度量級</div></div>
 </div>
 
-<h2>各節目 <small>CAC 綠＝優於頻道成熟值 15% 以上，紅＝差 30% 以上</small></h2>
+<h2>各節目 <small>CAC 綠＝優於頻道值 15% 以上，紅＝差 30% 以上</small></h2>
 <div class="card tbl"><table>
-<tr><th>節目</th><th class="n">成熟集數</th><th class="n">每集成本</th><th class="n">已投入</th><th class="n">歸因訂閱（成熟）</th><th class="n">CAC 成熟</th><th class="n">CAC 含初步</th><th>集數執行率（vs 年預算）</th></tr>
+<tr><th>節目</th><th class="n">已上片</th><th class="n">每集成本</th><th class="n">已投入</th><th class="n">歸因訂閱</th><th class="n">CAC</th><th>集數執行率（vs 年預算）</th></tr>
 {show_rows}
 </table></div>
 
-<h2>依上片月份 <small>每月上片集數的成本 ÷ 該批影片至今累積訂閱（愈右愈貴）</small></h2>
+<h2>依上片月份 <small>每月上片集數的成本 ÷ 該批影片至今累積訂閱（愈右愈貴；近一兩個月的訂閱仍在累積）</small></h2>
 <div class="card months">{month_rows}</div>
 
 <div class="two">
-  <div><h2>最划算的集 <small>成熟集數 · 元／訂閱</small></h2><div class="card"><ol class="eps">{"".join(ep_li(e) for e in best)}</ol></div></div>
-  <div><h2>最貴的集 <small>成熟集數 · 元／訂閱</small></h2><div class="card"><ol class="eps">{"".join(ep_li(e) for e in worst)}</ol></div></div>
+  <div><h2>最划算的集 <small>元／訂閱</small></h2><div class="card"><ol class="eps">{"".join(ep_li(e) for e in best)}</ol></div></div>
+  <div><h2>最貴的集 <small>元／訂閱 · Analytics 尚未歸因的新片不列</small></h2><div class="card"><ol class="eps">{"".join(ep_li(e) for e in worst)}</ol></div></div>
 </div>
 
 <div class="notes">
-<b>怎麼讀</b> — CAC＝該批影片的製作成本（預算單價 × 集數）÷ 這些影片觀看頁帶來的訂閱。訂閱會持續累積數月，所以「成熟」值才是可比較的正式數字；含初步的版本一定偏高。GM 的價值在每日觸及與曝光，CAC 只反映它換訂閱的效率，不宜單用 CAC 評 GM。<br>
+<b>怎麼讀</b> — CAC＝該批影片的製作成本（預算單價 × 集數）÷ 這些影片觀看頁帶來的訂閱。訂閱會持續累積數月，新上片的月份數字會逐週下修。GM 的價值在每日觸及與曝光，CAC 只反映它換訂閱的效率，不宜單用 CAC 評 GM。<br>
 <b>成本假設</b> — {esc(B["tier"])}。各節目每集製作費＝年預算 ÷ 預算集數（{"、".join(f"{SHORT[r['name']]} {wan(r['annual'])}/{r['budget_eps']} 集" for r in rows)}）；共用項目 {wan(B["shared"]["annual"])} 依 {B["shared"]["episodes"]} 集攤提。實際請採購數與預算單價的差異未反映。<br>
 <b>訂閱口徑</b> — YouTube Analytics 影片頁歸因（subscribersGained），新片 1–3 天內尚未完整歸因；淨增版本＝訂閱減流失。觀看數皆為互動觀看（8/24 計法變更後本站口徑）。<br>
 <b>保密</b> — 本頁由本機預算檔生成，預算數字不在 GitHub repo；此 artifact 未分享，僅你可見。
@@ -202,4 +196,4 @@ HTML = f'''<meta charset="utf-8"><meta name="viewport" content="width=device-wid
 </div>
 '''
 open(OUT, "w", encoding="utf-8").write(HTML)
-print(f"✅ {OUT}｜成熟 CAC {cac_mat:,.0f}｜含初步 {cac_attr:,.0f}｜淨增口徑 {cac_net:,.0f}｜全成本 {cac_full:,.0f}｜成熟集數 {len(mat_eps)}/{len(all_eps)}")
+print(f"✅ {OUT}｜CAC 歸因 {cac_attr:,.0f}｜淨增口徑 {cac_net:,.0f}｜全成本 {cac_full:,.0f}｜集數 {len(all_eps)}｜" + "、".join(f"{SHORT[r['name']]} {r['cac_all']:,.0f}" if r['cac_all'] else SHORT[r['name']]+' —' for r in rows))
