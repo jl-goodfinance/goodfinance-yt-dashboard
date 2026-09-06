@@ -138,7 +138,7 @@ section{margin-top:22px}
 .stack-legend b{color:var(--ink);font-weight:700;margin-left:2px}
 
 /* ── show cards ── */
-.shows{display:grid;grid-template-columns:repeat(auto-fill,minmax(470px,1fr));gap:12px;align-items:start}
+.shows{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(470px,100%),1fr));gap:12px;align-items:start}  /* min() 避免手機寬度 <470 時卡片溢出 */
 .show{padding:0;display:flex;flex-direction:column;overflow:hidden;position:relative}
 .show::before{
   content:"";position:absolute;left:0;top:16px;bottom:16px;width:3.5px;border-radius:0 3px 3px 0;
@@ -382,6 +382,27 @@ footer.src b{color:var(--sub)}
 }
 @media (max-width:640px){
   body{padding:0 12px 36px}
+  /* 節目卡（手機）：點節目名＝展開（JS 同步），專頁改走加大的「開啟專頁」按鈕；展開鍵改為有文字的膠囊 */
+  .show h3.lk::after{content:""}
+  .show-head{row-gap:10px;padding:14px 14px 12px}
+  .head-stats{gap:7px 14px}
+  .head-stats > span:nth-child(5),.head-stats > span:nth-child(8){display:none}   /* 集數、平均更新週期：展開後表格內仍有 */
+  .head-stats .pg-btn{order:99;flex-basis:100%;text-align:center;padding:9px 14px;font-size:12.5px;margin-top:4px;opacity:1;border-width:1px}
+  .chev{font-size:0;border:1px solid var(--line);border-radius:99px;padding:7px 12px;color:var(--sub);transition:none;line-height:1}
+  .chev::before{content:"展開 ▾";font-size:12px;font-weight:600}
+  .show.open .chev{transform:none}
+  .show.open .chev::before{content:"收合 ▴"}
+  .show-vids{overflow-x:auto}
+  /* 競品表：手機橫捲時釘住名次與頻道名 */
+  table.rank th:nth-child(1),table.rank td.rk{position:sticky;left:0;z-index:2;background:#0c111d}
+  table.rank th:nth-child(2),table.rank td.ch{position:sticky;left:26px;z-index:2;background:#0c111d;max-width:112px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;box-shadow:6px 0 8px -6px rgba(0,0,0,.6);padding-right:6px}
+  table.rank td.ch a{font-size:12.5px}
+  table.rank td.ch small{display:none}   /* 手機隱藏 @handle，讓數字欄有空間 */
+  table.rank td{padding:7px 6px}
+  table.rank td.rk{width:22px;padding-left:4px;padding-right:0}
+  table.rank th:nth-child(2){left:22px}
+  table.rank td.ch{left:22px}
+  table.rank tr.me td.rk,table.rank tr.me td.ch{background:#12233a}
   .share-rows .row{grid-template-columns:104px 1fr 92px;font-size:11.5px}
   h1{font-size:24px}
   .card:not(.show){padding:15px 16px}
@@ -391,6 +412,8 @@ footer.src b{color:var(--sub)}
 
   /* 競品觀測 */
   .rk-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:8px}
+  .rk-grid > *{min-width:0}   /* 讓寬表格在卡片內橫向捲動，而不是撐開整頁（手機） */
+  .rkcard{min-width:0}
   
   .rkcard h3{margin:0;font-size:20px;font-weight:800}
   .rknote{color:#97a3bd;font-size:11.5px;margin-bottom:8px}
@@ -417,7 +440,7 @@ footer.src b{color:var(--sub)}
   .rknote-inline{color:#97a3bd;font-size:11.5px}
   .rk-chev{margin-left:auto;font-size:12px;color:#97a3bd;transition:transform .3s cubic-bezier(.4,0,.2,1)}
   .rkcard.collapsed .rk-chev{transform:rotate(-90deg)}
-  .rk-scroll{overflow-x:auto;overflow-y:hidden;max-height:1600px;margin-top:11px;transition:max-height .45s cubic-bezier(.4,0,.2,1),opacity .3s,margin-top .3s}
+  .rk-scroll{overflow-x:auto;overflow-y:hidden;max-width:100%;-webkit-overflow-scrolling:touch;max-height:1600px;margin-top:11px;transition:max-height .45s cubic-bezier(.4,0,.2,1),opacity .3s,margin-top .3s}
   .rkcard.collapsed .rk-scroll{max-height:0;opacity:0;margin-top:0}
   table.rank thead th[data-k]{cursor:pointer;transition:color .15s;white-space:nowrap}
   table.rank thead th[data-k]:hover{color:#dfe7f5}
@@ -869,8 +892,9 @@ document.getElementById("shows").innerHTML = SHOWS.map(s => {
 document.getElementById("shows").addEventListener("click", e => {
   const pg = e.target.closest(".pg-btn");
   if (pg) { openShow(pg.closest(".show").dataset.name); return; }
+  // 桌機（有 hover 的精準指標）點節目名開專頁；手機／觸控改為展開卡片，專頁走「開啟專頁」按鈕
   const nameEl = e.target.closest(".show h3.lk");
-  if (nameEl) { openShow(nameEl.closest(".show").dataset.name); return; }
+  if (nameEl && matchMedia("(min-width:641px) and (hover:hover)").matches) { openShow(nameEl.closest(".show").dataset.name); return; }
   const head = e.target.closest(".show-head");
   if (!head) return;
   const card = head.closest(".show");
