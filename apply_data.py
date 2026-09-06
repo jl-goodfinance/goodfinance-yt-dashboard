@@ -86,6 +86,8 @@ repl(r"const BUILD_TS = \d+;", f"const BUILD_TS = {_TS};")
 json.dump({"ts": _TS}, open(os.path.join(BASE, "docs", "version.json"), "w"))
 CINS = load("compet_insights.json", {"updated": "", "industry": [], "kol": []})
 repl(r"const CINSIGHT = \{.*?\};\n", "const CINSIGHT = " + j(CINS) + ";\n")
+EPS26 = {s["name"]: [{k: e.get(k) for k in ("id", "pub", "subs", "ev", "views", "t", "sch")} for e in s.get("eps26", [])] for s in D["shows"]}
+repl(r"const EPS26 = \{.*?\};", "const EPS26 = " + j(EPS26) + ";")
 NEWRET = load("studio_newret.json", {"updated": "", "videos": {}})
 repl(r"const NEWRET = \{.*?\};\n", "const NEWRET = " + j({"updated": NEWRET.get("updated", ""), "videos": NEWRET.get("videos", {})}) + ";\n")
 # 3. 總量常數
