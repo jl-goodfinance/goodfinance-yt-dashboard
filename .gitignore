@@ -1,2 +1,6 @@
 __pycache__/
 data_prev.json
+
+# 私人成本效率頁（含預算，不公開）
+cac*.html
+data_prev_week.json

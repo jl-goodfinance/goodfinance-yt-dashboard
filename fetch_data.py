@@ -248,6 +248,9 @@ for name, ids in show_videos.items():
         "top26": {"id": top26["id"], "title": top26["title"][:70], "views": top26["s26"]["views"], "ev": top26["s26"].get("ev", 0),
                   "dur": top26["s26"]["dur"], "subs": top26["s26"]["subs"]} if top26 and top26["s26"]["views"] else None,
         "recent": recent,
+        # 2026 全部上片逐集（精簡；供成本效率頁計算 30 天成熟 CAC）
+        "eps26": [{"id": v["id"], "pub": v["published"], "subs": v["life"]["subs"], "ev": v["life"].get("ev", 0),
+                   "views": v["life"]["views"], "sch": v.get("sch", ""), "t": v["title"][:40]} for v in up26],
     })
     print(f"{name}: 2026 觀看 {views26:,} 訂閱 +{subs26:,} | 全期間 {viewsL:,} +{subsL:,} | 週期分母 {wd26}")
 
