@@ -75,8 +75,10 @@ ch26 = analytics(startDate=Y26_START,
     metrics="views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained,engagedViews")["rows"][0]
 chLife = analytics(startDate=LIFE_START,
     metrics="views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained,engagedViews")["rows"][0]
+# 精確訂閱數＝Analytics 開台至今 訂閱−退訂（公開 subscriberCount 為三位有效數字且延遲數小時～數天，會低於 Studio）
+subsNet = analytics(startDate=LIFE_START, metrics="subscribersGained,subscribersLost")["rows"][0]
 channel = {
-    "subs": int(st["subscriberCount"]), "totalViews": int(st["viewCount"]),
+    "subs": int(st["subscriberCount"]), "subsExact": int(subsNet[0]) - int(subsNet[1]), "totalViews": int(st["viewCount"]),
     "totalVideos": int(st["videoCount"]),
     "views26": ch26[0], "watchMin26": ch26[1], "avgDur26": ch26[2], "avgPct26": ch26[3], "subsGained26": ch26[4],
     "avgDurLife": chLife[2], "avgPctLife": chLife[3], "subsGainedLife": chLife[4],
