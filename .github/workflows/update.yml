@@ -1,7 +1,7 @@
 name: hourly-data-update
 on:
   schedule:
-    - cron: "5 * * * *"     # 每小時第 5 分
+    - cron: "23,53 * * * *"   # 每半小時各排一次、避開整點壅塞（GitHub 排程為盡力而為，實際到達約 1–3 小時一輪；2026-09 曾退化到 3–6 小時，故加密）
   workflow_dispatch:
 permissions:
   contents: write
