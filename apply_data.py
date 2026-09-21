@@ -79,7 +79,7 @@ repl(r"const COMMENTS = \{.*?\};\n", "const COMMENTS = " + j(CMT) + ";\n")
 repl(r"const THUMBS = \{.*?\};\n", "const THUMBS = " + j(THUMBS) + ";\n")
 repl(r"const RANKS = \{.*?\};\n", "const RANKS = " + j(RANK) + ";\n")
 repl(r"const WEEKLY = \[.*?\];\n", "const WEEKLY = " + j(D.get("weekly", [])) + ";\n")
-repl(r"const SUBS_NOW = \d+;", f"const SUBS_NOW = {ch.get('subsExact') or ch['subs']};")   # 累計曲線終點改用 Analytics 精確值
+repl(r"const SUBS_NOW = \d+;", f"const SUBS_NOW = {ch['subs']};")   # 公開值（Analytics 累計會因重算而回跳，不可靠）
 import time as _time
 _TS = int(_time.time())
 repl(r"const BUILD_TS = \d+;", f"const BUILD_TS = {_TS};")
@@ -98,8 +98,8 @@ VM = S28.get("viewerMix", {})
 kpis = f'''<div class="kpis">
     <div class="card kpi hero">
       <div class="label">訂閱數</div>
-      <div class="num">{(ch.get("subsExact") or ch["subs"]):,}</div>
-      <div class="foot">Analytics 至 {D["endDate"][5:].replace("-", "/")}（訂閱−退訂累計）· YouTube 公開顯示 {ch["subs"]:,}（三位有效數字、有延遲）</div>
+      <div class="num">{ch["subs"]:,}</div>
+      <div class="foot">YouTube 公開值（三位有效數字、可能延遲數小時）{("· Studio 精確 " + format(S28["subsStudio"]["n"], ",") + "（" + S28["subsStudio"]["date"][5:].replace("-", "/") + "）") if S28.get("subsStudio") else "· Studio 後台精確值僅登入可見"}</div>
     </div>
     <div class="card kpi hero">
       <div class="label">總觀看數</div>
