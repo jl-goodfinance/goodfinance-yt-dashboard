@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-23",
+ "updated": "2026-09-24",
  "industry": [
   {
    "name": "富邦證券",
@@ -9,8 +9,8 @@
    "subs": 470000,
    "views": 40033203,
    "videos": 500,
-   "w7v": 3,
-   "recentAvg": 52332,
+   "w7v": 2,
+   "recentAvg": 52457,
    "engage": 0.4,
    "shorts": 7,
    "top": {
@@ -19,7 +19,7 @@
     "views": 2323114
    },
    "w7": 1000,
-   "w7view": 244343
+   "w7view": 207981
   },
   {
    "name": "永豐金證券 豐雲學堂",
@@ -28,18 +28,18 @@
    "handle": "@sinoec",
    "subs": 248000,
    "views": 41708631,
-   "videos": 1226,
-   "w7v": 13,
-   "recentAvg": 7205,
+   "videos": 1227,
+   "w7v": 10,
+   "recentAvg": 7282,
    "engage": 0.0,
-   "shorts": 7,
+   "shorts": 0,
    "top": {
-    "id": "Es5rvQroRRo",
-    "title": "2026 SEMICON 展場直擊！台積電大軍發威，現場帶你挖出「半導體隱形冠軍」！#旺矽 #穎崴 #漢測 #精測 #京",
-    "views": 65659
+    "id": "sMkF89mWueE",
+    "title": "保健品牌的隱形推手：精華生醫(7806)以一站式CDMO與智慧化工廠，搶佔全球健康商機！｜《企業家觀點》EP22｜精華生",
+    "views": 30051
    },
-   "w7": 2000,
-   "w7view": 229579
+   "w7": 1000,
+   "w7view": 184299
   },
   {
    "name": "凱基 股股漲",
@@ -49,17 +49,17 @@
    "subs": 236000,
    "views": 12077410,
    "videos": 1534,
-   "w7v": 12,
-   "recentAvg": 5276,
+   "w7v": 10,
+   "recentAvg": 5316,
    "engage": 0.3,
    "shorts": 47,
    "top": {
-    "id": "YJWXF-1Xo4U",
-    "title": "第752集｜10年美債殖利率破5% 該如何投資? 台積電導入晶背供電 開啟半導體新時代《凱基股股漲》2026/09/15",
-    "views": 6847
+    "id": "Xs7WPLYa9mQ",
+    "title": "第756集｜中秋變盤是都市傳說還是鐵證如山？高階測試迎來史詩級資本擴張潮《凱基股股漲》2026/09/21",
+    "views": 10666
    },
-   "w7": 4000,
-   "w7view": 82310
+   "w7": 3000,
+   "w7view": 69281
   },
   {
    "name": "台新證券",
@@ -68,18 +68,18 @@
    "handle": "@taishin_securities",
    "subs": 113000,
    "views": 3217401,
-   "videos": 366,
-   "w7v": 14,
-   "recentAvg": 56124,
+   "videos": 367,
+   "w7v": 12,
+   "recentAvg": 55999,
    "engage": 0.0,
    "shorts": 7,
    "top": {
     "id": "e71BoEPJbMo",
     "title": "你投資了嗎？沒資金、不懂理財不再是藉口！大學生愛上當沖？時薪＄200元打工賺股市本金？Ｚ世代創造100%股市獲利經驗？【",
-    "views": 93364
+    "views": 94911
    },
-   "w7": 3000,
-   "w7view": 803328
+   "w7": 2000,
+   "w7view": 528638
   },
   {
    "name": "群益期貨 KeensPie",
@@ -90,7 +90,7 @@
    "views": 10557281,
    "videos": 643,
    "w7v": 5,
-   "recentAvg": 21802,
+   "recentAvg": 21844,
    "engage": 1.8,
    "shorts": 0,
    "top": {
@@ -99,7 +99,7 @@
     "views": 25146
    },
    "w7": 0,
-   "w7view": 89827
+   "w7view": 68329
   },
   {
    "name": "元大投信",
@@ -116,10 +116,10 @@
    "top": {
     "id": "TDAn1_GFX_U",
     "title": "一分鐘告訴你：ETF分割及反分割是什麼？",
-    "views": 1799858
+    "views": 1799865
    },
    "w7": -1000,
-   "w7view": 685
+   "w7view": 624
   },
   {
    "name": "凱基證券 樂活投資人",
@@ -128,18 +128,18 @@
    "handle": "@凱基證券樂活投資人",
    "subs": 74600,
    "views": 12217835,
-   "videos": 1417,
+   "videos": 1418,
    "w7v": 6,
-   "recentAvg": 76558,
+   "recentAvg": 77652,
    "engage": 0.0,
    "shorts": 60,
    "top": {
-    "id": "_DCmPTU2szo",
-    "title": "軋空行情的選股密碼",
-    "views": 596
+    "id": "PPB9Q0DPndo",
+    "title": "✈️ 航空股獲利還能再上修嗎？油價、貨運、客運誰才是關鍵？ft.一名空姐的流水帳日記 Zoe 【財經要雯 Podcast",
+    "views": 235
    },
-   "w7": 3300,
-   "w7view": 944510
+   "w7": 2600,
+   "w7view": 935204
   },
   {
    "name": "美好證券 Good Finance",
@@ -149,17 +149,17 @@
    "subs": 68800,
    "views": 8324842,
    "videos": 718,
-   "w7v": 7,
-   "recentAvg": 22424,
+   "w7v": 6,
+   "recentAvg": 22474,
    "engage": 1.1,
    "shorts": 0,
    "top": {
-    "id": "GIEKO1DQMsU",
-    "title": "6 年積蓄一天 All In！唯一賣出的一檔股票？自由是不工作嗎？feat. 瓦基 @readingoutpost",
-    "views": 81607
+    "id": "oj17_P9Z6_U",
+    "title": "退休，錢從哪裡來？如何建立月月配穩定現金流？70 歲開始理財也能財務自由！",
+    "views": 676453
    },
-   "w7": 900,
-   "w7view": 365609
+   "w7": 600,
+   "w7view": 298363
   },
   {
    "name": "國泰世華銀行",
@@ -170,7 +170,7 @@
    "views": 179354927,
    "videos": 460,
    "w7v": 1,
-   "recentAvg": 287072,
+   "recentAvg": 287342,
    "engage": 0.0,
    "shorts": 47,
    "top": {
@@ -178,8 +178,8 @@
     "title": "趴樹，變多！國泰世華蝦皮購物聯名卡 刷越多，回饋趴數(%)越多！",
     "views": 1248574
    },
-   "w7": 0,
-   "w7view": 1846471
+   "w7": 100,
+   "w7view": 1641948
   },
   {
    "name": "國泰投信 大樹下學投資",
@@ -190,16 +190,16 @@
    "views": 11319026,
    "videos": 126,
    "w7v": 1,
-   "recentAvg": 367079,
+   "recentAvg": 367101,
    "engage": 0.0,
    "shorts": 67,
    "top": {
     "id": "0w81ow6a0RY",
     "title": "00400A  參與本次配息 最後買進日 7/8",
-    "views": 1658159
+    "views": 1658255
    },
-   "w7": 400,
-   "w7view": 156313
+   "w7": 300,
+   "w7view": 139572
   },
   {
    "name": "中國信託 CTBC",
@@ -216,10 +216,10 @@
    "top": {
     "id": "v1Iubg4_vdk",
     "title": "【家．如常｜平凡的每一刻，如此難能可貴】",
-    "views": 8669959
+    "views": 8669974
    },
    "w7": 0,
-   "w7view": 2344
+   "w7view": 2045
   },
   {
    "name": "玉山銀行 E.SUN",
@@ -230,16 +230,16 @@
    "views": 162367925,
    "videos": 294,
    "w7v": 0,
-   "recentAvg": 756921,
+   "recentAvg": 757010,
    "engage": 0.0,
    "shorts": 87,
    "top": {
     "id": "dCAjuawSrdk",
     "title": "玉山Unicard【選擇美好 由你開始】一卡就GO",
-    "views": 4806388
+    "views": 4806390
    },
    "w7": 10,
-   "w7view": 203650
+   "w7view": 167406
   },
   {
    "name": "元大證券",
@@ -250,16 +250,16 @@
    "views": 1602089,
    "videos": 84,
    "w7v": 1,
-   "recentAvg": 429,
+   "recentAvg": 430,
    "engage": 0.7,
    "shorts": 87,
    "top": {
     "id": "ko22K2e0Ctg",
     "title": "最好的投資就在台灣｜存好股 找元大｜元大證券形象廣告 Yuanta Securities",
-    "views": 710540
+    "views": 710568
    },
    "w7": 20,
-   "w7view": 2096
+   "w7view": 1727
   },
   {
    "name": "統一投信",
@@ -267,10 +267,10 @@
    "yt_title": "統一投信",
    "handle": "@ezmoney-tw",
    "subs": 3850,
-   "views": 16324939,
+   "views": 16325110,
    "videos": 89,
    "w7v": 0,
-   "recentAvg": 328861,
+   "recentAvg": 328862,
    "engage": 0.0,
    "shorts": 33,
    "top": {
@@ -279,7 +279,7 @@
     "views": 850472
    },
    "w7": 10,
-   "w7view": 1804
+   "w7view": 1709
   },
   {
    "name": "兆豐銀行",
@@ -289,17 +289,17 @@
    "subs": 3460,
    "views": 10766683,
    "videos": 405,
-   "w7v": 2,
+   "w7v": 1,
    "recentAvg": 19469,
    "engage": 0.0,
    "shorts": 27,
    "top": {
     "id": "xH8yKKgRxbA",
     "title": "兆豐銀行 外幣ATM-給你說走就走的勇氣",
-    "views": 423175
+    "views": 423178
    },
-   "w7": 10,
-   "w7view": 405
+   "w7": 0,
+   "w7view": 329
   },
   {
    "name": "台新銀行 Richart",
@@ -328,16 +328,16 @@
    "views": 277965192,
    "videos": 163,
    "w7v": 1,
-   "recentAvg": 1237400,
+   "recentAvg": 1239566,
    "engage": 1.7,
    "shorts": 0,
    "top": {
     "id": "s3iM7VslPsQ",
     "title": "一口气了解洗钱 它能玩得有多花",
-    "views": 4971826
+    "views": 4987487
    },
    "w7": 0,
-   "w7view": 2060768
+   "w7view": 1881267
   },
   {
    "name": "柴鼠兄弟 ZRBros",
@@ -347,17 +347,17 @@
    "subs": 1160000,
    "views": 101918780,
    "videos": 800,
-   "w7v": 1,
-   "recentAvg": 97082,
+   "w7v": 0,
+   "recentAvg": 97093,
    "engage": 2.1,
    "shorts": 13,
    "top": {
     "id": "4TAXBlOVRsw",
     "title": "台股逐筆交易三大改變 小散戶下單二招無惱解決(市價單vs限價單) | 夯翻鼠FQ&amp;A15",
-    "views": 419824
+    "views": 419842
    },
    "w7": 0,
-   "w7view": 145245
+   "w7view": 98027
   },
   {
    "name": "游庭皓的財經皓角",
@@ -367,17 +367,17 @@
    "subs": 702000,
    "views": 114055156,
    "videos": 1230,
-   "w7v": 7,
-   "recentAvg": 183391,
+   "w7v": 6,
+   "recentAvg": 183874,
    "engage": 1.5,
-   "shorts": 7,
+   "shorts": 0,
    "top": {
     "id": "iE03-xLfFwU",
     "title": "2026/7/20(一)費半入熊 AI牛市結束?槓桿爆倉 買點又到了?Kimi K3震撼AI市場【早晨財經速解讀】",
-    "views": 161662
+    "views": 161676
    },
    "w7": 2000,
-   "w7view": 1361227
+   "w7view": 1219162
   },
   {
    "name": "老王愛說笑",
@@ -387,17 +387,17 @@
    "subs": 602000,
    "views": 138193726,
    "videos": 2517,
-   "w7v": 18,
-   "recentAvg": 63891,
+   "w7v": 15,
+   "recentAvg": 64318,
    "engage": 2.0,
    "shorts": 27,
    "top": {
-    "id": "0_ECAi9x04U",
-    "title": "友達還能漲？聯電還能抱？國巨搞什麼？記憶體躺平？2026/09/11【老王不只三分鐘】",
-    "views": 165541
+    "id": "Te6Omd1ILsE",
+    "title": "國巨誰偷買？聯電要漲到哪？記憶體大復活？台積電衝三千？2026/09/18【老王不只三分鐘】",
+    "views": 179414
    },
    "w7": 1000,
-   "w7view": 1223149
+   "w7view": 1031246
   },
   {
    "name": "SHIN LI 李勛",
@@ -407,17 +407,17 @@
    "subs": 470000,
    "views": 117029341,
    "videos": 1880,
-   "w7v": 7,
-   "recentAvg": 34646,
+   "w7v": 6,
+   "recentAvg": 34812,
    "engage": 0.8,
    "shorts": 33,
    "top": {
-    "id": "IN0dmijI4Ls",
-    "title": "你的存款在台灣，排行第幾？35-39歲最窮？｜SHIN LI 李勛",
-    "views": 79447
+    "id": "K37xZ1ViQ4c",
+    "title": "0050直接不用玩！ETF定期定額排行",
+    "views": 107640
    },
    "w7": 0,
-   "w7view": 502667
+   "w7view": 424372
   },
   {
    "name": "阿格力",
@@ -427,17 +427,17 @@
    "subs": 312000,
    "views": 53488869,
    "videos": 722,
-   "w7v": 1,
-   "recentAvg": 97164,
+   "w7v": 0,
+   "recentAvg": 97249,
    "engage": 1.8,
    "shorts": 0,
    "top": {
-    "id": "tWBNzFty0n4",
-    "title": "【阿格力】存股套牢怎麼辦，聯華（1229）為例，還能存嗎？",
-    "views": 107144
+    "id": "X8uCLkMrkDg",
+    "title": "【阿格力】100萬存高股息ETF，三年少買好幾隻勞力士？現在我都存高資本利得又有高股息的ETF，光00830今年股息就領",
+    "views": 358135
    },
-   "w7": 1000,
-   "w7view": 529934
+   "w7": 0,
+   "w7view": 403660
   },
   {
    "name": "清流君",
@@ -448,16 +448,16 @@
    "views": 23410447,
    "videos": 238,
    "w7v": 0,
-   "recentAvg": 122979,
+   "recentAvg": 122984,
    "engage": 1.8,
    "shorts": 53,
    "top": {
     "id": "PkT5gFJF5OE",
     "title": "台灣房價終將下跌 #台灣房價 #買房收租 #台灣房地產 #買房VS買股 #房市VS股市 #存股VS買房",
-    "views": 727730
+    "views": 742243
    },
    "w7": 1000,
-   "w7view": 76026
+   "w7view": 64872
   },
   {
    "name": "Ms.Selena",
@@ -477,7 +477,7 @@
     "views": 1562
    },
    "w7": 0,
-   "w7view": 10634
+   "w7view": 8474
   },
   {
    "name": "股癌 Gooaye",
@@ -487,17 +487,17 @@
    "subs": 176000,
    "views": 15732369,
    "videos": 698,
-   "w7v": 3,
-   "recentAvg": 47148,
+   "w7v": 2,
+   "recentAvg": 47221,
    "engage": 1.1,
    "shorts": 0,
    "top": {
     "id": "aNDEiyvHIic",
     "title": "EP675 | 🎢",
-    "views": 47897
+    "views": 47926
    },
    "w7": 0,
-   "w7view": 109999
+   "w7view": 72510
   },
   {
    "name": "Nicolas 楊應超",
@@ -508,16 +508,16 @@
    "views": 10223630,
    "videos": 81,
    "w7v": 2,
-   "recentAvg": 90912,
+   "recentAvg": 90995,
    "engage": 3.1,
    "shorts": 0,
    "top": {
     "id": "bsgjD3Uf8T4",
     "title": "黃金白銀暴跌—只有川普可以拯救，普通人發財的機會真的到了。",
-    "views": 390416
+    "views": 390427
    },
    "w7": 0,
-   "w7view": 237984
+   "w7view": 215133
   },
   {
    "name": "M觀點 Miula",
@@ -528,16 +528,16 @@
    "views": 15894527,
    "videos": 1573,
    "w7v": 2,
-   "recentAvg": 8368,
+   "recentAvg": 8373,
    "engage": 1.3,
    "shorts": 0,
    "top": {
-    "id": "YC7HD_-k4TI",
-    "title": "EP336. 前沿模型該減速嗎、Anthropic 威脅報告、為什麼要一直聊模型 | M觀點",
-    "views": 9151
+    "id": "dCyAZEitdis",
+    "title": "EP337. 微軟的 AI 憲法、PLTR 輝達合作、逆風看法的本質 | M觀點",
+    "views": 8897
    },
    "w7": 0,
-   "w7view": 23125
+   "w7view": 21971
   },
   {
    "name": "慢活夫妻",
@@ -548,16 +548,16 @@
    "views": 10988681,
    "videos": 389,
    "w7v": 2,
-   "recentAvg": 17534,
+   "recentAvg": 17549,
    "engage": 2.9,
    "shorts": 0,
    "top": {
     "id": "iJeTF8G_4PU",
     "title": "【美股ETF】睡覺就能賺20％， VOO、SPY、IVV 績效狠甩台灣0050  ｜慢活夫妻",
-    "views": 242304
+    "views": 242395
    },
    "w7": 0,
-   "w7view": 47075
+   "w7view": 43523
   },
   {
    "name": "財報狗",
@@ -568,7 +568,7 @@
    "views": 475994,
    "videos": 995,
    "w7v": 2,
-   "recentAvg": 2352,
+   "recentAvg": 2354,
    "engage": 1.3,
    "shorts": 0,
    "top": {
@@ -577,7 +577,7 @@
     "views": 916
    },
    "w7": 100,
-   "w7view": 7279
+   "w7view": 6223
   },
   {
    "name": "雨果的投資理財生活觀",
@@ -594,10 +594,10 @@
    "top": {
     "id": "35cTRoWrcl0",
     "title": "退休規劃：450萬理財藍圖",
-    "views": 2688
+    "views": 2693
    },
-   "w7": 24,
-   "w7view": 1069
+   "w7": 18,
+   "w7view": 934
   }
  ]
 }
