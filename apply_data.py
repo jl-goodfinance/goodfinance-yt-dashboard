@@ -173,6 +173,9 @@ repl(r'<span><span class="dot"></span>公開數據實抓</span>\s*<span><span cl
      '<span><span class="dot"></span>YouTube Analytics 官方數據</span>', optional=True)
 repl(r'<span><span class="dot demo"></span>「≈」示意：CTR、新舊觀眾比（API 未提供）</span>',
      f'<span><span class="dot"></span>CTR／新觀眾：Studio 近 28 天（{S28.get("period", "")}）</span>', optional=True)
+# 圖例日期區間每次跟著 studio28.json 的 period 更新（上一行只在首次轉換時命中，之後靠這行）
+repl(r'<span><span class="dot"></span>CTR／新觀眾：Studio 近 28 天（[^）]*）</span>',
+     f'<span><span class="dot"></span>CTR／新觀眾：Studio 近 28 天（{S28.get("period", "")}）</span>', optional=True)
 # 7. 頁尾資料說明
 repl(r'<footer class="src">.*?</footer>',
      f'''<footer class="src">
