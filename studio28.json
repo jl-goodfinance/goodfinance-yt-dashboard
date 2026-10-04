@@ -1,9 +1,9 @@
 {
- "period": "2026/9/3–2026/9/30",
+ "period": "2026/9/5–2026/10/2",
  "channel": {
-  "impressions": 5894764,
-  "ctr": 6.4,
-  "views28": 1301806
+  "impressions": 6412000,
+  "ctr": 6.5,
+  "views28": 1273000
  },
  "shows": {
   "Better Living 美好生活": {
@@ -231,11 +231,11 @@
   }
  },
  "viewerMix": {
-  "new": 30.9,
-  "casual": 52.6,
-  "regular": 16.5,
-  "monthly": 182000,
-  "asOf": "2026-08-09"
+  "new": 46.5,
+  "casual": 41.6,
+  "regular": 11.9,
+  "monthly": 359000,
+  "asOf": "2026-10-02"
  },
  "subsStudio": {
   "n": 69772,
