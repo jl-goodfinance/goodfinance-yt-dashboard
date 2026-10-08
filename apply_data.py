@@ -104,12 +104,15 @@ for _vid, _v in CD.get("videos", {}).items():
     _partial = _first > _pub + _td(days=1)
     _launch = _pub if _partial else _first
     _n = min((_date.fromisoformat(max(_v["d"])) - _launch).days + 1, 28)
-    _I, _C = [], []
+    _I, _C, _E, _ev = [], [], [], _v.get("ev", {})
     for _k in range(_n):
-        _x = _v["d"].get((_launch + _td(days=_k)).isoformat())
+        _dk = (_launch + _td(days=_k)).isoformat()
+        _x = _v["d"].get(_dk)
         _I.append(_x[0] if _x else 0)
         _C.append(_x[1] if _x and _x[0] else None)
-    _ctrd[_vid] = {"s": _launch.isoformat(), "i": _I, "c": _C, **({"p": 1} if _partial else {})}
+        _E.append(_ev.get(_dk))
+    _ctrd[_vid] = {"s": _launch.isoformat(), "i": _I, "c": _C, **({"e": _E} if any(e is not None for e in _E) else {}),
+                   **({"p": 1} if _partial else {})}
 repl(r"const CTRD = \{.*?\};\n", "const CTRD = " + j({"u": CD.get("latest", ""), "v": _ctrd}) + ";\n")
 # 3. 總量常數
 repl(r"const CHANNEL_TOTAL = [^;]+;",

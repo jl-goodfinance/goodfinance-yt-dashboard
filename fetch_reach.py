@@ -11,7 +11,7 @@ video_thumbnail_impressions_ctr）。日期為美西時間（YouTube Analytics �
 
 用法：python3 fetch_reach.py [--create-job]
 """
-import csv, io, json, os, sys, urllib.error, urllib.parse, urllib.request
+import csv, io, json, os, sys, time, urllib.error, urllib.parse, urllib.request
 from datetime import date, timedelta
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -23,6 +23,7 @@ JOB_NAME = "goodfinance-dashboard-reach"
 MAIN_SHOWS = 5        # data.json 的前五檔主節目
 TRACK_DAYS = 35       # 每支影片只記上片後 35 天內的逐日數據（儀表板最多畫到第 28 天）
 KEEP_DAYS = 400       # 上片超過此天數的影片從檔案移除，控制檔案大小
+EV_EVERY = 6 * 3600   # 逐日互動觀看（Analytics API）最多每 6 小時重抓一次，省配額
 
 
 def access_token():
@@ -86,6 +87,30 @@ def parse(csv_text):
         yield r.get("video_id"), d, int(float(r.get("video_thumbnail_impressions") or 0)), round(c * scale, 2)
 
 
+def fetch_ev(S, T, today):
+    """觀察期內影片的逐日互動觀看（Analytics API，日期同為美西時間）→ videos[id]["ev"] = {日期: 次數}"""
+    if time.time() - S.get("evAt", 0) < EV_EVERY:
+        return 0
+    n = 0
+    for vid, pub in T.items():
+        p = date.fromisoformat(pub)
+        if not (0 <= (today - p).days <= TRACK_DAYS):
+            continue
+        q = urllib.parse.urlencode({"ids": "channel==MINE", "startDate": (p - timedelta(days=1)).isoformat(),
+                                    "endDate": today.isoformat(), "dimensions": "day",
+                                    "filters": f"video=={vid}", "metrics": "engagedViews"})
+        try:
+            rows = call("https://youtubeanalytics.googleapis.com/v2/reports?" + q).get("rows", [])
+        except urllib.error.HTTPError as e:
+            print("互動觀看抓取失敗", vid, e.code)
+            continue
+        v = S["videos"].setdefault(vid, {"pub": pub, "d": {}})
+        v["ev"] = {d: int(x) for d, x in rows}
+        n += 1
+    S["evAt"] = int(time.time())
+    return n
+
+
 def main():
     create = "--create-job" in sys.argv
     H["Authorization"] = "Bearer " + access_token()
@@ -121,16 +146,17 @@ def main():
             v["d"][d] = [impr, ctr]
             hit += 1
         seen.add(rep["id"])
+    nev = fetch_ev(S, T, today)
     # 移除過舊影片；seen 只留目前 API 仍列出的報表 id（報表保留 30–60 天，檔案不會無限長大）
     S["videos"] = {k: v for k, v in S["videos"].items()
                    if (today - date.fromisoformat(v["pub"])).days <= KEEP_DAYS}
     live = {r["id"] for r in reports}
     S["seen"] = sorted(seen & live)
-    if new:
+    if new or nev:
         S["updated"] = today.isoformat()
         S["latest"] = max((r.get("startTime", "")[:10] for r in reports), default="")
     json.dump(S, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-    print(f"報表 {len(reports)} 份（新 {len(new)} 份），寫入 {hit} 筆逐日數據，影片 {len(S['videos'])} 支")
+    print(f"報表 {len(reports)} 份（新 {len(new)} 份），寫入 {hit} 筆逐日數據，互動觀看更新 {nev} 支，影片 {len(S['videos'])} 支")
 
 
 if __name__ == "__main__":
