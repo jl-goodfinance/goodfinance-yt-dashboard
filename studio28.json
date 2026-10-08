@@ -254,10 +254,10 @@
    "date": "2026-10-04"
   },
   "tahLffs4ZDE": {
-   "ctr": 9.2,
-   "impr": 49000,
+   "ctr": 8.8,
+   "impr": 55000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-08"
   },
   "4MSzaa8mUZU": {
    "ctr": 8.2,
@@ -267,63 +267,63 @@
   },
   "wjIgB450-CE": {
    "ctr": 8.9,
-   "impr": 49000,
+   "impr": 50000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-08"
   },
   "rS9agSHxsnw": {
    "ctr": 6.9,
-   "impr": 57000,
+   "impr": 58000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-08"
   },
   "QAu3YX8J5hY": {
    "ctr": 6.6,
-   "impr": 76000,
+   "impr": 77000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-08"
   },
   "rO52MWadA0c": {
    "ctr": 8.5,
    "impr": 103000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-08"
   },
   "p1OuOyBkVNM": {
-   "ctr": 7.0,
-   "impr": 31000,
+   "ctr": 6.9,
+   "impr": 32000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-08"
   },
   "gDWv1d-hHSw": {
    "ctr": 7.3,
    "impr": 61000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-08"
   },
   "pzqWbNEmo68": {
    "ctr": 9.9,
-   "impr": 216000,
+   "impr": 217000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-08"
   },
   "b3t0vTvWXss": {
-   "ctr": 8.7,
+   "ctr": 8.6,
    "impr": 138000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-08"
   },
   "ZhKPCV8pd-o": {
    "ctr": 7.2,
    "impr": 40000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-08"
   },
   "Zs3Qcyo-PbM": {
    "ctr": 10.7,
    "impr": 147000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-08"
   },
   "rqadvGCJfUA": {
    "ctr": 7.9,
@@ -374,16 +374,16 @@
    "date": "2026-10-04"
   },
   "RJsxtLp1SXs": {
-   "ctr": 8.1,
-   "impr": 77000,
+   "ctr": 8.0,
+   "impr": 81000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-08"
   },
   "iJOo86XGLlw": {
    "ctr": 6.8,
-   "impr": 60000,
+   "impr": 62000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-08"
   },
   "s5P4FVmAJQo": {
    "ctr": 8.9,
@@ -398,10 +398,10 @@
    "date": "2026-10-04"
   },
   "hqIVNoootfc": {
-   "ctr": 8.3,
-   "impr": 46000,
+   "ctr": 8.2,
+   "impr": 47000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-08"
   },
   "CmLASVI6wHs": {
    "ctr": 7.6,
@@ -429,15 +429,15 @@
   },
   "PkFgm1NB7HY": {
    "ctr": 3.9,
-   "impr": 514000,
+   "impr": 583000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-08"
   },
   "9wNUf_jztmM": {
    "ctr": 6.0,
-   "impr": 352000,
+   "impr": 369000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-08"
   },
   "v8TaNViPUBQ": {
    "ctr": 8.6,
@@ -450,6 +450,12 @@
    "impr": 52000,
    "src": "since_publish",
    "date": "2026-10-04"
+  },
+  "x1RwDsGxiVI": {
+   "ctr": 9.5,
+   "impr": 181000,
+   "src": "since_publish",
+   "date": "2026-10-08"
   }
  },
  "viewerMix": {
@@ -460,7 +466,7 @@
   "asOf": "2026-10-02"
  },
  "subsStudio": {
-  "n": 69772,
-  "date": "2026-10-04"
+  "n": 70132,
+  "date": "2026-10-08"
  }
 }
