@@ -32,6 +32,12 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: python fetch_rank.py || echo "rank fetch failed, keep cached rank.json"
+      - name: Fetch daily CTR (Reporting API, best-effort)
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python fetch_reach.py || echo "reach fetch failed, keep cached ctr_daily.json"
       - name: Apply to dashboard
         run: python apply_data.py docs/index.html
       - name: Commit & push（含重試：避免與人工推送競爭而丟失整輪更新）

@@ -90,6 +90,27 @@ EPS26 = {s["name"]: [{k: e.get(k) for k in ("id", "pub", "subs", "ev", "views", 
 repl(r"const EPS26 = \{.*?\};", "const EPS26 = " + j(EPS26) + ";")
 NEWRET = load("studio_newret.json", {"updated": "", "videos": {}})
 repl(r"const NEWRET = \{.*?\};\n", "const NEWRET = " + j({"updated": NEWRET.get("updated", ""), "videos": NEWRET.get("videos", {})}) + ";\n")
+# 逐日 CTR（Reporting API，見 fetch_reach.py）：每支影片以「上片第 N 天」對齊，最多 28 天
+from datetime import date as _date, timedelta as _td
+CD = load("ctr_daily.json", {"videos": {}})
+_ctrd = {}
+for _vid, _v in CD.get("videos", {}).items():
+    _ds = sorted(d for d, x in _v.get("d", {}).items() if x[0] > 0)
+    if not _ds:
+        continue
+    _pub, _first = _date.fromisoformat(_v["pub"]), _date.fromisoformat(_ds[0])
+    # 報表日期是美西時間、上片日是 UTC：首個有曝光的日期落在上片日 ±1 天內＝有抓到首日，以它當第 0 天；
+    # 否則（30 天回補沒涵蓋到上片日）以上片日近似第 0 天，並標記 p＝缺首日
+    _partial = _first > _pub + _td(days=1)
+    _launch = _pub if _partial else _first
+    _n = min((_date.fromisoformat(max(_v["d"])) - _launch).days + 1, 28)
+    _I, _C = [], []
+    for _k in range(_n):
+        _x = _v["d"].get((_launch + _td(days=_k)).isoformat())
+        _I.append(_x[0] if _x else 0)
+        _C.append(_x[1] if _x and _x[0] else None)
+    _ctrd[_vid] = {"s": _launch.isoformat(), "i": _I, "c": _C, **({"p": 1} if _partial else {})}
+repl(r"const CTRD = \{.*?\};\n", "const CTRD = " + j({"u": CD.get("latest", ""), "v": _ctrd}) + ";\n")
 # 3. 總量常數
 repl(r"const CHANNEL_TOTAL = [^;]+;",
      f"const CHANNEL_TOTAL = {ch['totalViews']}, TOTAL_2026 = {ch['views26']}, EV_LIFE = {ch.get('evLife') or 0}, EV_TOTAL_2026 = {ch.get('ev26') or 0};")
