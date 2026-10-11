@@ -1,4 +1,4 @@
-（2026-10-11 週報草稿，待 JL 確認後發 #team-thoughts）
+（2026-10-11 週報，JL 確認後已發 #team-thoughts：https://goodfinance.slack.com/archives/C013RJ72S3S/p1791724650952749）
 
 📊 **YouTube 週報 2026/10/11** · https://jl-goodfinance.github.io/goodfinance-yt-dashboard/
 
