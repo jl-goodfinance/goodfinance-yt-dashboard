@@ -76,7 +76,11 @@ repl(r"const RECENT = \{.*?\};", "const RECENT = " + j(recent) + ";")
 repl(r"const ADVICE = \{.*?\};\n", "const ADVICE = " + j(ADV) + ";\n")
 repl(r"const ANALYSIS = \{.*?\};\n", "const ANALYSIS = " + j(ANA) + ";\n")
 repl(r"const COMMENTS = \{.*?\};\n", "const COMMENTS = " + j(CMT) + ";\n")
-repl(r"const THUMBS = \{.*?\};\n", "const THUMBS = " + j(THUMBS) + ";\n")
+# 縮圖：GitHub Pages（docs/index.html）直接引用 YouTube 縮圖網址並延遲載入，頁面從 1.2 MB 降到約 130 KB；
+# 根目錄 goodfinance-yt-shows.html 給 artifact 用，artifact 安全政策擋外部圖片，維持 base64 內嵌
+PAGES = os.path.abspath(HTML) == os.path.join(BASE, "docs", "index.html")
+THUMB_SRC = {vid: f"https://i.ytimg.com/vi/{vid}/mqdefault.jpg" for vid in THUMBS} if PAGES else THUMBS
+repl(r"const THUMBS = \{.*?\};\n", "const THUMBS = " + j(THUMB_SRC) + ";\n")
 repl(r"const RANKS = \{.*?\};\n", "const RANKS = " + j(RANK) + ";\n")
 repl(r"const WEEKLY = \[.*?\];\n", "const WEEKLY = " + j(D.get("weekly", [])) + ";\n")
 repl(r"const SUBS_NOW = \d+;", f"const SUBS_NOW = {ch['subs']};")   # 公開值（Analytics 累計會因重算而回跳，不可靠）
