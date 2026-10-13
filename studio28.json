@@ -260,52 +260,52 @@
    "date": "2026-10-04"
   },
   "tahLffs4ZDE": {
-   "ctr": 8.8,
-   "impr": 55000,
+   "ctr": 8.7,
+   "impr": 57000,
    "src": "since_publish",
-   "date": "2026-10-08"
+   "date": "2026-10-13"
   },
   "4MSzaa8mUZU": {
-   "ctr": 8.2,
-   "impr": 65000,
+   "ctr": 7.8,
+   "impr": 73000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-13"
   },
   "wjIgB450-CE": {
-   "ctr": 8.9,
+   "ctr": 8.8,
    "impr": 50000,
    "src": "since_publish",
-   "date": "2026-10-08"
+   "date": "2026-10-13"
   },
   "rS9agSHxsnw": {
-   "ctr": 6.9,
+   "ctr": 6.8,
    "impr": 58000,
    "src": "since_publish",
-   "date": "2026-10-08"
+   "date": "2026-10-13"
   },
   "QAu3YX8J5hY": {
    "ctr": 6.6,
    "impr": 77000,
    "src": "since_publish",
-   "date": "2026-10-08"
+   "date": "2026-10-13"
   },
   "rO52MWadA0c": {
    "ctr": 8.5,
-   "impr": 103000,
+   "impr": 104000,
    "src": "since_publish",
-   "date": "2026-10-08"
+   "date": "2026-10-13"
   },
   "p1OuOyBkVNM": {
    "ctr": 6.9,
    "impr": 32000,
    "src": "since_publish",
-   "date": "2026-10-08"
+   "date": "2026-10-13"
   },
   "gDWv1d-hHSw": {
    "ctr": 7.3,
-   "impr": 61000,
+   "impr": 62000,
    "src": "since_publish",
-   "date": "2026-10-08"
+   "date": "2026-10-13"
   },
   "pzqWbNEmo68": {
    "ctr": 9.9,
@@ -374,22 +374,22 @@
    "date": "2026-10-04"
   },
   "SU05e_EDV6Q": {
-   "ctr": 7.9,
-   "impr": 30000,
+   "ctr": 7.4,
+   "impr": 33000,
    "src": "since_publish",
-   "date": "2026-10-04"
+   "date": "2026-10-13"
   },
   "RJsxtLp1SXs": {
-   "ctr": 8.0,
-   "impr": 81000,
+   "ctr": 7.9,
+   "impr": 83000,
    "src": "since_publish",
-   "date": "2026-10-08"
+   "date": "2026-10-13"
   },
   "iJOo86XGLlw": {
-   "ctr": 6.8,
-   "impr": 62000,
+   "ctr": 6.7,
+   "impr": 63000,
    "src": "since_publish",
-   "date": "2026-10-08"
+   "date": "2026-10-13"
   },
   "s5P4FVmAJQo": {
    "ctr": 8.9,
@@ -407,7 +407,7 @@
    "ctr": 8.2,
    "impr": 47000,
    "src": "since_publish",
-   "date": "2026-10-08"
+   "date": "2026-10-13"
   },
   "CmLASVI6wHs": {
    "ctr": 7.6,
@@ -434,16 +434,16 @@
    "date": "2026-10-04"
   },
   "PkFgm1NB7HY": {
-   "ctr": 3.9,
-   "impr": 583000,
+   "ctr": 3.7,
+   "impr": 675000,
    "src": "since_publish",
-   "date": "2026-10-08"
+   "date": "2026-10-13"
   },
   "9wNUf_jztmM": {
-   "ctr": 6.0,
-   "impr": 369000,
+   "ctr": 5.9,
+   "impr": 393000,
    "src": "since_publish",
-   "date": "2026-10-08"
+   "date": "2026-10-13"
   },
   "v8TaNViPUBQ": {
    "ctr": 8.6,
@@ -458,10 +458,34 @@
    "date": "2026-10-04"
   },
   "x1RwDsGxiVI": {
-   "ctr": 9.5,
-   "impr": 181000,
+   "ctr": 9.4,
+   "impr": 215000,
    "src": "since_publish",
-   "date": "2026-10-08"
+   "date": "2026-10-13"
+  },
+  "uALbXGyov90": {
+   "ctr": 7.7,
+   "impr": 51000,
+   "src": "since_publish",
+   "date": "2026-10-13"
+  },
+  "VvlO4mfBtjw": {
+   "ctr": 8.8,
+   "impr": 102000,
+   "src": "since_publish",
+   "date": "2026-10-13"
+  },
+  "TEWqdTxGoR0": {
+   "ctr": 7.8,
+   "impr": 31000,
+   "src": "since_publish",
+   "date": "2026-10-13"
+  },
+  "blacSH9Vcjc": {
+   "ctr": 6.9,
+   "impr": 82000,
+   "src": "since_publish",
+   "date": "2026-10-13"
   }
  },
  "viewerMix": {
@@ -472,8 +496,8 @@
   "asOf": "2026-10-10"
  },
  "subsStudio": {
-  "n": 70333,
-  "date": "2026-10-11"
+  "n": 70449,
+  "date": "2026-10-13"
  },
  "showsNote": "各節目 CTR＝近 30 天上片（2026/9/9–10/8）集數的 Studio「自發布至今」曝光加權；2026-10-08 起由每日逐支抓取彙整；無新片節目沿用前期值",
  "channelNote": "2026-10-11：Studio「內容」分頁曝光／CTR 卡片仍「系統發生錯誤」（10/8 起連兩次），頻道層曝光與 CTR 沿用 9/5–10/2；資訊主頁 28 天（9/13–10/10）：訂閱 +2,727、觀看 120.3 萬、每月觀眾 31.1 萬"
