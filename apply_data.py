@@ -83,7 +83,12 @@ THUMB_SRC = {vid: f"https://i.ytimg.com/vi/{vid}/mqdefault.jpg" for vid in THUMB
 repl(r"const THUMBS = \{.*?\};\n", "const THUMBS = " + j(THUMB_SRC) + ";\n")
 repl(r"const RANKS = \{.*?\};\n", "const RANKS = " + j(RANK) + ";\n")
 repl(r"const WEEKLY = \[.*?\];\n", "const WEEKLY = " + j(D.get("weekly", [])) + ";\n")
-repl(r"const SUBS_NOW = \d+;", f"const SUBS_NOW = {ch['subs']};")   # 公開值（Analytics 累計會因重算而回跳，不可靠）
+# 訂閱數：Studio 精確值 2 天內有更新就用它，否則退回 YouTube 公開值（三位有效數字）
+from datetime import date as _d0
+_SS = S28.get("subsStudio") or {}
+SUBS_EXACT = bool(_SS.get("n")) and (_d0.today() - _d0.fromisoformat(_SS["date"])).days <= 2
+SUBS_SHOW = _SS["n"] if SUBS_EXACT else ch["subs"]
+repl(r"const SUBS_NOW = \d+;", f"const SUBS_NOW = {SUBS_SHOW};")   # 不用 Analytics 累計（會因重算而回跳，不可靠）
 import time as _time
 _TS = int(_time.time())
 repl(r"const BUILD_TS = \d+;", f"const BUILD_TS = {_TS};")
@@ -126,8 +131,8 @@ VM = S28.get("viewerMix", {})
 kpis = f'''<div class="kpis">
     <div class="card kpi hero">
       <div class="label">訂閱數</div>
-      <div class="num">{ch["subs"]:,}</div>
-      <div class="foot">YouTube 公開值（三位有效數字、可能延遲數小時）{("· Studio 精確 " + format(S28["subsStudio"]["n"], ",") + "（" + S28["subsStudio"]["date"][5:].replace("-", "/") + "）") if S28.get("subsStudio") else "· Studio 後台精確值僅登入可見"}</div>
+      <div class="num">{SUBS_SHOW:,}</div>
+      <div class="foot">{("Studio 精確值（" + _SS["date"][5:].replace("-", "/") + " 更新）· YouTube 公開值 " + format(ch["subs"], ",")) if SUBS_EXACT else ("YouTube 公開值（三位有效數字、可能延遲數小時）" + ("· Studio 精確 " + format(_SS["n"], ",") + "（" + _SS["date"][5:].replace("-", "/") + "）" if _SS.get("n") else "· Studio 後台精確值僅登入可見"))}</div>
     </div>
     <div class="card kpi hero">
       <div class="label">總觀看數</div>
