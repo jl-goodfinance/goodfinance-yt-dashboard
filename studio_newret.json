@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17",
+ "updated": "2026-10-22",
  "note": "Studio 逐支影片『非重複觀眾人數·自上傳至今』的新觀眾%；Studio 僅提供上傳約 10 天以上、90 天內且資料量足夠者。2026-09-28：影片層新／回訪觀眾卡片恢復正常（9/13–9/20 連續三週故障後），本週重抓 22 支（五檔主節目 8/27 以後上片＋GI/GI 近期集）；超過 90 天者（如 6/29 NVIDIA 集）Studio 顯示「觀眾資料不足」已移除；其餘未重抓者沿用 2026-09-13 值。 2026-10-01：Chrome 內 social@ 的 Studio 工作階段已失效（authuser 連結跳到無效頁），只剩 JL 管理員帳號的 Studio，影片層數據分析整頁報「系統發生錯誤」、訂閱欄顯示「—」，本週無法重抓；全部沿用 9/28 值（9/21 之後上片的 GM 七支與 Good Income EP3 尚無資料）。 2026-10-04：Chrome 內仍只有 JL 管理員帳號的 Studio 工作階段（影片層數據分析報「系統發生錯誤」），本週再次無法重抓，全部沿用 9/28 值；頻道層（曝光／CTR／觀眾組成／精確訂閱）可讀。 2026-10-04（下午）：JL 在 Chrome 重新登入 social@，影片層新觀眾卡恢復；用 studio_newret_scrape.js（隱藏 iframe 6 支並行）補抓 31 支（GM 7/13–9/29 缺漏集＋Good Income EP3），全部有值。 2026-10-17：JL 重新登入 social@ 後，用帶 ?authuser=social@goodfinance.com 的影片層網址（隱藏 iframe）補抓 4 支：Figure 集 7.7%、特輯 11.3%、Hank 集 27.3%、55 歲集 10.1%；其餘沿用 10/14 值。",
  "videos": {
   "r9G5H6KweXA": 3.6,
@@ -92,6 +92,11 @@
   "TEWqdTxGoR0": 8.3,
   "x1RwDsGxiVI": 11.3,
   "4MSzaa8mUZU": 10,
-  "nyNC4vGZmW0": 7.7
+  "nyNC4vGZmW0": 7.7,
+  "moR-m8s7KA8": 10,
+  "Iqb4xtxYJLI": 6.8,
+  "7xd2oIE0Ro8": 12.1,
+  "Fxh0r9DUUhM": 22.5,
+  "aTcsW62HWwc": 6.6
  }
 }

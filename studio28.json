@@ -260,16 +260,16 @@
    "date": "2026-10-04"
   },
   "tahLffs4ZDE": {
-   "ctr": 8.7,
-   "impr": 57000,
+   "ctr": 8.6,
+   "impr": 58000,
    "src": "since_publish",
-   "date": "2026-10-14"
+   "date": "2026-10-22"
   },
   "4MSzaa8mUZU": {
    "ctr": 7.8,
    "impr": 73000,
    "src": "since_publish",
-   "date": "2026-10-14"
+   "date": "2026-10-22"
   },
   "wjIgB450-CE": {
    "ctr": 8.8,
@@ -374,22 +374,22 @@
    "date": "2026-10-04"
   },
   "SU05e_EDV6Q": {
-   "ctr": 7.4,
+   "ctr": 7.3,
    "impr": 34000,
    "src": "since_publish",
-   "date": "2026-10-14"
+   "date": "2026-10-22"
   },
   "RJsxtLp1SXs": {
    "ctr": 7.9,
-   "impr": 83000,
+   "impr": 84000,
    "src": "since_publish",
-   "date": "2026-10-14"
+   "date": "2026-10-22"
   },
   "iJOo86XGLlw": {
    "ctr": 6.7,
-   "impr": 63000,
+   "impr": 64000,
    "src": "since_publish",
-   "date": "2026-10-14"
+   "date": "2026-10-22"
   },
   "s5P4FVmAJQo": {
    "ctr": 8.9,
@@ -440,10 +440,10 @@
    "date": "2026-10-17"
   },
   "9wNUf_jztmM": {
-   "ctr": 5.9,
-   "impr": 395000,
+   "ctr": 5.8,
+   "impr": 422000,
    "src": "since_publish",
-   "date": "2026-10-14"
+   "date": "2026-10-22"
   },
   "v8TaNViPUBQ": {
    "ctr": 8.6,
@@ -459,57 +459,81 @@
   },
   "x1RwDsGxiVI": {
    "ctr": 9.3,
-   "impr": 226000,
+   "impr": 230000,
    "src": "since_publish",
-   "date": "2026-10-17"
+   "date": "2026-10-22"
   },
   "uALbXGyov90": {
-   "ctr": 7.7,
-   "impr": 51000,
+   "ctr": 7.6,
+   "impr": 52000,
    "src": "since_publish",
-   "date": "2026-10-14"
+   "date": "2026-10-22"
   },
   "VvlO4mfBtjw": {
-   "ctr": 8.8,
-   "impr": 102000,
+   "ctr": 8.7,
+   "impr": 103000,
    "src": "since_publish",
-   "date": "2026-10-14"
+   "date": "2026-10-22"
   },
   "TEWqdTxGoR0": {
-   "ctr": 7.8,
-   "impr": 32000,
+   "ctr": 7.6,
+   "impr": 33000,
    "src": "since_publish",
-   "date": "2026-10-14"
+   "date": "2026-10-22"
   },
   "blacSH9Vcjc": {
-   "ctr": 6.9,
-   "impr": 82000,
+   "ctr": 6.8,
+   "impr": 84000,
    "src": "since_publish",
-   "date": "2026-10-14"
+   "date": "2026-10-22"
   },
   "nyNC4vGZmW0": {
-   "ctr": 8.0,
+   "ctr": 7.9,
    "impr": 70000,
    "src": "since_publish",
-   "date": "2026-10-17"
+   "date": "2026-10-22"
   },
   "7xd2oIE0Ro8": {
-   "ctr": 7.2,
-   "impr": 54000,
+   "ctr": 7.1,
+   "impr": 57000,
    "src": "since_publish",
-   "date": "2026-10-17"
+   "date": "2026-10-22"
   },
   "aTcsW62HWwc": {
-   "ctr": 7.9,
-   "impr": 39000,
+   "ctr": 7.7,
+   "impr": 42000,
    "src": "since_publish",
-   "date": "2026-10-17"
+   "date": "2026-10-22"
   },
   "Fxh0r9DUUhM": {
-   "ctr": 7.3,
-   "impr": 89000,
+   "ctr": 7.2,
+   "impr": 95000,
    "src": "since_publish",
-   "date": "2026-10-17"
+   "date": "2026-10-22"
+  },
+  "moR-m8s7KA8": {
+   "ctr": 6.2,
+   "impr": 86000,
+   "src": "since_publish",
+   "date": "2026-10-22"
+  },
+  "XX0ovWBeiDQ": {
+   "ctr": 7.8,
+   "impr": 80000,
+   "src": "since_publish",
+   "date": "2026-10-22"
+  },
+  "4P6OItGsAss": {
+   "ctr": 6.5,
+   "impr": 52000,
+   "src": "since_publish",
+   "date": "2026-10-22"
+  },
+  "Iqb4xtxYJLI": {
+   "ctr": 9.0,
+   "impr": 125000,
+   "src": "since_publish",
+   "date": "2026-10-22"
   }
  },
  "viewerMix": {
@@ -520,8 +544,8 @@
   "asOf": "2026-10-16"
  },
  "subsStudio": {
-  "n": 70712,
-  "date": "2026-10-17"
+  "n": 70894,
+  "date": "2026-10-22"
  },
  "showsNote": "各節目 CTR＝近 30 天上片（2026/9/17–10/15）集數的 Studio「自發布至今」曝光加權；2026-10-08 起由每日逐支抓取彙整；無新片節目（Good Invest、Good Income）沿用前期值",
  "channelNote": "2026-10-17：Studio「內容」分頁曝光／CTR 卡片恢復可讀（10/8、10/11 兩次報錯後）。28 天（9/19–10/16）：縮圖曝光 443.3 萬、點閱率 5.8%、因曝光產生的互動觀看 25.9 萬（平均 6:10）；觀看 91.6 萬（影片 80.1 萬／Shorts 11.3 萬）、觀看時間 4.2 萬小時、訂閱 +2,238（影片 +1,992／Shorts +50；Studio 判定「比平常少 362」，一般 2,600–3,700）；新觀眾 影片 6 萬／Shorts 1.4 萬、一般觀眾 影片 3.5 萬；流量：瀏覽 74.3%、推薦 11.8%、搜尋 3.9%、外部 3.3%、Shorts 推薦 2.4%；上期（9/5–10/2）曝光 641.2 萬、CTR 6.5%；28 天觀看性別：女 27.9%（10/10 32.4%、10/7 34.3%、10/2 37.1%）、45–54 歲 27.4%、55–64 歲 26.5%；未訂閱者觀看時間 70.7%；每月觀眾 23.1 萬（10/10 31.1 萬、10/2 35.9 萬），觀眾組成 新 38.1／游離 45.1／一般 16.8；推動成長：退休集「非常高」、美債 EP2「高」、正2／Hank／1.4 奈米「中」；新觀眾最多：退休集 7.8 萬、Amy 姐 Shorts 2.7 萬、Hank 2.2 萬、55 歲集 2.2 萬、009816 1.6 萬"
