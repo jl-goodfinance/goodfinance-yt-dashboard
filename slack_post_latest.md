@@ -1,4 +1,4 @@
-（2026-10-23 週報，發 #team-thoughts 版本）
+（2026-10-23 週報，已發 #team-thoughts：https://goodfinance.slack.com/archives/C013RJ72S3S/p1792731007699129）
 
 📊 **YouTube 週報 2026/10/23** · https://jl-goodfinance.github.io/goodfinance-yt-dashboard/
 
