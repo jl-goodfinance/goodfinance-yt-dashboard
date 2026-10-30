@@ -45,6 +45,7 @@ for s in D["shows"]:
         "subs": [s["subs"], s["subs26"]],
         "dur": [fmt_dur(s["dur"]), fmt_dur(s["dur26"])],
         "ctr28": S28["shows"].get(name, {}).get("ctr"),
+        "impr28": S28["shows"].get(name, {}).get("impr"),   # 與 ctr28 同一批集數的縮圖曝光
         "topctr": S28["shows"].get(name, {}).get("topctr"),
         "top": s["top"]["title"], "topv": s["top"]["views"], "topid": s["top"]["id"],
         "top26": s["top26"],
@@ -53,6 +54,7 @@ for s in D["shows"]:
     shows_js.append("  {" + fields + "}")
     for r in s["recent"]:
         r["ctr28"] = S28["videos"].get(r["id"], {}).get("ctr")
+        r["impr"] = S28["videos"].get(r["id"], {}).get("impr")   # Studio 自發布至今縮圖曝光（與 ctr28 同一筆）
     recent[name] = s["recent"]
 
 ch = D["channel"]
