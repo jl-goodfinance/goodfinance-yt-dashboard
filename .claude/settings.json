@@ -1,0 +1,5 @@
+{
+  "permissions": {
+    "allow": ["Bash(python3 -I build_cac.py)"]
+  }
+}
