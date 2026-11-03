@@ -90,6 +90,7 @@ from datetime import date as _d0
 _SS = S28.get("subsStudio") or {}
 SUBS_EXACT = bool(_SS.get("n")) and (_d0.today() - _d0.fromisoformat(_SS["date"])).days <= 2
 SUBS_SHOW = _SS["n"] if SUBS_EXACT else ch["subs"]
+_SS_WHEN = (_SS["date"][5:].replace("-", "/") + (" " + _SS["time"] if _SS.get("time") else "")) if _SS.get("date") else ""   # 一天多輪更新，附抓取時間
 repl(r"const SUBS_NOW = \d+;", f"const SUBS_NOW = {SUBS_SHOW};")   # 不用 Analytics 累計（會因重算而回跳，不可靠）
 import time as _time
 _TS = int(_time.time())
@@ -134,7 +135,7 @@ kpis = f'''<div class="kpis">
     <div class="card kpi hero">
       <div class="label">訂閱數</div>
       <div class="num">{SUBS_SHOW:,}</div>
-      <div class="foot">{("Studio 精確值（" + _SS["date"][5:].replace("-", "/") + " 更新）· YouTube 公開值 " + format(ch["subs"], ",")) if SUBS_EXACT else ("YouTube 公開值（三位有效數字、可能延遲數小時）" + ("· Studio 精確 " + format(_SS["n"], ",") + "（" + _SS["date"][5:].replace("-", "/") + "）" if _SS.get("n") else "· Studio 後台精確值僅登入可見"))}</div>
+      <div class="foot">{("Studio 精確值（" + _SS_WHEN + " 更新）· YouTube 公開值 " + format(ch["subs"], ",")) if SUBS_EXACT else ("YouTube 公開值（三位有效數字、可能延遲數小時）" + ("· Studio 精確 " + format(_SS["n"], ",") + "（" + _SS_WHEN + "）" if _SS.get("n") else "· Studio 後台精確值僅登入可見"))}</div>
     </div>
     <div class="card kpi hero">
       <div class="label">總觀看數</div>
