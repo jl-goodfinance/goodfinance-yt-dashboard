@@ -1,620 +1,620 @@
 {
-  "period": "2026/10/3–2026/10/30",
-  "channel": {
-    "impressions": 3081480,
-    "ctr": 6.1,
-    "views28": 622000,
-    "period": "2026-10-03~2026-10-30"
+ "period": "2026/10/3–2026/10/30",
+ "channel": {
+  "impressions": 3081480,
+  "ctr": 6.1,
+  "views28": 622000,
+  "period": "2026-10-03~2026-10-30"
+ },
+ "shows": {
+  "Better Living 美好生活": {
+   "impr": 422000,
+   "videos": 1,
+   "ctr": 5.8,
+   "topctr": {
+    "id": "9wNUf_jztmM",
+    "title": "55 歲我還在學理財！只靠工作收入，退休夠用嗎？我不可能幫孩子理財一輩子！",
+    "ctr": 5.8,
+    "views": 87456
+   }
   },
-  "shows": {
-    "Better Living 美好生活": {
-      "impr": 422000,
-      "videos": 1,
-      "ctr": 5.8,
-      "topctr": {
-        "id": "9wNUf_jztmM",
-        "title": "55 歲我還在學理財！只靠工作收入，退休夠用嗎？我不可能幫孩子理財一輩子！",
-        "ctr": 5.8,
-        "views": 87456
-      }
-    },
-    "Good Invest 美好投資": {
-      "impr": 120000,
-      "videos": 1,
-      "ctr": 6.3,
-      "topctr": {
-        "id": "Pizxa8HVRWI",
-        "title": "AI多頭還會繼續？選舉將至，美國的佈局才剛開始 ft. 債券天后 顧姐｜EP37",
-        "ctr": 6.3,
-        "views": 22746
-      }
-    },
-    "Entrepreneurship": {
-      "impr": 703000,
-      "videos": 1,
-      "ctr": 3.7,
-      "topctr": {
-        "id": "PkFgm1NB7HY",
-        "title": "「買好資產，就是跟時間做朋友！」美好證券董事長 Hank 深度導讀：巴菲特如何從",
-        "ctr": 3.7,
-        "views": 78158
-      }
-    },
-    "Good Morning 美好": {
-      "impr": 1447000,
-      "videos": 20,
-      "ctr": 7.9,
-      "topctr": {
-        "id": "Tb0l_cjiV08",
-        "title": "傳台積電 CoWoS 報價喊漲 2 成、採購罕見完全不砍價！後段封裝產能到底有多",
-        "ctr": 9.3,
-        "views": 12842
-      }
-    },
-    "Good Income": {
-      "impr": 218000,
-      "videos": 1,
-      "ctr": 5.1,
-      "topctr": {
-        "id": "FL5YdkNX6-0",
-        "title": "退休月領 10 萬！先搞懂錢放哪，才能穩穩領一輩子｜EP3",
-        "ctr": 5.1,
-        "views": 43127
-      }
-    }
+  "Good Invest 美好投資": {
+   "impr": 120000,
+   "videos": 1,
+   "ctr": 6.3,
+   "topctr": {
+    "id": "Pizxa8HVRWI",
+    "title": "AI多頭還會繼續？選舉將至，美國的佈局才剛開始 ft. 債券天后 顧姐｜EP37",
+    "ctr": 6.3,
+    "views": 22746
+   }
   },
-  "videos": {
-    "GIEKO1DQMsU": {
-      "ctr": 7.2,
-      "impr": 698797
-    },
-    "7iFxcXD2Ru8": {
-      "ctr": 5.4,
-      "impr": 502562
-    },
-    "g_17YMQRXvI": {
-      "ctr": 5.7,
-      "impr": 494484
-    },
-    "rhj-cJfMdy0": {
-      "ctr": 4.1,
-      "impr": 277515
-    },
-    "ZAQe284luAE": {
-      "ctr": 6.9,
-      "impr": 227494
-    },
-    "iafFE0iEXtE": {
-      "ctr": 6.6,
-      "impr": 165287
-    },
-    "I79Z8p8wTFk": {
-      "ctr": 7.8,
-      "impr": 157272
-    },
-    "KS5UEKlrezA": {
-      "ctr": 6.8,
-      "impr": 150485
-    },
-    "h6KX7WXkfzU": {
-      "ctr": 8.0,
-      "impr": 139948
-    },
-    "pNPMEDoIhrw": {
-      "ctr": 8.6,
-      "impr": 124152
-    },
-    "MB6NF35pI9c": {
-      "ctr": 6.2,
-      "impr": 105442
-    },
-    "egqD41-P6Jg": {
-      "ctr": 10.2,
-      "impr": 96423
-    },
-    "8d3huL8b4Ng": {
-      "ctr": 10.0,
-      "impr": 89784
-    },
-    "vMn0bPtsKVo": {
-      "ctr": 7.7,
-      "impr": 76203
-    },
-    "szWe052Mlp8": {
-      "ctr": 8.5,
-      "impr": 72768
-    },
-    "QFeNsNMzIMo": {
-      "ctr": 8.9,
-      "impr": 58690
-    },
-    "pP3UCseTJxc": {
-      "ctr": 8.0,
-      "impr": 56174
-    },
-    "JHLiFF3j4aw": {
-      "ctr": 6.7,
-      "impr": 53335
-    },
-    "bbKNIG79Izk": {
-      "ctr": 8.9,
-      "impr": 46726
-    },
-    "64uzCevRsrM": {
-      "ctr": 11.3,
-      "impr": 45956
-    },
-    "1Jov9OQ6QO0": {
-      "ctr": 7.6,
-      "impr": 45478
-    },
-    "XbUBQEHehVs": {
-      "ctr": 10.7,
-      "impr": 43004
-    },
-    "McXYAe9KvWc": {
-      "ctr": 9.3,
-      "impr": 42166
-    },
-    "W2fmpAPLWi0": {
-      "ctr": 10.0,
-      "impr": 41418
-    },
-    "mNHUpX2VleA": {
-      "ctr": 9.3,
-      "impr": 41113
-    },
-    "aLSX2SYQ12Y": {
-      "ctr": 9.8,
-      "impr": 39189
-    },
-    "3r6uOwTqP_Y": {
-      "ctr": 9.1,
-      "impr": 36989
-    },
-    "0y81JOe5BTE": {
-      "ctr": 6.6,
-      "impr": 36385
-    },
-    "0UMcpRWKOpw": {
-      "ctr": 7.2,
-      "impr": 28371
-    },
-    "44mxk7UgAsI": {
-      "ctr": 6.9,
-      "impr": 26709
-    },
-    "NlcW0mxBPNw": {
-      "ctr": 4.6,
-      "impr": 23881
-    },
-    "65MMo6_gA5Y": {
-      "ctr": 5.3,
-      "impr": 22434
-    },
-    "JLNoq73XD78": {
-      "ctr": 6.7,
-      "impr": 21692
-    },
-    "DPhdD5_FsF4": {
-      "ctr": 4.4,
-      "impr": 19970
-    },
-    "C0YeArPX8NE": {
-      "ctr": 8.4,
-      "impr": 14295
-    },
-    "-3iFkurES4Y": {
-      "ctr": 11.5,
-      "impr": 12536
-    },
-    "xa0ZyGtqz4k": {
-      "ctr": 7.2,
-      "impr": 10639
-    },
-    "wNnnv517yjE": {
-      "ctr": 1.8,
-      "impr": 10278
-    },
-    "FRP7s6r6SQM": {
-      "ctr": 8.2,
-      "impr": 7707
-    },
-    "vJVAPN63VNc": {
-      "ctr": 3.7,
-      "impr": 7582
-    },
-    "3hWck9jTXcw": {
-      "ctr": 6.4,
-      "impr": 6822
-    },
-    "-nMoZvQAGMo": {
-      "ctr": 3.7,
-      "impr": 6373
-    },
-    "8cB1BlwWBPY": {
-      "ctr": 3.6,
-      "impr": 4096
-    },
-    "_XxKcsDBZrw": {
-      "ctr": 7.8,
-      "impr": 32000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "RAkGFgdlAAg": {
-      "ctr": 7.5,
-      "impr": 68000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "-IpIfh-dD1Y": {
-      "ctr": 8.1,
-      "impr": 56000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "DysNnVojwsg": {
-      "ctr": 8.6,
-      "impr": 29000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "tahLffs4ZDE": {
-      "ctr": 8.6,
-      "impr": 58000,
-      "src": "since_publish",
-      "date": "2026-10-30"
-    },
-    "4MSzaa8mUZU": {
-      "ctr": 7.8,
-      "impr": 74000,
-      "src": "since_publish",
-      "date": "2026-10-28"
-    },
-    "wjIgB450-CE": {
-      "ctr": 8.8,
-      "impr": 50000,
-      "src": "since_publish",
-      "date": "2026-10-14"
-    },
-    "rS9agSHxsnw": {
-      "ctr": 6.8,
-      "impr": 58000,
-      "src": "since_publish",
-      "date": "2026-10-14"
-    },
-    "QAu3YX8J5hY": {
-      "ctr": 6.6,
-      "impr": 77000,
-      "src": "since_publish",
-      "date": "2026-10-14"
-    },
-    "rO52MWadA0c": {
-      "ctr": 8.5,
-      "impr": 104000,
-      "src": "since_publish",
-      "date": "2026-10-14"
-    },
-    "p1OuOyBkVNM": {
-      "ctr": 6.9,
-      "impr": 32000,
-      "src": "since_publish",
-      "date": "2026-10-13"
-    },
-    "gDWv1d-hHSw": {
-      "ctr": 7.3,
-      "impr": 62000,
-      "src": "since_publish",
-      "date": "2026-10-14"
-    },
-    "pzqWbNEmo68": {
-      "ctr": 9.9,
-      "impr": 217000,
-      "src": "since_publish",
-      "date": "2026-10-08"
-    },
-    "b3t0vTvWXss": {
-      "ctr": 8.6,
-      "impr": 138000,
-      "src": "since_publish",
-      "date": "2026-10-08"
-    },
-    "ZhKPCV8pd-o": {
-      "ctr": 7.2,
-      "impr": 40000,
-      "src": "since_publish",
-      "date": "2026-10-08"
-    },
-    "Zs3Qcyo-PbM": {
-      "ctr": 10.7,
-      "impr": 147000,
-      "src": "since_publish",
-      "date": "2026-10-08"
-    },
-    "rqadvGCJfUA": {
-      "ctr": 7.9,
-      "impr": 70000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "BN2icqAp6NU": {
-      "ctr": 9.7,
-      "impr": 56000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "7bgYJpcOspk": {
-      "ctr": 6.8,
-      "impr": 33000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "IzAgC9zGKe0": {
-      "ctr": 10.1,
-      "impr": 150000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "x6Nv9-M_G7U": {
-      "ctr": 6.7,
-      "impr": 32000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "gAN6UkRg6T4": {
-      "ctr": 8.2,
-      "impr": 108000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "d1oSSTNmz-s": {
-      "ctr": 8.8,
-      "impr": 74000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "SU05e_EDV6Q": {
-      "ctr": 7.2,
-      "impr": 34000,
-      "src": "since_publish",
-      "date": "2026-10-28"
-    },
-    "RJsxtLp1SXs": {
-      "ctr": 7.8,
-      "impr": 84000,
-      "src": "since_publish",
-      "date": "2026-10-25"
-    },
-    "iJOo86XGLlw": {
-      "ctr": 6.7,
-      "impr": 64000,
-      "src": "since_publish",
-      "date": "2026-10-22"
-    },
-    "s5P4FVmAJQo": {
-      "ctr": 8.9,
-      "impr": 115000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "XkDyD08uedI": {
-      "ctr": 5.6,
-      "impr": 108000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "hqIVNoootfc": {
-      "ctr": 8.2,
-      "impr": 47000,
-      "src": "since_publish",
-      "date": "2026-10-14"
-    },
-    "CmLASVI6wHs": {
-      "ctr": 7.6,
-      "impr": 40000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "KF0VLj1dNhk": {
-      "ctr": 5.0,
-      "impr": 44000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "oj17_P9Z6_U": {
-      "ctr": 6.7,
-      "impr": 2875000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "FL5YdkNX6-0": {
-      "ctr": 5.1,
-      "impr": 218000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "PkFgm1NB7HY": {
-      "ctr": 3.7,
-      "impr": 703000,
-      "src": "since_publish",
-      "date": "2026-10-17"
-    },
-    "9wNUf_jztmM": {
-      "ctr": 5.8,
-      "impr": 422000,
-      "src": "since_publish",
-      "date": "2026-10-22"
-    },
-    "v8TaNViPUBQ": {
-      "ctr": 8.6,
-      "impr": 33000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "ElH8TTbk0u4": {
-      "ctr": 8.6,
-      "impr": 52000,
-      "src": "since_publish",
-      "date": "2026-10-04"
-    },
-    "x1RwDsGxiVI": {
-      "ctr": 9.3,
-      "impr": 232000,
-      "src": "since_publish",
-      "date": "2026-10-31"
-    },
-    "uALbXGyov90": {
-      "ctr": 7.6,
-      "impr": 53000,
-      "src": "since_publish",
-      "date": "2026-11-03"
-    },
-    "VvlO4mfBtjw": {
-      "ctr": 8.7,
-      "impr": 103000,
-      "src": "since_publish",
-      "date": "2026-11-02"
-    },
-    "TEWqdTxGoR0": {
-      "ctr": 7.4,
-      "impr": 34000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    },
-    "blacSH9Vcjc": {
-      "ctr": 6.8,
-      "impr": 85000,
-      "src": "since_publish",
-      "date": "2026-11-04"
-    },
-    "nyNC4vGZmW0": {
-      "ctr": 7.8,
-      "impr": 71000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    },
-    "7xd2oIE0Ro8": {
-      "ctr": 6.9,
-      "impr": 58000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    },
-    "aTcsW62HWwc": {
-      "ctr": 7.7,
-      "impr": 44000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    },
-    "Fxh0r9DUUhM": {
-      "ctr": 7.1,
-      "impr": 98000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    },
-    "moR-m8s7KA8": {
-      "ctr": 6.2,
-      "impr": 95000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    },
-    "XX0ovWBeiDQ": {
-      "ctr": 7.6,
-      "impr": 89000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    },
-    "4P6OItGsAss": {
-      "ctr": 6.2,
-      "impr": 56000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    },
-    "Iqb4xtxYJLI": {
-      "ctr": 8.9,
-      "impr": 130000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    },
-    "sSVlhAiG3bA": {
-      "ctr": 5.8,
-      "impr": 54000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    },
-    "-gGbmhvW52M": {
-      "ctr": 7.4,
-      "impr": 43000,
-      "src": "since_publish",
-      "date": "2026-11-04"
-    },
-    "24iMDBM3-Mw": {
-      "ctr": 7.3,
-      "impr": 39000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    },
-    "Tb0l_cjiV08": {
-      "ctr": 9.1,
-      "impr": 49000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    },
-    "e-A_BKDBBIs": {
-      "ctr": 7.2,
-      "impr": 38000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    },
-    "_0nI4vtrx0s": {
-      "ctr": 10.9,
-      "impr": 11000,
-      "src": "since_publish",
-      "date": "2026-11-04"
-    },
-    "JBaJlvN4Bj8": {
-      "ctr": 7.1,
-      "impr": 38000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    },
-    "Pizxa8HVRWI": {
-      "ctr": 5.7,
-      "impr": 513000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    },
-    "Zn9lGEOU3P8": {
-      "ctr": 7.9,
-      "impr": 69000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    },
-    "RvaqKB8UcJo": {
-      "ctr": 7.4,
-      "impr": 70000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    },
-    "uoQeeM6PL5A": {
-      "ctr": 6.8,
-      "impr": 64000,
-      "src": "since_publish",
-      "date": "2026-11-05"
-    }
+  "Entrepreneurship": {
+   "impr": 703000,
+   "videos": 1,
+   "ctr": 3.7,
+   "topctr": {
+    "id": "PkFgm1NB7HY",
+    "title": "「買好資產，就是跟時間做朋友！」美好證券董事長 Hank 深度導讀：巴菲特如何從",
+    "ctr": 3.7,
+    "views": 78158
+   }
   },
-  "viewerMix": {
-    "new": 34.5,
-    "casual": 45.6,
-    "regular": 19.9,
-    "monthly": 166000,
-    "asOf": "2026-10-30"
+  "Good Morning 美好": {
+   "impr": 1447000,
+   "videos": 20,
+   "ctr": 7.9,
+   "topctr": {
+    "id": "Tb0l_cjiV08",
+    "title": "傳台積電 CoWoS 報價喊漲 2 成、採購罕見完全不砍價！後段封裝產能到底有多",
+    "ctr": 9.3,
+    "views": 12842
+   }
   },
-  "subsStudio": {
-    "n": 72371,
-    "date": "2026-11-05",
-    "time": "20:01"
+  "Good Income": {
+   "impr": 218000,
+   "videos": 1,
+   "ctr": 5.1,
+   "topctr": {
+    "id": "FL5YdkNX6-0",
+    "title": "退休月領 10 萬！先搞懂錢放哪，才能穩穩領一輩子｜EP3",
+    "ctr": 5.1,
+    "views": 43127
+   }
+  }
+ },
+ "videos": {
+  "GIEKO1DQMsU": {
+   "ctr": 7.2,
+   "impr": 698797
   },
-  "showsNote": "各節目 CTR＝近 30 天上片（10/02–10/30）集數的 Studio「自發布至今」曝光加權（2026-11-01 每日任務重抓 20 支；GM 排除 10/29 已轉私人的首版）；Good Invest 本週只有 EP37 顧姐一支；無新片節目（Better Living 美好生活、Good Income、Entrepreneurship）沿用前期值",
-  "channelNote": "2026-11-01：Studio 28 天（10/3–10/30）：縮圖曝光 308.1 萬、點閱率 6.1%（上期 10/1–10/28 329.4 萬＠6.1%；再上期 372.2 萬＠6.0%；Studio 標「與前 28 天相比少 47%」）、平均觀看時間 6:48；觀看 68.6 萬「與平常差不多」（一般 33 萬–70.6 萬；內容分頁全部 62.2 萬「比平常多 5.1 萬」、一般 29.8–57.1 萬；上期 69.8 萬）、觀看時間 3.4 萬小時（一般 3.0–5.1 萬）、訂閱 +1,557「比平常少 1,043」（一般 2,600–3,800；上期 +1,616 少 984、再上期 +1,871 少 729）；流量來源 瀏覽 75.9%／推薦 14.3%／搜尋 5.0%／直接 1.3%／頻道頁 1.0%；訂閱者觀看時間 32.9%（未訂閱 67.1%）；28 天性別 男 77.6%／女 22.4%，45 歲以上 68.3%；裝置 手機 53.6%／電視 19.1%／電腦 18.6%／平板 8.7%；台灣 84.5%。28 天熱門：退休集 70,373（4:08／30.0%）、估值特輯 60,069（5:36／38.5%）、魏哲家集 34,006、009816 集 33,660、Terafab 集 28,055、蘇姿丰集 23,547、55 歲集 23,307、長鑫集 23,006、南亞科集 21,464、歐積電集 21,183。開場續看率：記憶體集 73%、A14 集 72%（高於一般）；55 歲集 62%、魏哲家集 62%、南亞科 56%、Hank 集 46%（低於一般）。觀眾分頁（10/30）：每月觀眾 16.6 萬（10/28 17 萬、10/23 19.3 萬、10/16 23.1 萬、10/10 31.1 萬），組成 新 34.5／游離 45.6／一般 19.9；推動觀眾成長（90 天）：退休集「非常高」、美債 EP2「中」、Hank 集「中」，其餘中／低；依觀眾熱門：新觀眾 退休集 3.9 萬、估值特輯 9,670、Hank 集 7,811；觀眾也看頻道：風傳媒、關我什麼事、非凡、游庭皓、CMoney；觀眾 7 天在看：風傳媒〈46000 是最後逃命波？阮慕驊〉39.1 萬、游庭皓 10/27 18.8 萬、財訊老謝開講 58.8 萬；觀眾在線高峰 每天晚上 7–10 點、週五白天也高；鈴鐺全部通知 10.1%。即時：訂閱 71,298（11/1 07:30）、48 小時觀看 60,696，其中顧姐 EP37 25,894、Intel 特輯 11,227、邁威爾集 7,838。最新 Intel 特輯上傳 17 小時：觀看 1.1 萬（一般 9,100–1.4 萬）、CTR 8.3%、平均觀看 5:27（一般 5:43–6:09，Studio 標「點閱率高但觀看時間短」）。本週 GM 五支（10/27–10/31，10/31 為週六特輯）、Good Invest EP37 顧姐 10/30 結束 59 天空窗。"
+  "7iFxcXD2Ru8": {
+   "ctr": 5.4,
+   "impr": 502562
+  },
+  "g_17YMQRXvI": {
+   "ctr": 5.7,
+   "impr": 494484
+  },
+  "rhj-cJfMdy0": {
+   "ctr": 4.1,
+   "impr": 277515
+  },
+  "ZAQe284luAE": {
+   "ctr": 6.9,
+   "impr": 227494
+  },
+  "iafFE0iEXtE": {
+   "ctr": 6.6,
+   "impr": 165287
+  },
+  "I79Z8p8wTFk": {
+   "ctr": 7.8,
+   "impr": 157272
+  },
+  "KS5UEKlrezA": {
+   "ctr": 6.8,
+   "impr": 150485
+  },
+  "h6KX7WXkfzU": {
+   "ctr": 8.0,
+   "impr": 139948
+  },
+  "pNPMEDoIhrw": {
+   "ctr": 8.6,
+   "impr": 124152
+  },
+  "MB6NF35pI9c": {
+   "ctr": 6.2,
+   "impr": 105442
+  },
+  "egqD41-P6Jg": {
+   "ctr": 10.2,
+   "impr": 96423
+  },
+  "8d3huL8b4Ng": {
+   "ctr": 10.0,
+   "impr": 89784
+  },
+  "vMn0bPtsKVo": {
+   "ctr": 7.7,
+   "impr": 76203
+  },
+  "szWe052Mlp8": {
+   "ctr": 8.5,
+   "impr": 72768
+  },
+  "QFeNsNMzIMo": {
+   "ctr": 8.9,
+   "impr": 58690
+  },
+  "pP3UCseTJxc": {
+   "ctr": 8.0,
+   "impr": 56174
+  },
+  "JHLiFF3j4aw": {
+   "ctr": 6.7,
+   "impr": 53335
+  },
+  "bbKNIG79Izk": {
+   "ctr": 8.9,
+   "impr": 46726
+  },
+  "64uzCevRsrM": {
+   "ctr": 11.3,
+   "impr": 45956
+  },
+  "1Jov9OQ6QO0": {
+   "ctr": 7.6,
+   "impr": 45478
+  },
+  "XbUBQEHehVs": {
+   "ctr": 10.7,
+   "impr": 43004
+  },
+  "McXYAe9KvWc": {
+   "ctr": 9.3,
+   "impr": 42166
+  },
+  "W2fmpAPLWi0": {
+   "ctr": 10.0,
+   "impr": 41418
+  },
+  "mNHUpX2VleA": {
+   "ctr": 9.3,
+   "impr": 41113
+  },
+  "aLSX2SYQ12Y": {
+   "ctr": 9.8,
+   "impr": 39189
+  },
+  "3r6uOwTqP_Y": {
+   "ctr": 9.1,
+   "impr": 36989
+  },
+  "0y81JOe5BTE": {
+   "ctr": 6.6,
+   "impr": 36385
+  },
+  "0UMcpRWKOpw": {
+   "ctr": 7.2,
+   "impr": 28371
+  },
+  "44mxk7UgAsI": {
+   "ctr": 6.9,
+   "impr": 26709
+  },
+  "NlcW0mxBPNw": {
+   "ctr": 4.6,
+   "impr": 23881
+  },
+  "65MMo6_gA5Y": {
+   "ctr": 5.3,
+   "impr": 22434
+  },
+  "JLNoq73XD78": {
+   "ctr": 6.7,
+   "impr": 21692
+  },
+  "DPhdD5_FsF4": {
+   "ctr": 4.4,
+   "impr": 19970
+  },
+  "C0YeArPX8NE": {
+   "ctr": 8.4,
+   "impr": 14295
+  },
+  "-3iFkurES4Y": {
+   "ctr": 11.5,
+   "impr": 12536
+  },
+  "xa0ZyGtqz4k": {
+   "ctr": 7.2,
+   "impr": 10639
+  },
+  "wNnnv517yjE": {
+   "ctr": 1.8,
+   "impr": 10278
+  },
+  "FRP7s6r6SQM": {
+   "ctr": 8.2,
+   "impr": 7707
+  },
+  "vJVAPN63VNc": {
+   "ctr": 3.7,
+   "impr": 7582
+  },
+  "3hWck9jTXcw": {
+   "ctr": 6.4,
+   "impr": 6822
+  },
+  "-nMoZvQAGMo": {
+   "ctr": 3.7,
+   "impr": 6373
+  },
+  "8cB1BlwWBPY": {
+   "ctr": 3.6,
+   "impr": 4096
+  },
+  "_XxKcsDBZrw": {
+   "ctr": 7.8,
+   "impr": 32000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "RAkGFgdlAAg": {
+   "ctr": 7.5,
+   "impr": 68000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "-IpIfh-dD1Y": {
+   "ctr": 8.1,
+   "impr": 56000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "DysNnVojwsg": {
+   "ctr": 8.6,
+   "impr": 29000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "tahLffs4ZDE": {
+   "ctr": 8.6,
+   "impr": 58000,
+   "src": "since_publish",
+   "date": "2026-10-30"
+  },
+  "4MSzaa8mUZU": {
+   "ctr": 7.8,
+   "impr": 74000,
+   "src": "since_publish",
+   "date": "2026-10-28"
+  },
+  "wjIgB450-CE": {
+   "ctr": 8.8,
+   "impr": 50000,
+   "src": "since_publish",
+   "date": "2026-10-14"
+  },
+  "rS9agSHxsnw": {
+   "ctr": 6.8,
+   "impr": 58000,
+   "src": "since_publish",
+   "date": "2026-10-14"
+  },
+  "QAu3YX8J5hY": {
+   "ctr": 6.6,
+   "impr": 77000,
+   "src": "since_publish",
+   "date": "2026-10-14"
+  },
+  "rO52MWadA0c": {
+   "ctr": 8.5,
+   "impr": 104000,
+   "src": "since_publish",
+   "date": "2026-10-14"
+  },
+  "p1OuOyBkVNM": {
+   "ctr": 6.9,
+   "impr": 32000,
+   "src": "since_publish",
+   "date": "2026-10-13"
+  },
+  "gDWv1d-hHSw": {
+   "ctr": 7.3,
+   "impr": 62000,
+   "src": "since_publish",
+   "date": "2026-10-14"
+  },
+  "pzqWbNEmo68": {
+   "ctr": 9.9,
+   "impr": 217000,
+   "src": "since_publish",
+   "date": "2026-10-08"
+  },
+  "b3t0vTvWXss": {
+   "ctr": 8.6,
+   "impr": 138000,
+   "src": "since_publish",
+   "date": "2026-10-08"
+  },
+  "ZhKPCV8pd-o": {
+   "ctr": 7.2,
+   "impr": 40000,
+   "src": "since_publish",
+   "date": "2026-10-08"
+  },
+  "Zs3Qcyo-PbM": {
+   "ctr": 10.7,
+   "impr": 147000,
+   "src": "since_publish",
+   "date": "2026-10-08"
+  },
+  "rqadvGCJfUA": {
+   "ctr": 7.9,
+   "impr": 70000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "BN2icqAp6NU": {
+   "ctr": 9.7,
+   "impr": 56000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "7bgYJpcOspk": {
+   "ctr": 6.8,
+   "impr": 33000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "IzAgC9zGKe0": {
+   "ctr": 10.1,
+   "impr": 150000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "x6Nv9-M_G7U": {
+   "ctr": 6.7,
+   "impr": 32000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "gAN6UkRg6T4": {
+   "ctr": 8.2,
+   "impr": 108000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "d1oSSTNmz-s": {
+   "ctr": 8.8,
+   "impr": 74000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "SU05e_EDV6Q": {
+   "ctr": 7.2,
+   "impr": 34000,
+   "src": "since_publish",
+   "date": "2026-10-28"
+  },
+  "RJsxtLp1SXs": {
+   "ctr": 7.8,
+   "impr": 84000,
+   "src": "since_publish",
+   "date": "2026-10-25"
+  },
+  "iJOo86XGLlw": {
+   "ctr": 6.7,
+   "impr": 64000,
+   "src": "since_publish",
+   "date": "2026-10-22"
+  },
+  "s5P4FVmAJQo": {
+   "ctr": 8.9,
+   "impr": 115000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "XkDyD08uedI": {
+   "ctr": 5.6,
+   "impr": 108000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "hqIVNoootfc": {
+   "ctr": 8.2,
+   "impr": 47000,
+   "src": "since_publish",
+   "date": "2026-10-14"
+  },
+  "CmLASVI6wHs": {
+   "ctr": 7.6,
+   "impr": 40000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "KF0VLj1dNhk": {
+   "ctr": 5.0,
+   "impr": 44000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "oj17_P9Z6_U": {
+   "ctr": 6.7,
+   "impr": 2875000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "FL5YdkNX6-0": {
+   "ctr": 5.1,
+   "impr": 218000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "PkFgm1NB7HY": {
+   "ctr": 3.7,
+   "impr": 703000,
+   "src": "since_publish",
+   "date": "2026-10-17"
+  },
+  "9wNUf_jztmM": {
+   "ctr": 5.8,
+   "impr": 422000,
+   "src": "since_publish",
+   "date": "2026-10-22"
+  },
+  "v8TaNViPUBQ": {
+   "ctr": 8.6,
+   "impr": 33000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "ElH8TTbk0u4": {
+   "ctr": 8.6,
+   "impr": 52000,
+   "src": "since_publish",
+   "date": "2026-10-04"
+  },
+  "x1RwDsGxiVI": {
+   "ctr": 9.3,
+   "impr": 232000,
+   "src": "since_publish",
+   "date": "2026-10-31"
+  },
+  "uALbXGyov90": {
+   "ctr": 7.6,
+   "impr": 53000,
+   "src": "since_publish",
+   "date": "2026-11-03"
+  },
+  "VvlO4mfBtjw": {
+   "ctr": 8.7,
+   "impr": 103000,
+   "src": "since_publish",
+   "date": "2026-11-02"
+  },
+  "TEWqdTxGoR0": {
+   "ctr": 7.4,
+   "impr": 34000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  },
+  "blacSH9Vcjc": {
+   "ctr": 6.8,
+   "impr": 85000,
+   "src": "since_publish",
+   "date": "2026-11-04"
+  },
+  "nyNC4vGZmW0": {
+   "ctr": 7.8,
+   "impr": 71000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  },
+  "7xd2oIE0Ro8": {
+   "ctr": 6.9,
+   "impr": 58000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  },
+  "aTcsW62HWwc": {
+   "ctr": 7.7,
+   "impr": 44000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  },
+  "Fxh0r9DUUhM": {
+   "ctr": 7.1,
+   "impr": 98000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  },
+  "moR-m8s7KA8": {
+   "ctr": 6.2,
+   "impr": 95000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  },
+  "XX0ovWBeiDQ": {
+   "ctr": 7.6,
+   "impr": 89000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  },
+  "4P6OItGsAss": {
+   "ctr": 6.2,
+   "impr": 56000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  },
+  "Iqb4xtxYJLI": {
+   "ctr": 8.9,
+   "impr": 130000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  },
+  "sSVlhAiG3bA": {
+   "ctr": 5.8,
+   "impr": 54000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  },
+  "-gGbmhvW52M": {
+   "ctr": 7.4,
+   "impr": 43000,
+   "src": "since_publish",
+   "date": "2026-11-04"
+  },
+  "24iMDBM3-Mw": {
+   "ctr": 7.3,
+   "impr": 39000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  },
+  "Tb0l_cjiV08": {
+   "ctr": 9.1,
+   "impr": 49000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  },
+  "e-A_BKDBBIs": {
+   "ctr": 7.2,
+   "impr": 38000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  },
+  "_0nI4vtrx0s": {
+   "ctr": 10.9,
+   "impr": 11000,
+   "src": "since_publish",
+   "date": "2026-11-04"
+  },
+  "JBaJlvN4Bj8": {
+   "ctr": 7.1,
+   "impr": 38000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  },
+  "Pizxa8HVRWI": {
+   "ctr": 5.7,
+   "impr": 513000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  },
+  "Zn9lGEOU3P8": {
+   "ctr": 7.9,
+   "impr": 69000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  },
+  "RvaqKB8UcJo": {
+   "ctr": 7.4,
+   "impr": 70000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  },
+  "uoQeeM6PL5A": {
+   "ctr": 6.8,
+   "impr": 64000,
+   "src": "since_publish",
+   "date": "2026-11-05"
+  }
+ },
+ "viewerMix": {
+  "new": 34.5,
+  "casual": 45.6,
+  "regular": 19.9,
+  "monthly": 166000,
+  "asOf": "2026-10-30"
+ },
+ "subsStudio": {
+  "n": 72372,
+  "date": "2026-11-05",
+  "time": "22:17"
+ },
+ "showsNote": "各節目 CTR＝近 30 天上片（10/02–10/30）集數的 Studio「自發布至今」曝光加權（2026-11-01 每日任務重抓 20 支；GM 排除 10/29 已轉私人的首版）；Good Invest 本週只有 EP37 顧姐一支；無新片節目（Better Living 美好生活、Good Income、Entrepreneurship）沿用前期值",
+ "channelNote": "2026-11-01：Studio 28 天（10/3–10/30）：縮圖曝光 308.1 萬、點閱率 6.1%（上期 10/1–10/28 329.4 萬＠6.1%；再上期 372.2 萬＠6.0%；Studio 標「與前 28 天相比少 47%」）、平均觀看時間 6:48；觀看 68.6 萬「與平常差不多」（一般 33 萬–70.6 萬；內容分頁全部 62.2 萬「比平常多 5.1 萬」、一般 29.8–57.1 萬；上期 69.8 萬）、觀看時間 3.4 萬小時（一般 3.0–5.1 萬）、訂閱 +1,557「比平常少 1,043」（一般 2,600–3,800；上期 +1,616 少 984、再上期 +1,871 少 729）；流量來源 瀏覽 75.9%／推薦 14.3%／搜尋 5.0%／直接 1.3%／頻道頁 1.0%；訂閱者觀看時間 32.9%（未訂閱 67.1%）；28 天性別 男 77.6%／女 22.4%，45 歲以上 68.3%；裝置 手機 53.6%／電視 19.1%／電腦 18.6%／平板 8.7%；台灣 84.5%。28 天熱門：退休集 70,373（4:08／30.0%）、估值特輯 60,069（5:36／38.5%）、魏哲家集 34,006、009816 集 33,660、Terafab 集 28,055、蘇姿丰集 23,547、55 歲集 23,307、長鑫集 23,006、南亞科集 21,464、歐積電集 21,183。開場續看率：記憶體集 73%、A14 集 72%（高於一般）；55 歲集 62%、魏哲家集 62%、南亞科 56%、Hank 集 46%（低於一般）。觀眾分頁（10/30）：每月觀眾 16.6 萬（10/28 17 萬、10/23 19.3 萬、10/16 23.1 萬、10/10 31.1 萬），組成 新 34.5／游離 45.6／一般 19.9；推動觀眾成長（90 天）：退休集「非常高」、美債 EP2「中」、Hank 集「中」，其餘中／低；依觀眾熱門：新觀眾 退休集 3.9 萬、估值特輯 9,670、Hank 集 7,811；觀眾也看頻道：風傳媒、關我什麼事、非凡、游庭皓、CMoney；觀眾 7 天在看：風傳媒〈46000 是最後逃命波？阮慕驊〉39.1 萬、游庭皓 10/27 18.8 萬、財訊老謝開講 58.8 萬；觀眾在線高峰 每天晚上 7–10 點、週五白天也高；鈴鐺全部通知 10.1%。即時：訂閱 71,298（11/1 07:30）、48 小時觀看 60,696，其中顧姐 EP37 25,894、Intel 特輯 11,227、邁威爾集 7,838。最新 Intel 特輯上傳 17 小時：觀看 1.1 萬（一般 9,100–1.4 萬）、CTR 8.3%、平均觀看 5:27（一般 5:43–6:09，Studio 標「點閱率高但觀看時間短」）。本週 GM 五支（10/27–10/31，10/31 為週六特輯）、Good Invest EP37 顧姐 10/30 結束 59 天空窗。"
 }
