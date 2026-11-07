@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "industry": [
   {
    "name": "富邦證券",
@@ -9,8 +9,8 @@
    "subs": 502000,
    "views": 41812914,
    "videos": 513,
-   "w7v": 3,
-   "recentAvg": 72454,
+   "w7v": 2,
+   "recentAvg": 72503,
    "engage": 0.6,
    "shorts": 0,
    "top": {
@@ -19,7 +19,7 @@
     "views": 2323124
    },
    "w7": 1000,
-   "w7view": 187947
+   "w7view": 160705
   },
   {
    "name": "永豐金證券 豐雲學堂",
@@ -29,8 +29,8 @@
    "subs": 261000,
    "views": 42746189,
    "videos": 1211,
-   "w7v": 15,
-   "recentAvg": 3113,
+   "w7v": 13,
+   "recentAvg": 3136,
    "engage": 0.1,
    "shorts": 7,
    "top": {
@@ -38,8 +38,8 @@
     "title": "上班族的存股入門班 課程介紹",
     "views": 3415868
    },
-   "w7": 2000,
-   "w7view": 109772
+   "w7": 1000,
+   "w7view": 90899
   },
   {
    "name": "凱基 股股漲",
@@ -49,8 +49,8 @@
    "subs": 253000,
    "views": 12502916,
    "videos": 1588,
-   "w7v": 12,
-   "recentAvg": 5188,
+   "w7v": 10,
+   "recentAvg": 5254,
    "engage": 0.3,
    "shorts": 47,
    "top": {
@@ -59,7 +59,7 @@
     "views": 208559
    },
    "w7": 2000,
-   "w7view": 70444
+   "w7view": 59181
   },
   {
    "name": "台新證券",
@@ -69,8 +69,8 @@
    "subs": 170000,
    "views": 4042956,
    "videos": 414,
-   "w7v": 13,
-   "recentAvg": 7033,
+   "w7v": 12,
+   "recentAvg": 7073,
    "engage": 0.2,
    "shorts": 27,
    "top": {
@@ -78,8 +78,8 @@
     "title": "誰說Ｚ世代不存錢？目標千萬！300萬！10萬豬公存錢法大公開，同儕焦慮感如何化解？【30歲要有多少存款】聽你這young",
     "views": 317608
    },
-   "w7": 14000,
-   "w7view": 137875
+   "w7": 12000,
+   "w7view": 112831
   },
   {
    "name": "群益期貨 KeensPie",
@@ -89,8 +89,8 @@
    "subs": 108000,
    "views": 11202481,
    "videos": 668,
-   "w7v": 7,
-   "recentAvg": 28252,
+   "w7v": 6,
+   "recentAvg": 28416,
    "engage": 1.9,
    "shorts": 0,
    "top": {
@@ -99,7 +99,7 @@
     "views": 196927
    },
    "w7": 1000,
-   "w7view": 197784
+   "w7view": 168841
   },
   {
    "name": "元大投信",
@@ -110,7 +110,7 @@
    "views": 35176058,
    "videos": 198,
    "w7v": 0,
-   "recentAvg": 1501395,
+   "recentAvg": 1503099,
    "engage": 0.0,
    "shorts": 87,
    "top": {
@@ -119,7 +119,7 @@
     "views": 1799914
    },
    "w7": 0,
-   "w7view": 3251569
+   "w7view": 2587497
   },
   {
    "name": "凱基證券 樂活投資人",
@@ -129,8 +129,8 @@
    "subs": 86700,
    "views": 43814647,
    "videos": 1458,
-   "w7v": 10,
-   "recentAvg": 1858,
+   "w7v": 7,
+   "recentAvg": 1899,
    "engage": 0.2,
    "shorts": 53,
    "top": {
@@ -138,8 +138,8 @@
     "title": "【凱基證券｜選擇凱基，開始累積】",
     "views": 13478429
    },
-   "w7": 1400,
-   "w7view": 6020106
+   "w7": 1100,
+   "w7view": 4772986
   },
   {
    "name": "美好證券 Good Finance",
@@ -149,8 +149,8 @@
    "subs": 72400,
    "views": 9580907,
    "videos": 765,
-   "w7v": 10,
-   "recentAvg": 15799,
+   "w7v": 8,
+   "recentAvg": 15841,
    "engage": 1.3,
    "shorts": 7,
    "top": {
@@ -158,8 +158,8 @@
     "title": "退休，錢從哪裡來？如何建立月月配穩定現金流？70 歲開始理財也能財務自由！",
     "views": 796251
    },
-   "w7": 1400,
-   "w7view": 256941
+   "w7": 1200,
+   "w7view": 227371
   },
   {
    "name": "國泰世華銀行",
@@ -170,7 +170,7 @@
    "views": 185513545,
    "videos": 471,
    "w7v": 0,
-   "recentAvg": 186712,
+   "recentAvg": 187139,
    "engage": 0.0,
    "shorts": 40,
    "top": {
@@ -179,7 +179,7 @@
     "views": 11748335
    },
    "w7": 0,
-   "w7view": 552627
+   "w7view": 473178
   },
   {
    "name": "國泰投信 大樹下學投資",
@@ -189,8 +189,8 @@
    "subs": 30900,
    "views": 12899474,
    "videos": 129,
-   "w7v": 2,
-   "recentAvg": 410314,
+   "w7v": 1,
+   "recentAvg": 411927,
    "engage": 0.0,
    "shorts": 67,
    "top": {
@@ -199,7 +199,7 @@
     "views": 1658655
    },
    "w7": 0,
-   "w7view": 963219
+   "w7view": 925292
   },
   {
    "name": "中國信託 CTBC",
@@ -207,7 +207,7 @@
    "yt_title": "中國信託CTBC",
    "handle": "@ctbc9079",
    "subs": 11200,
-   "views": 63071347,
+   "views": 63071529,
    "videos": 119,
    "w7v": 0,
    "recentAvg": 786452,
@@ -219,7 +219,7 @@
     "views": 8670065
    },
    "w7": 0,
-   "w7view": 2460
+   "w7view": 2089
   },
   {
    "name": "玉山銀行 E.SUN",
@@ -230,7 +230,7 @@
    "views": 164970734,
    "videos": 306,
    "w7v": 0,
-   "recentAvg": 75104,
+   "recentAvg": 75148,
    "engage": 0.0,
    "shorts": 93,
    "top": {
@@ -239,7 +239,7 @@
     "views": 5599449
    },
    "w7": 20,
-   "w7view": 555289
+   "w7view": 462355
   },
   {
    "name": "元大證券",
@@ -259,7 +259,7 @@
     "views": 710674
    },
    "w7": 10,
-   "w7view": 2047
+   "w7view": 1906
   },
   {
    "name": "統一投信",
@@ -270,7 +270,7 @@
    "views": 18049027,
    "videos": 95,
    "w7v": 0,
-   "recentAvg": 267838,
+   "recentAvg": 268137,
    "engage": 0.0,
    "shorts": 20,
    "top": {
@@ -279,7 +279,7 @@
     "views": 850477
    },
    "w7": 10,
-   "w7view": 316394
+   "w7view": 236250
   },
   {
    "name": "兆豐銀行",
@@ -299,7 +299,7 @@
     "views": 1584475
    },
    "w7": 30,
-   "w7view": 798
+   "w7view": 748
   },
   {
    "name": "台新銀行 Richart",
@@ -328,7 +328,7 @@
    "views": 285871763,
    "videos": 165,
    "w7v": 1,
-   "recentAvg": 1440351,
+   "recentAvg": 1440784,
    "engage": 1.4,
    "shorts": 7,
    "top": {
@@ -337,7 +337,7 @@
     "views": 6057033
    },
    "w7": 0,
-   "w7view": 572105
+   "w7view": 484535
   },
   {
    "name": "柴鼠兄弟 ZRBros",
@@ -348,7 +348,7 @@
    "views": 102533729,
    "videos": 804,
    "w7v": 2,
-   "recentAvg": 87507,
+   "recentAvg": 87989,
    "engage": 1.7,
    "shorts": 13,
    "top": {
@@ -357,7 +357,7 @@
     "views": 2857410
    },
    "w7": 0,
-   "w7view": 51001
+   "w7view": 45792
   },
   {
    "name": "游庭皓的財經皓角",
@@ -367,8 +367,8 @@
    "subs": 717000,
    "views": 121726507,
    "videos": 1279,
-   "w7v": 6,
-   "recentAvg": 222998,
+   "w7v": 5,
+   "recentAvg": 223112,
    "engage": 1.5,
    "shorts": 0,
    "top": {
@@ -377,7 +377,7 @@
     "views": 715016
    },
    "w7": 4000,
-   "w7view": 1579240
+   "w7view": 1490856
   },
   {
    "name": "老王愛說笑",
@@ -387,9 +387,9 @@
    "subs": 606000,
    "views": 145012325,
    "videos": 2602,
-   "w7v": 18,
-   "recentAvg": 51173,
-   "engage": 2.1,
+   "w7v": 15,
+   "recentAvg": 51640,
+   "engage": 2.2,
    "shorts": 13,
    "top": {
     "id": "ShxSsJC_mek",
@@ -397,7 +397,7 @@
     "views": 426543
    },
    "w7": 1000,
-   "w7view": 1120163
+   "w7view": 855564
   },
   {
    "name": "SHIN LI 李勛",
@@ -407,8 +407,8 @@
    "subs": 470000,
    "views": 120364118,
    "videos": 1917,
-   "w7v": 8,
-   "recentAvg": 60331,
+   "w7v": 7,
+   "recentAvg": 60669,
    "engage": 0.9,
    "shorts": 13,
    "top": {
@@ -417,7 +417,7 @@
     "views": 2699032
    },
    "w7": 0,
-   "w7view": 792626
+   "w7view": 626347
   },
   {
    "name": "阿格力",
@@ -427,8 +427,8 @@
    "subs": 314000,
    "views": 56665639,
    "videos": 739,
-   "w7v": 7,
-   "recentAvg": 72490,
+   "w7v": 6,
+   "recentAvg": 72670,
    "engage": 0.9,
    "shorts": 7,
    "top": {
@@ -437,7 +437,7 @@
     "views": 668604
    },
    "w7": 1000,
-   "w7view": 812280
+   "w7view": 722605
   },
   {
    "name": "清流君",
@@ -448,7 +448,7 @@
    "views": 23982568,
    "videos": 241,
    "w7v": 0,
-   "recentAvg": 121297,
+   "recentAvg": 121300,
    "engage": 1.8,
    "shorts": 53,
    "top": {
@@ -457,7 +457,7 @@
     "views": 1702132
    },
    "w7": 0,
-   "w7view": 61073
+   "w7view": 51773
   },
   {
    "name": "Ms.Selena",
@@ -467,7 +467,7 @@
    "subs": 191000,
    "views": 13600578,
    "videos": 970,
-   "w7v": 1,
+   "w7v": 0,
    "recentAvg": 1562,
    "engage": 1.2,
    "shorts": 60,
@@ -477,7 +477,7 @@
     "views": 296814
    },
    "w7": 0,
-   "w7view": 8772
+   "w7view": 7159
   },
   {
    "name": "股癌 Gooaye",
@@ -488,7 +488,7 @@
    "views": 16365694,
    "videos": 710,
    "w7v": 2,
-   "recentAvg": 45813,
+   "recentAvg": 45826,
    "engage": 1.0,
    "shorts": 0,
    "top": {
@@ -497,7 +497,7 @@
     "views": 89060
    },
    "w7": 0,
-   "w7view": 111617
+   "w7view": 106052
   },
   {
    "name": "Nicolas 楊應超",
@@ -508,7 +508,7 @@
    "views": 11605868,
    "videos": 96,
    "w7v": 3,
-   "recentAvg": 91393,
+   "recentAvg": 91942,
    "engage": 1.8,
    "shorts": 13,
    "top": {
@@ -517,7 +517,7 @@
     "views": 390514
    },
    "w7": 0,
-   "w7view": 283860
+   "w7view": 277353
   },
   {
    "name": "M觀點 Miula",
@@ -528,7 +528,7 @@
    "views": 16077046,
    "videos": 1593,
    "w7v": 4,
-   "recentAvg": 9314,
+   "recentAvg": 9344,
    "engage": 1.2,
    "shorts": 7,
    "top": {
@@ -537,7 +537,7 @@
     "views": 298896
    },
    "w7": 0,
-   "w7view": 43530
+   "w7view": 39384
   },
   {
    "name": "慢活夫妻",
@@ -548,7 +548,7 @@
    "views": 11337415,
    "videos": 405,
    "w7v": 2,
-   "recentAvg": 8043,
+   "recentAvg": 8052,
    "engage": 1.7,
    "shorts": 7,
    "top": {
@@ -557,7 +557,7 @@
     "views": 922920
    },
    "w7": 0,
-   "w7view": 35636
+   "w7view": 31527
   },
   {
    "name": "財報狗",
@@ -568,7 +568,7 @@
    "views": 498109,
    "videos": 1005,
    "w7v": 3,
-   "recentAvg": 1922,
+   "recentAvg": 1926,
    "engage": 1.0,
    "shorts": 0,
    "top": {
@@ -577,7 +577,7 @@
     "views": 59828
    },
    "w7": 0,
-   "w7view": 6872
+   "w7view": 5581
   },
   {
    "name": "雨果的投資理財生活觀",
@@ -585,9 +585,9 @@
    "yt_title": "雨果的投資理財生活觀",
    "handle": "@hugolife",
    "subs": 1000,
-   "views": 33012,
+   "views": 33019,
    "videos": 114,
-   "w7v": 3,
+   "w7v": 2,
    "recentAvg": 243,
    "engage": 0.9,
    "shorts": 73,
@@ -596,8 +596,8 @@
     "title": "退休規劃：450萬理財藍圖",
     "views": 2777
    },
-   "w7": 7,
-   "w7view": 547
+   "w7": 6,
+   "w7view": 366
   }
  ]
 }
