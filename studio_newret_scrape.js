@@ -29,9 +29,10 @@ window.__nr = {}; window.__nrDone = false;
       await sleep(2000);
       try {
         const s = txt(f.contentDocument);
-        const m = s.match(/新觀眾\|首次收看你的頻道\|([\d.]+)%/);
+        // 2026-11-15：Studio 改版後影片頁轉到 hub_audience，改為三分法「新觀眾|12%|一般觀眾|53%|忠實觀眾|34%」（整數）；舊版比對式保留
+        const m = s.match(/新觀眾\|首次收看你的頻道\|([\d.]+)%/) || s.match(/新觀眾\|([\d.]+)%\|一般觀眾/);
         if (m) res = { pct: parseFloat(m[1]), jl: s.includes("JL羅申駿") };
-        else if (s.includes("觀眾資料不足")) res = { na: 1 };
+        else if (s.includes("觀眾資料不足") || /觀眾 \(按觀看行為\)\|[^|]*\|資料不足/.test(s)) res = { na: 1 };
       } catch (e) { res = { err: String(e) }; }
     }
     window.__nr[id] = res || { fail: 1 };

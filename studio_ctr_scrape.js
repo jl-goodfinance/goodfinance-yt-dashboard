@@ -27,7 +27,10 @@ window.__ctr = {}; window.__ctrDone = false;
     while (!res && Date.now() - t0 < 240000) {
       await sleep(2000);
       try {
-        const m = txt(f.contentDocument).match(/縮圖曝光次數\|縮圖曝光次數\|([\d.,]+萬?)\|[\s\S]*?縮圖點閱率\|([\d.]+)%/);
+        const s = txt(f.contentDocument);
+        // 2026-11-15：Studio 改版後影片頁轉到 hub_reach，主要指標卡格式為「縮圖曝光次數|38.7萬|…|縮圖點閱率|5.6%」；舊版比對式保留
+        const m = s.match(/縮圖曝光次數\|縮圖曝光次數\|([\d.,]+萬?)\|[\s\S]*?縮圖點閱率\|([\d.]+)%/)
+          || (s.includes("觀眾如何找到這部影片") && s.match(/主要指標[\s\S]*?縮圖曝光次數\|([\d.,]+萬?)\|[\s\S]*?縮圖點閱率\|([\d.]+)%/));
         if (m) res = { impr: m[1], ctr: m[2] };
       } catch (e) { res = { err: String(e) }; }
     }
