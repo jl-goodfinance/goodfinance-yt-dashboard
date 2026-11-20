@@ -205,6 +205,36 @@
      "first": "2026-11-20",
      "weeks": 1
     }
+   ],
+   "mission": "交易型觀眾每天回來",
+   "scorecard": [
+    {
+     "metric": "24 小時 CTR",
+     "target": "≥9%（KR，基準 7.13%）",
+     "source": "Slack 每日縮圖結果／Studio 前 24 小時"
+    },
+    {
+     "metric": "單集曝光（前 24 小時與累計）",
+     "source": "Studio"
+    },
+    {
+     "metric": "A/B 選題結果（選題＋包裝）",
+     "source": "Studio A/B 卡片 → ab_log.json"
+    },
+    {
+     "metric": "開場續看（0:30）",
+     "source": "Analytics API audienceWatchRatio"
+    },
+    {
+     "metric": "訂閱轉化率（互動觀看:訂閱）",
+     "target": "60:1",
+     "source": "Analytics API"
+    },
+    {
+     "metric": "每天回來的代理指標：已訂閱觀看占比、瀏覽功能占比",
+     "source": "Analytics API",
+     "note": "Claude 建議加看"
+    }
    ]
   },
   "Good Invest 美好投資": {
@@ -277,6 +307,28 @@
      "first": "2026-11-15",
      "weeks": 2
     }
+   ],
+   "mission": "用總經議題帶出投資的可能性與方向，進而帶進大流量與訂閱",
+   "scorecard": [
+    {
+     "metric": "搜尋與推薦流量占比、搜尋字詞、推薦來源影片",
+     "source": "Analytics API／Studio"
+    },
+    {
+     "metric": "訂閱轉化率",
+     "target": "60:1"
+    },
+    {
+     "metric": "新觀眾比／未訂閱觀看占比",
+     "source": "Studio 觀眾分頁／Analytics API"
+    },
+    {
+     "metric": "觀看數（互動觀看）"
+    },
+    {
+     "metric": "24 小時 CTR",
+     "target": "≥6.5%（KR，基準 5.71%）"
+    }
    ]
   },
   "Better Living 美好生活": {
@@ -339,6 +391,28 @@
      "first": "2026-11-20",
      "weeks": 1
     }
+   ],
+   "mission": "財富管理客群的入口",
+   "scorecard": [
+    {
+     "metric": "新觀眾占比／未訂閱觀看占比"
+    },
+    {
+     "metric": "目標客群占比（45 歲以上、女性）",
+     "source": "Analytics API ageGroup,gender",
+     "note": "目標客群定義為 Claude 暫定，待 JL 確認"
+    },
+    {
+     "metric": "24 小時 CTR",
+     "target": "≥7%（KR，基準 6.23%）"
+    },
+    {
+     "metric": "訂閱轉化率",
+     "target": "60:1"
+    },
+    {
+     "metric": "觀看數（最會出爆款的一檔）"
+    }
    ]
   },
   "Good Income": {
@@ -396,6 +470,24 @@
      "first": "2026-11-15",
      "weeks": 2
     }
+   ],
+   "mission": "Better Living 財富管理客群的解決方案；固收產品的對外溝通（節目名 Good Fixed Income）",
+   "scorecard": [
+    {
+     "metric": "目標客群觸及（45 歲以上占比、來自 Better Living 的推薦流量）"
+    },
+    {
+     "metric": "訂閱轉化率",
+     "target": "60:1"
+    },
+    {
+     "metric": "留言裡的產品提問數",
+     "source": "comments.json／Data API"
+    },
+    {
+     "metric": "24 小時 CTR",
+     "target": "≥5.3%（KR，基準 4.8%）"
+    }
    ]
   },
   "Entrepreneurship": {
@@ -448,7 +540,35 @@
      "first": "2026-11-20",
      "weeks": 1
     }
+   ],
+   "mission": "品牌信任",
+   "scorecard": [
+    {
+     "metric": "觀看時長（平均觀看時間、平均觀看比例、各四分位續看）"
+    },
+    {
+     "metric": "訂閱轉化率",
+     "target": "60:1"
+    },
+    {
+     "metric": "24 小時 CTR",
+     "target": "≥6%"
+    },
+    {
+     "metric": "分享數",
+     "note": "Claude 建議加看：品牌信任的外顯行為"
+    }
    ]
   }
+ },
+ "framework": {
+  "since": "2026-11-20",
+  "by": "JL 指定（全部門都會看 insights）",
+  "all_shows": "每檔都要報訂閱轉化率＝互動觀看 ÷ 訂閱（公司 KR 60:1），並與該檔自己的歷史集數比。",
+  "ctr_basis": "CTR 一律用團隊 KR 口徑＝上線前 24 小時（Studio 影片分析 › 更多 › 前 24 小時；GM 另有 Slack #goodmorning-美好 每日「縮圖結果」貼文）。自發布至今的 CTR 只當輔助，要標明。",
+  "ab": "A/B 測試同時評選題與包裝：記錄每個版本的標題、縮圖、觀看時間占比、勝負，寫進 ab_log.json 累積。",
+  "team_can_change": "上片時間、片長、來賓排程、每日短片都可以調整，建議不必自我設限。",
+  "account_opening": "開戶歸因流程尚未設計完成，暫不列指標。",
+  "data": "episode_metrics.json（fetch_episode_metrics.py，Analytics API 逐集）＋ studio_reach.json（Studio 逐集 A/B、前 24 小時 CTR、流量來源）"
  }
 }
