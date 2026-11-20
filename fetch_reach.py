@@ -78,8 +78,10 @@ def targets():
 def parse(csv_text):
     rows = list(csv.DictReader(io.StringIO(csv_text)))
     ctrs = [float(r.get("video_thumbnail_impressions_ctr") or 0) for r in rows]
-    # 文件只說是「百分比」未寫刻度：整份報表最大值 ≤ 1 視為 0–1 比例，換算成 %
-    scale = 100.0 if ctrs and max(ctrs) <= 1 else 1.0
+    # 文件只說是「百分比」未寫刻度：以非零值的中位數判斷（≤ 1 視為 0–1 比例，換算成 %）。
+    # 不能用最大值：小片偶有點擊多於曝光（比例 > 1），會讓整天被誤判成已是百分比（2026-11-20 修正）
+    nz = sorted(c for c in ctrs if c > 0)
+    scale = 100.0 if nz and nz[len(nz) // 2] <= 1 else 1.0
     for r, c in zip(rows, ctrs):
         d = r.get("date", "")
         if len(d) == 8:
