@@ -1,39 +1,61 @@
 {
  "videos": {
   "3-p35lkvmlo": {
-   "asOf": "2026-11-20",
+   "asOf": "2026-11-24",
    "since": {
-    "impr": 18000,
-    "ctr": 7.1,
-    "views": 4065,
+    "impr": 260000,
+    "ctr": 7.0,
+    "views": 47000,
     "from": null
    },
-   "evFromImpr": 270,
-   "avd": "5:26",
+   "h24": {
+    "impr": 80000,
+    "ctr": 8.4,
+    "views": 17000,
+    "from": "2026年11月20日 下午15:00"
+   },
+   "evFromImpr": 18000,
+   "avd": "5:45",
+   "abLog": [
+    {
+     "metric": "觀看時間占比",
+     "status": "已完成",
+     "period": "2026年11月20日",
+     "variants": [
+      {
+       "title": "台股四月以來最低點，怎麼渡過短期波動？ ft. 李柏鋒｜EP38 #熊市 #ETF #台版VT",
+       "share": 30.5,
+       "thumb": "https://i9.ytimg.com/vi/3-p35lkvmlo/mqdefault_custom_1.jpg?v=6b00087c&sqp=CNSPgdgG&rs=AOn4CLDL1CQmMHdMvuMM375V52KYz7-wcw"
+      },
+      {
+       "title": "台股四月以來最低點，怎麼渡過短期波動？ ft. 李柏鋒｜EP38 #熊市 #ETF #台版VT",
+       "win": true,
+       "share": 69.5,
+       "thumb": "https://i9.ytimg.com/vi/3-p35lkvmlo/mqdefault_custom_2.jpg?v=6b00087c&sqp=CNSPgdgG&rs=AOn4CLAifnz43asgz9bnyZESEuh7pzQt5A"
+      }
+     ],
+     "tests": "縮圖"
+    }
+   ],
    "ab": {
     "metric": "觀看時間占比",
-    "status": "已完成",
-    "period": "2026年11月20日",
+    "status": "執行中",
+    "period": "",
     "variants": [
      {
-      "title": "台股四月以來最低點，怎麼渡過短期波動？ ft. 李柏鋒｜EP38 #熊市 #ETF #台版VT",
-      "share": 30.5,
-      "thumb": "https://i9.ytimg.com/vi/3-p35lkvmlo/mqdefault_custom_1.jpg?v=6b00087c&sqp=CNSPgdgG&rs=AOn4CLDL1CQmMHdMvuMM375V52KYz7-wcw"
+      "title": "定期定額投資大盤，還有這個選擇 ft. 李柏鋒｜EP38 #0050 #回彈 #抗跌ETF"
      },
      {
-      "title": "台股四月以來最低點，怎麼渡過短期波動？ ft. 李柏鋒｜EP38 #熊市 #ETF #台版VT",
-      "win": true,
-      "share": 69.5,
-      "thumb": "https://i9.ytimg.com/vi/3-p35lkvmlo/mqdefault_custom_2.jpg?v=6b00087c&sqp=CNSPgdgG&rs=AOn4CLAifnz43asgz9bnyZESEuh7pzQt5A"
+      "title": "定期定額投資大盤，還有這個選擇 ft. 李柏鋒｜EP38 #0050 #回彈 #抗跌ETF"
      }
     ],
     "tests": "縮圖"
    },
    "traffic": {
-    "瀏覽功能": 72.8,
-    "推薦影片": 18.7,
-    "其他 YouTube 功能": 2.5,
-    "YouTube 搜尋": 1.8
+    "瀏覽功能": 75.1,
+    "推薦影片": 20.0,
+    "直接或不明來源": 1.2,
+    "YouTube 搜尋": 1.0
    }
   },
   "Pizxa8HVRWI": {
@@ -293,11 +315,11 @@
    }
   },
   "9qOTiDCAQpw": {
-   "asOf": "2026-11-20",
+   "asOf": "2026-11-24",
    "since": {
-    "impr": 133000,
+    "impr": 154000,
     "ctr": 4.9,
-    "views": 24000,
+    "views": 28000,
     "from": null
    },
    "h24": {
@@ -306,12 +328,12 @@
     "views": 5787,
     "from": "2026年11月12日 下午16:00"
    },
-   "evFromImpr": 6577,
-   "avd": "6:25",
+   "evFromImpr": 7524,
+   "avd": "6:13",
    "traffic": {
-    "瀏覽功能": 86.1,
-    "推薦影片": 7.9,
-    "頻道頁面": 2.0,
+    "瀏覽功能": 86.0,
+    "推薦影片": 8.2,
+    "頻道頁面": 1.9,
     "直接或不明來源": 1.2
    }
   },
@@ -557,11 +579,11 @@
    }
   },
   "vicl_sFj8kY": {
-   "asOf": "2026-11-20",
+   "asOf": "2026-11-24",
    "since": {
-    "impr": 447000,
-    "ctr": 5.5,
-    "views": 92000,
+    "impr": 464000,
+    "ctr": 5.4,
+    "views": 96000,
     "from": null
    },
    "h24": {
@@ -570,23 +592,26 @@
     "views": 7128,
     "from": "2026年11月5日 下午15:00"
    },
-   "evFromImpr": 24000,
-   "avd": "5:19",
+   "evFromImpr": 25000,
+   "avd": "5:18",
    "ab": {
     "metric": "觀看時間占比",
-    "status": "執行中",
-    "period": "",
+    "status": "已完成",
+    "period": "2026年11月20日至23日",
     "variants": [
      {
       "title": "#高股息 配 5%，拿到手剩 3.5%？會計師揭退休族領息的稅務陷阱 ft. 李維仁會計師｜EP4",
+      "share": 30.4,
       "thumb": "https://i9.ytimg.com/vi/vicl_sFj8kY/mqdefault_custom_1.jpg?v=6b00046a&sqp=CPyKgdgG&rs=AOn4CLAvyFDbktHJJpajCOC9o7jCkSC6xg"
      },
      {
       "title": "#高股息 配 5%，拿到手剩 3.5%？會計師揭退休族領息的稅務陷阱 ft. 李維仁會計師｜EP4",
+      "share": 36.8,
       "thumb": "https://i9.ytimg.com/vi/vicl_sFj8kY/mqdefault_custom_2.jpg?v=6b00046a&sqp=CPyKgdgG&rs=AOn4CLAaAygJzyncU5bOmzJ3GMCa0hmYLQ"
      },
      {
       "title": "年底前必看！賺 750 萬不用繳稅？會計師公開節稅撇步  ft. 李維仁會計師｜EP4",
+      "share": 32.8,
       "thumb": "https://i9.ytimg.com/vi/vicl_sFj8kY/mqdefault_custom_3.jpg?v=6b00046a&sqp=CPyKgdgG&rs=AOn4CLDMBL_WZDj97fVJBykZA6cvJmUphg"
      }
     ],
@@ -594,7 +619,7 @@
    },
    "traffic": {
     "瀏覽功能": 91.0,
-    "推薦影片": 4.8,
+    "推薦影片": 4.7,
     "直接或不明來源": 1.3,
     "頻道頁面": 0.8
    }
@@ -775,36 +800,42 @@
    }
   },
   "4E0_9STbzVM": {
-   "asOf": "2026-11-20",
+   "asOf": "2026-11-24",
    "since": {
-    "impr": 15000,
-    "ctr": 9.5,
-    "views": 4568,
+    "impr": 21000,
+    "ctr": 8.2,
+    "views": 5519,
     "from": null
    },
-   "evFromImpr": 1133,
-   "avd": "5:58",
+   "h24": {
+    "impr": 18000,
+    "ctr": 9.0,
+    "views": 4953,
+    "from": "2026年11月20日 上午11:52"
+   },
+   "evFromImpr": 1727,
+   "avd": "6:08",
    "ab": {
     "metric": "觀看時間占比",
-    "status": "執行中",
-    "period": "",
+    "status": "已由你停止",
+    "period": "2026年11月20日至23日",
     "variants": [
      {
       "title": "國安基金證實進場、金管會祭最強限空令！台股仍暴跌 1,768 點失守年線，政府救市到底擋住了誰？",
-      "share": 55.0
+      "share": 52.9
      },
      {
       "title": "日月光豪砸 2,489 億高雄動土建測試新廠，這筆千億銀彈最先流進誰口袋？",
-      "share": 45.0
+      "share": 47.1
      }
     ],
     "tests": "標題＋縮圖"
    },
    "traffic": {
-    "瀏覽功能": 77.0,
-    "推薦影片": 15.5,
-    "通知": 2.5,
-    "其他 YouTube 功能": 1.5
+    "瀏覽功能": 75.8,
+    "推薦影片": 14.5,
+    "通知": 2.3,
+    "頻道頁面": 2.2
    }
   },
   "HHcVX8BI-KQ": {
@@ -1446,8 +1477,81 @@
     "頻道頁面": 6.1,
     "YouTube 搜尋": 1.9
    }
+  },
+  "EHsby5WLPUU": {
+   "asOf": "2026-11-24",
+   "since": {
+    "impr": 26000,
+    "ctr": 10.9,
+    "views": 8671,
+    "from": null
+   },
+   "evFromImpr": 1370,
+   "avd": "7:13",
+   "ab": {
+    "metric": "觀看時間占比",
+    "status": "已完成",
+    "period": "2026年11月24日",
+    "variants": [
+     {
+      "title": "黃仁勳正式復職！輝達股價狂飆 31%、台指期夜盤漲停，這根漲停替台股拿掉了什麼、又留下了什麼？",
+      "share": 35.2
+     },
+     {
+      "title": "台積電罕見打破沉默、ADR 飆 14%！政商總動員挺 AI，有多少真訂單？",
+      "win": true,
+      "share": 64.8
+     }
+    ],
+    "tests": "標題＋縮圖"
+   },
+   "traffic": {
+    "瀏覽功能": 75.2,
+    "推薦影片": 18.1,
+    "其他 YouTube 功能": 2.9,
+    "YouTube 搜尋": 1.5
+   }
+  },
+  "poocX6HiPZE": {
+   "asOf": "2026-11-24",
+   "since": {
+    "impr": 18000,
+    "ctr": 7.7,
+    "views": 4647,
+    "from": null
+   },
+   "h24": {
+    "impr": 17000,
+    "ctr": 7.8,
+    "views": 4549,
+    "from": "2026年11月23日 上午11:47"
+   },
+   "evFromImpr": 1389,
+   "avd": "7:07",
+   "ab": {
+    "metric": "觀看時間占比",
+    "status": "已由你停止",
+    "period": "2026年11月23日",
+    "variants": [
+     {
+      "title": "輝達驚爆會計與刑事調查暴跌 14%！台指期夜盤崩 1,881 點，金管會五招齊發救市打中真正痛點了嗎？",
+      "share": 56.8
+     },
+     {
+      "title": "台灣50反1 狂飆逾兩成、富邦印度正2 逆勢大漲 23%，熱錢正在逃命還是大搬風？",
+      "share": 43.2
+     }
+    ],
+    "tests": "標題＋縮圖"
+   },
+   "traffic": {
+    "瀏覽功能": 74.2,
+    "推薦影片": 15.0,
+    "YouTube 搜尋": 3.0,
+    "通知": 2.9
+   }
   }
  },
- "updated": "2026-11-20",
+ "updated": "2026-11-24",
  "note": "Studio 影片分析〈觸及〉分頁逐集抓取：h24＝上線前 24 小時曝光與 CTR（團隊 KR 口徑）、since＝自發布至今、ab＝A/B 測試各版本與觀看時間占比。"
 }

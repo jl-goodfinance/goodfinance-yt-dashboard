@@ -71,6 +71,13 @@ def main():
         if imp.get("ev"): rec["evFromImpr"] = num(imp["ev"]); rec["avd"] = imp.get("avd")
         ab = parse_ab(r.get("ab"), r.get("abImg")) or cur.get("ab")
         if ab:
+            prev = cur.get("ab")
+            log = list(cur.get("abLog") or [])
+            # 同一支影片重新開測時，把上一輪結果收進 abLog（否則會被進行中的新測試蓋掉）
+            sig = lambda a: (a.get("period"), tuple((v.get("title"), v.get("share")) for v in a.get("variants") or []))
+            if prev and prev.get("status") != "執行中" and sig(prev) != sig(ab) and all(sig(x) != sig(prev) for x in log):
+                log.append(prev)
+            if log: rec["abLog"] = log
             old = (cur.get("ab") or {}).get("variants") or []
             for i, v in enumerate(ab["variants"]):  # 舊紀錄有縮圖網址而這次沒抓到就沿用
                 if "thumb" not in v and i < len(old) and old[i].get("title") == v["title"] and old[i].get("thumb"): v["thumb"] = old[i]["thumb"]

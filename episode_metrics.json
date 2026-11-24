@@ -1,164 +1,400 @@
 {
- "updated": "2026-11-20",
- "note": "YouTube Analytics API；流量與年齡為觀看次數占比、裝置為觀看時間占比；ret30s＝0:30 仍在觀看的比例（取續看曲線中含 0:30 的那一格，與 Studio〈參與度〉的「00:30 時仍在觀看的比例」對過：11/16 GM 為 64.1% 對 63.5%；片長超過 50 分鐘時一格就超過 30 秒，不準，請用 Studio 的數字）",
+ "updated": "2026-11-24",
+ "note": "YouTube Analytics API；流量與年齡為觀看次數占比、裝置為觀看時間占比；ret30s＝0:30 仍在觀看的比例",
  "videos": {
+  "poocX6HiPZE": {
+   "show": "Good Morning 美好",
+   "pub": "2026-11-23",
+   "title": "輝達驚爆會計與刑事調查暴跌 14%！台指期夜盤崩 1,881 點，金管會五招齊發",
+   "dur": 892,
+   "public": 4616,
+   "likes": 90,
+   "comments": 4
+  },
   "4E0_9STbzVM": {
    "show": "Good Morning 美好",
    "pub": "2026-11-20",
    "title": "國安基金證實進場、金管會祭最強限空令！台股仍暴跌 1,768 點失守年線，政府救",
    "dur": 810,
-   "public": 4253,
-   "likes": 80,
-   "comments": 16
+   "public": 5509,
+   "likes": 91,
+   "comments": 18,
+   "views": 5364,
+   "ev": 2613,
+   "minutes": 16362,
+   "avgDur": 354,
+   "avgPct": 43.75,
+   "shares": 22,
+   "subs": 1,
+   "subsLost": 0,
+   "traffic": {
+    "SUBSCRIBER": 76.3,
+    "RELATED_VIDEO": 14.9,
+    "NOTIFICATION": 2.4,
+    "YT_CHANNEL": 1.9,
+    "YT_SEARCH": 1.4,
+    "NO_LINK_OTHER": 1.3,
+    "YT_OTHER_PAGE": 1.0,
+    "PLAYLIST": 0.5,
+    "EXT_URL": 0.3,
+    "HASHTAGS": 0.0
+   },
+   "subscribedViews": 66.2,
+   "subscribedWatch": 73.7,
+   "age": {
+    "25-34": 14.3,
+    "35-44": 25.2,
+    "45-54": 30.3,
+    "55-64": 21.9,
+    "65-": 8.3
+   },
+   "female": 9.4,
+   "age45": 60.5,
+   "age35_54": 55.5,
+   "device": {
+    "MOBILE": 49.3,
+    "DESKTOP": 23.3,
+    "TV": 20.5,
+    "TABLET": 7.0
+   },
+   "search": [
+    [
+     "美好證券",
+     10
+    ],
+    [
+     "金管會",
+     8
+    ],
+    [
+     "華新麗華",
+     7
+    ],
+    [
+     "玻璃基板",
+     3
+    ],
+    [
+     "宏爺講股",
+     2
+    ],
+    [
+     "鴻海",
+     2
+    ],
+    [
+     "國安基金",
+     1
+    ],
+    [
+     "廣達",
+     1
+    ]
+   ],
+   "related": [
+    [
+     "2026/11/20(五)四大指數年線全失守 ANT吃飽 美股全倒?台股禁空令 擋得住賣壓?【早晨財經速解讀】",
+     "游庭皓的財經皓角",
+     35
+    ],
+    [
+     "定期定額投資大盤，還有這個選擇 ft. 李柏鋒｜EP38 #0050 #回彈 #抗跌ETF",
+     "美好證券 Good Finance",
+     20
+    ],
+    [
+     "股市續崩， 送融資上天? 摜破年線！融資斷頭潮逼近130%？看懂這指標較穩?｜美股、台積電、輝達、超微、鴻海、廣達、財經",
+     "宏爺講股",
+     15
+    ],
+    [
+     "台新李鎮宇分析黃仁勳下台有利有弊！直言輝達有望複製「蘋果路線」再創高峰！台供應鏈卻首當其衝？專業經理人接手若趨保守「升級",
+     "三立財經iNEWS",
+     12
+    ],
+    [
+     "【台積電會到600元嗎?】2026/11/20(直播)",
+     "郭哲榮分析師-摩爾證券投顧",
+     12
+    ],
+    [
+     "台股創1990年最大單週跌幅！史詩級崩盤到底該怎麼做？這部影片真的會救到你｜老簡講股",
+     "老簡講股 l 簡之隊",
+     10
+    ]
+   ],
+   "ret30s": 72.6,
+   "ret25": 56.0,
+   "ret50": 46.0,
+   "ret75": 40.8,
+   "ret95": 35.0
   },
   "HHcVX8BI-KQ": {
    "show": "Good Morning 美好",
    "pub": "2026-11-19",
    "title": "台積電高層親飛輝達送暖！輝達法說會點名台廠！繼京元電、欣興之後，景碩、矽品正式簽",
    "dur": 785,
-   "public": 6908,
-   "likes": 105,
-   "comments": 23
+   "public": 7574,
+   "likes": 110,
+   "comments": 21,
+   "views": 7394,
+   "ev": 3557,
+   "minutes": 20512,
+   "avgDur": 326,
+   "avgPct": 41.57,
+   "shares": 27,
+   "subs": 5,
+   "subsLost": 1,
+   "traffic": {
+    "SUBSCRIBER": 77.4,
+    "RELATED_VIDEO": 12.9,
+    "YT_SEARCH": 3.1,
+    "NOTIFICATION": 1.8,
+    "NO_LINK_OTHER": 1.4,
+    "YT_CHANNEL": 1.2,
+    "EXT_URL": 1.1,
+    "YT_OTHER_PAGE": 0.6,
+    "PLAYLIST": 0.3,
+    "END_SCREEN": 0.2
+   },
+   "subscribedViews": 62.2,
+   "subscribedWatch": 69.1,
+   "age": {
+    "25-34": 11.2,
+    "35-44": 20.9,
+    "45-54": 29.6,
+    "55-64": 26.1,
+    "65-": 12.1
+   },
+   "female": 10.6,
+   "age45": 67.8,
+   "age35_54": 50.5,
+   "device": {
+    "MOBILE": 49.1,
+    "DESKTOP": 22.5,
+    "TV": 19.9,
+    "TABLET": 8.4
+   },
+   "search": [
+    [
+     "美好證券",
+     23
+    ],
+    [
+     "台積電",
+     16
+    ],
+    [
+     "聯亞",
+     5
+    ],
+    [
+     "何基鼎",
+     3
+    ],
+    [
+     "台達電",
+     3
+    ],
+    [
+     "nvda",
+     2
+    ],
+    [
+     "nvidia 法說會",
+     2
+    ],
+    [
+     "光通訊",
+     2
+    ]
+   ],
+   "related": [
+    [
+     "股市崩盤？ 宏爺買股；台股遭鎖定狙擊？外資狂倒3.17兆！台股驚現空襲警報，美股、台積電、輝達、美光、0050、0087",
+     "宏爺講股",
+     23
+    ],
+    [
+     "2026/11/19(四)AI股災遇上 史上最大IPO?輝達對中政策轉彎 美股這波 夠恐慌了嗎?【早晨財經速解讀】",
+     "游庭皓的財經皓角",
+     20
+    ],
+    [
+     "美商務部 BIS 祭最嚴「第三國算力禁令」！星馬泰五國列高風險黑名單，台積電、伺服器鏈訂單會縮水嗎？｜2026/11/1",
+     "美好證券 Good Finance",
+     13
+    ],
+    [
+     "帶你看懂CPO：黃仁勳辭職前押下30倍產能，沒有他，輝達這條路還走得下去嗎？",
+     "矽說台灣",
+     11
+    ],
+    [
+     "南韓演員金惠奫遊台拍宣傳片藏諧音哏 蔡英文轉發稱讚－民視新聞",
+     "民視新聞網 Formosa TV News network",
+     10
+    ],
+    [
+     "輝達想踢走老黃還真難！3董事反水力挺回鍋  美媒更曝黃仁勳籌「1.6兆美元」隨時反殺！｜#寰宇財經新聞 @globalm",
+     "寰宇財經新聞",
+     10
+    ]
+   ],
+   "ret30s": 71.0,
+   "ret25": 51.0,
+   "ret50": 42.9,
+   "ret75": 37.6,
+   "ret95": 34.8
   },
   "2oH3VMGO97I": {
    "show": "Good Morning 美好",
    "pub": "2026-11-18",
    "title": "美商務部 BIS 祭最嚴「第三國算力禁令」！星馬泰五國列高風險黑名單，台積電、伺",
    "dur": 863,
-   "public": 11168,
-   "likes": 135,
-   "comments": 24,
-   "views": 5916,
-   "ev": 2852,
-   "minutes": 19179,
-   "avgDur": 378,
-   "avgPct": 43.8,
-   "shares": 24,
-   "subs": 9,
+   "public": 11599,
+   "likes": 136,
+   "comments": 25,
+   "views": 11525,
+   "ev": 5142,
+   "minutes": 32418,
+   "avgDur": 353,
+   "avgPct": 40.93,
+   "shares": 37,
+   "subs": 15,
    "subsLost": 1,
    "traffic": {
-    "SUBSCRIBER": 84.2,
-    "RELATED_VIDEO": 11.2,
-    "NOTIFICATION": 1.5,
+    "SUBSCRIBER": 82.9,
+    "RELATED_VIDEO": 11.0,
+    "YT_SEARCH": 1.5,
     "NO_LINK_OTHER": 1.2,
-    "YT_CHANNEL": 0.5,
-    "YT_SEARCH": 0.5,
-    "YT_OTHER_PAGE": 0.4,
+    "NOTIFICATION": 1.1,
+    "YT_CHANNEL": 1.1,
+    "YT_OTHER_PAGE": 0.5,
     "PLAYLIST": 0.3,
-    "EXT_URL": 0.2
+    "EXT_URL": 0.2,
+    "END_SCREEN": 0.1
    },
-   "subscribedViews": 54.7,
-   "subscribedWatch": 65.0,
+   "subscribedViews": 51.3,
+   "subscribedWatch": 64.2,
    "age": {
     "25-34": 10.5,
-    "35-44": 19.8,
-    "45-54": 29.3,
-    "55-64": 27.2,
-    "65-": 13.2
+    "35-44": 21.7,
+    "45-54": 30.7,
+    "55-64": 25.6,
+    "65-": 11.7
    },
-   "female": 11.9,
-   "age45": 69.7,
-   "age35_54": 49.1,
+   "female": 10.1,
+   "age45": 68.0,
+   "age35_54": 52.4,
    "device": {
-    "MOBILE": 43.6,
-    "DESKTOP": 26.7,
-    "TV": 21.9,
-    "TABLET": 7.8
+    "MOBILE": 46.5,
+    "DESKTOP": 23.3,
+    "TV": 22.2,
+    "TABLET": 8.0
    },
    "search": [
     [
      "美好證券",
-     11
+     27
+    ],
+    [
+     "bis",
+     18
+    ],
+    [
+     "華邦電",
+     6
+    ],
+    [
+     "南亞科",
+     5
+    ],
+    [
+     "bis新规",
+     4
     ],
     [
      "台積電",
-     2
+     4
     ],
     [
      "潘健成",
-     2
-    ],
-    [
-     "緯穎",
-     2
+     4
     ],
     [
      "美好",
-     1
-    ],
-    [
-     "美好金融",
-     1
+     4
     ]
    ],
    "related": [
     [
      "2026/11/18(三)輝達財報炸裂 老黃回鍋夢碎?新CEO如何面對 晶片禁令與融資風暴?【早晨財經速解讀】",
      "游庭皓的財經皓角",
-     34
+     44
     ],
     [
      "輝達神級財報不重要，重要的是黃仁勳路線沒變，黃仁勳王者歸來不遠了！",
      "老簡講股 l 簡之隊",
-     26
+     37
     ],
     [
      "股市死貓跳?病貓發威? 年線保衛戰拉警報！外資空單近10萬口，輝達盤後急拉是解藥還是煙霧彈？AI機房竟沒電被銀行打折甩賣",
      "宏爺講股",
-     21
+     29
+    ],
+    [
+     "【最新】黃仁勳王者歸來！輝達竟拒絕還去找獵頭？AI體系痛苦瓦解中！【邦妮區塊鏈】",
+     "邦妮區塊鏈 Bonnie Blockchain",
+     29
+    ],
+    [
+     "台積電高層親飛輝達送暖！輝達法說會點名台廠！繼京元電、欣興之後，景碩、矽品正式簽下新協議｜2026/11/19 (四）",
+     "美好證券 Good Finance",
+     27
     ],
     [
      "2026/11/18(三)  輝達(NVDA)太便宜，財報好能止跌？",
      "財女珍妮",
-     14
-    ],
-    [
-     "首个无黄仁勋的财报！消费还能撑多久？大摩看8700点！GPT6.2来了！",
-     "美投侃新闻",
-     10
-    ],
-    [
-     "浑水做空英伟达，财报盘后出炉。【2026-11-17】",
-     "阳光财经",
-     9
+     19
     ]
    ],
-   "ret30s": 73.5,
-   "ret25": 54.2,
-   "ret50": 45.8,
-   "ret75": 40.2,
-   "ret95": 33.8
+   "ret30s": 70.2,
+   "ret25": 51.1,
+   "ret50": 42.7,
+   "ret75": 37.0,
+   "ret95": 31.3
   },
   "-i5zM58Hvk8": {
    "show": "Good Morning 美好",
    "pub": "2026-11-17",
    "title": "輝達換帥添變數、Google TPU 趁勢狂搶長單！聯發科獨家包辦第九、十代設計",
    "dur": 892,
-   "public": 11447,
-   "likes": 151,
+   "public": 11876,
+   "likes": 152,
    "comments": 20,
-   "views": 11105,
-   "ev": 4831,
-   "minutes": 30874,
-   "avgDur": 359,
-   "avgPct": 40.28,
-   "shares": 42,
+   "views": 11633,
+   "ev": 5076,
+   "minutes": 32178,
+   "avgDur": 356,
+   "avgPct": 39.92,
+   "shares": 43,
    "subs": 11,
    "subsLost": 1,
    "traffic": {
-    "SUBSCRIBER": 82.8,
+    "SUBSCRIBER": 82.4,
     "RELATED_VIDEO": 12.0,
-    "NO_LINK_OTHER": 1.2,
     "NOTIFICATION": 1.2,
-    "YT_SEARCH": 0.8,
+    "NO_LINK_OTHER": 1.1,
+    "YT_SEARCH": 0.9,
+    "YT_CHANNEL": 0.8,
     "YT_OTHER_PAGE": 0.7,
-    "YT_CHANNEL": 0.6,
     "PLAYLIST": 0.4,
-    "END_SCREEN": 0.1,
+    "END_SCREEN": 0.3,
     "EXT_URL": 0.1
    },
-   "subscribedViews": 52.7,
-   "subscribedWatch": 65.0,
+   "subscribedViews": 53.3,
+   "subscribedWatch": 65.2,
    "age": {
     "25-34": 10.8,
     "35-44": 23.0,
@@ -170,31 +406,31 @@
    "age45": 66.3,
    "age35_54": 53.0,
    "device": {
-    "MOBILE": 49.6,
+    "MOBILE": 49.5,
     "DESKTOP": 21.8,
-    "TV": 21.1,
-    "TABLET": 7.4
+    "TV": 21.2,
+    "TABLET": 7.5
    },
    "search": [
     [
      "美好證券",
-     25
+     29
+    ],
+    [
+     "美好",
+     7
     ],
     [
      "ai",
      5
     ],
     [
-     "聯發科",
+     "穎樂",
      4
     ],
     [
-     "穎樂",
-     3
-    ],
-    [
-     "美好",
-     3
+     "聯發科",
+     4
     ],
     [
      "環球晶",
@@ -216,13 +452,18 @@
      32
     ],
     [
-     "黃仁勳風暴「台股6萬點夢碎」？美國「去中化恐變去台化」AI股重訂價…2027「底線下修4萬點」千元股神話破滅？- 李鎮宇",
-     "寶傑點兵／寶傑怎麼說",
-     20
+     "美商務部 BIS 祭最嚴「第三國算力禁令」！星馬泰五國列高風險黑名單，台積電、伺服器鏈訂單會縮水嗎？｜2026/11/1",
+     "美好證券 Good Finance",
+     23
     ],
     [
      "黃仁勳為什麼又想回來？暗中4股力量殘酷拉鋸中！【邦妮區塊鏈】",
      "邦妮區塊鏈 Bonnie Blockchain",
+     19
+    ],
+    [
+     "輝達 Vera Rubin 傳延後放量！鴻海廣達沒事，為何「換新材料的速度」才是台灣供應鏈最大惡夢？｜2026/11/1",
+     "美好證券 Good Finance",
      19
     ],
     [
@@ -234,82 +475,81 @@
      "'26.11.17【豐富│聽，阮大哥的！】股市大跌，到底在跌什麼？",
      "豐富",
      17
-    ],
-    [
-     "算力热潮转向了？航天史第一次！高盛：盈利增速腰斩！伯克希尔买了啥？",
-     "美投侃新闻",
-     17
     ]
    ],
-   "ret30s": 65.7,
-   "ret25": 49.2,
-   "ret50": 42.8,
-   "ret75": 38.6,
-   "ret95": 32.4
+   "ret30s": 64.9,
+   "ret25": 48.7,
+   "ret50": 42.3,
+   "ret75": 38.4,
+   "ret95": 32.3
   },
   "gMmk9lpygaY": {
    "show": "Good Morning 美好",
    "pub": "2026-11-16",
    "title": "輝達 Vera Rubin 傳延後放量！鴻海廣達沒事，為何「換新材料的速度」才是",
    "dur": 938,
-   "public": 22998,
+   "public": 23184,
    "likes": 195,
    "comments": 19,
-   "views": 22087,
-   "ev": 9929,
-   "minutes": 49422,
-   "avgDur": 287,
-   "avgPct": 30.680000000000003,
-   "shares": 86,
-   "subs": 42,
-   "subsLost": 0,
+   "views": 23111,
+   "ev": 10259,
+   "minutes": 50599,
+   "avgDur": 284,
+   "avgPct": 30.36,
+   "shares": 87,
+   "subs": 46,
+   "subsLost": 1,
    "traffic": {
-    "SUBSCRIBER": 88.6,
-    "RELATED_VIDEO": 6.4,
-    "YT_SEARCH": 1.9,
+    "SUBSCRIBER": 88.4,
+    "RELATED_VIDEO": 6.3,
+    "YT_SEARCH": 2.1,
     "NO_LINK_OTHER": 1.0,
-    "NOTIFICATION": 0.6,
+    "YT_CHANNEL": 0.6,
+    "NOTIFICATION": 0.5,
     "YT_OTHER_PAGE": 0.5,
-    "YT_CHANNEL": 0.5,
     "EXT_URL": 0.3,
     "PLAYLIST": 0.2,
     "END_SCREEN": 0.1
    },
-   "subscribedViews": 38.5,
+   "subscribedViews": 38.2,
    "subscribedWatch": 54.2,
    "age": {
     "18-24": 0.3,
-    "25-34": 9.7,
-    "35-44": 19.3,
-    "45-54": 28.0,
-    "55-64": 27.2,
-    "65-": 15.5
+    "25-34": 9.6,
+    "35-44": 19.6,
+    "45-54": 28.3,
+    "55-64": 26.7,
+    "65-": 15.3
    },
-   "female": 9.8,
-   "age45": 70.7,
-   "age35_54": 47.3,
+   "female": 9.5,
+   "age45": 70.3,
+   "age35_54": 47.9,
    "device": {
-    "MOBILE": 46.0,
-    "DESKTOP": 25.1,
-    "TV": 19.7,
+    "MOBILE": 45.9,
+    "DESKTOP": 25.3,
+    "TV": 19.5,
     "TABLET": 9.2
    },
    "search": [
     [
      "廣達",
-     57
+     68
     ],
     [
      "美好證券",
-     47
+     60
     ],
     [
      "vera rubin",
-     45
+     53
     ],
     [
      "rubin",
-     24
+     25
+    ],
+    [
+     "玻璃基板",
+     20
     ],
     [
      "鴻海",
@@ -317,15 +557,11 @@
     ],
     [
      "新應材",
-     14
+     16
     ],
     [
-     "玻璃基板",
-     14
-    ],
-    [
-     "精材",
-     8
+     "大成鋼",
+     10
     ]
    ],
    "related": [
@@ -360,78 +596,78 @@
      14
     ]
    ],
-   "ret30s": 64.1,
-   "ret25": 42.3,
-   "ret50": 32.3,
-   "ret75": 23.0,
-   "ret95": 19.6
+   "ret30s": 63.8,
+   "ret25": 41.8,
+   "ret50": 32.0,
+   "ret75": 22.7,
+   "ret95": 19.3
   },
   "HRVb5wvuFZs": {
    "show": "Good Morning 美好",
    "pub": "2026-11-14",
    "title": "0056 配息從 1.07 元驟降又暴衝 1.72 元！房租菜錢不會打折，靠高股",
    "dur": 1141,
-   "public": 43375,
-   "likes": 219,
+   "public": 44536,
+   "likes": 221,
    "comments": 17,
-   "views": 42529,
-   "ev": 15208,
-   "minutes": 71418,
-   "avgDur": 275,
-   "avgPct": 24.18,
+   "views": 43791,
+   "ev": 15658,
+   "minutes": 73883,
+   "avgDur": 276,
+   "avgPct": 24.23,
    "shares": 79,
-   "subs": 63,
+   "subs": 65,
    "subsLost": 0,
    "traffic": {
-    "SUBSCRIBER": 94.3,
-    "RELATED_VIDEO": 3.0,
-    "YT_SEARCH": 0.9,
-    "NO_LINK_OTHER": 0.6,
+    "SUBSCRIBER": 93.8,
+    "RELATED_VIDEO": 3.1,
+    "YT_SEARCH": 1.2,
+    "NO_LINK_OTHER": 0.5,
     "YT_OTHER_PAGE": 0.4,
     "YT_CHANNEL": 0.3,
     "NOTIFICATION": 0.3,
     "PLAYLIST": 0.2,
     "EXT_URL": 0.1
    },
-   "subscribedViews": 14.9,
-   "subscribedWatch": 22.5,
+   "subscribedViews": 15.1,
+   "subscribedWatch": 22.6,
    "age": {
     "18-24": 0.4,
     "25-34": 7.9,
     "35-44": 22.2,
-    "45-54": 35.8,
-    "55-64": 25.0,
-    "65-": 8.7
+    "45-54": 35.7,
+    "55-64": 25.3,
+    "65-": 8.6
    },
    "female": 20.6,
-   "age45": 69.5,
-   "age35_54": 58.0,
+   "age45": 69.6,
+   "age35_54": 57.9,
    "device": {
-    "MOBILE": 42.5,
-    "TV": 26.9,
+    "MOBILE": 42.6,
+    "TV": 27.0,
     "DESKTOP": 18.9,
     "TABLET": 11.6
    },
    "search": [
     [
      "0056",
-     152
+     253
     ],
     [
      "美好證券",
-     27
+     30
+    ],
+    [
+     "0056配息",
+     19
+    ],
+    [
+     "高股息",
+     12
     ],
     [
      "存股",
      11
-    ],
-    [
-     "高股息",
-     10
-    ],
-    [
-     "0056配息",
-     8
     ],
     [
      "最佳的一季",
@@ -450,7 +686,7 @@
     [
      "高股息ETF配息排行榜｜月領3萬、提早退休？ 第一名我很想買了! //BC股倉 (開啟字幕)",
      "BC 股倉",
-     149
+     168
     ],
     [
      "006208一拆八變3萬 跟0050怎麼選？｜楚狂人 ft. 證券分析師 股添樂 ｜財富狂犇｜玩股網20261114",
@@ -465,7 +701,7 @@
     [
      "投資 10 年輸給定存！30、40、50 理財建議！退休準備你從第一步就想錯了！feat.《中年理財》作者雨果 @hug",
      "美好證券 Good Finance",
-     19
+     22
     ],
     [
      "月月配怎麼組？他手上最大是00878，再配0056、00919｜安爸｜理財資優生 EP99精華",
@@ -473,38 +709,38 @@
      19
     ],
     [
-     "【精華】勞保一次領買0056、00878、00919能贏領年金？退休規劃專家葉俊佑拆解算給你看，60歲提早領打8折不吃虧",
-     "【CMoney理財寶】官方頻道",
-     11
+     "定期定額投資大盤，還有這個選擇 ft. 李柏鋒｜EP38 #0050 #回彈 #抗跌ETF",
+     "美好證券 Good Finance",
+     12
     ]
    ],
    "ret30s": 63.5,
-   "ret25": 31.7,
-   "ret50": 24.2,
+   "ret25": 31.8,
+   "ret50": 24.3,
    "ret75": 19.0,
-   "ret95": 14.4
+   "ret95": 14.5
   },
   "fQWqxBqIe7c": {
    "show": "Good Morning 美好",
    "pub": "2026-11-13",
    "title": "黃仁勳下台震動 1,500 億美元大單！台股 AI 鏈不會全面團滅，這兩類廠商反",
    "dur": 852,
-   "public": 47450,
-   "likes": 300,
+   "public": 47775,
+   "likes": 304,
    "comments": 34,
-   "views": 47251,
-   "ev": 20540,
-   "minutes": 92031,
-   "avgDur": 264,
-   "avgPct": 31.1,
+   "views": 47658,
+   "ev": 20739,
+   "minutes": 93009,
+   "avgDur": 265,
+   "avgPct": 31.120000000000005,
    "shares": 99,
-   "subs": 47,
+   "subs": 48,
    "subsLost": 0,
    "traffic": {
-    "SUBSCRIBER": 90.2,
-    "RELATED_VIDEO": 6.1,
-    "YT_SEARCH": 1.4,
-    "NO_LINK_OTHER": 0.7,
+    "SUBSCRIBER": 90.1,
+    "RELATED_VIDEO": 6.2,
+    "YT_SEARCH": 1.5,
+    "NO_LINK_OTHER": 0.8,
     "YT_OTHER_PAGE": 0.4,
     "YT_CHANNEL": 0.4,
     "NOTIFICATION": 0.4,
@@ -512,8 +748,8 @@
     "END_SCREEN": 0.1,
     "EXT_URL": 0.1
    },
-   "subscribedViews": 24.0,
-   "subscribedWatch": 40.0,
+   "subscribedViews": 24.2,
+   "subscribedWatch": 40.3,
    "age": {
     "18-24": 0.4,
     "25-34": 6.4,
@@ -526,27 +762,31 @@
    "age45": 81.1,
    "age35_54": 32.4,
    "device": {
-    "MOBILE": 47.3,
+    "MOBILE": 47.1,
+    "TV": 20.3,
     "DESKTOP": 20.2,
-    "TV": 20.1,
     "TABLET": 12.4
    },
    "search": [
     [
      "鴻海",
-     218
+     223
     ],
     [
      "a大 鴻海",
-     95
+     98
     ],
     [
      "美好證券",
-     45
+     50
     ],
     [
      "鴻海法說會",
      11
+    ],
+    [
+     "a大",
+     7
     ],
     [
      "台股",
@@ -559,10 +799,6 @@
     [
      "a大鴻海",
      5
-    ],
-    [
-     "a大",
-     4
     ]
    ],
    "related": [
@@ -574,7 +810,7 @@
     [
      "黃仁勳辭職！台積電、鴻海、廣達會受影響嗎？四大族群一次看",
      "晨星 DayStar Brilliant",
-     95
+     96
     ],
     [
      "後黃仁勳時代來了｜輝達人事大地震，哪些台廠會受重傷、哪些反而受益？",
@@ -598,31 +834,31 @@
     ]
    ],
    "ret30s": 63.0,
-   "ret25": 38.7,
+   "ret25": 38.6,
    "ret50": 33.1,
    "ret75": 26.3,
-   "ret95": 19.8
+   "ret95": 19.9
   },
   "E6h8a6drDF0": {
    "show": "Good Morning 美好",
    "pub": "2026-11-12",
    "title": "台積電喊需求「永無止境」、市值重返 60 兆！前段設備台廠竟不到 1%，真正的肥",
    "dur": 896,
-   "public": 8366,
+   "public": 8446,
    "likes": 146,
    "comments": 17,
-   "views": 8349,
-   "ev": 4073,
-   "minutes": 24975,
+   "views": 8402,
+   "ev": 4102,
+   "minutes": 25154,
    "avgDur": 364,
-   "avgPct": 40.63,
+   "avgPct": 40.72,
    "shares": 37,
    "subs": 7,
    "subsLost": 1,
    "traffic": {
-    "SUBSCRIBER": 81.9,
-    "RELATED_VIDEO": 10.5,
-    "NOTIFICATION": 1.7,
+    "SUBSCRIBER": 81.8,
+    "RELATED_VIDEO": 10.6,
+    "NOTIFICATION": 1.6,
     "YT_SEARCH": 1.6,
     "YT_CHANNEL": 1.2,
     "NO_LINK_OTHER": 1.0,
@@ -631,8 +867,8 @@
     "PLAYLIST": 0.4,
     "EXT_URL": 0.4
    },
-   "subscribedViews": 57.1,
-   "subscribedWatch": 66.0,
+   "subscribedViews": 57.0,
+   "subscribedWatch": 66.1,
    "age": {
     "25-34": 11.5,
     "35-44": 22.2,
@@ -644,9 +880,9 @@
    "age45": 66.4,
    "age35_54": 49.9,
    "device": {
-    "MOBILE": 53.9,
-    "DESKTOP": 22.4,
-    "TV": 16.2,
+    "MOBILE": 53.7,
+    "DESKTOP": 22.3,
+    "TV": 16.4,
     "TABLET": 7.5
    },
    "search": [
@@ -692,7 +928,7 @@
     [
      "黃仁勳下台震動 1,500 億美元大單！台股 AI 鏈不會全面團滅，這兩類廠商反而迎來漁翁得利？｜2026/11/13 ",
      "美好證券 Good Finance",
-     16
+     18
     ],
     [
      "反彈結束? 開始逃命? 暴風雨前的寧靜？台股連五紅逼近月線，外資空單卻逆勢狂飆10.3萬口！輝達盤後跳水背後有何玄機？美",
@@ -707,7 +943,7 @@
     [
      "台積電一邊買 Anthropic 普通股、一邊卡 OpenAI 特別股！入股兩大 AI 巨頭，背後藏著哪些精準避險心機？",
      "美好證券 Good Finance",
-     10
+     11
     ],
     [
      "台積電反彈才剛開始？看1指標加碼接黃金雨！【#財經鈔能力】｜20261111 趙慶翔 ft.闕又上 #台積電 #0050",
@@ -717,7 +953,7 @@
    ],
    "ret30s": 68.3,
    "ret25": 52.9,
-   "ret50": 43.5,
+   "ret50": 43.4,
    "ret75": 36.0,
    "ret95": 33.1
   },
@@ -726,20 +962,20 @@
    "pub": "2026-11-11",
    "title": "台積電一邊買 Anthropic 普通股、一邊卡 OpenAI 特別股！入股兩大",
    "dur": 867,
-   "public": 16045,
-   "likes": 199,
+   "public": 16101,
+   "likes": 200,
    "comments": 16,
-   "views": 16020,
-   "ev": 6833,
-   "minutes": 36899,
+   "views": 16063,
+   "ev": 6850,
+   "minutes": 37032,
    "avgDur": 320,
-   "avgPct": 37,
+   "avgPct": 37.02,
    "shares": 57,
    "subs": 19,
    "subsLost": 1,
    "traffic": {
-    "SUBSCRIBER": 90.2,
-    "RELATED_VIDEO": 5.2,
+    "SUBSCRIBER": 90.1,
+    "RELATED_VIDEO": 5.3,
     "YT_SEARCH": 1.1,
     "NOTIFICATION": 0.9,
     "NO_LINK_OTHER": 0.8,
@@ -763,15 +999,15 @@
    "age45": 69.7,
    "age35_54": 47.4,
    "device": {
-    "MOBILE": 50.4,
-    "DESKTOP": 24.0,
-    "TV": 17.5,
-    "TABLET": 8.0
+    "MOBILE": 50.3,
+    "DESKTOP": 23.9,
+    "TV": 17.7,
+    "TABLET": 8.1
    },
    "search": [
     [
      "美好證券",
-     29
+     30
     ],
     [
      "2330",
@@ -845,20 +1081,20 @@
    "pub": "2026-11-10",
    "title": "Terafab記憶體月產 70 萬片單挑三星！馬斯克回頭找台積電，為何魏哲家堅持",
    "dur": 949,
-   "public": 20840,
+   "public": 20875,
    "likes": 198,
    "comments": 34,
-   "views": 20821,
-   "ev": 7927,
-   "minutes": 41635,
+   "views": 20854,
+   "ev": 7944,
+   "minutes": 41677,
    "avgDur": 311,
-   "avgPct": 32.82,
+   "avgPct": 32.79,
    "shares": 41,
    "subs": 11,
    "subsLost": 3,
    "traffic": {
-    "SUBSCRIBER": 90.3,
-    "RELATED_VIDEO": 5.4,
+    "SUBSCRIBER": 90.2,
+    "RELATED_VIDEO": 5.5,
     "YT_SEARCH": 1.4,
     "NO_LINK_OTHER": 0.7,
     "YT_CHANNEL": 0.6,
@@ -868,7 +1104,7 @@
     "EXT_URL": 0.1,
     "END_SCREEN": 0.1
    },
-   "subscribedViews": 34.6,
+   "subscribedViews": 34.7,
    "subscribedWatch": 55.8,
    "age": {
     "18-24": 0.8,
@@ -890,7 +1126,7 @@
    "search": [
     [
      "美好證券",
-     65
+     67
     ],
     [
      "記憶體",
@@ -953,31 +1189,31 @@
      15
     ]
    ],
-   "ret30s": 62.2,
-   "ret25": 41.7,
+   "ret30s": 62.1,
+   "ret25": 41.6,
    "ret50": 31.9,
-   "ret75": 31.0,
-   "ret95": 23.8
+   "ret75": 30.9,
+   "ret95": 23.7
   },
   "40etm2xKbtg": {
    "show": "Good Morning 美好",
    "pub": "2026-11-09",
    "title": "豪砸 300 億買斷 50 公頃！南科管理局擴大版圖，台積電可從 3 奈米一路蓋",
    "dur": 959,
-   "public": 9976,
+   "public": 10006,
    "likes": 139,
    "comments": 13,
-   "views": 9963,
-   "ev": 4569,
-   "minutes": 26322,
+   "views": 9993,
+   "ev": 4590,
+   "minutes": 26446,
    "avgDur": 342,
-   "avgPct": 35.72,
+   "avgPct": 35.76,
    "shares": 40,
    "subs": 9,
    "subsLost": 0,
    "traffic": {
-    "SUBSCRIBER": 84.5,
-    "RELATED_VIDEO": 7.9,
+    "SUBSCRIBER": 84.4,
+    "RELATED_VIDEO": 8.0,
     "YT_SEARCH": 2.3,
     "NOTIFICATION": 1.4,
     "NO_LINK_OTHER": 1.3,
@@ -1001,9 +1237,9 @@
    "age35_54": 53.1,
    "device": {
     "MOBILE": 50.4,
-    "DESKTOP": 25.7,
-    "TV": 17.0,
-    "TABLET": 6.9
+    "DESKTOP": 25.6,
+    "TV": 17.1,
+    "TABLET": 7.0
    },
    "search": [
     [
@@ -1053,7 +1289,7 @@
     [
      "台積電喊需求「永無止境」、市值重返 60 兆！前段設備台廠竟不到 1%，真正的肥肉全卡在這一關？｜2026/11/12 ",
      "美好證券 Good Finance",
-     14
+     16
     ],
     [
      "雙11會員優惠開跑!!2026/11/9(一)黑天鵝?輝達間諜案 國安調查全面轉向?國安基金來了台股四萬點防線 守得住嗎",
@@ -1074,7 +1310,7 @@
    "ret30s": 66.7,
    "ret25": 47.5,
    "ret50": 35.6,
-   "ret75": 32.4,
+   "ret75": 32.3,
    "ret95": 27.3
   },
   "23XDH1gjJFA": {
@@ -1082,19 +1318,19 @@
    "pub": "2026-11-06",
    "title": "費半單日暴跌 12%！Citrini 宣告 AI 交易已死，美銀為何反稱「建廠放",
    "dur": 813,
-   "public": 11629,
+   "public": 11646,
    "likes": 142,
    "comments": 17,
-   "views": 11621,
-   "ev": 4945,
-   "minutes": 26189,
+   "views": 11637,
+   "ev": 4953,
+   "minutes": 26240,
    "avgDur": 314,
-   "avgPct": 38.72,
+   "avgPct": 38.73,
    "shares": 32,
    "subs": 10,
    "subsLost": 1,
    "traffic": {
-    "SUBSCRIBER": 86.2,
+    "SUBSCRIBER": 86.1,
     "RELATED_VIDEO": 6.1,
     "YT_SEARCH": 1.9,
     "YT_CHANNEL": 1.9,
@@ -1105,7 +1341,7 @@
     "EXT_URL": 0.2,
     "END_SCREEN": 0.1
    },
-   "subscribedViews": 46.0,
+   "subscribedViews": 46.1,
    "subscribedWatch": 65.2,
    "age": {
     "25-34": 14.6,
@@ -1118,15 +1354,15 @@
    "age45": 56.6,
    "age35_54": 60.6,
    "device": {
-    "MOBILE": 52.3,
-    "DESKTOP": 26.2,
-    "TV": 14.7,
-    "TABLET": 6.9
+    "MOBILE": 52.2,
+    "DESKTOP": 26.1,
+    "TV": 14.8,
+    "TABLET": 6.8
    },
    "search": [
     [
      "美好證券",
-     91
+     95
     ],
     [
      "臻鼎",
@@ -1192,7 +1428,7 @@
    "ret30s": 67.2,
    "ret25": 50.1,
    "ret50": 41.4,
-   "ret75": 33.7,
+   "ret75": 33.6,
    "ret95": 29.9
   },
   "p8xylTGN5QQ": {
@@ -1200,19 +1436,19 @@
    "pub": "2026-11-05",
    "title": "台廠豪砸 2,300 億的德州翻藍！神秘 450 億建廠案曝光，台積電伺服器鏈會",
    "dur": 831,
-   "public": 13255,
+   "public": 13271,
    "likes": 138,
    "comments": 21,
-   "views": 13253,
-   "ev": 5483,
-   "minutes": 30888,
-   "avgDur": 335,
-   "avgPct": 40.32,
+   "views": 13262,
+   "ev": 5487,
+   "minutes": 30904,
+   "avgDur": 334,
+   "avgPct": 40.29,
    "shares": 36,
    "subs": 4,
    "subsLost": 1,
    "traffic": {
-    "SUBSCRIBER": 87.1,
+    "SUBSCRIBER": 87.0,
     "RELATED_VIDEO": 7.5,
     "YT_SEARCH": 1.6,
     "YT_CHANNEL": 1.0,
@@ -1318,12 +1554,12 @@
    "pub": "2026-11-04",
    "title": "三星爆 2030 年全面退出 8 吋廠！市場喊聯電成最大贏家，又為何說台廠根本吃",
    "dur": 912,
-   "public": 8737,
+   "public": 8743,
    "likes": 117,
    "comments": 15,
-   "views": 8733,
-   "ev": 3719,
-   "minutes": 20988,
+   "views": 8739,
+   "ev": 3721,
+   "minutes": 20989,
    "avgDur": 335,
    "avgPct": 36.77,
    "shares": 37,
@@ -1333,7 +1569,7 @@
     "SUBSCRIBER": 83.6,
     "RELATED_VIDEO": 8.7,
     "YT_SEARCH": 2.2,
-    "YT_CHANNEL": 1.7,
+    "YT_CHANNEL": 1.8,
     "NO_LINK_OTHER": 1.1,
     "NOTIFICATION": 1.0,
     "YT_OTHER_PAGE": 0.6,
@@ -1429,21 +1665,21 @@
    "ret25": 48.0,
    "ret50": 38.7,
    "ret75": 33.2,
-   "ret95": 29.4
+   "ret95": 29.3
   },
   "uoQeeM6PL5A": {
    "show": "Good Morning 美好",
    "pub": "2026-11-03",
    "title": "政府搶先替 1 奈米劃定台南新園區！2 奈米營收剛飆破 8%，台積電大擴廠該看眼",
    "dur": 951,
-   "public": 11402,
+   "public": 11419,
    "likes": 224,
    "comments": 16,
-   "views": 11401,
-   "ev": 6330,
+   "views": 11405,
+   "ev": 6331,
    "minutes": 35484,
    "avgDur": 334,
-   "avgPct": 35.18,
+   "avgPct": 35.17,
    "shares": 62,
    "subs": 21,
    "subsLost": 2,
@@ -1493,7 +1729,7 @@
     ],
     [
      "晶技",
-     5
+     4
     ],
     [
      "美好金融",
@@ -1548,19 +1784,19 @@
    "ret25": 46.4,
    "ret50": 38.2,
    "ret75": 29.4,
-   "ret95": 24.3
+   "ret95": 24.2
   },
   "RvaqKB8UcJo": {
    "show": "Good Morning 美好",
    "pub": "2026-11-02",
    "title": "聯電搶下光通訊萬片大單，為何連三星急單都敢直接拒絕？｜2026/11/02 (一",
    "dur": 920,
-   "public": 17214,
-   "likes": 233,
+   "public": 17236,
+   "likes": 234,
    "comments": 29,
-   "views": 17201,
-   "ev": 7645,
-   "minutes": 40424,
+   "views": 17224,
+   "ev": 7657,
+   "minutes": 40516,
    "avgDur": 314,
    "avgPct": 34.17,
    "shares": 74,
@@ -1568,7 +1804,7 @@
    "subsLost": 3,
    "traffic": {
     "SUBSCRIBER": 79.6,
-    "RELATED_VIDEO": 12.0,
+    "RELATED_VIDEO": 11.9,
     "YT_SEARCH": 3.7,
     "NO_LINK_OTHER": 1.5,
     "YT_CHANNEL": 1.2,
@@ -1580,7 +1816,7 @@
     "LIVE_REDIRECT": 0.0
    },
    "subscribedViews": 40.2,
-   "subscribedWatch": 56.2,
+   "subscribedWatch": 56.1,
    "age": {
     "25-34": 11.2,
     "35-44": 19.6,
@@ -1592,19 +1828,19 @@
    "age45": 69.2,
    "age35_54": 46.8,
    "device": {
-    "MOBILE": 50.5,
-    "DESKTOP": 23.4,
-    "TV": 17.7,
-    "TABLET": 8.5
+    "MOBILE": 50.4,
+    "DESKTOP": 23.3,
+    "TV": 17.8,
+    "TABLET": 8.4
    },
    "search": [
     [
      "聯電",
-     314
+     317
     ],
     [
      "聯發科",
-     66
+     68
     ],
     [
      "美好證券",
@@ -1674,22 +1910,22 @@
    "pub": "2026-10-31",
    "title": "技術慘輸台積電、本益比卻飆破 50 倍！Intel 憑什麼比台積電貴這麼多？",
    "dur": 967,
-   "public": 18290,
+   "public": 18313,
    "likes": 203,
    "comments": 49,
-   "views": 18286,
-   "ev": 7943,
-   "minutes": 41670,
+   "views": 18299,
+   "ev": 7950,
+   "minutes": 41690,
    "avgDur": 311,
-   "avgPct": 32.2,
+   "avgPct": 32.19,
    "shares": 82,
    "subs": 23,
    "subsLost": 5,
    "traffic": {
-    "SUBSCRIBER": 81.7,
+    "SUBSCRIBER": 81.6,
     "RELATED_VIDEO": 8.9,
-    "YT_SEARCH": 4.2,
-    "YT_CHANNEL": 2.3,
+    "YT_SEARCH": 4.3,
+    "YT_CHANNEL": 2.4,
     "NO_LINK_OTHER": 1.0,
     "YT_OTHER_PAGE": 0.6,
     "NOTIFICATION": 0.6,
@@ -1723,7 +1959,7 @@
     ],
     [
      "intel",
-     129
+     133
     ],
     [
      "美好證券",
@@ -1782,7 +2018,7 @@
      20
     ]
    ],
-   "ret30s": 64.2,
+   "ret30s": 64.1,
    "ret25": 39.7,
    "ret50": 32.7,
    "ret75": 28.0,
@@ -1793,19 +2029,19 @@
    "pub": "2026-10-30",
    "title": "台積電豪砸 388 億買下中科兩座廠房！友達賣廠大賺，這筆交易背後藏著什麼盤算？",
    "dur": 897,
-   "public": 9193,
+   "public": 9202,
    "likes": 111,
    "comments": 6,
-   "views": 9189,
-   "ev": 4298,
-   "minutes": 26663,
+   "views": 9196,
+   "ev": 4301,
+   "minutes": 26676,
    "avgDur": 369,
-   "avgPct": 41.23,
+   "avgPct": 41.22,
    "shares": 31,
    "subs": 7,
    "subsLost": 2,
    "traffic": {
-    "SUBSCRIBER": 78.6,
+    "SUBSCRIBER": 78.5,
     "RELATED_VIDEO": 14.6,
     "YT_SEARCH": 2.1,
     "YT_CHANNEL": 1.5,
@@ -1815,7 +2051,7 @@
     "PLAYLIST": 0.5,
     "EXT_URL": 0.2
    },
-   "subscribedViews": 48.1,
+   "subscribedViews": 48.0,
    "subscribedWatch": 61.7,
    "age": {
     "25-34": 11,
@@ -1830,7 +2066,7 @@
    "device": {
     "MOBILE": 49.2,
     "DESKTOP": 22.0,
-    "TV": 19.9,
+    "TV": 20.0,
     "TABLET": 8.9
    },
    "search": [
@@ -1900,7 +2136,7 @@
     ]
    ],
    "ret30s": 68.5,
-   "ret25": 51.8,
+   "ret25": 51.7,
    "ret50": 41.9,
    "ret75": 38.2,
    "ret95": 32.5
@@ -1910,14 +2146,14 @@
    "pub": "2026-10-29",
    "title": "2029 年前記憶體產能全部賣光！明明有長鑫，阿里騰訊為何急著跟SK海力士簽 1",
    "dur": 902,
-   "public": 9718,
+   "public": 9727,
    "likes": 103,
    "comments": 0,
-   "views": 9713,
-   "ev": 4496,
-   "minutes": 25791,
+   "views": 9720,
+   "ev": 4502,
+   "minutes": 25811,
    "avgDur": 341,
-   "avgPct": 37.87,
+   "avgPct": 37.85,
    "shares": 32,
    "subs": 9,
    "subsLost": 1,
@@ -1925,7 +2161,7 @@
     "SUBSCRIBER": 74.1,
     "RELATED_VIDEO": 15.8,
     "YT_SEARCH": 5.4,
-    "YT_CHANNEL": 1.2,
+    "YT_CHANNEL": 1.3,
     "NOTIFICATION": 1.1,
     "NO_LINK_OTHER": 0.9,
     "YT_OTHER_PAGE": 0.7,
@@ -1949,13 +2185,13 @@
    "device": {
     "MOBILE": 52.3,
     "DESKTOP": 21.5,
-    "TV": 18.7,
+    "TV": 18.8,
     "TABLET": 7.4
    },
    "search": [
     [
      "記憶體",
-     269
+     270
     ],
     [
      "美好證券",
@@ -2018,9 +2254,9 @@
      33
     ]
    ],
-   "ret30s": 66.8,
+   "ret30s": 66.7,
    "ret25": 48.1,
-   "ret50": 39.4,
+   "ret50": 39.3,
    "ret75": 33.5,
    "ret95": 27.8
   },
@@ -2134,21 +2370,21 @@
    "pub": "2026-10-28",
    "title": "Q3 爆賺逾一個股本、毛利率破 70%！旺宏突宣布「不再擴產 NOR」，背後打著",
    "dur": 870,
-   "public": 9810,
+   "public": 9830,
    "likes": 124,
    "comments": 10,
-   "views": 9797,
-   "ev": 4284,
-   "minutes": 27450,
+   "views": 9816,
+   "ev": 4292,
+   "minutes": 27490,
    "avgDur": 381,
-   "avgPct": 43.87,
+   "avgPct": 43.85,
    "shares": 33,
    "subs": 8,
    "subsLost": 1,
    "traffic": {
-    "SUBSCRIBER": 81.1,
+    "SUBSCRIBER": 80.9,
     "RELATED_VIDEO": 10.8,
-    "YT_SEARCH": 3.3,
+    "YT_SEARCH": 3.4,
     "NO_LINK_OTHER": 1.2,
     "NOTIFICATION": 1.1,
     "YT_CHANNEL": 1.1,
@@ -2157,7 +2393,7 @@
     "END_SCREEN": 0.2,
     "EXT_URL": 0.2
    },
-   "subscribedViews": 49.5,
+   "subscribedViews": 49.4,
    "subscribedWatch": 64.6,
    "age": {
     "25-34": 11.6,
@@ -2170,19 +2406,19 @@
    "age45": 65.7,
    "age35_54": 50.7,
    "device": {
-    "MOBILE": 50.7,
+    "MOBILE": 50.6,
     "DESKTOP": 24.1,
-    "TV": 17.8,
+    "TV": 17.9,
     "TABLET": 7.3
    },
    "search": [
     [
      "旺宏",
-     177
+     191
     ],
     [
      "美好證券",
-     62
+     63
     ],
     [
      "美好金融",
@@ -2252,14 +2488,14 @@
    "pub": "2026-10-27",
    "title": "傳台積電 CoWoS 報價喊漲 2 成、採購罕見完全不砍價！後段封裝產能到底有多",
    "dur": 970,
-   "public": 13068,
+   "public": 13071,
    "likes": 137,
    "comments": 4,
    "views": 13068,
    "ev": 6142,
    "minutes": 38169,
-   "avgDur": 370,
-   "avgPct": 38.15,
+   "avgDur": 369,
+   "avgPct": 38.14,
    "shares": 54,
    "subs": 13,
    "subsLost": 0,
@@ -2370,7 +2606,7 @@
    "pub": "2026-10-22",
    "title": "大立光三個月狂掃七座廠房！砸 80 億搶爆台中工業區，背後卡位什麼 AI 大單？",
    "dur": 820,
-   "public": 9475,
+   "public": 9478,
    "likes": 124,
    "comments": 6,
    "views": 9475,
@@ -2488,19 +2724,19 @@
    "pub": "2026-10-21",
    "title": "AI 營收狂暴增 9 倍！SpaceX 財報營收翻倍，為何 AI 部門利潤率不到",
    "dur": 800,
-   "public": 10415,
+   "public": 10418,
    "likes": 123,
    "comments": 8,
-   "views": 10414,
-   "ev": 5218,
-   "minutes": 29348,
+   "views": 10416,
+   "ev": 5219,
+   "minutes": 29362,
    "avgDur": 335,
-   "avgPct": 41.92,
+   "avgPct": 41.93,
    "shares": 49,
    "subs": 13,
    "subsLost": 1,
    "traffic": {
-    "SUBSCRIBER": 71.9,
+    "SUBSCRIBER": 71.8,
     "RELATED_VIDEO": 21.4,
     "YT_SEARCH": 2.2,
     "NO_LINK_OTHER": 1.3,
@@ -2511,7 +2747,7 @@
     "EXT_URL": 0.1
    },
    "subscribedViews": 44.9,
-   "subscribedWatch": 62.4,
+   "subscribedWatch": 62.3,
    "age": {
     "25-34": 11.6,
     "35-44": 26.0,
@@ -2531,7 +2767,7 @@
    "search": [
     [
      "美好證券",
-     28
+     29
     ],
     [
      "spacex財報",
@@ -2605,14 +2841,14 @@
    "pub": "2026-10-20",
    "title": "歐積電年產 48 萬片算小廠？捷克爭取台灣合作 AI 半導體橋樑，為何最先爆發的",
    "dur": 902,
-   "public": 21367,
+   "public": 21370,
    "likes": 184,
    "comments": 15,
-   "views": 21366,
-   "ev": 9577,
-   "minutes": 47086,
+   "views": 21367,
+   "ev": 9578,
+   "minutes": 47101,
    "avgDur": 291,
-   "avgPct": 32.36,
+   "avgPct": 32.37,
    "shares": 50,
    "subs": 19,
    "subsLost": 1,
@@ -2629,7 +2865,7 @@
     "END_SCREEN": 0.1
    },
    "subscribedViews": 31.2,
-   "subscribedWatch": 49.4,
+   "subscribedWatch": 49.3,
    "age": {
     "25-34": 8.1,
     "35-44": 14.7,
@@ -2641,7 +2877,7 @@
    "age45": 77.2,
    "age35_54": 38.4,
    "device": {
-    "MOBILE": 52.6,
+    "MOBILE": 52.5,
     "DESKTOP": 21.1,
     "TV": 17.6,
     "TABLET": 8.7
@@ -2723,7 +2959,7 @@
    "pub": "2026-10-19",
    "title": "大立光說不可行、友達打臉稱誤解！Micro LED 到底能不能卡進 AI 的 C",
    "dur": 1019,
-   "public": 11229,
+   "public": 11231,
    "likes": 144,
    "comments": 16,
    "views": 11229,
@@ -2841,19 +3077,19 @@
    "pub": "2026-10-17",
    "title": "目標價上看 800 元、EPS 預估卻差了三倍！法人幫南亞科估價，這次到底在吵什",
    "dur": 1108,
-   "public": 22053,
+   "public": 22083,
    "likes": 195,
    "comments": 76,
-   "views": 22043,
-   "ev": 8768,
-   "minutes": 53530,
+   "views": 22072,
+   "ev": 8783,
+   "minutes": 53602,
    "avgDur": 362,
-   "avgPct": 32.74,
+   "avgPct": 32.73,
    "shares": 97,
    "subs": 38,
    "subsLost": 2,
    "traffic": {
-    "SUBSCRIBER": 79.7,
+    "SUBSCRIBER": 79.6,
     "RELATED_VIDEO": 7.8,
     "YT_SEARCH": 7.1,
     "YT_CHANNEL": 2.9,
@@ -2879,14 +3115,14 @@
    "age35_54": 49.5,
    "device": {
     "MOBILE": 48.7,
-    "TV": 21.8,
+    "TV": 21.9,
     "DESKTOP": 21.4,
     "TABLET": 8.0
    },
    "search": [
     [
      "南亞科",
-     907
+     916
     ],
     [
      "南亞",
@@ -2952,7 +3188,7 @@
    "ret30s": 61.1,
    "ret25": 37.3,
    "ret50": 34.3,
-   "ret75": 32.4,
+   "ret75": 32.3,
    "ret95": 29.0
   },
   "Iqb4xtxYJLI": {
@@ -2960,7 +3196,7 @@
    "pub": "2026-10-16",
    "title": "魏哲家預告 2027 年轉趨審慎！消費性產品掉隊，明年台積電全靠 AI 一個人撐",
    "dur": 833,
-   "public": 34106,
+   "public": 34107,
    "likes": 288,
    "comments": 34,
    "views": 34106,
@@ -3079,21 +3315,21 @@
    "pub": "2026-10-15",
    "title": "ASML 提前宣告 2028 年產能都不夠！台積電法說會前夕拋重磅利多，設備供應",
    "dur": 873,
-   "public": 15029,
+   "public": 15036,
    "likes": 138,
    "comments": 8,
-   "views": 15018,
-   "ev": 5642,
-   "minutes": 30638,
+   "views": 15031,
+   "ev": 5647,
+   "minutes": 30643,
    "avgDur": 322,
-   "avgPct": 36.94,
+   "avgPct": 36.91,
    "shares": 53,
    "subs": 20,
    "subsLost": 1,
    "traffic": {
     "SUBSCRIBER": 44.0,
     "YT_SEARCH": 42.0,
-    "RELATED_VIDEO": 10.5,
+    "RELATED_VIDEO": 10.6,
     "NO_LINK_OTHER": 0.9,
     "NOTIFICATION": 0.6,
     "YT_CHANNEL": 0.6,
@@ -3125,7 +3361,7 @@
    "search": [
     [
      "台積電法說會",
-     3704
+     3705
     ],
     [
      "台積電",
@@ -3133,7 +3369,7 @@
     ],
     [
      "台積電法說",
-     302
+     303
     ],
     [
      "tsmc 法說會",
@@ -3199,21 +3435,21 @@
    "pub": "2026-10-14",
    "title": "宣稱比三星快兩年量產 4F²！長鑫存儲殺出重圍，全球記憶體股急跌背後怕什麼？｜2",
    "dur": 886,
-   "public": 23187,
+   "public": 23200,
    "likes": 174,
    "comments": 42,
-   "views": 23174,
-   "ev": 9612,
-   "minutes": 46557,
+   "views": 23197,
+   "ev": 9620,
+   "minutes": 46590,
    "avgDur": 287,
-   "avgPct": 32.44,
+   "avgPct": 32.43,
    "shares": 74,
    "subs": 43,
    "subsLost": 1,
    "traffic": {
-    "SUBSCRIBER": 84.2,
+    "SUBSCRIBER": 84.1,
     "RELATED_VIDEO": 7.7,
-    "YT_SEARCH": 5.0,
+    "YT_SEARCH": 5.1,
     "NO_LINK_OTHER": 0.8,
     "YT_CHANNEL": 0.7,
     "NOTIFICATION": 0.6,
@@ -3223,7 +3459,7 @@
     "EXT_URL": 0.1
    },
    "subscribedViews": 28.6,
-   "subscribedWatch": 47.7,
+   "subscribedWatch": 47.6,
    "age": {
     "25-34": 8.0,
     "35-44": 18.6,
@@ -3235,9 +3471,9 @@
    "age45": 73.4,
    "age35_54": 44.5,
    "device": {
-    "MOBILE": 48.9,
-    "DESKTOP": 25.0,
-    "TV": 18.1,
+    "MOBILE": 48.8,
+    "DESKTOP": 24.9,
+    "TV": 18.2,
     "TABLET": 8.0
    },
    "search": [
@@ -3251,7 +3487,7 @@
     ],
     [
      "长鑫存储",
-     86
+     87
     ],
     [
      "长鑫",
@@ -3309,7 +3545,7 @@
    "ret30s": 63.5,
    "ret25": 44.1,
    "ret50": 32.4,
-   "ret75": 25.5,
+   "ret75": 25.4,
    "ret95": 22.0
   },
   "aTcsW62HWwc": {
@@ -3317,33 +3553,33 @@
    "pub": "2026-10-13",
    "title": "日月光單月狂吞 881 億創新高、市值衝 3.4 兆！天價股價背後，真正狂飆的業",
    "dur": 876,
-   "public": 11989,
+   "public": 12015,
    "likes": 143,
    "comments": 12,
-   "views": 11974,
-   "ev": 5328,
-   "minutes": 30324,
+   "views": 12001,
+   "ev": 5337,
+   "minutes": 30341,
    "avgDur": 338,
-   "avgPct": 38.68,
+   "avgPct": 38.63,
    "shares": 45,
    "subs": 15,
    "subsLost": 2,
    "traffic": {
-    "SUBSCRIBER": 71.5,
+    "SUBSCRIBER": 71.4,
     "RELATED_VIDEO": 14.8,
-    "YT_SEARCH": 9.1,
-    "YT_CHANNEL": 1.1,
+    "YT_SEARCH": 9.3,
+    "YT_CHANNEL": 1.0,
     "NO_LINK_OTHER": 1.0,
-    "NOTIFICATION": 0.9,
+    "NOTIFICATION": 0.8,
     "YT_OTHER_PAGE": 0.8,
     "END_SCREEN": 0.3,
-    "PLAYLIST": 0.3,
+    "PLAYLIST": 0.2,
     "EXT_URL": 0.2,
     "SHORTS_CONTENT_LINKS": 0.0,
     "HASHTAGS": 0.0
    },
-   "subscribedViews": 46.8,
-   "subscribedWatch": 65.0,
+   "subscribedViews": 46.7,
+   "subscribedWatch": 64.9,
    "age": {
     "25-34": 13.9,
     "35-44": 26.7,
@@ -3363,7 +3599,7 @@
    "search": [
     [
      "日月光",
-     568
+     589
     ],
     [
      "南亞科",
@@ -3430,21 +3666,21 @@
    "ret25": 48.2,
    "ret50": 43.3,
    "ret75": 34.0,
-   "ret95": 30.1
+   "ret95": 30.0
   },
   "nyNC4vGZmW0": {
    "show": "Good Morning 美好",
    "pub": "2026-10-12",
    "title": "黃仁勳砸 300 億加碼 Figure！槓上馬斯克 Optimus 萬台大產能，",
    "dur": 936,
-   "public": 17899,
+   "public": 17902,
    "likes": 207,
    "comments": 16,
-   "views": 17899,
-   "ev": 7822,
-   "minutes": 44958,
+   "views": 17901,
+   "ev": 7824,
+   "minutes": 44961,
    "avgDur": 341,
-   "avgPct": 36.53,
+   "avgPct": 36.52,
    "shares": 74,
    "subs": 20,
    "subsLost": 1,
@@ -3547,390 +3783,31 @@
     ]
    ],
    "ret30s": 64.5,
-   "ret25": 45.1,
+   "ret25": 45.0,
    "ret50": 38.2,
    "ret75": 32.1,
-   "ret95": 27.8
-  },
-  "TEWqdTxGoR0": {
-   "show": "Good Morning 美好",
-   "pub": "2026-10-08",
-   "title": "SK 海力士旗下 Solidigm 宣布：新增台灣 ODM 據點！力成、和碩接獲",
-   "dur": 792,
-   "public": 8457,
-   "likes": 121,
-   "comments": 10,
-   "views": 8454,
-   "ev": 3690,
-   "minutes": 20790,
-   "avgDur": 335,
-   "avgPct": 42.34,
-   "shares": 57,
-   "subs": 8,
-   "subsLost": 2,
-   "traffic": {
-    "SUBSCRIBER": 76.3,
-    "YT_SEARCH": 8.4,
-    "RELATED_VIDEO": 7.5,
-    "NO_LINK_OTHER": 2.1,
-    "YT_CHANNEL": 1.6,
-    "EXT_URL": 1.3,
-    "NOTIFICATION": 1.2,
-    "YT_OTHER_PAGE": 0.8,
-    "PLAYLIST": 0.6,
-    "END_SCREEN": 0.3
-   },
-   "subscribedViews": 47.3,
-   "subscribedWatch": 66.5,
-   "age": {
-    "25-34": 14.6,
-    "35-44": 28.2,
-    "45-54": 25.8,
-    "55-64": 22.3,
-    "65-": 9.1
-   },
-   "female": 7.9,
-   "age45": 57.2,
-   "age35_54": 54.0,
-   "device": {
-    "MOBILE": 57.0,
-    "DESKTOP": 22.3,
-    "TV": 14.0,
-    "TABLET": 6.7
-   },
-   "search": [
-    [
-     "力成",
-     390
-    ],
-    [
-     "美好證券",
-     72
-    ],
-    [
-     "和碩",
-     27
-    ],
-    [
-     "海力士",
-     21
-    ],
-    [
-     "sk海力士",
-     12
-    ],
-    [
-     "力成科技",
-     12
-    ],
-    [
-     "緯穎",
-     5
-    ],
-    [
-     "南茂",
-     3
-    ]
-   ],
-   "related": [
-    [
-     "2026/10/8(四)全球政府都缺錢!高利率時代誰來買單?AI時代 企業賺錢、政府缺錢、人民沒錢?【早晨財經速解讀】",
-     "游庭皓的財經皓角",
-     19
-    ],
-    [
-     "單日閃電拜訪五大夥伴！蘇姿丰親赴台灣將長約拉到 5 年，背後釋放什麼產能訊號？｜2026/10/07 (三）",
-     "美好證券 Good Finance",
-     17
-    ],
-    [
-     "2026/10/08(四) FED還想升息AI行情撐得住？",
-     "財女珍妮",
-     14
-    ],
-    [
-     "台積電參與Terafab? 馬斯克突改口:自建自營 台積電只能分租...陳立武出面宣示主導?!｜非凡財經新聞｜20261",
-     "USTV 非凡電視",
-     11
-    ],
-    [
-     "一張超薄鋼片\"中鋼\"救星?比紙還薄\"輝達伺服器\"也要它?│20261008│Catch大錢潮 feat. 呂國禎",
-     "Catch大錢潮",
-     6
-    ],
-    [
-     "銀行最怕的事正在發生？當存款全搬上鏈，穩定幣如何逼台灣金融業改變？｜天下零時差10.08.26",
-     "天下雜誌 video",
-     6
-    ]
-   ],
-   "ret30s": 68.4,
-   "ret25": 53.4,
-   "ret50": 44.7,
-   "ret75": 39.6,
-   "ret95": 36.1
-  },
-  "blacSH9Vcjc": {
-   "show": "Good Morning 美好",
-   "pub": "2026-10-07",
-   "title": "單日閃電拜訪五大夥伴！蘇姿丰親赴台灣將長約拉到 5 年，背後釋放什麼產能訊號？｜",
-   "dur": 865,
-   "public": 23582,
-   "likes": 175,
-   "comments": 10,
-   "views": 23578,
-   "ev": 7319,
-   "minutes": 37739,
-   "avgDur": 304,
-   "avgPct": 35.25,
-   "shares": 76,
-   "subs": 30,
-   "subsLost": 0,
-   "traffic": {
-    "SUBSCRIBER": 90.6,
-    "RELATED_VIDEO": 4.9,
-    "YT_SEARCH": 1.5,
-    "NO_LINK_OTHER": 0.7,
-    "YT_CHANNEL": 0.7,
-    "NOTIFICATION": 0.5,
-    "YT_OTHER_PAGE": 0.5,
-    "PLAYLIST": 0.2,
-    "EXT_URL": 0.2,
-    "END_SCREEN": 0.1,
-    "SHORTS_CONTENT_LINKS": 0.0,
-    "LIVE_REDIRECT": 0.0
-   },
-   "subscribedViews": 28.4,
-   "subscribedWatch": 54.8,
-   "age": {
-    "18-24": 1.3,
-    "25-34": 12.9,
-    "35-44": 23.3,
-    "45-54": 26.1,
-    "55-64": 22.2,
-    "65-": 14.1
-   },
-   "female": 9.9,
-   "age45": 62.4,
-   "age35_54": 49.4,
-   "device": {
-    "MOBILE": 53.9,
-    "DESKTOP": 25.3,
-    "TV": 13.0,
-    "TABLET": 7.8
-   },
-   "search": [
-    [
-     "美好證券",
-     58
-    ],
-    [
-     "群聯",
-     27
-    ],
-    [
-     "南亞科",
-     11
-    ],
-    [
-     "事欣科",
-     10
-    ],
-    [
-     "上銀",
-     9
-    ],
-    [
-     "蘇姿丰",
-     9
-    ],
-    [
-     "緯穎",
-     8
-    ],
-    [
-     "amd",
-     7
-    ]
-   ],
-   "related": [
-    [
-     "#胡說科技 訂戶限定訪談精華｜專訪艦長程正樺：黑天鵝逼近，今年最讓人吃驚的AI股不是台積電！",
-     "天下雜誌 video",
-     54
-    ],
-    [
-     "SK 海力士旗下 Solidigm 宣布：新增台灣 ODM 據點！力成、和碩接獲企業級 SSD 代工大單｜2026/10",
-     "美好證券 Good Finance",
-     34
-    ],
-    [
-     "矽晶圓賣方市場回歸！報價全面轉強，台廠迎新一波商機！【懂產業 看先探】。",
-     "先探i投資",
-     23
-    ],
-    [
-     "2026/10/7(三)輝達衝6兆市值 估值更便宜?AI越燒越多 錢從哪裡來？【早晨財經速解讀】",
-     "游庭皓的財經皓角",
-     21
-    ],
-    [
-     "蘇姿丰示警「記憶體供應吃緊」！超微擴大備貨、加碼台灣  AI需求帶旺台廠供應鏈 　力成、群聯如中樂透？｜三立財經iNEW",
-     "三立財經iNEWS",
-     14
-    ],
-    [
-     "【利多不漲】五萬點新天險！漲價概念股狂噴!當心營收暴跌股?! #決勝關鍵 2026.10.07",
-     "林漢偉分析師-摩爾證券投顧",
-     10
-    ]
-   ],
-   "ret30s": 62.4,
-   "ret25": 45.1,
-   "ret50": 37.5,
-   "ret75": 30.7,
-   "ret95": 26.7
-  },
-  "uALbXGyov90": {
-   "show": "Good Morning 美好",
-   "pub": "2026-10-06",
-   "title": "鴻海單月營收 1.15 兆是起點還是頂點？公司喊出「符合預期」，第四季該盯哪項 ",
-   "dur": 767,
-   "public": 15389,
-   "likes": 139,
-   "comments": 32,
-   "views": 15388,
-   "ev": 5263,
-   "minutes": 26802,
-   "avgDur": 301,
-   "avgPct": 39.35,
-   "shares": 49,
-   "subs": 8,
-   "subsLost": 2,
-   "traffic": {
-    "SUBSCRIBER": 79.7,
-    "YT_SEARCH": 11.1,
-    "RELATED_VIDEO": 5.6,
-    "NOTIFICATION": 1.0,
-    "YT_CHANNEL": 0.8,
-    "NO_LINK_OTHER": 0.7,
-    "YT_OTHER_PAGE": 0.4,
-    "PLAYLIST": 0.3,
-    "EXT_URL": 0.2,
-    "END_SCREEN": 0.2,
-    "SHORTS_CONTENT_LINKS": 0.1,
-    "HASHTAGS": 0.0
-   },
-   "subscribedViews": 33.8,
-   "subscribedWatch": 60.3,
-   "age": {
-    "25-34": 13.5,
-    "35-44": 22.6,
-    "45-54": 27.8,
-    "55-64": 23.7,
-    "65-": 12.4
-   },
-   "female": 11.6,
-   "age45": 63.9,
-   "age35_54": 50.4,
-   "device": {
-    "MOBILE": 56.1,
-    "DESKTOP": 21.4,
-    "TV": 14.2,
-    "TABLET": 8.4
-   },
-   "search": [
-    [
-     "鴻海",
-     1345
-    ],
-    [
-     "美好證券",
-     57
-    ],
-    [
-     "a大 鴻海",
-     36
-    ],
-    [
-     "a大",
-     11
-    ],
-    [
-     "009831",
-     8
-    ],
-    [
-     "安小之家",
-     5
-    ],
-    [
-     "閎康",
-     5
-    ],
-    [
-     "鴻海a大",
-     4
-    ]
-   ],
-   "related": [
-    [
-     "2026/10/6(二)台股衝五萬 這次誰在買?美債殖利率衝6% 美股越漲越怪?【早晨財經速解讀】",
-     "游庭皓的財經皓角",
-     45
-    ],
-    [
-     "台積電傳出聯手 Terafab，要幫特斯拉在德州蓋晶圓廠？馬斯克親口證實「討論中」！｜2026/10/05 (一)",
-     "美好證券 Good Finance",
-     20
-    ],
-    [
-     "魏哲家預告 2027 年轉趨審慎！消費性產品掉隊，明年台積電全靠 AI 一個人撐？｜2026/10/16 (五）",
-     "美好證券 Good Finance",
-     15
-    ],
-    [
-     "鴻海是台灣第一家拿到SpaceX伺服器訂單！｜台股攻略｜劉烱德",
-     "台股攻略 劉烱德",
-     14
-    ],
-    [
-     "單日閃電拜訪五大夥伴！蘇姿丰親赴台灣將長約拉到 5 年，背後釋放什麼產能訊號？｜2026/10/07 (三）",
-     "美好證券 Good Finance",
-     12
-    ],
-    [
-     "迎AI轉型別只看南亞? 揭台塑成台積電新歡大計! 2030年迎300億產值!台塑AI轉型大計 股價能噴飛?│202610",
-     "Catch大錢潮",
-     12
-    ]
-   ],
-   "ret30s": 67.8,
-   "ret25": 51.9,
-   "ret50": 39.6,
-   "ret75": 34.2,
-   "ret95": 30.9
+   "ret95": 27.7
   },
   "44mxk7UgAsI": {
    "show": "Good Morning 美好",
    "pub": "2026-05-09",
    "title": "領股息還是求成長？ Allen 深度解析：0050 與 0056 是人生進度選擇",
    "dur": 987,
-   "public": 69094,
-   "likes": 1331,
+   "public": 69360,
+   "likes": 1334,
    "comments": 94,
-   "views": 68940,
-   "ev": 65005,
-   "minutes": 401925,
+   "views": 69247,
+   "ev": 65186,
+   "minutes": 403250,
    "avgDur": 370,
-   "avgPct": 37.57,
-   "shares": 1910,
-   "subs": 718,
+   "avgPct": 37.58,
+   "shares": 1917,
+   "subs": 721,
    "subsLost": 5,
    "traffic": {
     "SUBSCRIBER": 55.1,
     "RELATED_VIDEO": 33.4,
-    "EXT_URL": 4.2,
+    "EXT_URL": 4.3,
     "YT_SEARCH": 2.4,
     "NO_LINK_OTHER": 1.8,
     "YT_OTHER_PAGE": 1.3,
@@ -3957,25 +3834,25 @@
    "device": {
     "MOBILE": 57.4,
     "TV": 19.0,
-    "DESKTOP": 13.3,
-    "TABLET": 10.4
+    "DESKTOP": 13.2,
+    "TABLET": 10.3
    },
    "search": [
     [
      "0056",
-     531
+     538
     ],
     [
      "0050",
-     159
+     160
     ],
     [
      "0050 0056",
-     132
+     135
     ],
     [
      "美好證券",
-     111
+     112
     ],
     [
      "0050 vs 0056",
@@ -4003,12 +3880,12 @@
     [
      "用 #0056 還是 #0050 存退休金好？啥！0050買在200元也不用擔心🤔單筆投資買在最高價vs定期定額誰的績效",
      "投資嗨什麼",
-     831
+     837
     ],
     [
      "【存股看過來】009816再上新高！續抱還是先停利？009816跟0050誰才真正囊括台股冠軍？ ft. 李柏鋒｜EP3",
      "美好證券 Good Finance",
-     678
+     680
     ],
     [
      "為何你買ETF還是賠？9成散戶都犯的4個致命錯誤",
@@ -4018,12 +3895,12 @@
     [
      "退休族買0050還是0056？樂活大叔施昇輝：先留2～3年生活費，再這樣配置！",
      "簡簡單",
-     484
+     487
     ],
     [
      "🚩【吳淡如】投三年0050、0056及00878，究竟哪一檔ETF獲利最漂亮？",
      "吳淡如人生實用商學院（Official官方唯一頻道）",
-     348
+     351
     ]
    ],
    "ret30s": 65.3,
@@ -4037,21 +3914,21 @@
    "pub": "2026-05-29",
    "title": "友達小股東犀利提問：沒 P 沒 O 怎麼做 CPO？彭双浪：載板才是關鍵！送樣進",
    "dur": 926,
-   "public": 54752,
+   "public": 54795,
    "likes": 755,
    "comments": 56,
-   "views": 54719,
-   "ev": 52486,
-   "minutes": 227302,
+   "views": 54776,
+   "ev": 52505,
+   "minutes": 227324,
    "avgDur": 259,
-   "avgPct": 28.050000000000004,
+   "avgPct": 28.04,
    "shares": 887,
    "subs": 455,
    "subsLost": 4,
    "traffic": {
     "SUBSCRIBER": 57.1,
     "RELATED_VIDEO": 23.8,
-    "EXT_URL": 7.8,
+    "EXT_URL": 7.7,
     "YT_SEARCH": 6.6,
     "NO_LINK_OTHER": 2.3,
     "YT_OTHER_PAGE": 0.9,
@@ -4061,7 +3938,7 @@
     "END_SCREEN": 0.1,
     "HASHTAGS": 0.1
    },
-   "subscribedViews": 13.6,
+   "subscribedViews": 13.5,
    "subscribedWatch": 19.9,
    "age": {
     "18-24": 0.7,
@@ -4083,11 +3960,11 @@
    "search": [
     [
      "友達",
-     2258
+     2266
     ],
     [
      "富采",
-     146
+     148
     ],
     [
      "cpo",
@@ -4098,12 +3975,12 @@
      86
     ],
     [
-     "友達股東會",
-     56
+     "友達光電",
+     57
     ],
     [
-     "友達光電",
-     54
+     "友達股東會",
+     56
     ],
     [
      "友達股票",
@@ -4123,7 +4000,7 @@
     [
      "CoPoS、玻璃基板是什麼？矽光子翻10倍後…下一個暴漲主角是它們？｜EP.47｜2026/5/29｜黎志建 分析師｜辣",
      "辣個分析師-黎志建(Vic)",
-     279
+     280
     ],
     [
      "《面板外資狂加碼 群創.友達殺出新藍海? 》【錢線百分百】20260514-6│非凡財經新聞│",
@@ -4149,7 +4026,7 @@
    "ret30s": 64.7,
    "ret25": 41.5,
    "ret50": 25.0,
-   "ret75": 17.4,
+   "ret75": 17.3,
    "ret95": 15.6
   },
   "-3iFkurES4Y": {
@@ -4157,12 +4034,12 @@
    "pub": "2026-05-11",
    "title": "面板廠變身封裝巨頭？台積電傳聯手群創攻 FOPLP！洪進揚：群創已站上先進封裝第",
    "dur": 996,
-   "public": 49075,
+   "public": 49098,
    "likes": 1139,
    "comments": 41,
-   "views": 49062,
-   "ev": 48394,
-   "minutes": 265870,
+   "views": 49084,
+   "ev": 48405,
+   "minutes": 265917,
    "avgDur": 329,
    "avgPct": 33.09,
    "shares": 1590,
@@ -4181,7 +4058,7 @@
     "END_SCREEN": 0.1,
     "HASHTAGS": 0.0
    },
-   "subscribedViews": 15.2,
+   "subscribedViews": 15.1,
    "subscribedWatch": 19.8,
    "age": {
     "18-24": 0.7,
@@ -4277,12 +4154,12 @@
    "pub": "2026-05-23",
    "title": "00403A 破發慘案！近百萬人套牢：揭秘主動型 ETF 的 3 大致命風險，別",
    "dur": 1072,
-   "public": 50085,
+   "public": 50125,
    "likes": 791,
    "comments": 212,
-   "views": 50059,
-   "ev": 47098,
-   "minutes": 267730,
+   "views": 50097,
+   "ev": 47116,
+   "minutes": 267799,
    "avgDur": 340,
    "avgPct": 31.8,
    "shares": 580,
@@ -4326,7 +4203,7 @@
     ],
     [
      "00407a",
-     95
+     96
     ],
     [
      "美好證券",
@@ -4396,16 +4273,16 @@
    "pub": "2026-05-15",
    "title": "台積電宣布 COUPE 今年量產：解析「AI 三層蛋糕」概念，張曉強預言 203",
    "dur": 1028,
-   "public": 47005,
+   "public": 47020,
    "likes": 1023,
    "comments": 48,
-   "views": 46996,
-   "ev": 46062,
-   "minutes": 275083,
+   "views": 47012,
+   "ev": 46067,
+   "minutes": 275115,
    "avgDur": 358,
    "avgPct": 34.85,
    "shares": 1180,
-   "subs": 785,
+   "subs": 786,
    "subsLost": 7,
    "traffic": {
     "SUBSCRIBER": 68.1,
@@ -4514,41 +4391,151 @@
   "3-p35lkvmlo": {
    "show": "Good Invest 美好投資",
    "pub": "2026-11-20",
-   "title": "台股四月以來最低點，怎麼渡過短期波動？ ft. 李柏鋒｜EP38 #熊市 #ET",
+   "title": "台股四月以來最低點，續抱0050還是盡快止損？ ft. 李柏鋒｜EP38 #00",
    "dur": 1338,
-   "public": 2986,
-   "likes": 54,
-   "comments": 11
+   "public": 47306,
+   "likes": 401,
+   "comments": 45,
+   "views": 37240,
+   "ev": 19123,
+   "minutes": 117260,
+   "avgDur": 340,
+   "avgPct": 25.46,
+   "shares": 233,
+   "subs": 60,
+   "subsLost": 3,
+   "traffic": {
+    "SUBSCRIBER": 75.5,
+    "RELATED_VIDEO": 19.9,
+    "NO_LINK_OTHER": 1.2,
+    "YT_SEARCH": 1.0,
+    "YT_OTHER_PAGE": 0.9,
+    "YT_CHANNEL": 0.5,
+    "PLAYLIST": 0.5,
+    "NOTIFICATION": 0.4,
+    "EXT_URL": 0.2,
+    "END_SCREEN": 0.0
+   },
+   "subscribedViews": 23.0,
+   "subscribedWatch": 26.2,
+   "age": {
+    "18-24": 0.7,
+    "25-34": 10.1,
+    "35-44": 23.8,
+    "45-54": 35.1,
+    "55-64": 22.9,
+    "65-": 7.4
+   },
+   "female": 27.4,
+   "age45": 65.4,
+   "age35_54": 58.9,
+   "device": {
+    "MOBILE": 48.0,
+    "TV": 23.7,
+    "DESKTOP": 16.8,
+    "TABLET": 11.5
+   },
+   "search": [
+    [
+     "0050",
+     49
+    ],
+    [
+     "009826",
+     37
+    ],
+    [
+     "美好證券",
+     30
+    ],
+    [
+     "0050還可以買嗎",
+     9
+    ],
+    [
+     "台股",
+     6
+    ],
+    [
+     "vt",
+     5
+    ],
+    [
+     "vt etf",
+     4
+    ],
+    [
+     "glb",
+     3
+    ]
+   ],
+   "related": [
+    [
+     "台股暴跌、股魚破年線進場加碼。國安基金救市勝率88.88%，但根據歷史紀錄，短線仍可能再跌20%？除了台積電、國安基金最",
+     "Smart智富月刊",
+     218
+    ],
+    [
+     "高股息、主動式ETF、正二怎麼看？解析ETF投資五大迷思｜周冠男專訪 EP2",
+     "富邦證券",
+     212
+    ],
+    [
+     "台股急殺回吐獲利！股市賺到的錢怎麼花？郝哥拆解心理帳戶與沉沒成本陷阱：即刻止損才能裝入未來幸福 解鎖從賺錢存錢到花錢的致",
+     "工商時報",
+     191
+    ],
+    [
+     "AI 泡沫開始破了？股市大跌，現在該買、該賣，還是再等等？",
+     "清流君",
+     142
+    ],
+    [
+     "台股創1990年最大單週跌幅！史詩級崩盤到底該怎麼做？這部影片真的會救到你｜老簡講股",
+     "老簡講股 l 簡之隊",
+     110
+    ],
+    [
+     "0050越跌越買 資產卻縮水? 避開3禁忌! 退休金翻400% ft. 超馬芭樂【 小宇宙大爆發 】",
+     "小宇宙大爆發",
+     108
+    ]
+   ],
+   "ret30s": 68.1,
+   "ret25": 33.0,
+   "ret50": 24.5,
+   "ret75": 21.2,
+   "ret95": 18.2
   },
   "Pizxa8HVRWI": {
    "show": "Good Invest 美好投資",
    "pub": "2026-10-30",
    "title": "政治就是影響投資的最大因素，你還能買美債嗎？  ft. 債券天后 顧姐｜EP37",
    "dur": 2521,
-   "public": 109970,
-   "likes": 1149,
+   "public": 110737,
+   "likes": 1151,
    "comments": 127,
-   "views": 109544,
-   "ev": 46936,
-   "minutes": 421600,
-   "avgDur": 535,
-   "avgPct": 21.24,
-   "shares": 1047,
-   "subs": 875,
+   "views": 110389,
+   "ev": 47302,
+   "minutes": 424299,
+   "avgDur": 534,
+   "avgPct": 21.21,
+   "shares": 1052,
+   "subs": 878,
    "subsLost": 14,
    "traffic": {
-    "SUBSCRIBER": 84.3,
+    "SUBSCRIBER": 84.1,
     "RELATED_VIDEO": 11.2,
-    "NO_LINK_OTHER": 1.3,
+    "NO_LINK_OTHER": 1.4,
     "YT_OTHER_PAGE": 0.9,
-    "YT_SEARCH": 0.8,
+    "YT_SEARCH": 0.9,
     "YT_CHANNEL": 0.8,
     "PLAYLIST": 0.3,
     "EXT_URL": 0.3,
     "NOTIFICATION": 0.1,
     "END_SCREEN": 0.0
    },
-   "subscribedViews": 19.3,
+   "subscribedViews": 19.4,
    "subscribedWatch": 30.5,
    "age": {
     "18-24": 0.6,
@@ -4564,13 +4551,13 @@
    "device": {
     "MOBILE": 54.1,
     "DESKTOP": 20.7,
-    "TV": 17.3,
+    "TV": 17.4,
     "TABLET": 7.9
    },
    "search": [
     [
      "美好證券",
-     209
+     223
     ],
     [
      "美國選舉",
@@ -4620,12 +4607,12 @@
     [
      "美股暴跌，你心慌了嗎？如果你現在正在套牢，請先把這支影片看完！ #intel #google  #比特幣",
      "Chief PaPa 張志雲",
-     118
+     130
     ],
     [
      "谷歌亞馬遜現金流災難　Anthropic IPO能救AI？｜#黃斐瑜｜#游庭皓｜#金臨天下 20261031 美股金週報",
      "TVBS財經",
-     113
+     114
     ],
     [
      "【下班國際線】外資狂賣台積電！台股5萬點卡關該賣嗎？張錫：這一年上看5000元！ft.張錫｜Ep.74｜路怡珍 @The",
@@ -4634,9 +4621,9 @@
     ]
    ],
    "ret30s": 59.0,
-   "ret25": 29.0,
+   "ret25": 28.9,
    "ret50": 22.6,
-   "ret75": 16.9,
+   "ret75": 16.8,
    "ret95": 15.9
   },
   "KF0VLj1dNhk": {
@@ -4644,21 +4631,21 @@
    "pub": "2026-09-01",
    "title": "AI資本支出喊停，會發生什麼事？為什麼會影響台灣公司的股價？  ｜EP36 #A",
    "dur": 1308,
-   "public": 10892,
+   "public": 10914,
    "likes": 139,
    "comments": 19,
-   "views": 10875,
-   "ev": 4099,
-   "minutes": 30176,
-   "avgDur": 441,
-   "avgPct": 33.72,
+   "views": 10899,
+   "ev": 4105,
+   "minutes": 30254,
+   "avgDur": 438,
+   "avgPct": 33.55,
    "shares": 67,
    "subs": 11,
    "subsLost": 1,
    "traffic": {
-    "SUBSCRIBER": 77.2,
+    "SUBSCRIBER": 77.1,
     "RELATED_VIDEO": 8.5,
-    "YT_CHANNEL": 6.1,
+    "YT_CHANNEL": 6.0,
     "YT_SEARCH": 1.9,
     "NO_LINK_OTHER": 1.6,
     "PLAYLIST": 1.3,
@@ -4682,7 +4669,7 @@
    "device": {
     "MOBILE": 49.5,
     "DESKTOP": 28.1,
-    "TV": 16.4,
+    "TV": 16.5,
     "TABLET": 6.0
    },
    "search": [
@@ -4728,7 +4715,7 @@
     [
      "看好0050長期會漲，就是看好正2？投資0050還是631L好？聊聊正2  ft. 李柏鋒｜EP35 #00631L #",
      "美好證券 Good Finance",
-     72
+     75
     ],
     [
      "功耗衝上 4,000 瓦傳統水冷會爆！為何台積電登高一呼喊出「微流道」AI 冷革命？｜2026/09/02 (三)",
@@ -4753,29 +4740,29 @@
    ],
    "ret30s": 61.4,
    "ret25": 42.7,
-   "ret50": 36.4,
-   "ret75": 31.1,
-   "ret95": 26.9
+   "ret50": 36.5,
+   "ret75": 31.2,
+   "ret95": 27.0
   },
   "bM2-fps3yXM": {
    "show": "Good Invest 美好投資",
    "pub": "2026-08-13",
    "title": "看好0050長期會漲，就是看好正2？投資0050還是631L好？聊聊正2  ft",
    "dur": 1420,
-   "public": 100744,
-   "likes": 1158,
-   "comments": 184,
-   "views": 100353,
-   "ev": 74662,
-   "minutes": 578571,
+   "public": 102021,
+   "likes": 1162,
+   "comments": 187,
+   "views": 101424,
+   "ev": 75262,
+   "minutes": 583693,
    "avgDur": 464,
-   "avgPct": 32.68,
-   "shares": 1362,
-   "subs": 509,
-   "subsLost": 6,
+   "avgPct": 32.69,
+   "shares": 1372,
+   "subs": 511,
+   "subsLost": 7,
    "traffic": {
-    "SUBSCRIBER": 57.6,
-    "RELATED_VIDEO": 31.4,
+    "SUBSCRIBER": 57.5,
+    "RELATED_VIDEO": 31.3,
     "YT_SEARCH": 4.5,
     "NO_LINK_OTHER": 2.3,
     "YT_OTHER_PAGE": 1.4,
@@ -4783,11 +4770,12 @@
     "YT_CHANNEL": 1.0,
     "PLAYLIST": 0.7,
     "NOTIFICATION": 0.2,
-    "END_SCREEN": 0.0,
-    "HASHTAGS": 0.0
+    "END_SCREEN": 0.1,
+    "HASHTAGS": 0.0,
+    "ANNOTATION": 0.0
    },
    "subscribedViews": 12.5,
-   "subscribedWatch": 14.9,
+   "subscribedWatch": 15.0,
    "age": {
     "18-24": 0.8,
     "25-34": 16.4,
@@ -4796,7 +4784,7 @@
     "55-64": 15.8,
     "65-": 3.6
    },
-   "female": 23.4,
+   "female": 23.3,
    "age45": 51.7,
    "age35_54": 63.4,
    "device": {
@@ -4808,7 +4796,7 @@
    "search": [
     [
      "正2",
-     703
+     718
     ],
     [
      "0050正2",
@@ -4816,11 +4804,11 @@
     ],
     [
      "00631l",
-     484
+     488
     ],
     [
      "00685l",
-     422
+     429
     ],
     [
      "0050",
@@ -4828,11 +4816,11 @@
     ],
     [
      "正二",
-     157
+     162
     ],
     [
      "美好證券",
-     140
+     141
     ],
     [
      "投資",
@@ -4841,24 +4829,24 @@
    ],
    "related": [
     [
-     "賣0050改買正二？台股正二未來10萬路徑分析",
-     "清流君",
-     1008
-    ],
-    [
      "【存股看過來】009816再上新高！續抱還是先停利？009816跟0050誰才真正囊括台股冠軍？ ft. 李柏鋒｜EP3",
      "美好證券 Good Finance",
-     1004
+     1013
+    ],
+    [
+     "賣0050改買正二？台股正二未來10萬路徑分析",
+     "清流君",
+     1009
     ],
     [
      "【錢鏡你家】0050、台積電、0050正2怎麼選？教授用12年數據揭答ft.北科大教授 吳牧恩",
      "鏡發財",
-     540
+     556
     ],
     [
      "0050正二同期績效勝0050四倍！定期定額長存必賺？用0050正二搭配現金效果最好！怎麼搭？！EP173 ft.股魚《",
      "投資嗨什麼",
-     487
+     490
     ],
     [
      "跑不贏0050，009826有必要買？4個說服我的理由。",
@@ -4871,7 +4859,7 @@
      369
     ]
    ],
-   "ret30s": 63.1,
+   "ret30s": 63.0,
    "ret25": 42.6,
    "ret50": 36.8,
    "ret75": 30.0,
@@ -4882,31 +4870,31 @@
    "pub": "2026-07-08",
    "title": "【主動式ETF】需求震盪，就是長線買點？  ft. 李柏鋒｜EP34 #0098",
    "dur": 2021,
-   "public": 59072,
+   "public": 59417,
    "likes": 769,
    "comments": 68,
-   "views": 58969,
-   "ev": 51232,
-   "minutes": 473876,
+   "views": 59219,
+   "ev": 51323,
+   "minutes": 474615,
    "avgDur": 554,
-   "avgPct": 27.440000000000005,
+   "avgPct": 27.43,
    "shares": 649,
    "subs": 364,
    "subsLost": 9,
    "traffic": {
     "SUBSCRIBER": 59.3,
-    "RELATED_VIDEO": 31.3,
+    "RELATED_VIDEO": 31.2,
     "NO_LINK_OTHER": 2.1,
     "YT_CHANNEL": 2.0,
     "YT_SEARCH": 1.6,
     "YT_OTHER_PAGE": 1.5,
-    "PLAYLIST": 1.0,
+    "PLAYLIST": 1.1,
     "EXT_URL": 0.5,
     "END_SCREEN": 0.4,
     "NOTIFICATION": 0.3,
     "HASHTAGS": 0.0
    },
-   "subscribedViews": 16.9,
+   "subscribedViews": 16.8,
    "subscribedWatch": 19.1,
    "age": {
     "18-24": 0.8,
@@ -4936,7 +4924,7 @@
     ],
     [
      "00981a",
-     132
+     135
     ],
     [
      "李柏鋒",
@@ -4963,7 +4951,7 @@
     [
      "【存股看過來】009816再上新高！續抱還是先停利？009816跟0050誰才真正囊括台股冠軍？ ft. 李柏鋒｜EP3",
      "美好證券 Good Finance",
-     2211
+     2225
     ],
     [
      "看好0050長期會漲，就是看好正2？投資0050還是631L好？聊聊正2  ft. 李柏鋒｜EP35 #00631L #",
@@ -4973,7 +4961,7 @@
     [
      "【ETF總集篇】股價再創新高，今天就是購買0050的好時機？0050這樣買才對 ft. 李柏鋒 | EP30 #0050",
      "美好證券 Good Finance",
-     585
+     589
     ],
     [
      "工程師投資10年後，只留下0050、台積電跟美光？羅潘的配置邏輯｜ft.羅潘x羅盤｜日薪八百窮學徒",
@@ -5002,20 +4990,20 @@
    "pub": "2026-05-05",
    "title": "【存股看過來】009816再上新高！續抱還是先停利？009816跟0050誰才真",
    "dur": 1525,
-   "public": 354039,
-   "likes": 2984,
+   "public": 355719,
+   "likes": 2988,
    "comments": 228,
-   "views": 353297,
-   "ev": 311909,
-   "minutes": 2448913,
+   "views": 354690,
+   "ev": 312755,
+   "minutes": 2455975,
    "avgDur": 470,
    "avgPct": 30.870000000000005,
-   "shares": 5398,
-   "subs": 2469,
+   "shares": 5409,
+   "subs": 2475,
    "subsLost": 23,
    "traffic": {
-    "SUBSCRIBER": 55.8,
-    "RELATED_VIDEO": 33.3,
+    "SUBSCRIBER": 55.7,
+    "RELATED_VIDEO": 33.4,
     "YT_SEARCH": 4.9,
     "NO_LINK_OTHER": 1.9,
     "EXT_URL": 1.4,
@@ -5048,27 +5036,27 @@
    "search": [
     [
      "009816",
-     11037
+     11065
     ],
     [
      "0050",
-     559
+     565
     ],
     [
      "9816",
-     316
+     317
     ],
     [
      "0050 009816",
      187
     ],
     [
-     "009816 0050",
-     120
+     "周冠男",
+     122
     ],
     [
-     "周冠男",
-     115
+     "009816 0050",
+     120
     ],
     [
      "00405a",
@@ -5083,17 +5071,17 @@
     [
      "今年最紅ETF新兵 009816 VS 00403A，誰勝出？0050大哥笑而不語｜峰哥｜Smart智富．投資的一千零一",
      "Smart智富月刊",
-     2299
+     2302
     ],
     [
      "0050還是009816 ? 股添樂拆解它隱藏優勢｜楚狂人 ft. 證券分析師 股添樂｜財富狂犇｜玩股網20260404",
      "玩股網楚狂人",
-     1968
+     1974
     ],
     [
      "買0050就夠了？009816恐打回原型？0056害你領無退休金？【#財經鈔能力】｜20260309 趙慶翔 ft.清流",
      "TVBS財經",
-     1553
+     1575
     ],
     [
      "漲太慢！他問手上00919該「全換009816」？　凱基台灣TOP50成績好驚人｜懶錢包LazyWallet",
@@ -5103,12 +5091,12 @@
     [
      "看好0050長期會漲，就是看好正2？投資0050還是631L好？聊聊正2  ft. 李柏鋒｜EP35 #00631L #",
      "美好證券 Good Finance",
-     1358
+     1366
     ],
     [
      "領股息還是求成長？ Allen 深度解析：0050 與 0056 是人生進度選擇題。現在的你最適合哪條賽道？",
      "美好證券 Good Finance",
-     1220
+     1222
     ]
    ],
    "ret30s": 72.2,
@@ -5122,12 +5110,12 @@
    "pub": "2026-04-16",
    "title": "現金 100 萬到 1000 萬，不同水位該如何佈局避險？Fed真的轉「鷹」了？",
    "dur": 1281,
-   "public": 42515,
+   "public": 42569,
    "likes": 627,
    "comments": 118,
-   "views": 42484,
-   "ev": 40338,
-   "minutes": 297887,
+   "views": 42551,
+   "ev": 40368,
+   "minutes": 298103,
    "avgDur": 442,
    "avgPct": 34.57,
    "shares": 717,
@@ -5140,13 +5128,13 @@
     "YT_CHANNEL": 2.3,
     "YT_OTHER_PAGE": 1.7,
     "PLAYLIST": 1.6,
-    "YT_SEARCH": 1.6,
+    "YT_SEARCH": 1.5,
     "EXT_URL": 0.5,
     "NOTIFICATION": 0.2,
     "END_SCREEN": 0.1
    },
    "subscribedViews": 15.2,
-   "subscribedWatch": 16.3,
+   "subscribedWatch": 16.4,
    "age": {
     "25-34": 3.3,
     "35-44": 16.2,
@@ -5233,29 +5221,29 @@
    "ret25": 41.1,
    "ret50": 37.9,
    "ret75": 32.8,
-   "ret95": 28.7
+   "ret95": 28.6
   },
   "HkDmcyliGgs": {
    "show": "Good Invest 美好投資",
    "pub": "2026-03-10",
    "title": "BlackRock 貝萊德從反對到全力押注！現在連 Nasdaq 都跟上了。RW",
    "dur": 1103,
-   "public": 6406,
+   "public": 6427,
    "likes": 132,
    "comments": 15,
-   "views": 6391,
-   "ev": 6220,
-   "minutes": 30573,
-   "avgDur": 294,
-   "avgPct": 26.729999999999997,
+   "views": 6414,
+   "ev": 6235,
+   "minutes": 30708,
+   "avgDur": 295,
+   "avgPct": 26.780000000000005,
    "shares": 131,
    "subs": 42,
    "subsLost": 2,
    "traffic": {
-    "SUBSCRIBER": 50.8,
-    "RELATED_VIDEO": 15.4,
-    "EXT_URL": 8.9,
-    "YT_CHANNEL": 8.7,
+    "SUBSCRIBER": 50.7,
+    "RELATED_VIDEO": 15.6,
+    "EXT_URL": 8.8,
+    "YT_CHANNEL": 8.6,
     "NO_LINK_OTHER": 5.1,
     "YT_SEARCH": 4.8,
     "PLAYLIST": 3.7,
@@ -5263,7 +5251,7 @@
     "NOTIFICATION": 1.2
    },
    "subscribedViews": 35.0,
-   "subscribedWatch": 44.9,
+   "subscribedWatch": 44.8,
    "age": {
     "18-24": 2,
     "25-34": 13.3,
@@ -5276,8 +5264,8 @@
    "age45": 61.4,
    "age35_54": 56.4,
    "device": {
-    "MOBILE": 42.4,
-    "DESKTOP": 32.0,
+    "MOBILE": 42.5,
+    "DESKTOP": 31.9,
     "TV": 16.9,
     "TABLET": 8.7
    },
@@ -5339,7 +5327,7 @@
     [
      "現金 100 萬到 1000 萬，不同水位該如何佈局避險？Fed真的轉「鷹」了？｜EP32 #川普 #fed #聯準會 ",
      "美好證券 Good Finance",
-     15
+     16
     ],
     [
      "台塑四寶變身 AI 供應商！搶攻電子級材料：南亞、台化卡位「半導體＋電網」商機｜2026/03/13 (五)",
@@ -5347,8 +5335,8 @@
      14
     ]
    ],
-   "ret30s": 62.5,
-   "ret25": 34.2,
+   "ret30s": 62.6,
+   "ret25": 34.3,
    "ret50": 27.8,
    "ret75": 22.2,
    "ret95": 18.9
@@ -5358,15 +5346,15 @@
    "pub": "2026-02-12",
    "title": "【ETF總集篇】股價再創新高，今天就是購買0050的好時機？0050這樣買才對 ",
    "dur": 1664,
-   "public": 172276,
+   "public": 172608,
    "likes": 2067,
    "comments": 143,
-   "views": 172179,
-   "ev": 168155,
-   "minutes": 1457594,
+   "views": 172451,
+   "ev": 168325,
+   "minutes": 1459193,
    "avgDur": 520,
    "avgPct": 31.25,
-   "shares": 2776,
+   "shares": 2778,
    "subs": 1503,
    "subsLost": 19,
    "traffic": {
@@ -5441,27 +5429,27 @@
     [
      "【存股看過來】009816再上新高！續抱還是先停利？009816跟0050誰才真正囊括台股冠軍？ ft. 李柏鋒｜EP3",
      "美好證券 Good Finance",
-     2982
+     2988
     ],
     [
      "【股票】台股漲太多？揭單押0050下場？抱3檔ETF資產7年翻倍？ft. 清流君｜下班經濟學687｜謝哲青、路怡珍",
      "風傳媒 The Storm Media",
-     1117
+     1119
     ],
     [
      "【主動式ETF】需求震盪，就是長線買點？  ft. 李柏鋒｜EP34 #00981a #台股 #AI #投資",
      "美好證券 Good Finance",
-     638
+     647
     ],
     [
      "領股息還是求成長？ Allen 深度解析：0050 與 0056 是人生進度選擇題。現在的你最適合哪條賽道？",
      "美好證券 Good Finance",
-     478
+     481
     ],
     [
      "看好0050長期會漲，就是看好正2？投資0050還是631L好？聊聊正2  ft. 李柏鋒｜EP35 #00631L #",
      "美好證券 Good Finance",
-     421
+     429
     ],
     [
      "1股不賣！不敗教主陳重銘「主動式ETF」這樣配教你賺贏大盤！【#賺錢放大術】20260212｜陳重銘、白昀霏｜#寰宇新聞",
@@ -5480,45 +5468,45 @@
    "pub": "2026-11-12",
    "title": "投資 10 年輸給定存！30、40、50 理財建議！退休準備你從第一步就想錯了！",
    "dur": 1275,
-   "public": 24260,
-   "likes": 178,
+   "public": 28496,
+   "likes": 193,
    "comments": 12,
-   "views": 21766,
-   "ev": 8506,
-   "minutes": 51928,
-   "avgDur": 358,
-   "avgPct": 28.13,
-   "shares": 99,
-   "subs": 19,
+   "views": 26407,
+   "ev": 10189,
+   "minutes": 62014,
+   "avgDur": 353,
+   "avgPct": 27.71,
+   "shares": 115,
+   "subs": 21,
    "subsLost": 1,
    "traffic": {
-    "SUBSCRIBER": 86.7,
-    "RELATED_VIDEO": 7.4,
-    "YT_CHANNEL": 1.9,
+    "SUBSCRIBER": 85.9,
+    "RELATED_VIDEO": 8.1,
+    "YT_CHANNEL": 2.0,
     "NO_LINK_OTHER": 1.2,
-    "YT_OTHER_PAGE": 0.7,
     "PLAYLIST": 0.7,
+    "YT_OTHER_PAGE": 0.7,
     "EXT_URL": 0.6,
-    "YT_SEARCH": 0.5,
-    "NOTIFICATION": 0.3,
+    "YT_SEARCH": 0.4,
+    "NOTIFICATION": 0.2,
     "SHORTS_CONTENT_LINKS": 0.0
    },
-   "subscribedViews": 25.3,
-   "subscribedWatch": 30.8,
+   "subscribedViews": 22.6,
+   "subscribedWatch": 28.9,
    "age": {
-    "25-34": 10.5,
-    "35-44": 32.0,
-    "45-54": 41.8,
-    "55-64": 15.7
+    "25-34": 9.4,
+    "35-44": 31.5,
+    "45-54": 42.6,
+    "55-64": 16.6
    },
-   "female": 29.2,
-   "age45": 57.5,
-   "age35_54": 73.8,
+   "female": 30.4,
+   "age45": 59.2,
+   "age35_54": 74.1,
    "device": {
-    "MOBILE": 53.8,
-    "DESKTOP": 21.3,
-    "TV": 15.3,
-    "TABLET": 9.6
+    "MOBILE": 52.2,
+    "DESKTOP": 20.6,
+    "TV": 18.2,
+    "TABLET": 9.0
    },
    "search": [
     [
@@ -5530,11 +5518,11 @@
      8
     ],
     [
-     "指數化投資",
-     5
+     "雨果",
+     6
     ],
     [
-     "雨果",
+     "指數化投資",
      5
     ],
     [
@@ -5542,11 +5530,11 @@
      2
     ],
     [
-     "中月半年",
-     1
+     "美好",
+     2
     ],
     [
-     "美好",
+     "中月半年",
      1
     ],
     [
@@ -5558,55 +5546,55 @@
     [
      "退休，錢從哪裡來？如何建立月月配穩定現金流？70 歲開始理財也能財務自由！",
      "美好證券 Good Finance",
-     84
+     240
+    ],
+    [
+     "定期定額投資大盤，還有這個選擇 ft. 李柏鋒｜EP38 #0050 #回彈 #抗跌ETF",
+     "美好證券 Good Finance",
+     45
+    ],
+    [
+     "55 歲我還在學理財！只靠工作收入，退休夠用嗎？我不可能幫孩子理財一輩子！",
+     "美好證券 Good Finance",
+     39
     ],
     [
      "0056 配息從 1.07 元驟降又暴衝 1.72 元！房租菜錢不會打折，靠高股息退休該怎麼活？",
      "美好證券 Good Finance",
-     36
+     37
     ],
     [
      "借300萬買正2 暴跌崩潰了！借錢買股票先搞懂這眉角 TISA與0050都贏高股息ETF│Stay Rich│俞璘ft.",
      "StayRich小資理財藍圖",
-     18
-    ],
-    [
-     "揭密資產配置! 30歲大膽衝 60歲轉定存? 退休金4%法則 #台股 #股市 #理財 #投資",
-     "理財有問必達",
-     18
+     20
     ],
     [
      "五十歲退休後段班莫慌！「月存兩萬三」10年逆轉退休金！- 闕又上 劉寶傑《寶傑怎麼說》20261112-2",
      "寶傑點兵／寶傑怎麼說",
-     18
-    ],
-    [
-     "006208一拆八變3萬 跟0050怎麼選？｜楚狂人 ft. 證券分析師 股添樂 ｜財富狂犇｜玩股網20261114",
-     "玩股網楚狂人",
-     17
+     20
     ]
    ],
-   "ret30s": 56.8,
-   "ret25": 35.0,
-   "ret50": 29.0,
-   "ret75": 25.4,
-   "ret95": 18.2
+   "ret30s": 57.0,
+   "ret25": 34.3,
+   "ret50": 28.5,
+   "ret75": 24.7,
+   "ret95": 17.9
   },
   "9wNUf_jztmM": {
    "show": "Better Living 美好生活",
    "pub": "2026-09-24",
    "title": "55 歲我還在學理財！只靠工作收入，退休夠用嗎？我不可能幫孩子理財一輩子！",
    "dur": 536,
-   "public": 108423,
-   "likes": 567,
+   "public": 109338,
+   "likes": 570,
    "comments": 62,
-   "views": 107587,
-   "ev": 42483,
-   "minutes": 142154,
-   "avgDur": 197,
-   "avgPct": 36.76,
-   "shares": 498,
-   "subs": 139,
+   "views": 108832,
+   "ev": 42858,
+   "minutes": 143290,
+   "avgDur": 196,
+   "avgPct": 36.7,
+   "shares": 504,
+   "subs": 141,
    "subsLost": 5,
    "traffic": {
     "SUBSCRIBER": 85.0,
@@ -5622,7 +5610,7 @@
     "END_SCREEN": 0.0
    },
    "subscribedViews": 11.0,
-   "subscribedWatch": 14.3,
+   "subscribedWatch": 14.2,
    "age": {
     "18-24": 0.4,
     "25-34": 9.3,
@@ -5636,14 +5624,14 @@
    "age35_54": 65.2,
    "device": {
     "MOBILE": 43.1,
-    "TV": 24.2,
+    "TV": 24.3,
     "DESKTOP": 20.2,
-    "TABLET": 12.5
+    "TABLET": 12.4
    },
    "search": [
     [
      "美好證券",
-     196
+     201
     ],
     [
      "工作收入",
@@ -5663,7 +5651,7 @@
     ],
     [
      "理財",
-     22
+     23
     ],
     [
      "美好金融",
@@ -5678,7 +5666,7 @@
     [
      "退休，錢從哪裡來？如何建立月月配穩定現金流？70 歲開始理財也能財務自由！",
      "美好證券 Good Finance",
-     4077
+     4133
     ],
     [
      "中了1,000萬還是要上班？你對工作還有熱情嗎？年輕世代為何都在瘋半退休？【聽你這young說】｜台新證券",
@@ -5688,12 +5676,12 @@
     [
      "45+ 理財怎麼做？高薪為什麼還是活得很累？最實用的 30、40、50 歲理財建議！Feat. 理財作家 十方 @dai",
      "美好證券 Good Finance",
-     58
+     59
     ],
     [
      "0050 vs. 0056 不用選？多少錢才能安心退休？退休後 1000 萬年領 50 萬還能留給孩子！feat. 樂活",
      "美好證券 Good Finance",
-     50
+     51
     ],
     [
      "0056.00878創高 好貴該停扣嗎？TISA基金這樣買 省超過1%│Stay Rich│俞璘ft. 王仲麟│2026",
@@ -5706,27 +5694,27 @@
      42
     ]
    ],
-   "ret30s": 64.9,
-   "ret25": 45.9,
-   "ret50": 35.3,
+   "ret30s": 64.8,
+   "ret25": 45.8,
+   "ret50": 35.2,
    "ret75": 29.6,
-   "ret95": 25.8
+   "ret95": 25.7
   },
   "oj17_P9Z6_U": {
    "show": "Better Living 美好生活",
    "pub": "2026-08-27",
    "title": "退休，錢從哪裡來？如何建立月月配穩定現金流？70 歲開始理財也能財務自由！",
    "dur": 831,
-   "public": 855988,
-   "likes": 2429,
-   "comments": 175,
-   "views": 846056,
-   "ev": 343694,
-   "minutes": 1406677,
+   "public": 873115,
+   "likes": 2456,
+   "comments": 177,
+   "views": 863720,
+   "ev": 349766,
+   "minutes": 1432408,
    "avgDur": 241,
-   "avgPct": 29.09,
-   "shares": 3751,
-   "subs": 1285,
+   "avgPct": 29.04,
+   "shares": 3807,
+   "subs": 1303,
    "subsLost": 33,
    "traffic": {
     "SUBSCRIBER": 94.5,
@@ -5743,20 +5731,20 @@
     "HASHTAGS": 0.0,
     "LIVE_REDIRECT": 0.0
    },
-   "subscribedViews": 3.1,
-   "subscribedWatch": 5.0,
+   "subscribedViews": 3.0,
+   "subscribedWatch": 4.9,
    "age": {
     "13-17": 0,
     "18-24": 0.2,
     "25-34": 6.1,
-    "35-44": 13.2,
-    "45-54": 27.7,
+    "35-44": 13.0,
+    "45-54": 27.6,
     "55-64": 35.5,
-    "65-": 17.3
+    "65-": 17.4
    },
-   "female": 52.8,
+   "female": 52.9,
    "age45": 80.5,
-   "age35_54": 40.9,
+   "age35_54": 40.6,
    "device": {
     "TV": 42.8,
     "MOBILE": 37.3,
@@ -5766,15 +5754,15 @@
    "search": [
     [
      "退休",
-     418
+     422
     ],
     [
      "美好證券",
-     228
+     230
     ],
     [
      "退休生活",
-     209
+     212
     ],
     [
      "美好金融",
@@ -5801,7 +5789,7 @@
     [
      "55 歲我還在學理財！只靠工作收入，退休夠用嗎？我不可能幫孩子理財一輩子！",
      "美好證券 Good Finance",
-     638
+     641
     ],
     [
      "52歲、月收8萬，理財專家只給1分? 別再焦慮！中年人的財務翻身術ft.人生底氣教練 郭莉芳｜EP234",
@@ -5811,7 +5799,7 @@
     [
      "普通人變有錢的唯一方法，如何致富的終極秘密？",
      "陳修平的師父商學院",
-     228
+     230
     ],
     [
      "周冠男談校務基金：不投資，就是把風險留給下一代｜投資你來講EP.146｜Feat. 政大商學院 副院長 周冠男 教授",
@@ -5829,10 +5817,10 @@
      123
     ]
    ],
-   "ret30s": 61.9,
+   "ret30s": 61.8,
    "ret25": 33.0,
    "ret50": 28.6,
-   "ret75": 27.0,
+   "ret75": 26.9,
    "ret95": 17.5
   },
   "cdKzPWUqnyM": {
@@ -5840,19 +5828,19 @@
    "pub": "2026-07-30",
    "title": "45 歲當阿公開始學投資？舉家搬到恆春卻遇上財務危機？！自由地賺錢很重要！fea",
    "dur": 1132,
-   "public": 30310,
+   "public": 30402,
    "likes": 363,
    "comments": 34,
-   "views": 30253,
-   "ev": 23319,
-   "minutes": 81535,
+   "views": 30359,
+   "ev": 23359,
+   "minutes": 81754,
    "avgDur": 209,
-   "avgPct": 18.47,
+   "avgPct": 18.48,
    "shares": 218,
    "subs": 134,
    "subsLost": 6,
    "traffic": {
-    "SUBSCRIBER": 82.5,
+    "SUBSCRIBER": 82.4,
     "RELATED_VIDEO": 6.1,
     "YT_CHANNEL": 3.7,
     "YT_SEARCH": 2.5,
@@ -5878,15 +5866,15 @@
    "age45": 57.8,
    "age35_54": 68.2,
    "device": {
-    "MOBILE": 46.3,
+    "MOBILE": 46.2,
     "DESKTOP": 24.9,
-    "TV": 19.0,
+    "TV": 19.2,
     "TABLET": 9.8
    },
    "search": [
     [
      "老喬",
-     356
+     359
     ],
     [
      "老喬joe chen",
@@ -5921,7 +5909,7 @@
     [
      "6 年積蓄一天 All In！唯一賣出的一檔股票？自由是不工作嗎？feat. 瓦基 @readingoutpost",
      "美好證券 Good Finance",
-     380
+     383
     ],
     [
      "退休到底要存多少才夠？樂活大叔施昇輝公開「22倍公式」：0050、0056這樣配！#退休理財【#小豪出任務】",
@@ -5960,14 +5948,14 @@
    "pub": "2026-06-25",
    "title": "6 年積蓄一天 All In！唯一賣出的一檔股票？自由是不工作嗎？feat. 瓦",
    "dur": 1416,
-   "public": 87253,
-   "likes": 1308,
+   "public": 87459,
+   "likes": 1309,
    "comments": 77,
-   "views": 87156,
-   "ev": 82288,
-   "minutes": 437833,
+   "views": 87354,
+   "ev": 82372,
+   "minutes": 438319,
    "avgDur": 319,
-   "avgPct": 22.54,
+   "avgPct": 22.53,
    "shares": 1055,
    "subs": 572,
    "subsLost": 8,
@@ -5985,7 +5973,7 @@
     "SHORTS_CONTENT_LINKS": 0.0
    },
    "subscribedViews": 15.3,
-   "subscribedWatch": 19.0,
+   "subscribedWatch": 19.1,
    "age": {
     "18-24": 0.6,
     "25-34": 12.6,
@@ -5999,18 +5987,18 @@
    "age35_54": 62.1,
    "device": {
     "MOBILE": 52.2,
-    "DESKTOP": 20.5,
+    "DESKTOP": 20.4,
     "TV": 18.1,
     "TABLET": 9.3
    },
    "search": [
     [
      "瓦基",
-     573
+     574
     ],
     [
      "美好證券",
-     32
+     33
     ],
     [
      "美好金融",
@@ -6041,17 +6029,17 @@
     [
      "45+ 理財怎麼做？高薪為什麼還是活得很累？最實用的 30、40、50 歲理財建議！Feat. 理財作家 十方 @dai",
      "美好證券 Good Finance",
-     1507
+     1512
     ],
     [
      "離職後我焦慮了七年！？零用錢不要存下來！夫妻理財最重要一關鍵！feat. 台積電前財務主管 郝旭烈 @haovoice",
      "美好證券 Good Finance",
-     599
+     601
     ],
     [
      "有錢人不會告訴你的「投資秘訣」ft.蔡宇哲、郝旭烈 EP121 #小青書 #謝哲青",
      "小青書",
-     286
+     287
     ],
     [
      "別再照抄別人的理財方法了！你在第幾階，決定你該怎麼變有錢｜財富階梯 Wealth Ladder｜啾啾鞋",
@@ -6064,9 +6052,9 @@
      134
     ],
     [
-     "200萬變1600萬! 50歲必抱2檔爆賺股 ft. 蔡明翰【 小宇宙大爆發 】",
-     "小宇宙大爆發",
-     120
+     "退休，錢從哪裡來？如何建立月月配穩定現金流？70 歲開始理財也能財務自由！",
+     "美好證券 Good Finance",
+     121
     ]
    ],
    "ret30s": 51.7,
@@ -6080,22 +6068,22 @@
    "pub": "2026-05-28",
    "title": "45+ 理財怎麼做？高薪為什麼還是活得很累？最實用的 30、40、50 歲理財建",
    "dur": 1512,
-   "public": 244719,
-   "likes": 5136,
+   "public": 245248,
+   "likes": 5140,
    "comments": 284,
-   "views": 244433,
-   "ev": 231457,
-   "minutes": 1502785,
+   "views": 244969,
+   "ev": 231764,
+   "minutes": 1505634,
    "avgDur": 389,
-   "avgPct": 25.75,
-   "shares": 7944,
-   "subs": 2913,
+   "avgPct": 25.759999999999998,
+   "shares": 7951,
+   "subs": 2918,
    "subsLost": 54,
    "traffic": {
     "SUBSCRIBER": 76.4,
-    "RELATED_VIDEO": 12.1,
+    "RELATED_VIDEO": 12.2,
     "NO_LINK_OTHER": 3.5,
-    "YT_SEARCH": 2.3,
+    "YT_SEARCH": 2.4,
     "YT_OTHER_PAGE": 2.0,
     "EXT_URL": 1.8,
     "YT_CHANNEL": 0.9,
@@ -6106,7 +6094,7 @@
     "HASHTAGS": 0.0
    },
    "subscribedViews": 7.2,
-   "subscribedWatch": 8.1,
+   "subscribedWatch": 8.2,
    "age": {
     "18-24": 1.2,
     "25-34": 25.1,
@@ -6127,23 +6115,23 @@
    "search": [
     [
      "十方",
-     2579
+     2602
     ],
     [
      "十方老師",
-     855
+     862
     ],
     [
      "理財",
-     308
+     311
     ],
     [
      "美好證券",
-     138
+     139
     ],
     [
      "理财",
-     69
+     72
     ],
     [
      "45+",
@@ -6162,12 +6150,12 @@
     [
      "【#博音】EP237 | 理財策略不應該是用年齡區分 ft. 十方",
      "曾博恩",
-     1983
+     1987
     ],
     [
      "退休，錢從哪裡來？如何建立月月配穩定現金流？70 歲開始理財也能財務自由！",
      "美好證券 Good Finance",
-     734
+     755
     ],
     [
      "離職後我焦慮了七年！？零用錢不要存下來！夫妻理財最重要一關鍵！feat. 台積電前財務主管 郝旭烈 @haovoice",
@@ -6180,14 +6168,14 @@
      334
     ],
     [
+     "高薪不代表財務安全？理財作家十方告別菜市人生，28歲辭去大學教職，她如何打造不怕中年失業的財務安全網，在43歲實現財富自",
+     "哈佛商業評論",
+     328
+    ],
+    [
      "6 年積蓄一天 All In！唯一賣出的一檔股票？自由是不工作嗎？feat. 瓦基 @readingoutpost",
      "美好證券 Good Finance",
      324
-    ],
-    [
-     "高薪不代表財務安全？理財作家十方告別菜市人生，28歲辭去大學教職，她如何打造不怕中年失業的財務安全網，在43歲實現財富自",
-     "哈佛商業評論",
-     321
     ]
    ],
    "ret30s": 66.8,
@@ -6201,31 +6189,31 @@
    "pub": "2026-04-30",
    "title": "優人神鼓創辦人談：藝術創作者如何理財？60 歲開始學習靠被動收入「賺錢」！從排斥",
    "dur": 1290,
-   "public": 4112,
+   "public": 4121,
    "likes": 127,
    "comments": 12,
-   "views": 4104,
-   "ev": 3937,
-   "minutes": 19210,
-   "avgDur": 292,
-   "avgPct": 22.69,
-   "shares": 125,
+   "views": 4119,
+   "ev": 3945,
+   "minutes": 19301,
+   "avgDur": 293,
+   "avgPct": 22.72,
+   "shares": 126,
    "subs": 45,
    "subsLost": 3,
    "traffic": {
     "SUBSCRIBER": 50.9,
-    "YT_CHANNEL": 16.0,
+    "YT_CHANNEL": 15.9,
     "NO_LINK_OTHER": 8.2,
-    "RELATED_VIDEO": 8.0,
+    "RELATED_VIDEO": 8.1,
     "PLAYLIST": 7.2,
     "EXT_URL": 5.1,
     "YT_SEARCH": 2.2,
-    "YT_OTHER_PAGE": 1.9,
+    "YT_OTHER_PAGE": 1.8,
     "SHORTS_CONTENT_LINKS": 0.3,
     "NOTIFICATION": 0.2
    },
-   "subscribedViews": 32.9,
-   "subscribedWatch": 39.0,
+   "subscribedViews": 33.0,
+   "subscribedWatch": 38.9,
    "age": {
     "25-34": 3.3,
     "35-44": 11.9,
@@ -6236,10 +6224,10 @@
    "age45": 84.8,
    "age35_54": 55.5,
    "device": {
-    "MOBILE": 35.7,
-    "DESKTOP": 33.4,
-    "TV": 22.6,
-    "TABLET": 8.3
+    "MOBILE": 35.8,
+    "DESKTOP": 33.3,
+    "TV": 22.7,
+    "TABLET": 8.2
    },
    "search": [
     [
@@ -6318,24 +6306,24 @@
    "pub": "2026-03-26",
    "title": "如何跟孩子聊「錢」？留給孩子的富養 3 能力？與兒子徒步環島 40 天療癒的卻是",
    "dur": 957,
-   "public": 6070,
+   "public": 6085,
    "likes": 136,
    "comments": 9,
-   "views": 6057,
-   "ev": 5601,
-   "minutes": 26752,
+   "views": 6082,
+   "ev": 5610,
+   "minutes": 26829,
    "avgDur": 286,
-   "avgPct": 29.93,
+   "avgPct": 29.94,
    "shares": 156,
    "subs": 36,
    "subsLost": 1,
    "traffic": {
     "SUBSCRIBER": 41.8,
-    "EXT_URL": 15.6,
-    "YT_CHANNEL": 14.5,
-    "RELATED_VIDEO": 13.5,
+    "EXT_URL": 15.5,
+    "YT_CHANNEL": 14.4,
+    "RELATED_VIDEO": 13.6,
     "NO_LINK_OTHER": 6.8,
-    "PLAYLIST": 4.0,
+    "PLAYLIST": 4.1,
     "YT_OTHER_PAGE": 1.7,
     "YT_SEARCH": 1.3,
     "NOTIFICATION": 0.7,
@@ -6343,7 +6331,7 @@
     "SHORTS_CONTENT_LINKS": 0.1
    },
    "subscribedViews": 28.1,
-   "subscribedWatch": 37.3,
+   "subscribedWatch": 37.2,
    "age": {
     "25-34": 4.4,
     "35-44": 29.3,
@@ -6354,9 +6342,9 @@
    "age45": 66.3,
    "age35_54": 80.7,
    "device": {
-    "MOBILE": 44.6,
-    "DESKTOP": 28.4,
-    "TV": 19.9,
+    "MOBILE": 44.5,
+    "DESKTOP": 28.3,
+    "TV": 20.1,
     "TABLET": 7.1
    },
    "search": [
@@ -6382,17 +6370,17 @@
     [
      "離職後我焦慮了七年！？零用錢不要存下來！夫妻理財最重要一關鍵！feat. 台積電前財務主管 郝旭烈 @haovoice",
      "美好證券 Good Finance",
-     48
+     50
+    ],
+    [
+     "45+ 理財怎麼做？高薪為什麼還是活得很累？最實用的 30、40、50 歲理財建議！Feat. 理財作家 十方 @dai",
+     "美好證券 Good Finance",
+     27
     ],
     [
      "0050 vs. 0056 不用選？多少錢才能安心退休？退休後 1000 萬年領 50 萬還能留給孩子！feat. 樂活",
      "美好證券 Good Finance",
      27
-    ],
-    [
-     "45+ 理財怎麼做？高薪為什麼還是活得很累？最實用的 30、40、50 歲理財建議！Feat. 理財作家 十方 @dai",
-     "美好證券 Good Finance",
-     26
     ],
     [
      "省錢是犧牲生活嗎？月存 3000 也能變千萬？25 歲開始最輕鬆的滾雪球計畫 feat. YouTuber 李勛 @SH",
@@ -6405,7 +6393,7 @@
      11
     ]
    ],
-   "ret30s": 57.9,
+   "ret30s": 58.0,
    "ret25": 33.6,
    "ret50": 30.4,
    "ret75": 28.4,
@@ -6416,31 +6404,31 @@
    "pub": "2026-02-26",
    "title": "當老闆一點也不好玩！？心跳掉到 38 下、連續虧損 7 年，李昆霖揭露創業最難的",
    "dur": 1201,
-   "public": 8642,
+   "public": 8672,
    "likes": 159,
    "comments": 16,
-   "views": 8629,
-   "ev": 7545,
-   "minutes": 37817,
+   "views": 8660,
+   "ev": 7553,
+   "minutes": 37858,
    "avgDur": 300,
    "avgPct": 25,
    "shares": 195,
    "subs": 59,
    "subsLost": 4,
    "traffic": {
-    "SUBSCRIBER": 53.5,
+    "SUBSCRIBER": 53.6,
     "RELATED_VIDEO": 14.5,
     "EXT_URL": 10.7,
     "YT_CHANNEL": 8.3,
     "NO_LINK_OTHER": 6.5,
-    "PLAYLIST": 3.2,
+    "PLAYLIST": 3.3,
     "YT_SEARCH": 1.5,
     "YT_OTHER_PAGE": 1.4,
     "NOTIFICATION": 0.2,
     "END_SCREEN": 0.1,
     "SHORTS_CONTENT_LINKS": 0.1
    },
-   "subscribedViews": 25.6,
+   "subscribedViews": 25.5,
    "subscribedWatch": 29.4,
    "age": {
     "25-34": 5.6,
@@ -6510,7 +6498,7 @@
    "ret30s": 60.4,
    "ret25": 32.5,
    "ret50": 24.5,
-   "ret75": 19.9,
+   "ret75": 19.8,
    "ret95": 17.5
   },
   "KS5UEKlrezA": {
@@ -6518,16 +6506,16 @@
    "pub": "2026-01-29",
    "title": "離職後我焦慮了七年！？零用錢不要存下來！夫妻理財最重要一關鍵！feat. 台積電",
    "dur": 1499,
-   "public": 256240,
-   "likes": 3013,
+   "public": 256684,
+   "likes": 3016,
    "comments": 101,
-   "views": 256053,
-   "ev": 236743,
-   "minutes": 1678359,
+   "views": 256403,
+   "ev": 236878,
+   "minutes": 1679573,
    "avgDur": 425,
-   "avgPct": 28.360000000000003,
+   "avgPct": 28.37,
    "shares": 4860,
-   "subs": 1581,
+   "subs": 1582,
    "subsLost": 28,
    "traffic": {
     "SUBSCRIBER": 73.5,
@@ -6564,11 +6552,11 @@
    "search": [
     [
      "郝旭烈",
-     1406
+     1408
     ],
     [
      "美好證券",
-     160
+     162
     ],
     [
      "郝旭烈podcast",
@@ -6599,7 +6587,7 @@
     [
      "45+ 理財怎麼做？高薪為什麼還是活得很累？最實用的 30、40、50 歲理財建議！Feat. 理財作家 十方 @dai",
      "美好證券 Good Finance",
-     2690
+     2697
     ],
     [
      "【商戰】別再幻想了！退休沒你想的爽？一事無成是自己害的？ft.台積電財務高層 郝旭烈｜下班經濟學675｜謝哲青、張瓊方@",
@@ -6609,7 +6597,7 @@
     [
      "0050 vs. 0056 不用選？多少錢才能安心退休？退休後 1000 萬年領 50 萬還能留給孩子！feat. 樂活",
      "美好證券 Good Finance",
-     1271
+     1272
     ],
     [
      "台積電前主管：人最可怕的地方，就是能把討厭的事當成一輩子的志業｜【初日會客室】 郝旭烈",
@@ -6619,12 +6607,12 @@
     [
      "退休，錢從哪裡來？如何建立月月配穩定現金流？70 歲開始理財也能財務自由！",
      "美好證券 Good Finance",
-     868
+     870
     ],
     [
      "省錢是犧牲生活嗎？月存 3000 也能變千萬？25 歲開始最輕鬆的滾雪球計畫 feat. YouTuber 李勛 @SH",
      "美好證券 Good Finance",
-     822
+     824
     ]
    ],
    "ret30s": 60.3,
@@ -6638,22 +6626,22 @@
    "pub": "2026-11-05",
    "title": "#高股息 配 5%，拿到手剩 3.5%？會計師揭退休族領息的稅務陷阱 ft. 李",
    "dur": 923,
-   "public": 92519,
-   "likes": 682,
-   "comments": 127,
-   "views": 89976,
-   "ev": 35149,
-   "minutes": 167211,
-   "avgDur": 280,
-   "avgPct": 30.42,
-   "shares": 1015,
-   "subs": 246,
+   "public": 96152,
+   "likes": 703,
+   "comments": 129,
+   "views": 94309,
+   "ev": 36645,
+   "minutes": 174439,
+   "avgDur": 279,
+   "avgPct": 30.320000000000004,
+   "shares": 1044,
+   "subs": 259,
    "subsLost": 3,
    "traffic": {
-    "SUBSCRIBER": 91.1,
+    "SUBSCRIBER": 91.0,
     "RELATED_VIDEO": 4.8,
     "NO_LINK_OTHER": 1.3,
-    "YT_CHANNEL": 0.7,
+    "YT_CHANNEL": 0.8,
     "YT_OTHER_PAGE": 0.7,
     "EXT_URL": 0.5,
     "YT_SEARCH": 0.4,
@@ -6663,29 +6651,29 @@
     "ANNOTATION": 0.0,
     "END_SCREEN": 0.0
    },
-   "subscribedViews": 14.5,
-   "subscribedWatch": 18.7,
+   "subscribedViews": 14.2,
+   "subscribedWatch": 18.5,
    "age": {
     "18-24": 0.2,
-    "25-34": 8.7,
-    "35-44": 25.3,
-    "45-54": 38.2,
+    "25-34": 8.6,
+    "35-44": 25.5,
+    "45-54": 38.3,
     "55-64": 21.9,
-    "65-": 5.7
+    "65-": 5.6
    },
-   "female": 21.0,
+   "female": 21.1,
    "age45": 65.8,
-   "age35_54": 63.5,
+   "age35_54": 63.8,
    "device": {
-    "MOBILE": 46.2,
-    "TV": 24.4,
-    "DESKTOP": 20.4,
-    "TABLET": 9.1
+    "MOBILE": 45.7,
+    "TV": 25.1,
+    "DESKTOP": 20.3,
+    "TABLET": 8.9
    },
    "search": [
     [
      "美好證券",
-     78
+     83
     ],
     [
      "會計師",
@@ -6701,7 +6689,7 @@
     ],
     [
      "美債",
-     4
+     6
     ],
     [
      "退休",
@@ -6720,7 +6708,7 @@
     [
      "高股息拖累財富？40歲提早退休 砍光飆股只留這檔！獨創「505退休提領法」10年多賺1700萬？解密正2槓桿迷思與新ET",
      "TVBS財經",
-     133
+     136
     ],
     [
      "有5張00919「就贏過半投資人」！　怎樣月月領1萬~10萬元？｜懶錢包LazyWallet",
@@ -6730,7 +6718,7 @@
     [
      "0056 配息從 1.07 元驟降又暴衝 1.72 元！房租菜錢不會打折，靠高股息退休該怎麼活？",
      "美好證券 Good Finance",
-     61
+     64
     ],
     [
      "買台積電還是0050？前政大校長揭散戶「常見錯誤」｜周行一、王志郁｜【富足今周起】EP62精華",
@@ -6743,35 +6731,35 @@
      38
     ],
     [
-     "雙11會員優惠開跑!!2026/11/9(一)黑天鵝?輝達間諜案 國安調查全面轉向?國安基金來了台股四萬點防線 守得住嗎",
-     "游庭皓的財經皓角",
+     "退休月領 10 萬！先搞懂錢放哪，才能穩穩領一輩子｜EP3",
+     "美好證券 Good Finance",
      34
     ]
    ],
-   "ret30s": 63.6,
-   "ret25": 38.6,
-   "ret50": 31.0,
-   "ret75": 25.6,
-   "ret95": 19.4
+   "ret30s": 63.5,
+   "ret25": 38.5,
+   "ret50": 30.8,
+   "ret75": 25.5,
+   "ret95": 19.3
   },
   "FL5YdkNX6-0": {
    "show": "Good Income",
    "pub": "2026-09-09",
    "title": "退休月領 10 萬！先搞懂錢放哪，才能穩穩領一輩子｜EP3",
    "dur": 526,
-   "public": 47875,
+   "public": 48114,
    "likes": 257,
    "comments": 56,
-   "views": 47658,
-   "ev": 19021,
-   "minutes": 65917,
+   "views": 47999,
+   "ev": 19154,
+   "minutes": 66460,
    "avgDur": 204,
-   "avgPct": 38.89,
-   "shares": 316,
+   "avgPct": 38.9,
+   "shares": 317,
    "subs": 96,
    "subsLost": 0,
    "traffic": {
-    "SUBSCRIBER": 88.2,
+    "SUBSCRIBER": 88.1,
     "RELATED_VIDEO": 6.1,
     "YT_CHANNEL": 2.0,
     "NO_LINK_OTHER": 1.0,
@@ -6795,9 +6783,9 @@
    "age45": 82.4,
    "age35_54": 52.8,
    "device": {
-    "MOBILE": 36.7,
+    "MOBILE": 36.6,
     "TV": 33.2,
-    "DESKTOP": 19.6,
+    "DESKTOP": 19.5,
     "TABLET": 10.6
    },
    "search": [
@@ -6843,12 +6831,12 @@
     [
      "退休，錢從哪裡來？如何建立月月配穩定現金流？70 歲開始理財也能財務自由！",
      "美好證券 Good Finance",
-     156
+     157
     ],
     [
      "美債 ETF 應該買台灣發行，還是美國發行？外行人看費用，內行人看稅務成本！｜EP2",
      "美好證券 Good Finance",
-     130
+     134
     ],
     [
      "40% 稅率大戶的必修課：捐贈不是多花錢！解析 5 大捐贈類別與固定收益時間差規劃｜EP1",
@@ -6863,13 +6851,13 @@
     [
      "#高股息 配 5%，拿到手剩 3.5%？會計師揭退休族領息的稅務陷阱 ft. 李維仁會計師｜EP4",
      "美好證券 Good Finance",
-     24
+     26
     ]
    ],
-   "ret30s": 60.8,
+   "ret30s": 60.7,
    "ret25": 48.6,
    "ret50": 42.1,
-   "ret75": 32.2,
+   "ret75": 32.3,
    "ret95": 26.1
   },
   "j8jbX0z97NQ": {
@@ -6877,19 +6865,19 @@
    "pub": "2026-08-04",
    "title": "美債 ETF 應該買台灣發行，還是美國發行？外行人看費用，內行人看稅務成本！｜E",
    "dur": 794,
-   "public": 98017,
-   "likes": 1220,
+   "public": 98338,
+   "likes": 1222,
    "comments": 182,
-   "views": 97800,
-   "ev": 77498,
-   "minutes": 331150,
+   "views": 98228,
+   "ev": 77679,
+   "minutes": 332067,
    "avgDur": 255,
-   "avgPct": 32.21,
+   "avgPct": 32.22,
    "shares": 1184,
-   "subs": 975,
+   "subs": 979,
    "subsLost": 6,
    "traffic": {
-    "SUBSCRIBER": 82.9,
+    "SUBSCRIBER": 82.8,
     "RELATED_VIDEO": 9.3,
     "NO_LINK_OTHER": 1.8,
     "YT_SEARCH": 1.7,
@@ -6915,7 +6903,7 @@
    "age45": 74.3,
    "age35_54": 52.8,
    "device": {
-    "TV": 43.2,
+    "TV": 43.1,
     "MOBILE": 26.4,
     "DESKTOP": 20.4,
     "TABLET": 10.1
@@ -6923,19 +6911,19 @@
    "search": [
     [
      "美債etf",
-     132
+     134
     ],
     [
      "美債",
-     124
+     127
     ],
     [
      "債券",
-     100
+     108
     ],
     [
      "債券etf",
-     85
+     86
     ],
     [
      "美國國債",
@@ -6963,7 +6951,7 @@
     [
      "退休月領 10 萬！先搞懂錢放哪，才能穩穩領一輩子｜EP3",
      "美好證券 Good Finance",
-     379
+     386
     ],
     [
      "美债5.2%｜现在买划算吗？会亏吗？",
@@ -6997,31 +6985,31 @@
    "pub": "2026-05-14",
    "title": "40% 稅率大戶的必修課：捐贈不是多花錢！解析 5 大捐贈類別與固定收益時間差規",
    "dur": 954,
-   "public": 38807,
-   "likes": 687,
+   "public": 38867,
+   "likes": 685,
    "comments": 60,
-   "views": 38747,
-   "ev": 37264,
-   "minutes": 192112,
+   "views": 38838,
+   "ev": 37315,
+   "minutes": 192422,
    "avgDur": 309,
-   "avgPct": 32.4,
-   "shares": 1350,
+   "avgPct": 32.41,
+   "shares": 1351,
    "subs": 487,
    "subsLost": 3,
    "traffic": {
-    "SUBSCRIBER": 78.3,
+    "SUBSCRIBER": 78.2,
     "RELATED_VIDEO": 11.3,
     "NO_LINK_OTHER": 2.9,
     "YT_CHANNEL": 2.5,
     "YT_OTHER_PAGE": 1.7,
     "PLAYLIST": 1.7,
     "EXT_URL": 0.9,
-    "YT_SEARCH": 0.5,
+    "YT_SEARCH": 0.6,
     "NOTIFICATION": 0.2,
     "END_SCREEN": 0.0,
     "HASHTAGS": 0.0
    },
-   "subscribedViews": 11.6,
+   "subscribedViews": 11.7,
    "subscribedWatch": 11.7,
    "age": {
     "18-24": 0.1,
@@ -7078,12 +7066,12 @@
     [
      "美債 ETF 應該買台灣發行，還是美國發行？外行人看費用，內行人看稅務成本！｜EP2",
      "美好證券 Good Finance",
-     2586
+     2588
     ],
     [
      "#高股息 配 5%，拿到手剩 3.5%？會計師揭退休族領息的稅務陷阱 ft. 李維仁會計師｜EP4",
      "美好證券 Good Finance",
-     312
+     329
     ],
     [
      "國稅局不會提醒你！你的稅可能白繳了，沒搞懂，小心多繳幾十萬甚至幾百萬！【武哥聊時事】",
@@ -7093,7 +7081,7 @@
     [
      "退休月領 10 萬！先搞懂錢放哪，才能穩穩領一輩子｜EP3",
      "美好證券 Good Finance",
-     99
+     101
     ],
     [
      "報稅別再傻傻按「下一步」！從股息、扣除額到常見錯誤 一次搞懂如何節稅！｜胡碩勻、王志郁｜【富足今周起】EP102",
@@ -7117,19 +7105,19 @@
    "pub": "2026-09-17",
    "title": "「買好資產，就是跟時間做朋友！」美好證券董事長 Hank 深度導讀：巴菲特如何從",
    "dur": 4972,
-   "public": 84230,
-   "likes": 919,
+   "public": 84525,
+   "likes": 921,
    "comments": 102,
-   "views": 84059,
-   "ev": 45169,
-   "minutes": 757330,
-   "avgDur": 1003,
-   "avgPct": 20.19,
-   "shares": 1235,
-   "subs": 642,
+   "views": 84372,
+   "ev": 45347,
+   "minutes": 760896,
+   "avgDur": 1004,
+   "avgPct": 20.2,
+   "shares": 1240,
+   "subs": 643,
    "subsLost": 10,
    "traffic": {
-    "SUBSCRIBER": 61.9,
+    "SUBSCRIBER": 61.8,
     "RELATED_VIDEO": 27.9,
     "NO_LINK_OTHER": 2.4,
     "YT_SEARCH": 2.3,
@@ -7143,7 +7131,7 @@
     "HASHTAGS": 0.0
    },
    "subscribedViews": 23.6,
-   "subscribedWatch": 27.4,
+   "subscribedWatch": 27.6,
    "age": {
     "18-24": 0.6,
     "25-34": 15.5,
@@ -7156,7 +7144,7 @@
    "age45": 57.7,
    "age35_54": 55.7,
    "device": {
-    "MOBILE": 61.7,
+    "MOBILE": 61.6,
     "DESKTOP": 18.4,
     "TV": 10.8,
     "TABLET": 9.1
@@ -7164,15 +7152,15 @@
    "search": [
     [
      "美好證券",
-     441
+     454
     ],
     [
      "巴菲特",
-     350
+     354
     ],
     [
      "價值投資",
-     67
+     65
     ],
     [
      "美好",
@@ -7199,12 +7187,12 @@
     [
      "NVIDIA 市值 5 兆美元還能買嗎？2030 年挑戰市值 10 兆！為什麼現在的輝達很有可能是「最便宜」的科技巨頭？",
      "美好證券 Good Finance",
-     1411
+     1416
     ],
     [
      "万字解读《滚雪球》：巴菲特与芒格，如何从捡烟蒂进化到买好公司",
      "小A学财经",
-     174
+     175
     ],
     [
      "美債下跌能抄底買進嗎？AI股沒泡沫，蘋果是大功臣？ft. 台新新光金首席經濟學家 李鎮宇 | 斐姨所思【阿姨想知道】 E",
@@ -7224,10 +7212,10 @@
     [
      "万字解读《聪明的投资者》: 投资界圣经，一本书让你看懂投资",
      "小A学财经",
-     85
+     86
     ]
    ],
-   "ret30s": 81.4,
+   "ret30s": 81.3,
    "ret25": 26.5,
    "ret50": 19.7,
    "ret75": 16.2,
@@ -7238,25 +7226,25 @@
    "pub": "2026-06-29",
    "title": "NVIDIA 市值 5 兆美元還能買嗎？2030 年挑戰市值 10 兆！為什麼現",
    "dur": 5818,
-   "public": 41460,
+   "public": 41545,
    "likes": 1203,
    "comments": 139,
-   "views": 41412,
-   "ev": 35321,
-   "minutes": 604544,
+   "views": 41503,
+   "ev": 35379,
+   "minutes": 605311,
    "avgDur": 1026,
    "avgPct": 17.64,
-   "shares": 1409,
-   "subs": 1002,
+   "shares": 1410,
+   "subs": 1003,
    "subsLost": 9,
    "traffic": {
-    "RELATED_VIDEO": 43.4,
+    "RELATED_VIDEO": 43.3,
     "SUBSCRIBER": 34.5,
-    "NO_LINK_OTHER": 7.6,
+    "NO_LINK_OTHER": 7.5,
     "EXT_URL": 3.9,
     "YT_CHANNEL": 3.8,
     "YT_OTHER_PAGE": 3.0,
-    "YT_SEARCH": 2.2,
+    "YT_SEARCH": 2.3,
     "PLAYLIST": 1.1,
     "NOTIFICATION": 0.3,
     "END_SCREEN": 0.2,
@@ -7280,12 +7268,12 @@
     "MOBILE": 57.4,
     "DESKTOP": 21.9,
     "TV": 11.3,
-    "TABLET": 9.5
+    "TABLET": 9.4
    },
    "search": [
     [
      "美好證券",
-     306
+     309
     ],
     [
      "nvidia",
@@ -7320,7 +7308,7 @@
     [
      "「買好資產，就是跟時間做朋友！」美好證券董事長 Hank 深度導讀：巴菲特如何從價值投資，進化成史上最強的資本配置者？",
      "美好證券 Good Finance",
-     704
+     712
     ],
     [
      "台積電牽手華邦電殺入「WoW 晶圓堆疊」最核心：解密距離趨近於零的微型銅接點，訊號直上直下的速度碾壓！｜2026/06/",
@@ -7349,7 +7337,7 @@
     ]
    ],
    "ret30s": 79.7,
-   "ret25": 22.7,
+   "ret25": 22.6,
    "ret50": 18.1,
    "ret75": 14.5,
    "ret95": 13.0
